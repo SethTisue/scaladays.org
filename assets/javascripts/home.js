@@ -1,4 +1,4 @@
-(function(){
+;(function(){
 
 window.requestAnimFrame = (function(){
 	return	window.requestAnimationFrame       ||
@@ -101,7 +101,45 @@ loop()
 
 }());
 
-(function(){
+;(function(){
+	$("#schedule .day").each(function(ø,root) {
+		var hourSize = 100;
+			
+		var times = $(root).attr("data-time").split("-"),
+			daystart = times[0].split(":"),
+			daystop = times[1].split(":"),
+			daytop = (parseFloat(daystart[0]) + parseFloat(daystart[1]) / 60),
+			dayheight = (parseFloat(daystop[0]) + parseFloat(daystop[1]) / 60) - daytop + 1;
+
+			$(root).css("height", (hourSize * dayheight) + "px");
+
+			var side = $("aside", root);
+			for (i = parseFloat(daystart[0]) + 1; i <= daystop[0] ; i++) {
+				// PM:
+				side.append("<span class='time' data-time='"+i+":00-"+i+":00'>"+(i>12?(i-12)+" pm":i+" am")+"</span>")
+				// Not PM :
+				//side.append("<span class='time' data-time='"+i+":00-"+i+":00'>"+i+":00</span>")
+			}
+
+
+		$("[data-time]",root).each(function(ø, el) {
+			var times = $(el).attr("data-time").split("-"),
+				start = times[0].split(":"),
+				stop = times[1].split(":"),
+				top = (parseFloat(start[0]) + parseFloat(start[1]) / 60),
+				height = (parseFloat(stop[0]) + parseFloat(stop[1]) / 60) - top;
+
+			if (height < 120) {
+				$(el).addClass("small");
+			}
+
+			$(el).css("top", (hourSize * (top - daytop)) + "px");
+			$(el).css("height", (hourSize * height) + "px");
+		});
+	});
+}());
+
+;(function(){
 if (!!('ontouchstart' in window)) return false
 
 $(".flip-thing > li").each(function(i,el){

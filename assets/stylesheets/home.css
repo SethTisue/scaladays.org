@@ -509,6 +509,136 @@ ul.flip-thing {
 	z-index: 31 !important;
 }
 
+
+#schedule {
+	width: 90%;
+	margin: 0 auto 100px;
+}
+#schedule .day {
+	position: relative;
+	background: #fff;
+}
+#schedule .day header {
+	padding: 20px;
+	height: 60px;
+	background: #444;
+	color: #fff;
+}
+#schedule aside {
+	position: absolute;
+	top: 60px;
+	left: 0;
+	bottom: 0;
+	width: 150px;
+	background: #fceeed url(assets/images@2x/time-schedule2.png) right -51px repeat-y;
+	background-size: 25px auto;
+	color: #e25651;
+}
+#schedule aside .time {
+	position: absolute;
+	right: 40px;
+	font-weight: 900;
+	font-size: 20px;
+	margin-top: -17px;
+}
+#schedule .tracks {
+	position: absolute;
+	top: 60px;
+	right: 10px;
+	bottom: 0;
+	left: 160px;
+}
+#schedule .tracks > div {
+	position: absolute;
+	border-left: 10px solid #fff;
+	border-right: 10px solid #fff;
+	padding: 5px 10px;
+}
+#schedule .keynote {
+	width: 100%;
+	background: #7fdff9;
+}
+#schedule .track {
+	width: 33.333%;
+	background: #e25651;
+}
+#schedule .track.room1 {
+	left: 0;
+}
+#schedule .track.room2 {
+	left: 33.333%;
+}
+#schedule .track.room3 {
+	left: 66.666%;
+}
+
+#schedule h2 {
+	color: #fff;
+	margin: 0;
+	font-size: 20px;
+	text-align: left;
+	font-weight: 900;
+	font-style: italic;
+}
+		
+#schedule h2 {
+	color: #fff;
+	margin: 0;
+	font-size: 20px;
+	text-align: left;
+	font-weight: 900;
+	font-style: italic;
+}
+#schedule .small h2 {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+#schedule .speaker {
+	display: inline-block;
+	margin-right: 5px;
+	color: #391010;
+}
+#schedule .speakersbio {
+	display: inline-block;
+	color: #8a2420;
+}
+
+#schedule .keynote .speaker {
+	color: #1b505e;
+}
+#schedule .keynote .speakersbio {
+	color: #39859a;
+}
+
+#schedule .pause {
+	width: 100%;
+	padding: 0 !important;
+}
+
+#schedule .pause h2 {
+	margin: 0;
+	height: 100px;
+	line-height: 100px;
+	color: #ccc;
+	background: url(assets/images@2x/pauses.png) center center no-repeat;
+	background-size: 150px 400px;
+}
+#schedule .pause.register h2 {
+	background-position: center 0;
+}
+#schedule .pause.drink h2 {
+	background-position: center -200px;
+}
+#schedule .pause.eat h2 {
+	background-position: center -100px;
+}
+#schedule .pause.drunk h2 {
+	background-position: center -300px;
+}
+
+
 #venue {
 	position: relative;
 	height: 90%;
