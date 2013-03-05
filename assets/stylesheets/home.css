@@ -530,7 +530,7 @@ ul.flip-thing {
 	left: 0;
 	bottom: 0;
 	width: 150px;
-	background: #fceeed url(assets/images@2x/time-schedule2.png) right -51px repeat-y;
+	background: #fceeed url(../images@2x/time-schedule2.png) right -51px repeat-y;
 	background-size: 25px auto;
 	color: #e25651;
 }
@@ -622,7 +622,7 @@ ul.flip-thing {
 	height: 100px;
 	line-height: 100px;
 	color: #ccc;
-	background: url(assets/images@2x/pauses.png) center center no-repeat;
+	background: url(../images@2x/pauses.png) center center no-repeat;
 	background-size: 150px 400px;
 }
 #schedule .pause.register h2 {
