@@ -19,10 +19,13 @@ while (props[i]) {
 		cssTransform = true;
 		vendor = props[i].replace(/transform/i,'');
 		vendor = vendor.toLowerCase();
+		if(cssTransform && vendor) vendor = "-" + vendor + "-";
 		break;
 	}
 	i++;
 }
+
+alert("vendor:"+vendor);
 
 if (!!('ontouchstart' in window) || !requestAnimFrame || !cssTransform) return false
 
@@ -61,20 +64,20 @@ var lastPosition = -10,
 			mountains.css('opacity',1)
 			mountains2.css('opacity',1)
 
-			title.css('-'+vendor+'-transform', "translate3d(0, "+ (window.pageYOffset/-3.8) +"px,0)" )
+			title.css(vendor+'transform', "translate3d(0, "+ (window.pageYOffset/-3.8) +"px,0)" )
 			title.css('opacity', 1.2-(window.pageYOffset/400) )
 			scrollDown.css('opacity', 1-(window.pageYOffset/100) )
 
-			clouds.css('-'+vendor+'-transform', "translate3d(0, "+ (window.pageYOffset/-1.2) +"px,0)" )
-			cloudsF.css('-'+vendor+'-transform', "translate3d(0, "+ (window.pageYOffset/-1.2) +"px,0)" )
-			cloudsM.css('-'+vendor+'-transform', "translate3d(0, "+ (window.pageYOffset/-1.2) +"px,0)" )
-			clouds2.css('-'+vendor+'-transform', "translate3d(0, "+ (window.pageYOffset/-1.8) +"px,0)" )
-			clouds3.css('-'+vendor+'-transform', "translate3d(0, "+ (window.pageYOffset/-3) +"px,0)" )
+			clouds.css(vendor+'transform', "translate3d(0, "+ (window.pageYOffset/-1.2) +"px,0)" )
+			cloudsF.css(vendor+'transform', "translate3d(0, "+ (window.pageYOffset/-1.2) +"px,0)" )
+			cloudsM.css(vendor+'transform', "translate3d(0, "+ (window.pageYOffset/-1.2) +"px,0)" )
+			clouds2.css(vendor+'transform', "translate3d(0, "+ (window.pageYOffset/-1.8) +"px,0)" )
+			clouds3.css(vendor+'transform', "translate3d(0, "+ (window.pageYOffset/-3) +"px,0)" )
 
-			mountains.css('-'+vendor+'-transform', "translate3d(0, "+ (window.pageYOffset/-1.2) +"px,0)" )
-			mountains2.css('-'+vendor+'-transform', "translate3d(0, "+ (window.pageYOffset/-2) +"px,0)" )
+			mountains.css(vendor+'transform', "translate3d(0, "+ (window.pageYOffset/-1.2) +"px,0)" )
+			mountains2.css(vendor+'transform', "translate3d(0, "+ (window.pageYOffset/-2) +"px,0)" )
 
-//			land.css('-'+vendor+'-transform', "translate3d(0, "+ (window.pageYOffset/-6) +"px,0)" )
+//			land.css(vendor+'transform', "translate3d(0, "+ (window.pageYOffset/-6) +"px,0)" )
 
 		} else {
 			title.css('opacity',0)
@@ -83,11 +86,11 @@ var lastPosition = -10,
 			mountains.css('opacity',0)
 			mountains2.css('opacity',0)
 
-			clouds.css('-'+vendor+'-transform', "translate3d(0, -416px,0)" )
-			cloudsF.css('-'+vendor+'-transform', "translate3d(0, -416px,0)" )
-			cloudsM.css('-'+vendor+'-transform', "translate3d(0, -416px,0)" )
-			clouds2.css('-'+vendor+'-transform', "translate3d(0, -277px,0)" )
-			clouds3.css('-'+vendor+'-transform', "translate3d(0, -166px,0)" )
+			clouds.css(vendor+'transform', "translate3d(0, -416px,0)" )
+			cloudsF.css(vendor+'transform', "translate3d(0, -416px,0)" )
+			cloudsM.css(vendor+'transform', "translate3d(0, -416px,0)" )
+			clouds2.css(vendor+'transform', "translate3d(0, -277px,0)" )
+			clouds3.css(vendor+'transform', "translate3d(0, -166px,0)" )
 		}
 
 		if (window.pageYOffset > 700  ) {
@@ -116,18 +119,27 @@ loop()
 				window.onscoll;
 	})();
 
-	var route = {
-			write: function(){
-				return "#/"
+	var routes = {
+			write: function(el){
+				var day = $(el).parents(".day").attr("data-day"),
+					hour = $(el).attr("data-time"),
+					title = escape($(el).find("h2").first().text().replace(/\ /g,"-"));
+				window.location.hash = "#/" + day + "/" + hour + "/" + title
 			},
 			read: function(){
-				
+				var target = window.location.hash.split("/"),
+					el = $(".day[data-day='"+target[1]+"'] .track[data-time='"+target[2]+"']").first();
+
+					if (target.length > 2) {
+						$(window).scrollTop( (el.offset().top - 100)  );
+						el.trigger("click");
+					}
 			}
 		}
 
 	var hourSize = 100;
 	$("#schedule .day").each(function(ø,root) {
-			
+
 		var times = $(root).attr("data-time").split("-"),
 			daystart = times[0].split(":"),
 			daystop = times[1].split(":"),
@@ -162,7 +174,23 @@ loop()
 
 	});
 
+	$("#schedule .day").click(function(e){
+		allTracks.removeClass("active");
+			$("#details").slideUp("fast");
+			window.location.hash = "/";
+	});
 	var allTracks = $("#schedule .tracks .track").click(function(e){
+		e.preventDefault();
+		if ( $(this).hasClass("active") ) {
+			$(this).removeClass("active");
+			$("#details").slideUp("fast");
+			window.location.hash = "/";
+			return false;
+		}
+
+		routes.write(this);
+
+		$("#details").slideDown("fast");
 
 		allTracks.removeClass("active");
 		$(this).addClass("active");
@@ -185,6 +213,7 @@ loop()
 				.appendTo(timeWrap);
 
 		timeWrap.css("background-position", " right -" + (top * hourSize - 50 ) + "px");
+		return false;
 	});
 
 	// Scroll effect on schedule
@@ -240,6 +269,8 @@ loop()
 	window.onresize();
 
 	loop();
+
+	routes.read();
 
 }());
 

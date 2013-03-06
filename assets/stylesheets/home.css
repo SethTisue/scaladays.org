@@ -516,6 +516,7 @@ ul.flip-thing {
 	position: relative;
 }
 #details {
+	display: none;
 	background: #444;
 	color: #ccc;
 	position: absolute;
