@@ -97,13 +97,36 @@ var lastPosition = -10,
 		requestAnimFrame(loop)
 	}
 
+window.onresize = function(){
+	wHeight = window.innerHeight;
+}
 loop()
 
 }());
 
 ;(function(){
+
+	// This one is different from the previous one:
+	window.requestAnimFrame = (function(){
+		return	window.requestAnimationFrame       ||
+				window.webkitRequestAnimationFrame ||
+				window.mozRequestAnimationFrame    ||
+				window.msRequestAnimationFrame     ||
+				window.oRequestAnimationFrame      ||
+				window.onscoll;
+	})();
+
+	var route = {
+			write: function(){
+				return "#/"
+			},
+			read: function(){
+				
+			}
+		}
+
+	var hourSize = 100;
 	$("#schedule .day").each(function(ø,root) {
-		var hourSize = 100;
 			
 		var times = $(root).attr("data-time").split("-"),
 			daystart = times[0].split(":"),
@@ -136,7 +159,88 @@ loop()
 			$(el).css("top", (hourSize * (top - daytop)) + "px");
 			$(el).css("height", (hourSize * height) + "px");
 		});
+
 	});
+
+	var allTracks = $("#schedule .tracks .track").click(function(e){
+
+		allTracks.removeClass("active");
+		$(this).addClass("active");
+
+		$("#details .description").html( $(".details",this).html() );
+		
+		var times = $(this).attr("data-time").split("-"),
+			timeWrap = $("#details .times").html(""),
+			start = times[0].split(":"),
+			stop = times[1].split(":"),
+			top = (parseFloat(start[0]) + parseFloat(start[1]) / 60),
+			height = (parseFloat(stop[0]) + parseFloat(stop[1]) / 60) - top;
+
+		$("<span class='time'> "+times[0]+" </span>")
+				.css("top", "50px")
+				.appendTo(timeWrap);
+
+		$("<span class='time'> "+times[1]+" </span>")
+				.css("top", (hourSize * height + 50) + "px")
+				.appendTo(timeWrap);
+
+		timeWrap.css("background-position", " right -" + (top * hourSize - 50 ) + "px");
+	});
+
+	// Scroll effect on schedule
+	var lastPosition = -1,
+		wHeight = 0,
+		titles = [],
+		details = {};
+	function loop(){
+		if (lastPosition == window.pageYOffset || window.pageYOffset < details.top - 100) {
+			requestAnimFrame(loop);
+			return false;
+		} else lastPosition = window.pageYOffset;
+
+		titles.each(function(i, title){
+			if (lastPosition > title.top && lastPosition < title.bottom){
+				title.el.className = "fixed";
+			} else if (lastPosition > title.bottom) {
+				title.el.className = "after";
+			} else {
+				title.el.className = "";
+			}
+		});
+
+		if (lastPosition > details.top && lastPosition < details.bottom){
+			details.el.className = "fixed";
+		} else if (lastPosition > details.bottom) {
+			details.el.className = "after";
+		} else {
+			details.el.className = "";
+		}
+
+		requestAnimFrame(loop);
+	}
+
+	window.onresize = function(){
+		wHeight = window.innerHeight;
+		titles = $(".day").map(function(i,el){
+			return {
+				el: $(el).find("header")[0],
+				top: $(el).offset().top,
+				bottom: $(el).offset().top + $(el).height() - 60
+			}
+		});
+		details = $("#schedule").map(function(i,el){
+			return {
+				el: $("#details")[0],
+				top: $(el).offset().top - wHeight + 300,
+				bottom: $(el).offset().top + $(el).height() - wHeight + 240
+			}
+		})[0];
+		console.log(details)
+	}
+	window.onresize();
+
+	loop();
+
 }());
 
 ;(function(){

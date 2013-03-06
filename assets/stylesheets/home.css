@@ -513,17 +513,96 @@ ul.flip-thing {
 #schedule {
 	width: 90%;
 	margin: 0 auto 100px;
+	position: relative;
+}
+#details {
+	background: #444;
+	color: #ccc;
+	position: absolute;
+	top: 60px;
+	height: 240px;
+	width: 100%;
+	z-index: 99;
+	box-shadow: 0 -4px rgba(0,0,0,.2);
+
+}
+#details.fixed {
+	position: fixed;
+	bottom: 0;
+	top: auto;
+	width: 90%;
+}
+#details.after {
+	top: auto;
+	bottom: 0;
+}
+#details .times {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 150px;
+	height: 100%;
+	background: #383838 url(../images@2x/time-dark.png) top right repeat-y;
+	background-size: 25px auto;
+}
+#details .times .time {
+	color: #7fdff9;
+}
+
+#details .description {
+	position: absolute;
+	top: 0px;
+	left: 150px;
+	right: 0px;
+	bottom: 0px;
+}
+#details .track {
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	right: 36.666%;
+	bottom: 20px;
+}
+#details .speaker {
+	position: absolute;
+	width: 30%;
+	top: 20px;
+	right: 20px;
+	bottom: 20px;
+}
+
+
+#schedule {
+	padding-bottom: 240px;
 }
 #schedule .day {
 	position: relative;
 	background: #fff;
 }
 #schedule .day header {
+	position: absolute;
+	top: 0;
+	width: 100%;
 	padding: 20px;
 	height: 60px;
 	background: #444;
 	color: #fff;
+	z-index: 9;
+	-webkit-transform: translate3d(0,0,0);
+	box-shadow: 0 4px rgba(0,0,0,.2);
 }
+#schedule .day header.fixed {
+	position: fixed;
+	top: 0;
+	width: 90%;
+}
+#schedule .day header.after {
+	position: absolute;
+	bottom: 0;
+	top: auto;
+}
+
+
 #schedule aside {
 	position: absolute;
 	top: 60px;
@@ -532,9 +611,11 @@ ul.flip-thing {
 	width: 150px;
 	background: #fceeed url(../images@2x/time-schedule2.png) right -51px repeat-y;
 	background-size: 25px auto;
-	color: #e25651;
 }
 #schedule aside .time {
+	color: #e25651;
+}
+#schedule .time {
 	position: absolute;
 	right: 40px;
 	font-weight: 900;
@@ -548,6 +629,10 @@ ul.flip-thing {
 	bottom: 0;
 	left: 160px;
 }
+#schedule .tracks .details {
+	display: none;
+}
+
 #schedule .tracks > div {
 	position: absolute;
 	border-left: 10px solid #fff;
@@ -558,17 +643,18 @@ ul.flip-thing {
 	width: 100%;
 	background: #7fdff9;
 }
-#schedule .track {
+#schedule .tracks .track {
 	width: 33.333%;
 	background: #e25651;
 }
-#schedule .track.room1 {
+
+#schedule .tracks .track.room1 {
 	left: 0;
 }
-#schedule .track.room2 {
+#schedule .tracks .track.room2 {
 	left: 33.333%;
 }
-#schedule .track.room3 {
+#schedule .tracks .track.room3 {
 	left: 66.666%;
 }
 
@@ -595,29 +681,44 @@ ul.flip-thing {
 	text-overflow: ellipsis;
 }
 
-#schedule .speaker {
+#schedule .tracks .speaker {
 	display: inline-block;
 	margin-right: 5px;
 	color: #391010;
 }
-#schedule .speakersbio {
+#schedule .tracks .speakersbio {
 	display: inline-block;
 	color: #8a2420;
 }
 
-#schedule .keynote .speaker {
+#schedule .tracks .keynote .speaker {
 	color: #1b505e;
 }
-#schedule .keynote .speakersbio {
+#schedule .tracks .keynote .speakersbio {
 	color: #39859a;
 }
 
-#schedule .pause {
+#schedule .tracks .track.active {
+	background: #444;
+	color: #ccc;
+}
+#schedule .track.active .speaker {
+	display: inline-block;
+	margin-right: 5px;
+	color: #fff;
+}
+#schedule .track.active .speakersbio {
+	display: inline-block;
+	color: #7fdff9;
+}
+
+
+#schedule .tracks .pause {
 	width: 100%;
 	padding: 0 !important;
 }
 
-#schedule .pause h2 {
+#schedule .tracks .pause h2 {
 	margin: 0;
 	height: 100px;
 	line-height: 100px;
@@ -625,16 +726,16 @@ ul.flip-thing {
 	background: url(../images@2x/pauses.png) center center no-repeat;
 	background-size: 150px 400px;
 }
-#schedule .pause.register h2 {
+#schedule .tracks .pause.register h2 {
 	background-position: center 0;
 }
-#schedule .pause.drink h2 {
+#schedule .tracks .pause.drink h2 {
 	background-position: center -200px;
 }
-#schedule .pause.eat h2 {
+#schedule .tracks .pause.eat h2 {
 	background-position: center -100px;
 }
-#schedule .pause.drunk h2 {
+#schedule .tracks .pause.drunk h2 {
 	background-position: center -300px;
 }
 
