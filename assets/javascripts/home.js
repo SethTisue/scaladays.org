@@ -25,7 +25,6 @@ while (props[i]) {
 	i++;
 }
 
-alert("vendor:"+vendor);
 
 if (!!('ontouchstart' in window) || !requestAnimFrame || !cssTransform) return false
 
