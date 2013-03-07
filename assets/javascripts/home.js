@@ -1,3 +1,15 @@
+
+$(".flip-thing > li").each(function(i,el){
+	var number = parseFloat($(el).text());
+	$(el).html("").addClass("num-"+number);
+	$(el).append("<span class='none'/>");
+	for (var i=0;i<=number;i++){
+		$(el).append("<span class='back-"+i+"'/>");
+		$(el).append("<span class='num-"+i+"'/>");
+	}
+});
+
+
 ;(function(){
 
 window.requestAnimFrame = (function(){
@@ -26,9 +38,9 @@ while (props[i]) {
 }
 
 
-if (!!('ontouchstart' in window) || !requestAnimFrame || !cssTransform) return false
+if (!!('ontouchstart' in window) || !requestAnimFrame || !cssTransform) return false;
 
-document.body.className = "animate"
+document.body.className = "animate";
 
 var lastPosition = -10,
 	wHeight = window.innerHeight,
@@ -57,52 +69,52 @@ var lastPosition = -10,
 			return false;
 		} else lastPosition = window.pageYOffset;
 
-		if (window.pageYOffset < 500	) {
-			title.css('opacity',1)
-			scrollDown.css('opacity',1)
-			mountains.css('opacity',1)
-			mountains2.css('opacity',1)
+		if (window.pageYOffset < 500) {
+			title.css('opacity',1);
+			scrollDown.css('opacity',1);
+			mountains.css('opacity',1);
+			mountains2.css('opacity',1);
 
-			title.css(vendor+'transform', "translate3d(0, "+ (window.pageYOffset/-3.8) +"px,0)" )
-			title.css('opacity', 1.2-(window.pageYOffset/400) )
-			scrollDown.css('opacity', 1-(window.pageYOffset/100) )
+			title.css(vendor+'transform', "translate3d(0, "+ (window.pageYOffset/-3.8) +"px,0)" );
+			title.css('opacity', 1.2-(window.pageYOffset/400) );
+			scrollDown.css('opacity', 1-(window.pageYOffset/100) );
 
-			clouds.css(vendor+'transform', "translate3d(0, "+ (window.pageYOffset/-1.2) +"px,0)" )
-			cloudsF.css(vendor+'transform', "translate3d(0, "+ (window.pageYOffset/-1.2) +"px,0)" )
-			cloudsM.css(vendor+'transform', "translate3d(0, "+ (window.pageYOffset/-1.2) +"px,0)" )
-			clouds2.css(vendor+'transform', "translate3d(0, "+ (window.pageYOffset/-1.8) +"px,0)" )
-			clouds3.css(vendor+'transform', "translate3d(0, "+ (window.pageYOffset/-3) +"px,0)" )
+			clouds.css(vendor+'transform', "translate3d(0, "+ (window.pageYOffset/-1.2) +"px,0)" );
+			cloudsF.css(vendor+'transform', "translate3d(0, "+ (window.pageYOffset/-1.2) +"px,0)" );
+			cloudsM.css(vendor+'transform', "translate3d(0, "+ (window.pageYOffset/-1.2) +"px,0)" );
+			clouds2.css(vendor+'transform', "translate3d(0, "+ (window.pageYOffset/-1.8) +"px,0)" );
+			clouds3.css(vendor+'transform', "translate3d(0, "+ (window.pageYOffset/-3) +"px,0)" );
 
-			mountains.css(vendor+'transform', "translate3d(0, "+ (window.pageYOffset/-1.2) +"px,0)" )
-			mountains2.css(vendor+'transform', "translate3d(0, "+ (window.pageYOffset/-2) +"px,0)" )
+			mountains.css(vendor+'transform', "translate3d(0, "+ (window.pageYOffset/-1.2) +"px,0)" );
+			mountains2.css(vendor+'transform', "translate3d(0, "+ (window.pageYOffset/-2) +"px,0)" );
 
 //			land.css(vendor+'transform', "translate3d(0, "+ (window.pageYOffset/-6) +"px,0)" )
 
 		} else {
-			title.css('opacity',0)
-			scrollDown.css('opacity',0)
+			title.css('opacity',0);
+			scrollDown.css('opacity',0);
 
-			mountains.css('opacity',0)
-			mountains2.css('opacity',0)
+			mountains.css('opacity',0);
+			mountains2.css('opacity',0);
 
-			clouds.css(vendor+'transform', "translate3d(0, -416px,0)" )
-			cloudsF.css(vendor+'transform', "translate3d(0, -416px,0)" )
-			cloudsM.css(vendor+'transform', "translate3d(0, -416px,0)" )
-			clouds2.css(vendor+'transform', "translate3d(0, -277px,0)" )
-			clouds3.css(vendor+'transform', "translate3d(0, -166px,0)" )
+			clouds.css(vendor+'transform', "translate3d(0, -416px,0)" );
+			cloudsF.css(vendor+'transform', "translate3d(0, -416px,0)" );
+			cloudsM.css(vendor+'transform', "translate3d(0, -416px,0)" );
+			clouds2.css(vendor+'transform', "translate3d(0, -277px,0)" );
+			clouds3.css(vendor+'transform', "translate3d(0, -166px,0)" );
 		}
 
 		if (window.pageYOffset > 700	) {
-			flip.addClass("start")
+			flip.addClass("start");
 		}
 
-		requestAnimFrame(loop)
-	}
+		requestAnimFrame(loop);
+	};
 
 window.onresize = function(){
 	wHeight = window.innerHeight;
 }
-loop()
+loop();
 
 }());
 
@@ -115,7 +127,9 @@ loop()
 				window.mozRequestAnimationFrame		||
 				window.msRequestAnimationFrame		 ||
 				window.oRequestAnimationFrame			||
-				window.onscoll;
+				function(f){
+					setTimeout(f,60);
+				};
 	})();
 
 	var routes = {
@@ -155,7 +169,6 @@ loop()
 				//side.append("<span class='time' data-time='"+i+":00-"+i+":00'>"+i+":00</span>")
 			}
 
-
 		$("[data-time]",root).each(function(ø, el) {
 			var times = $(el).attr("data-time").split("-"),
 				start = times[0].split(":"),
@@ -183,7 +196,7 @@ loop()
 		
 		if ( $(this).hasClass("tbd") ) {
 			// exit if this session is still tbd
-			return;
+			return false;
 		}
 		
 		if ( $(this).hasClass("active") ) {
@@ -277,22 +290,13 @@ loop()
 
 	routes.read();
 
+
 }());
 
+
 ;(function(){
+
 if (!!('ontouchstart' in window)) return false
-
-$(".flip-thing > li").each(function(i,el){
-	var number = parseFloat($(el).text());
-	$(el).html("").addClass("num-"+number);
-	$(el).append("<span class='none'/>");
-	for (var i=0;i<=number;i++){
-		$(el).append("<span class='back-"+i+"'/>");
-		$(el).append("<span class='num-"+i+"'/>");
-	}
-})
-
-
 
 // MAP
 var hotelPosition = new google.maps.LatLng(40.756914, -73.984873);
@@ -374,4 +378,4 @@ var marker = new google.maps.Marker({
 	title: 'Hudson Hotel'
 });
 
-}())
+}());
