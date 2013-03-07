@@ -4,6 +4,7 @@
 		<title>Scaladays</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 		<meta name="viewport" content="width=device-width,maximum-scale=1.0;"/>
+		<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 		<link rel="stylesheet" type="text/css" href="assets/stylesheets/home.css">
 	</head>
 	<body class="static">
@@ -73,7 +74,7 @@
 					<h2>Sponsorship</h2>
 					<p>Scala Days 2013 is hosted by Typesafe and Skills Matter. Every year we strive to host an event that enables sophisticated and compelling technical research presentations, the opportunity to interact with thought leaders in the Scala community and have a blast doing so! This year Typesafe is hosting the conference at the Hudson Theatre in New York, but we welcome other sponsors to join us.</p>
 					<p>Additional sponsorship will enable the event to be made even more amazing and will give vendors the opportunity to interact with the thriving (and rapidly growing) Scala community.</p>
-          <p><a href="Scala-Days-2013-Sponsorship-Form.pdf">Download the Sponsorship Form</a> (pdf) to learn more about available sponsor packages.</p>
+		  <p><a href="Scala-Days-2013-Sponsorship-Form.pdf">Download the Sponsorship Form</a> (pdf) to learn more about available sponsor packages.</p>
 				</section>
 			</article>
 
@@ -82,172 +83,634 @@
 		</section>
 
 		<section id="schedule">
-			<div class="day" data-time="16:30-21:30">
-				<header><h1>June 10th, day 0</h1></header>
+
+			<div class="day" data-time="16:30-20:30" data-day="june-10">
+				<header><h1>Monday June 10th</h1></header>
 				<aside></aside>
 				<div class="tracks">
 					<div class="pause register" data-time="17:00-18:00">
-						<h2>Registration</h2>
+						<h2>Registration (Opens at 5pm)</h2>
 					</div>
 					<div class="pause drink" data-time="18:00-19:00">
-						<h2>Cocktails Hour</h2>
+						<h2>Cocktail Hour</h2>
 					</div>
 					<div class="keynote" data-time="19:00-20:30">
 						<h2>Keynote</h2>
 						<p class="speaker">Martin Odersky</p>
 						<p class="speakersbio">Creator of Scala, Typesafe Co-founder, Professor at EPFL</p>
 					</div>
-					<div class="pause drink" data-time="20:30-21:30">
-						<h2>Speakers' Cocktails</h2>
-					</div>
 				</div>
 			</div>
 
-			<div class="day" data-time="07:30-20:00">
-				<header><h1>June 11th, day 1</h1></header>
+			<div class="day" data-time="07:30-20:00" data-day="june-11">
+				<header><h1>Tuesday June 11th</h1></header>
 				<aside></aside>
 				<div class="tracks">
-					<div class="pause register" data-time="08:00-09:00">
-						<h2>Registration</h2>
+					<div class="pause register" data-time="07:30-08:45">
+						<h2>Registration (Opens at 7:30am)</h2>
 					</div>
-					<div class="keynote" data-time="9:00-10:30">
+					<div class="keynote" data-time="8:45-10:00">
 						<h2>Keynote</h2>
-						<p class="speaker">Jonas Boner</p>
-						<p class="speakersbio">CTO @ Typesafe</p>
+						<p class="speaker">Guest Speaker TBD</p>
 					</div>
-					<div class="track room1" data-time="10:45-12:00">
-						<h2>Scala is fun</h2>
-						<p class="speaker">Jonas Boner</p>
-						<p class="speakersbio">CTO @ Typesafe</p>
+					<div class="track room1" data-time="10:15-11:00">
+						<h2>Building Scalable, Highly Concurrent and Fault-Tolerant Systems: Lessons Learned</h2>
+						<p class="speaker">Jonas Bonér</p>
+						<p class="speakersbio">CTO at Typesafe</p>
+						<div class="details">
+							<div class="track">
+								<h2>Building Scalable, Highly Concurrent and Fault-Tolerant Systems: Lessons Learned</h2>
+								<p>The skills of building Scalable, Highly Concurrent and Fault-Tolerant Systems are becoming increasingly important in our new world of Cloud Computing, multi-core processors, Big Data and Real-Time Web. Unfortunately, many people are still doing it wrong; using the wrong tools, techniques, habits and ideas. In this talk we will look at some of the most common (and some not so common but superior) practices; what works - what doesn't work - and why.</p>
+							</div>
+							<div class="speaker">
+								<h2>Jonas Bonér</h2>
+								<p>Jonas Bonér is a geek, programmer, speaker, musician, writer and Java Champion. He is the CTO and co-founder of Typesafe and is an active contributor to the Open Source community; most notably founded the Akka Project and the AspectWerkz AOP compiler (now AspectJ). Learn more at: <a href="http://jonasboner.com">http://jonasboner.com</a></p>
+							</div>
+						</div>
 					</div>
-					<div class="track room2" data-time="10:45-12:00">
-						<h2>Scala is fun</h2>
-						<p class="speaker">Jonas Boner</p>
-						<p class="speakersbio">CTO @ Typesafe</p>
+					<div class="track room2" data-time="10:15-11:00">
+						<h2>Functional Patterns for the Asynchronous Web</h2>
+						<p class="speaker">Josh Suereth</p>
+						<p class="speakersbio">Senior Software Engineer at Typesafe</p>
+						<div class="details">
+							<div class="track">
+								<h2>Functional Patterns for the Asynchronous Web</h2>
+								<p>Asynchronous programming is the latest hype for web development.  While Asynchronous programming can help improve total throughput on a multi-core machine, the current state of the art lacks common patterns for how to define asynchronous flow.<br/><br/>This talk covers those patterns, from joining together a series of asynchronous operations to chaining a pipeline of asynchronous tasks.  We’ll present a few core abstractions (applicative functors, monads, traversal) that help define asynchronous workflow and then use these same abstractions to test the same flows synchronously.</p>
+							</div>
+							<div class="speaker">
+								<h2>Josh Suereth</h2>
+								<p>Josh Suereth is a Senior Software Engineer at Typesafe and the author of “Scala In Depth”. He has been a Scala enthusiast ever since he came to know this beautiful language in 2007. He started his professional career as a software developer in 2004 using programming languages like C++, Perl and Java. In 2009 he began writing the book “Scala In Depth” which provides practical support for using Scala in every day applications. Josh regularly shares his expertise in articles and talks.</p>
+							</div>
+						</div>
 					</div>
-					<div class="track room3" data-time="10:45-12:00">
-						<h2>Scala is fun</h2>
-						<p class="speaker">Jonas Boner</p>
-						<p class="speakersbio">CTO @ Typesafe</p>
+					<div class="track room3" data-time="10:15-11:00">
+						<h2>A Walk Down the Beach, How Kiama Helps Implementing Distributed Collections on Top of Hadoop</h2>
+						<p class="speaker">Eric Torreborre</p>
+						<p class="speakersbio"><!--todo--></p>
+						<div class="details">
+							<div class="track">
+								<h2>A Walk Down the Beach, How Kiama Helps Implementing Distributed Collections on Top of Hadoop</h2>
+								<p>
+									This talk will give you an brief overview of the BigData tooling landscape and where Scoobi, a distributed collection Scala library for Hadoop, stands.
+									Then we'll see what are the challenges in translating Scoobi abstractions to Hadoop constructs and how Scala, as programming language, and Kiama (<a href="http://code.google.com/kiama">http://code.google.com/kiama</a>), as a graph-processing library, can be leveraged to support this translation.
+									In particular, we'll show:<br/>
+									- How rewriting rules based on partial functions are a very succinct way to pre-process the computation graph and to optimise it.<br/>
+									- How attribute grammars can be used to implement general graph traversal algorithms<br/>
+								</p>
+							</div>
+							<div class="speaker">
+								<h2>Eric Torreborre</h2>
+								<p>Software developer, author of the specs/specs2 (<a href="http://specs2.org">http://specs2.org</a>) libraries in Scala</p>
+							</div>
+						</div>
+					</div>
+					<div class="track room1" data-time="11:15-12:00">
+						<h2>Concurrency – The good, the bad, the ugly</h2>
+						<p class="speaker">Viktor Klang</p>
+						<p class="speakersbio">Director of Engineering at Typesafe</p>
+						<div class="details">
+							<div class="track">
+								<h2>Concurrency – The good, the bad, the ugly</h2>
+								<p>With a plethora of different concurrency programming models available to developers today, in this talk, we'll put on our haz-mat suits and explore the different models–getting a 360 degree view on what's good, what's bad and what's just plain ugly. We're going to cover Threads, pessimistic locking, optimistic locking, event-handlers, actors and more, so don't forget to mute your cellphone, bring popcorn & soda and be prepared for a real thriller!</p>
+							</div>
+							<div class="speaker">
+								<h2>Viktor Klang</h2>
+								<p>Viktor, "the legend of", Klang been hooked on Scala since 2007 and is an honorary Akka Core Team member, an occasional speaker and Director of Engineering at Typesafe. Personal heroes are, including but not limited to–Doug Lea, Walther Sobchak and Daniel Spiewak.</p>
+							</div>
+						</div>
+					</div>
+					<div class="track room2" data-time="11:15-12:00">
+						<h2>Scala IDE: Present & Future</h2>
+						<p class="speaker">Mirco Dotta</p>
+						<p class="speakersbio">Scala IDE Tech Lead at Typesafe</p>
+						<div class="details">
+							<div class="track">
+								<h2>Scala IDE: Present & Future</h2>
+								<p>In this session we will have a round at all new functionalities introduced in the latest sand greatest Scala IDE V3.0 release, and outline the future direction of the tool.<br/>
+									<br/>
+									Semantic highlighting, implicit highlighting, and a new shiny Scala debugger are the spotlights of version 3.0. Scala code is now easier to read, write, test and debug.  Furthermore, a growing ecosystem of plug-ins is available right at your fingertips for customizing your Scala environment just the way it fits you best.<br/>
+									<br/>
+									The focus of the next releases is on enhancing the Scala debugger, further improving the editor's responsiveness, and add first-class support for both Play2 and Sbt.<br/>
+									<br/>
+									Sounds too good to be true? Come and see for yourself the Scala IDE in action!
+								</p>
+							</div>
+							<div class="speaker">
+								<h2>Mirco Dotta</h2>
+								<p>Software Engineer at Typesafe and Scala-IDE committer</p>
+							</div>
+						</div>
+					</div>
+					<div class="track room3" data-time="11:15-12:00">
+						<h2>Lift 3 and client side JavaScript frameworks</h2>
+						<p class="speaker">Torsten Uhlmann</p>
+						<p class="speakersbio">Independent Software Consultant</p>
+						<div class="details">
+							<div class="track">
+								<h2>Lift 3 and client side JavaScript frameworks</h2>
+								<p>
+									The currently developed upcoming Lift 3 (Scala 2.10+) contains innovative ways to craft web applications, like for instance actors that communicate between JS client and Lift server.<br/>
+									<br/>
+									The talk will demonstrate the new features of Lift 3 on one side and also touches the topic of integrating client side JavaScript frameworks like AngularJs, Knockout, Backbone, etc into an application architecture.
+								</p>
+							</div>
+							<div class="speaker">
+								<h2>Torsten Uhlmann</h2>
+								<p>Independent Software Consultant</p>
+							</div>
+						</div>
 					</div>
 					<div class="pause eat" data-time="12:15-13:15">
 						<h2>Lunch</h2>
 					</div>
 					<div class="track room1" data-time="13:30-14:15">
-						<h2>Scala is fun</h2>
-						<p class="speaker">Jonas Boner</p>
-						<p class="speakersbio">CTO @ Typesafe</p>
+						<h2>BYOL: Scala in Action</h2>
+						<p class="speaker">Heiko Seeberger</p>
+						<p class="speakersbio">Director Professional Services at Typesafe</p>
+						<div class="details">
+							<div class="track">
+								<h2>Bring Your Own Laptop: Scala in Action</h2>
+								<p>You don't yet speak Scala? Then let us invite you to a journey on which we will explore the outstanding features of this programming language for the Java Virtual Machine. As an introduction we will briefly talk about Scala's key characteristics. Then we will explore this language and some of its typical applications, e.g. concise OO and powerful functional collections. If you are a developer and expect vivid examples and live coding, then you will like this session.</p>
+							</div>
+							<div class="speaker">
+								<h2>Heiko Seeberger</h2>
+								<p>Heiko Seeberger is the Director Professional Services at Typesafe. He has been a Scala enthusiast ever since he came to know this beautiful language in 2008. He has more than fifteen years of professional expertise in consulting and software development on the Java platform, actively contributes to Scala community projects and regularly shares his expertise in articles and talks. Heiko is the main author of the German Scala book "Durchstarten mit Scala".</p>
+							</div>
+						</div>
 					</div>
-					<div class="track room2" data-time="13:30-14:45">
-						<h2>Scala is fun</h2>
-						<p class="speaker">Jonas Boner</p>
-						<p class="speakersbio">CTO @ Typesafe</p>
+					<div class="track room2" data-time="13:30-14:15">
+						<h2>Real-World Akka Recipes</h2>
+						<p class="speaker">Jamie Allen, Björn Antonsson, Patrik Nordwall</p>
+						<p class="speakersbio">Akka Gurus at Typesafe</p>
+						<div class="details">
+							<div class="track">
+								<h2>Real-World Akka Recipes</h2>
+								<p>In the brave new world of actor programming conventional design patterns frequently are not applicable, as is witnessed by questions we get on the mailing list and at conferences. That is why we have collected a number of common solutions and best practices for solving typical problems you will encounter when building scalable and robust systems with Akka actors. In this session we will show you how to implement flow control, distributed workers, blocking resources, reliable messaging and more.</p>
+							</div>
+							<div class="speaker">
+								<h2>Jamie Allen, Björn Antonsson, Patrik Nordwall</h2>
+								<p><!-- todo --></p>
+							</div>
+						</div>
+					</div>
+					<div class="track room3" data-time="13:30-14:15">
+						<h2>Effective SBT</h2>
+						<p class="speaker">Josh Suereth</p>
+						<p class="speakersbio">Senior Software Engineer at Typesafe</p>
+						<div class="details">
+							<div class="track">
+								<h2>Effective SBT</h2>
+								<p>An Introduction and dive into the best practices of creating and maintaining builds in SBT, including how to debug a broken build.  During the talk, we'll set up a non-trivial project including an Akka backend and Play frontend, both communicating to each other.  If you've struggled learning SBT up to this point, here is the talk for you!  </p>
+							</div>
+							<div class="speaker">
+								<h2>Josh Suereth</h2>
+								<p>Josh Suereth is a Senior Software Engineer at Typesafe and the author of “Scala In Depth”. He has been a Scala enthusiast ever since he came to know this beautiful language in 2007. He started his professional career as a software developer in 2004 using programming languages like C++, Perl and Java. In 2009 he began writing the book “Scala In Depth” which provides practical support for using Scala in every day applications. Josh regularly shares his expertise in articles and talks.</p>
+							</div>
+						</div>
 					</div>
 					<div class="track room1" data-time="14:30-15:15">
-						<h2>Scala is fun</h2>
-						<p class="speaker">Jonas Boner</p>
-						<p class="speakersbio">CTO @ Typesafe</p>
+						<h2>BYOL: Play Framework and Scala</h2>
+						<p class="speaker">Ryan Knight</p>
+						<p class="speakersbio">Consultant / Trainer at Typesafe</p>
+						<div class="details">
+							<div class="track">
+								<h2>Bring Your Own Laptop</h2>
+								<p>
+									Reactive Architectures are the next major evolution of the Internet.  They allow for applications to be built in a completely non-blocking, asynchronous, and reactive manner.  The Play Framework fully embraces this new paradigm of programming  which allows developers to write asynchronous applications using either Scala or Java.<br/>
+									<br/>
+									In this hands-on session we will be building a reactive Play application.  The application will use Play to asynchronously read from a web service and stream it to the client using web sockets and JSON.  In building this sample you will learn the basics of how a Play application is structured and the tools it provides for building event-driven applications.
+								</p>
+							</div>
+							<div class="speaker">
+								<h2>Ryan Knight</h2>
+								<p>Ryan Knight is a consultant and trainer for Typesafe. He has over 15 years of experience with enterprise software development. During this time he has worked with wide range of business, such as genealogy, telecommunications, finance and video games. Ryan was quickly converted to Scala when he was first introduced to the language, realizing the potential for writing much higher quality software that scales ad infinitum.</p>
+							</div>
+						</div>
 					</div>
-					<div class="track room2" data-time="15:00-16:15">
-						<h2>Scala is fun</h2>
-						<p class="speaker">Jonas Boner</p>
-						<p class="speakersbio">CTO @ Typesafe</p>
+					<div class="track room2" data-time="14:30-15:15">
+						<h2>Versal: A Scala-backed Startup</h2>
+						<p class="speaker">Alexy Khrabrov </p>
+						<p class="speakersbio"><!--todo--></p>
+						<div class="details">
+							<div class="track">
+								<h2>Versal: A Scala-backed Startup</h2>
+								<p>
+									Versal is an edtech platform.  We have a full Scala backend for RESTful API and a JavaScript backend.  In this talk we outline the whole trajectory from nothing to a working company where Scala does the heavy lifting.<br/>
+									<br/>
+									We describe the event sourcing architecture, and Jellyfish, an open-source project which decouples the web framework from logic.  We show how abstraction allows us to not get married to any particular implementation, replacing them by more performant ones as needed.<br/>
+									<br/>
+									We also describe how our community relationships -- running a Scala for Startups meetup -- helps us stay on top of the best practices for Scala engineering.
+								</p>
+							</div>
+							<div class="speaker">
+								<h2>Alexy Khrabrov</h2>
+								<p><!-- todo --></p>
+							</div>
+						</div>
 					</div>
-					<div class="track room1" data-time="15:30-16:15">
-						<h2>Scala is fun</h2>
-						<p class="speaker">Jonas Boner</p>
-						<p class="speakersbio">CTO @ Typesafe</p>
+					<div class="track room3" data-time="14:30-15:15">
+						<h2>Akka in Heterogenous Environments</h2>
+						<p class="speaker">Jan Machacek</p>
+						<p class="speakersbio"><!--todo--></p>
+						<div class="details">
+							<div class="track">
+								<h2>Akka in Heterogenous Environments</h2>
+								<p>
+									Jan will show how to use RabbitMQ to connect components on different platforms. After a few introductory slides explaining the main concepts, the rest of the talk will be live code. The coding will begin by showing simple Scala / Akka code to connect to RabbitMQ to send and receive messages--think ``java.lang.String`` values back and forth to start with. We will then increase the complexity of the messages and marshal the messages into JSON. Jan will then show the real power of messaging infrastructures by replacing the RPC server component by native code in C++: we will write image processing component. To make matters even better--faster--we will then use CUDA to perform the image processing.<br/>
+									<br/>Come to Jan's talk and demo if you want to find out how to use Scala, Akka and RabbitMQ in the core of your application, especially if your application needs to tie together code on completely different platforms and if it performs heavy number crunching or image processing. You do not need to have deep knowledge of Scala, Akka, RabbitMQ, Boost, OpenCV, ...; all that you will need is your _inner geek_.
+								</p>
+							</div>
+							<div class="speaker">
+								<h2>Jan Machacek</h2>
+								<p><!--todo--></p>
+							</div>
+						</div>
 					</div>
-					<div class="keynote" data-time="16:30-18:15">
-						<h2>Open spaces</h2>
+					<div class="keynote" data-time="15:30-17:30">
+						<h2>Open Spaces</h2>
 					</div>
-
 					<div class="pause drink" data-time="18:30-19:30">
 						<h2>Conference party</h2>
 					</div>
 				</div>
 			</div>
 
-			<div class="day" data-time="07:30-19:30">
-				<header><h1>June 12th, day 2</h1></header>
+			<div class="day" data-time="08:30-18:00" data-day="june-12">
+				<header><h1>Wednesday June 12th</h1></header>
 				<aside></aside>
 				<div class="tracks">
-					<div class="pause register" data-time="08:00-09:00">
-						<h2>Registration</h2>
+					<div class="track room1" data-time="09:15-10:00">
+						<h2>Akka Typed Channels</h2>
+						<p class="speaker">Roland Kuhn</p>
+						<p class="speakersbio">Akka Tech Lead at Typesafe</p>
+						<div class="details">
+							<div class="track">
+								<h2>Akka Typed Channels</h2>
+								<p>The actor model has been established as an important tool for dealing with concurrency, parallelism and distribution, but it has one feature which seems at odds with Scala’s statically typed setting: the fundamental communication mechanism is dynamically typed. This talk presents typed channels implemented as an Akka extension: Scala 2.10's hygienic macros provide the same level of type-safety for actor interactions as is afforded by the type-checker for normal method invocations.</p>
+							</div>
+							<div class="speaker">
+								<h2>Roland Kuhn</h2>
+								<p><!--todo--></p>
+							</div>
+						</div>
 					</div>
-					<div class="keynote" data-time="9:00-10:30">
-						<h2>Keynote</h2>
-						<p class="speaker">Jonas Boner</p>
-						<p class="speakersbio">CTO @ Typesafe</p>
+					<div class="track room2" data-time="09:15-10:00">
+						<h2>Expressing Design Constraints with the Cake Pattern</h2>
+						<p class="speaker">John Sullivan</p>
+						<p class="speakersbio"><!--todo--></p>
+						<div class="details">
+							<div class="track">
+								<h2>Expressing Design Constraints with the Cake Pattern</h2>
+								<p>
+									One of the earliest design decisions we need to make on a new project is what to use for dependency injection. We can always fall back on using Java-based tools such as Spring or Guice, but we keep looking for a solution that might be a more natural fit for Scala. We happen upon the “cake pattern”, as described in <a href="http://lamp.epfl.ch/%7Eodersky/papers/ScalableComponent.pdf">Scalable Component Abstractions by Martin Odersky</a>, and <a href="http://jonasboner.com/2008/10/06/real-world-scala-dependency-injection-di/">Real-World Scala: Dependency Injection (DI) by Jonas Bonér</a>.<br/>
+									<br/>
+									In this talk, we describe some interesting extensions to the cake pattern as described in the Jonas Bonér paper. In particular, we consider the use of the cake pattern to express hierarchical components, and the high-level design constraints between them. We also discuss encapsulating the details of a composite component.
+								</p>
+							</div>
+							<div class="speaker">
+								<h2>John Sullivan</h2>
+								<p><!--todo--></p>
+							</div>
+						</div>
 					</div>
-					<div class="track room1" data-time="10:45-12:00">
-						<h2>Scala is fun</h2>
-						<p class="speaker">Jonas Boner</p>
-						<p class="speakersbio">CTO @ Typesafe</p>
+					<div class="track room3" data-time="09:15-10:00">
+						<h2>Confessions of a Ruby Developer Whose Heart Was Stolen by Scala</h2>
+						<p class="speaker">Ryan LeCompte</p>
+						<p class="speakersbio"><!--todo--></p>
+						<div class="details">
+							<div class="track">
+								<h2>Confessions of a Ruby Developer Whose Heart Was Stolen by Scala</h2>
+								<p>
+									Ruby has a long history of "making the developer happy" by allowing for ease of programming and prototyping. Rails has taken off by storm and allowed startup companies to quickly create web applications that solve features required by the business. However, recently the Ruby community has realized that scaling Ruby in the real world can be a challenge due to the lack of type safety, the global interpreter lock, lack of a robust threading library, and the general lack of focus on performance in the Ruby world.<br/>
+									<br/>
+									In this talk my goal will be to illustrate how I've made the transition from the dynamic programming world of Ruby to the type safe and highly async/concurrent world of Scala and Akka. I think that Ruby developers shy away from Scala due to its static type safety and lack of understanding of its powerful and expressive features. I want to illustrate how Scala does a much better job at allowing the developer to be expressive while avoiding common pitfalls with Ruby (e.g., Ruby's dynamic mixins vs. Scala's type safe trait mixins). I will use examples from my own redis_failover project and illustrate how using Scala could've saved me at times.<br/>
+									<br/>
+									The Ruby/Rails community currently has a huge force behind it, and I think that some of these users will make the transition to Scala/Akka/Play with the proper illustrative comparisons and knowledge.
+								</p>
+							</div>
+							<div class="speaker">
+								<h2>Ryan LeCompte</h2>
+								<p>Long-time Ruby developer who recently made the switch to Scala. Currently a backend Scala developer at Quantifind in the Bay Area. Creator of the popular "redis_failover" project that provides automatic failover for Redis on top of ZooKeeper.</p>
+							</div>
+						</div>
 					</div>
-					<div class="track room2" data-time="10:45-12:00">
-						<h2>Scala is fun</h2>
-						<p class="speaker">Jonas Boner</p>
-						<p class="speakersbio">CTO @ Typesafe</p>
+					<div class="track room1" data-time="10:15-11:00">
+						<h2>Using Spring in Scala</h2>
+						<p class="speaker">Arjen Poutsma</p>
+						<p class="speakersbio">Staff Engineer, VMWare</p>
+						<div class="details">
+							<div class="track">
+								<h2>Using Spring in Scala</h2>
+								<p>The Spring Framework is one of the most popular Java frameworks used today. While it is possible to use Spring in Scala, it does feel awkward in certain places, because of the "Javaism" peering through. For instance, using callback interfaces feels strange in Scala; functions would be a better match. In October 2012, I introduced the Spring Scala project, which solves this particular issue, and aims to make it easier to use Spring in Scala in general. In this session, we discuss the Spring Scala portfolio project and its feature set.</p>
+							</div>
+							<div class="speaker">
+								<h2>Arjen Poutsma</h2>
+								<p><!--todo--></p>
+							</div>
+						</div>
 					</div>
-					<div class="track room3" data-time="10:45-12:00">
-						<h2>Scala is fun</h2>
-						<p class="speaker">Jonas Boner</p>
-						<p class="speakersbio">CTO @ Typesafe</p>
+					<div class="track room2" data-time="10:15-11:00">
+						<h2>How Scala and Akka helped build Sirius at Comcast's Interactive Media division</h2>
+						<p class="speaker">Michael Bevilacqua-Linn </p>
+						<p class="speakersbio">Software Architect and Comcast Interactive Media</p>
+						<div class="details">
+							<div class="track">
+								<h2>How Scala and Akka helped build Sirius at Comcast's Interactive Media division</h2>
+								<p>
+									A case study of how Scala and Akka helped a team of software developers without a whole lot of distributed system programming experience build a fairly sophisticated, production quality distributed system with a custom multipaxos implementation at its core.  The name of the system is Sirius, and we're using it to power the next generation of our API layer at Comcast's Interactive Media division.<br/>
+									<br/>
+									The talk will focus on how we use'd Akka and Scala to build the core of the system.<br/>
+									<br/>
+									Our basic approach was to read up on all the Paxos literature we could find.  We then took the psuedocode in "Paxos Made Moderately Complex" and translated it wholesale into straightforward Scala using functions and tuples.  Then we slowly massaged that code into something cleaner using case classes before moving it into Akka actors.  Finally, we went through that naive implementation to optimize our usage of memory and network resources to finish the core Paxos implementation.<br/>
+									<br/>
+									We've had this running in production for about half a year now with only minor issues.  Given that we had very limited experience with distributed systems, this a major miracle that we couldn't have pulled off without Akka.
+								</p>
+							</div>
+							<div class="speaker">
+								<h2>Michael Bevilacqua-Linn </h2>
+								<p><!--todo--></p>
+							</div>
+						</div>
+					</div>
+					<div class="track room3" data-time="10:15-11:00">
+						<h2>Actor Based Asynchronous IO in Akka</h2>
+						<p class="speaker">Endre Sándor Varga</p>
+						<p class="speakersbio">Akka Developer at Typesafe</p>
+						<div class="details">
+							<div class="track">
+								<h2>Actor Based Asynchronous IO in Akka</h2>
+								<p>Asynchronous IO is one of the most important building blocks when designing high-performance systems. Over the years various patterns emerged on top of the selector based services provided by the operating system. In this talk I will give a quick overview of the most important asynchronous IO patterns from callbacks to iteratees, demonstrating various approaches to error handling, backpressure/throttling and exposing low level behavior. Finally I will show how these approaches map to the actor world, introducing the new IO model designed by the Akka and Spray team available in Akka 2.2."</p>
+							</div>
+							<div class="speaker">
+								<h2>Endre Sándor Varga</h2>
+								<p><!--todo--></p>
+							</div>
+						</div>
+					</div>
+					<div class="track tbd room1" data-time="11:15-12:00">
+						<h2>TBD Session</h2>
+						<p class="speaker">TBD Speaker</p>
+						<p class="speakersbio"><!--Speaker Title--></p>
+						<div class="details">
+							<div class="track">
+								<h2>TBD Session</h2>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac est enim, ut sodales diam. Donec libero odio, porta auctor placerat a, scelerisque nec purus. Pellentesque commodo consectetur ligula, sit amet commodo est pellentesque ac. Praesent suscipit, purus eget volutpat iaculis, dolor ligula imperdiet risus, sit amet adipiscing mauris massa non erat. Nullam vitae turpis erat. Fusce nibh orci, vestibulum eu dapibus id.</p>
+							</div>
+							<div class="speaker">
+								<h2>TBD Speaker</h2>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+							</div>
+						</div>
+					</div>
+					<div class="track tbd room2" data-time="11:15-12:00">
+						<h2>TBD Session</h2>
+						<p class="speaker">TBD Speaker</p>
+						<p class="speakersbio"><!--Speaker Title--></p>
+						<div class="details">
+							<div class="track">
+								<h2>TBD Session</h2>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac est enim, ut sodales diam. Donec libero odio, porta auctor placerat a, scelerisque nec purus. Pellentesque commodo consectetur ligula, sit amet commodo est pellentesque ac. Praesent suscipit, purus eget volutpat iaculis, dolor ligula imperdiet risus, sit amet adipiscing mauris massa non erat. Nullam vitae turpis erat. Fusce nibh orci, vestibulum eu dapibus id.</p>
+							</div>
+							<div class="speaker">
+								<h2>TBD Speaker</h2>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+							</div>
+						</div>
+					</div>
+					<div class="track tbd room3" data-time="11:15-12:00">
+						<h2>TBD Session</h2>
+						<p class="speaker">TBD Speaker</p>
+						<p class="speakersbio"><!--Speaker Title--></p>
+						<div class="details">
+							<div class="track">
+								<h2>TBD Session</h2>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac est enim, ut sodales diam. Donec libero odio, porta auctor placerat a, scelerisque nec purus. Pellentesque commodo consectetur ligula, sit amet commodo est pellentesque ac. Praesent suscipit, purus eget volutpat iaculis, dolor ligula imperdiet risus, sit amet adipiscing mauris massa non erat. Nullam vitae turpis erat. Fusce nibh orci, vestibulum eu dapibus id.</p>
+							</div>
+							<div class="speaker">
+								<h2>TBD Speaker</h2>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+							</div>
+						</div>
 					</div>
 					<div class="pause eat" data-time="12:15-13:15">
 						<h2>Lunch</h2>
 					</div>
-					<div class="track room1" data-time="13:30-14:15">
-						<h2>Scala is fun</h2>
-						<p class="speaker">Jonas Boner</p>
-						<p class="speakersbio">CTO @ Typesafe</p>
+					<div class="track tbd room1" data-time="13:30-14:15">
+						<h2>TBD Session</h2>
+						<p class="speaker">TBD Speaker</p>
+						<p class="speakersbio"><!--Speaker Title--></p>
+						<div class="details">
+							<div class="track">
+								<h2>TBD Session</h2>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac est enim, ut sodales diam. Donec libero odio, porta auctor placerat a, scelerisque nec purus. Pellentesque commodo consectetur ligula, sit amet commodo est pellentesque ac. Praesent suscipit, purus eget volutpat iaculis, dolor ligula imperdiet risus, sit amet adipiscing mauris massa non erat. Nullam vitae turpis erat. Fusce nibh orci, vestibulum eu dapibus id.</p>
+							</div>
+							<div class="speaker">
+								<h2>TBD Speaker</h2>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+							</div>
+						</div>
 					</div>
-					<div class="track room2" data-time="13:30-14:45">
-						<h2>Scala is fun</h2>
-						<p class="speaker">Jonas Boner</p>
-						<p class="speakersbio">CTO @ Typesafe</p>
+					<div class="track tbd room2" data-time="13:30-14:15">
+						<h2>TBD Session</h2>
+						<p class="speaker">TBD Speaker</p>
+						<p class="speakersbio"><!--Speaker Title--></p>
+						<div class="details">
+							<div class="track">
+								<h2>TBD Session</h2>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac est enim, ut sodales diam. Donec libero odio, porta auctor placerat a, scelerisque nec purus. Pellentesque commodo consectetur ligula, sit amet commodo est pellentesque ac. Praesent suscipit, purus eget volutpat iaculis, dolor ligula imperdiet risus, sit amet adipiscing mauris massa non erat. Nullam vitae turpis erat. Fusce nibh orci, vestibulum eu dapibus id.</p>
+							</div>
+							<div class="speaker">
+								<h2>TBD Speaker</h2>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+							</div>
+						</div>
 					</div>
-					<div class="track room1" data-time="14:30-15:15">
-						<h2>Scala is fun</h2>
-						<p class="speaker">Jonas Boner</p>
-						<p class="speakersbio">CTO @ Typesafe</p>
+					<div class="track tbd room3" data-time="13:30-14:15">
+						<h2>TBD Session</h2>
+						<p class="speaker">TBD Speaker</p>
+						<p class="speakersbio"><!--Speaker Title--></p>
+						<div class="details">
+							<div class="track">
+								<h2>TBD Session</h2>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac est enim, ut sodales diam. Donec libero odio, porta auctor placerat a, scelerisque nec purus. Pellentesque commodo consectetur ligula, sit amet commodo est pellentesque ac. Praesent suscipit, purus eget volutpat iaculis, dolor ligula imperdiet risus, sit amet adipiscing mauris massa non erat. Nullam vitae turpis erat. Fusce nibh orci, vestibulum eu dapibus id.</p>
+							</div>
+							<div class="speaker">
+								<h2>TBD Speaker</h2>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+							</div>
+						</div>
 					</div>
-					<div class="track room2" data-time="15:00-16:15">
-						<h2>Scala is fun</h2>
-						<p class="speaker">Jonas Boner</p>
-						<p class="speakersbio">CTO @ Typesafe</p>
+					<div class="track tbd room1" data-time="14:30-15:15">
+						<h2>TBD Session</h2>
+						<p class="speaker">TBD Speaker</p>
+						<p class="speakersbio"><!--Speaker Title--></p>
+						<div class="details">
+							<div class="track">
+								<h2>TBD Session</h2>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac est enim, ut sodales diam. Donec libero odio, porta auctor placerat a, scelerisque nec purus. Pellentesque commodo consectetur ligula, sit amet commodo est pellentesque ac. Praesent suscipit, purus eget volutpat iaculis, dolor ligula imperdiet risus, sit amet adipiscing mauris massa non erat. Nullam vitae turpis erat. Fusce nibh orci, vestibulum eu dapibus id.</p>
+							</div>
+							<div class="speaker">
+								<h2>TBD Speaker</h2>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+							</div>
+						</div>
 					</div>
-					<div class="track room1" data-time="15:30-16:15">
-						<h2>Scala is fun, Scala is fun, Scala is fun, Scala is fun</h2>
-						<p class="speaker">Jonas Boner</p>
-						<p class="speakersbio">CTO @ Typesafe</p>
+					<div class="track tbd room2" data-time="14:30-15:15">
+						<h2>TBD Session</h2>
+						<p class="speaker">TBD Speaker</p>
+						<p class="speakersbio"><!--Speaker Title--></p>
+						<div class="details">
+							<div class="track">
+								<h2>TBD Session</h2>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac est enim, ut sodales diam. Donec libero odio, porta auctor placerat a, scelerisque nec purus. Pellentesque commodo consectetur ligula, sit amet commodo est pellentesque ac. Praesent suscipit, purus eget volutpat iaculis, dolor ligula imperdiet risus, sit amet adipiscing mauris massa non erat. Nullam vitae turpis erat. Fusce nibh orci, vestibulum eu dapibus id.</p>
+							</div>
+							<div class="speaker">
+								<h2>TBD Speaker</h2>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+							</div>
+						</div>
 					</div>
-					<div class="keynote" data-time="16:30-18:15">
-						<h2>Open spaces</h2>
+					<div class="track tbd room3" data-time="14:30-15:15">
+						<h2>TBD Session</h2>
+						<p class="speaker">TBD Speaker</p>
+						<p class="speakersbio"><!--Speaker Title--></p>
+						<div class="details">
+							<div class="track">
+								<h2>TBD Session</h2>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac est enim, ut sodales diam. Donec libero odio, porta auctor placerat a, scelerisque nec purus. Pellentesque commodo consectetur ligula, sit amet commodo est pellentesque ac. Praesent suscipit, purus eget volutpat iaculis, dolor ligula imperdiet risus, sit amet adipiscing mauris massa non erat. Nullam vitae turpis erat. Fusce nibh orci, vestibulum eu dapibus id.</p>
+							</div>
+							<div class="speaker">
+								<h2>TBD Speaker</h2>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+							</div>
+						</div>
 					</div>
-
-					<div class="pause eat" data-time="18:30-19:30">
-						<h2>Diner</h2>
+					<div class="track tbd room1" data-time="15:30-16:15">
+						<h2>TBD Session</h2>
+						<p class="speaker">TBD Speaker</p>
+						<p class="speakersbio"><!--Speaker Title--></p>
+						<div class="details">
+							<div class="track">
+								<h2>TBD Session</h2>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac est enim, ut sodales diam. Donec libero odio, porta auctor placerat a, scelerisque nec purus. Pellentesque commodo consectetur ligula, sit amet commodo est pellentesque ac. Praesent suscipit, purus eget volutpat iaculis, dolor ligula imperdiet risus, sit amet adipiscing mauris massa non erat. Nullam vitae turpis erat. Fusce nibh orci, vestibulum eu dapibus id.</p>
+							</div>
+							<div class="speaker">
+								<h2>TBD Speaker</h2>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+							</div>
+						</div>
+					</div>
+					<div class="track tbd room2" data-time="15:30-16:15">
+						<h2>TBD Session</h2>
+						<p class="speaker">TBD Speaker</p>
+						<p class="speakersbio"><!--Speaker Title--></p>
+						<div class="details">
+							<div class="track">
+								<h2>TBD Session</h2>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac est enim, ut sodales diam. Donec libero odio, porta auctor placerat a, scelerisque nec purus. Pellentesque commodo consectetur ligula, sit amet commodo est pellentesque ac. Praesent suscipit, purus eget volutpat iaculis, dolor ligula imperdiet risus, sit amet adipiscing mauris massa non erat. Nullam vitae turpis erat. Fusce nibh orci, vestibulum eu dapibus id.</p>
+							</div>
+							<div class="speaker">
+								<h2>TBD Speaker</h2>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+							</div>
+						</div>
+					</div>
+					<div class="track tbd room3" data-time="15:30-16:15">
+						<h2>TBD Session</h2>
+						<p class="speaker">TBD Speaker</p>
+						<p class="speakersbio"><!--Speaker Title--></p>
+						<div class="details">
+							<div class="track">
+								<h2>TBD Session</h2>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac est enim, ut sodales diam. Donec libero odio, porta auctor placerat a, scelerisque nec purus. Pellentesque commodo consectetur ligula, sit amet commodo est pellentesque ac. Praesent suscipit, purus eget volutpat iaculis, dolor ligula imperdiet risus, sit amet adipiscing mauris massa non erat. Nullam vitae turpis erat. Fusce nibh orci, vestibulum eu dapibus id.</p>
+							</div>
+							<div class="speaker">
+								<h2>TBD Speaker</h2>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+							</div>
+						</div>
+					</div>
+					<div class="track tbd room1" data-time="16:30-17:15">
+						<h2>TBD Session</h2>
+						<p class="speaker">TBD Speaker</p>
+						<p class="speakersbio"><!--Speaker Title--></p>
+						<div class="details">
+							<div class="track">
+								<h2>TBD Session</h2>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac est enim, ut sodales diam. Donec libero odio, porta auctor placerat a, scelerisque nec purus. Pellentesque commodo consectetur ligula, sit amet commodo est pellentesque ac. Praesent suscipit, purus eget volutpat iaculis, dolor ligula imperdiet risus, sit amet adipiscing mauris massa non erat. Nullam vitae turpis erat. Fusce nibh orci, vestibulum eu dapibus id.</p>
+							</div>
+							<div class="speaker">
+								<h2>TBD Speaker</h2>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+							</div>
+						</div>
+					</div>
+					<div class="track tbd room2" data-time="16:30-17:15">
+						<h2>TBD Session</h2>
+						<p class="speaker">TBD Speaker</p>
+						<p class="speakersbio"><!--Speaker Title--></p>
+						<div class="details">
+							<div class="track">
+								<h2>TBD Session</h2>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac est enim, ut sodales diam. Donec libero odio, porta auctor placerat a, scelerisque nec purus. Pellentesque commodo consectetur ligula, sit amet commodo est pellentesque ac. Praesent suscipit, purus eget volutpat iaculis, dolor ligula imperdiet risus, sit amet adipiscing mauris massa non erat. Nullam vitae turpis erat. Fusce nibh orci, vestibulum eu dapibus id.</p>
+							</div>
+							<div class="speaker">
+								<h2>TBD Speaker</h2>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+							</div>
+						</div>
+					</div>
+					<div class="track tbd room3" data-time="16:30-17:15">
+						<h2>TBD Session</h2>
+						<p class="speaker">TBD Speaker</p>
+						<p class="speakersbio"><!--Speaker Title--></p>
+						<div class="details">
+							<div class="track">
+								<h2>TBD Session</h2>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac est enim, ut sodales diam. Donec libero odio, porta auctor placerat a, scelerisque nec purus. Pellentesque commodo consectetur ligula, sit amet commodo est pellentesque ac. Praesent suscipit, purus eget volutpat iaculis, dolor ligula imperdiet risus, sit amet adipiscing mauris massa non erat. Nullam vitae turpis erat. Fusce nibh orci, vestibulum eu dapibus id.</p>
+							</div>
+							<div class="speaker">
+								<h2>TBD Speaker</h2>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
-
+			<div id="details">
+				<div class="times"></div>
+				<div class="description">
+				</div>
+			</div>
 		</section>
 
 		<section id="venue">
 			<div id="map"></div>
 			<article>
+				<h4>Conference center</h4>
 				<h2>Hudson Theater</h2>
 				<p>145 W 44th St, New York, NY</p>
-				<img src="assets/images/hotel.jpg" />
+
+				<h4>Hotel Accommodations</h4>
+				<p class="address">
+					<strong>Millennium Broadway Hotel</strong>
+					145 West 44th Street<br/>
+					New York, 10036-4012<br/>
+					United States<br/>
+					T. +1 212 768 4400
+				</p>
+
+<p>To book hotel reservations at the <a href="http://www.google.com/url?q=http%3A%2F%2Fwww.millenniumhotels.com%2Fmillenniumbroadwaynewyork%2F&sa=D&sntz=1&usg=AFQjCNGkAkeei2YxAnNlE1M9zqf2DlU8KQ">Millenium Hotel</a>, please <a href="http://www.google.com/url?q=https%3A%2F%2Fgc.synxis.com%2Frez.aspx%3Fhotel%3D11533%26dest%3D%26chain%3D%26lang%3D1%26Group%3D1306TYPESA%26arrive%3D06%2F09%2F2013%26depart%3D06%2F15%2F2013%26adult%3D1%26child%3D0&sa=D&sntz=1&usg=AFQjCNG3Jl_01GkD73_cabih0MVSz4mrtA">register and book online</a> using the Scala Days Group Code: 1306TYPESA</p>
+
+<p>Information on lower cost hotel accommodations to come shortly.</p>
+
 			</article>
 		</section>
 
 		<section id="partners">
 			<p class="platinum">
 				<a href="http://www.typesafe.com"><img src="assets/images@2x/typesafe.png"/></a>
-				<a href="http://skillsmatter.com/"><img src="assets/images@2x/skillsmatter.png"/></a>
+				<a href="http://skillsmatter.com/" class="skillsmatter"><img src="assets/images@2x/skillsmatter.png"/></a>
 			</p>
 		</section>
 
@@ -265,9 +728,9 @@
   _gaq.push(['_trackPageview']);
 
   (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
 
 </script>
