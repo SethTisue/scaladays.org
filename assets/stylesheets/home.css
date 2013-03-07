@@ -76,7 +76,7 @@ h2 {
 	width: 220px;
 	color: #51a8c0;
 	font-size: 16px;
-	background: url(../images/down@2x.png) no-repeat;
+	background: url(../images/down.png) no-repeat;
 	padding: 0 0 0 25px;
 	background-size: auto 100%;
 }
@@ -505,7 +505,21 @@ ul.flip-thing {
 .static .flip-thing li.num-7 span.num-7,
 .static .flip-thing li.num-8 span.num-8,
 .static .flip-thing li.num-9 span.num-9,
-.static .flip-thing li.num-10 span.num-10 {
+.static .flip-thing li.num-10 span.num-10,
+.static .flip-thing li.num-0 span.back-0,
+.static .flip-thing li.num-1 span.back-1,
+.static .flip-thing li.num-2 span.back-2,
+.static .flip-thing li.num-3 span.back-3,
+.static .flip-thing li.num-4 span.back-4,
+.static .flip-thing li.num-5 span.back-5,
+.static .flip-thing li.num-6 span.back-6,
+.static .flip-thing li.num-7 span.back-7,
+.static .flip-thing li.num-8 span.back-8,
+.static .flip-thing li.num-9 span.back-9,
+.static .flip-thing li.num-10 span.back-10 {
+	-webkit-animation: none !important;
+	-moz-animation: none !important;
+	animation: none !important;
 	z-index: 31 !important;
 }
 
@@ -543,8 +557,7 @@ ul.flip-thing {
 	left: 0;
 	width: 150px;
 	height: 100%;
-	background: #383838 url(../images@2x/time-dark.png) top right repeat-y;
-	background-size: 25px auto;
+	background: #383838 url(../images/time-dark.png) top right repeat-y;
 }
 #details .times .time {
 	color: #7fdff9;
@@ -607,9 +620,9 @@ ul.flip-thing {
 	left: 0;
 	bottom: 0;
 	width: 150px;
-	background: #fceeed url(../images@2x/time-schedule2.png) right -51px repeat-y;
-	background-size: 25px auto;
+	background: #fceeed url(../images/time-schedule2.png) right -51px repeat-y;
 }
+
 #schedule aside .time {
 	color: #e25651;
 }
@@ -721,9 +734,9 @@ ul.flip-thing {
 	height: 100px;
 	line-height: 100px;
 	color: #ccc;
-	background: url(../images@2x/pauses.png) center center no-repeat;
-	background-size: 150px 400px;
+	background: url(../images/pauses.png) center center no-repeat;
 }
+
 #schedule .tracks .pause.register h2 {
 	background-position: center 0;
 }
@@ -855,6 +868,19 @@ footer {
 	background-image: url("../images@2x/numbers/half.png");
 }
 
+#schedule .tracks .pause h2 {
+	background: url(../images@2x/pauses.png) center center no-repeat;
+	background-size: 150px 400px;
+}
+#details .times {
+	background: #383838 url(../images@2x/time-dark.png) top right repeat-y;
+	background-size: 25px auto;
+}
+#schedule aside {
+	background: #fceeed url(../images@2x/time-schedule2.png) right -51px repeat-y;
+	background-size: 25px auto;
+}
+
 
 }
 
@@ -924,5 +950,4 @@ footer {
 		display: block;
 		padding: 10px;
 	}
-
 }
