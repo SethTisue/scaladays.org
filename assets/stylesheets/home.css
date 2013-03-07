@@ -529,6 +529,9 @@ ul.flip-thing {
 	margin: 0 auto 100px;
 	position: relative;
 }
+#schedule.open {
+	padding-bottom: 240px;
+}
 #details {
 	display: none;
 	background: #444;
@@ -584,7 +587,6 @@ ul.flip-thing {
 	right: 20px;
 	bottom: 20px;
 }
-
 
 #schedule .day {
 	position: relative;
@@ -657,7 +659,9 @@ ul.flip-thing {
 #schedule .tracks .track {
 	width: 33.333%;
 	background: #e25651;
+	-webkit-transition: all 200ms ease-in-out;
 }
+
 
 #schedule .tracks .track.room1 {
 	left: 0;
@@ -693,13 +697,21 @@ ul.flip-thing {
 }
 
 #schedule .tracks .speaker {
-	display: inline-block;
+	display: block;
 	margin-right: 5px;
 	color: #391010;
+	-webkit-transition: all 200ms ease-in-out;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
 #schedule .tracks .speakersbio {
-	display: inline-block;
+	display: block;
 	color: #8a2420;
+	-webkit-transition: all 200ms ease-in-out;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
 
 #schedule .tracks .keynote .speaker {
@@ -707,6 +719,18 @@ ul.flip-thing {
 }
 #schedule .tracks .keynote .speakersbio {
 	color: #39859a;
+}
+
+#schedule .tracks .track:hover {
+	background: #555;
+	color: #ccc;
+	cursor: pointer;
+}
+#schedule .track:hover .speaker {
+	color: #ccc;
+}
+#schedule .track:hover .speakersbio {
+	color: #999;
 }
 
 #schedule .tracks .track.active {
@@ -721,6 +745,16 @@ ul.flip-thing {
 #schedule .track.active .speakersbio {
 	display: inline-block;
 	color: #7fdff9;
+}
+
+#schedule .tracks .track.tbd {
+	background: #e25651;
+	color: #fff !important;
+	opacity: .3;
+	cursor: default;
+}
+#schedule .track.tbd .speaker {
+	color: #ed9a96;
 }
 
 
@@ -880,7 +914,6 @@ footer {
 	background: #fceeed url(../images@2x/time-schedule2.png) right -51px repeat-y;
 	background-size: 25px auto;
 }
-
 
 }
 

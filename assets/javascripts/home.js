@@ -136,12 +136,13 @@ loop();
 			write: function(el){
 				var day = $(el).parents(".day").attr("data-day"),
 					hour = $(el).attr("data-time"),
+					room = $(el).hasClass("room1") ? "room1" : $(el).hasClass("room2") ? "room2" : $(el).hasClass("room3") ? "room3" : "room",
 					title = escape($(el).find("h2").first().text().replace(/\ /g,"-"));
-				window.location.hash = "#/" + day + "/" + hour + "/" + title
+				window.location.hash = "#/" + day + "/" + room + "/" + hour + "/" + title
 			},
 			read: function(){
 				var target = window.location.hash.split("/"),
-					el = $(".day[data-day='"+target[1]+"'] .track[data-time='"+target[2]+"']").first();
+					el = $(".day[data-day='"+target[1]+"'] ."+ target[2] +"[data-time='"+target[3]+"']").first();
 
 					if (target.length > 2) {
 						$(window).scrollTop( (el.offset().top - 100)	);
@@ -189,6 +190,7 @@ loop();
 	$("#schedule .day").click(function(e){
 		allTracks.removeClass("active");
 			$("#details").slideUp("fast");
+			$("#schedule").removeClass("open");
 			window.location.hash = "/";
 	});
 	var allTracks = $("#schedule .tracks .track").click(function(e){
@@ -201,6 +203,7 @@ loop();
 		
 		if ( $(this).hasClass("active") ) {
 			$(this).removeClass("active");
+			$("#schedule").removeClass("open");
 			$("#details").slideUp("fast");
 			window.location.hash = "/";
 			return false;
@@ -209,6 +212,7 @@ loop();
 		routes.write(this);
 
 		$("#details").slideDown("fast");
+		$("#schedule").addClass("open");
 
 		allTracks.removeClass("active");
 		$(this).addClass("active");
@@ -240,7 +244,7 @@ loop();
 		titles = [],
 		details = {};
 	function loop(){
-		if (lastPosition == window.pageYOffset || window.pageYOffset < details.top - 100) {
+		if (lastPosition == window.pageYOffset) {
 			requestAnimFrame(loop);
 			return false;
 		} else lastPosition = window.pageYOffset;
