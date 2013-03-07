@@ -800,7 +800,7 @@ ul.flip-thing {
 	width: 400px;
 	right: 0;
 	bottom: 0;
-	padding: 30px;
+	padding: 1px 30px;
 	margin: 0;
 }
 
@@ -808,9 +808,23 @@ ul.flip-thing {
 	margin: 0;
 	padding: 0;
 }
-#venue img {
-	width: 100%;
+#venue h4 {
+	margin: 40px 0 0;
+	color: #e25651;
 }
+#venue .address {
+	color: #ccc;
+}
+#venue .address strong {
+	color: #fff;
+	font-size: 18px;
+	margin: 0 0 7px;
+	display: block;
+}
+#venue a {
+	color: #7fdff9;
+}
+
 
 #map {
 	position: absolute;
@@ -837,6 +851,10 @@ ul.flip-thing {
 #partners img {
 	vertical-align: middle;
 	width: 300px;
+}
+#partners .skillsmatter img {
+	width: 133px;
+	vertical-align: -23px;
 }
 
 footer {
