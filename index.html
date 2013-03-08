@@ -368,21 +368,29 @@
 						</div>
 					</div>
 					<div class="track room2" data-time="09:15-10:00">
-						<h2>Expressing Design Constraints with the Cake Pattern</h2>
+						<h2>Making the Cake Pattern Clear and Concise with Type Macros</h2>
 						<p class="speaker">John Sullivan</p>
-						<p class="speakersbio"><!--todo--></p>
+						<p class="speakersbio">Principal Software Engineer at The Broad Institute</p>
 						<div class="details">
 							<div class="track">
-								<h2>Expressing Design Constraints with the Cake Pattern</h2>
+								<h2>Making the Cake Pattern Clear and Concise with Type Macros</h2>
 								<p>
-									One of the earliest design decisions we need to make on a new project is what to use for dependency injection. We can always fall back on using Java-based tools such as Spring or Guice, but we keep looking for a solution that might be a more natural fit for Scala. We happen upon the “cake pattern”, as described in <a href="http://lamp.epfl.ch/%7Eodersky/papers/ScalableComponent.pdf">Scalable Component Abstractions by Martin Odersky</a>, and <a href="http://jonasboner.com/2008/10/06/real-world-scala-dependency-injection-di/">Real-World Scala: Dependency Injection (DI) by Jonas Bonér</a>.<br/>
+									In this talk, we discuss some interesting extensions to the cake pattern as described in <a href="http://jonasboner.com/2008/10/06/real­world­scala­dependency­injection­di">Real­World Scala: Dependency Injection (DI)</a> by Jonas Bonér. We consider the use of the cake pattern to express hierarchical components, and the high­level design constraints between them. We also discuss encapsulating the details of a composite component.<br/>
 									<br/>
-									In this talk, we describe some interesting extensions to the cake pattern as described in the Jonas Bonér paper. In particular, we consider the use of the cake pattern to express hierarchical components, and the high-level design constraints between them. We also discuss encapsulating the details of a composite component.
+									The cake pattern suffers from three major problems that limit its adoption:<br/>
+									1. Verbosity: Lots of boilerplate.<br/>
+									2. Opacity: Hard to follow the code because the language idioms used do not signify the user's intent.<br/>
+									3. Compiler error messages are confusing.<br/>
+									<br/>
+									We present a specification for a suite of type macros to address the problems of verbosity and opacity. We provide a status report on the implementation of these macros to date.
 								</p>
 							</div>
 							<div class="speaker">
 								<h2>John Sullivan</h2>
-								<p><!--todo--></p>
+								<p>
+									A Java programmer since 1996, I’ve fallen in love with Scala over the last two to three years. I’m extremely fortunate to work more or less full time in Scala at my current position at <a href="http://www.broadinstitute.org/">The Broad Institute</a>. Interests include software engineering, agile software development, OO and functional programming, and Scala language and libraries.<br/>
+									<a href="http://scabl.blogspot.com/">Blog</a> | <a href="https://twitter.com/_john_sullivan_">Twitter</a> | <a href="http://www.linkedin.com/in/johnsullivanmscs">LinkedIn</a>
+								</p>
 							</div>
 						</div>
 					</div>
