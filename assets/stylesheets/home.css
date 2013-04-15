@@ -720,6 +720,10 @@ ul.flip-thing {
 #schedule .tracks .keynote .speakersbio {
 	color: #39859a;
 }
+#schedule .tracks .keynote .description {
+    color: #ffffff;
+    padding-top: 20px;
+}
 
 #schedule .tracks .track:hover {
 	background: #555;
