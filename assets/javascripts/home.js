@@ -286,7 +286,7 @@ loop();
 				bottom: $(el).offset().top + $(el).height() - wHeight + 240
 			}
 		})[0];
-		console.log(details)
+		//console.log(details)
 	}
 	window.onresize();
 
