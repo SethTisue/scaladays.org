@@ -845,8 +845,34 @@ ul.flip-thing {
 	word-spacing: 0;
 	font-size: 0;
 	position: relative;
+    background-color: #ffffff;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 50px;
 }
 
+#partners header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 5px;
+    height: 60px;
+    background: #444;
+    color: #fff;
+    z-index: 9;
+    -webkit-transform: translate3d(0,0,0);
+    box-shadow: 0 4px rgba(0,0,0,.2);
+    font-size: 42px;
+}
+
+#partners article {
+    width: 100%;
+    padding: 5px;
+    height: 45px;
+    background-color: #7fdff9;
+    color: #fff;
+    font-size: 30px;
+}
 
 #partners a {
   padding: 0 50px;
@@ -854,11 +880,31 @@ ul.flip-thing {
 
 #partners img {
 	vertical-align: middle;
-	width: 300px;
 }
-#partners .skillsmatter img {
-	width: 133px;
-	vertical-align: -23px;
+
+#partners img.hostedby {
+    max-width: 700px;
+    max-height: 100px;
+}
+
+#partners img.platinum {
+    max-width: 600px;
+    max-height: 80px;
+}
+
+#partners img.gold {
+    max-width: 500px;
+    max-height: 90px;
+}
+
+#partners img.silver {
+    max-width: 300px;
+    max-height: 50px;
+}
+
+#partners img.friends {
+    max-width: 300px;
+    max-height: 50px;
 }
 
 footer {
