@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<title>Scala Days 2013</title>
-                <meta name="description" content="The 4th annual Scala Days conference will be at Hudson Theater in NYC on June 10-12th bringing together Scala enthusiasts and developers from around the world.">
+				<meta name="description" content="The 4th annual Scala Days conference will be at Hudson Theater in NYC on June 10-12th bringing together Scala enthusiasts and developers from around the world.">
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 		<meta name="viewport" content="width=device-width,maximum-scale=1.0"/>
 		<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
@@ -71,14 +71,12 @@
 					<p><a href="Scala-Days-2013-Sponsorship-Form.pdf">Download the Sponsorship Form</a> (pdf) to learn more about available sponsor packages.</p>
 				</section>
 			</article>
-            
+			
 			<a href="http://scaladaysnyc.eventbrite.com/" class="button" onClick="trackOutboundLink(this, 'Outbound Links', 'scaladaysnyc.eventbrite.com'); return false;">Register</a>
 
 		</section>
 
 		<section id="schedule">
-			<h2 style="font-size: 40px; margin-bottom: 20px;">Tentative Schedule</h2>
-
 			<div class="day" data-time="16:30-20:30" data-day="june-10">
 				<header><h1>Monday June 10th</h1></header>
 				<aside></aside>
@@ -93,7 +91,7 @@
 						<h2>Keynote - Scala with Style</h2>
 						<p class="speaker">Martin Odersky</p>
 						<p class="speakersbio">Creator of Scala, Typesafe Co-founder, Professor at EPFL</p>
-                        <p class="description">Scala gives you awesome expressive power, but how to make best use of it? In my talk I will discuss the question what makes good Scala style. We will start with syntax and continue with how to name things, how to mix objects and functions, where (and where not) to use mutable state, and when to use which design pattern. As most questions of style, the discussion will be quite subjective, and some of it might be controversial. I am looking forward to discuss these topics with the conference attendees.</p>
+						<p class="description">Scala gives you awesome expressive power, but how to make best use of it? In my talk I will discuss the question what makes good Scala style. We will start with syntax and continue with how to name things, how to mix objects and functions, where (and where not) to use mutable state, and when to use which design pattern. As most questions of style, the discussion will be quite subjective, and some of it might be controversial. I am looking forward to discuss these topics with the conference attendees.</p>
 					</div>
 				</div>
 			</div>
@@ -394,97 +392,141 @@
 						</div>
 					</div>
 
-					<div class="track tbd room1" data-time="15:30-16:15">
-						<h2>TBD Session</h2>
-						<p class="speaker">TBD Speaker</p>
-						<p class="speakersbio"><!--Speaker Title--></p>
+					<div class="track room1" data-time="15:30-16:15">
+						<h2>Project Lancet: Surgical Precision JIT compilers</h2>
+						<p class="speaker">Tiark Rompf</p>
+						<p class="speakersbio">Post-doctoral Researcher at Oracle Labs and EPFL</p>
 						<div class="details">
 							<div class="track">
-								<h2>TBD Session</h2>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac est enim, ut sodales diam. Donec libero odio, porta auctor placerat a, scelerisque nec purus. Pellentesque commodo consectetur ligula, sit amet commodo est pellentesque ac. Praesent suscipit, purus eget volutpat iaculis, dolor ligula imperdiet risus, sit amet adipiscing mauris massa non erat. Nullam vitae turpis erat. Fusce nibh orci, vestibulum eu dapibus id.</p>
+								<h2>Project Lancet: Surgical Precision JIT compilers</h2>
+								<p>
+									Profile-driven JIT compilers like those in most JVMs provide good
+									performance on average, but they are a black box with highly
+									nondeterministic behavior. Thus, achieving top performance,
+									predictably and consistently, is very hard.
+
+									This talk will present Lancet, a research JIT compiler written
+									in Scala that allows the running application to take full control
+									of the JIT process. This includes the ability to compile multiple
+									specialized versions of code paths at runtime, which is key
+									for removing abstraction overhead of high-level, generic code.
+
+									Another key feature of Lancet are JIT macros, which enable execution
+									of user code at JIT-compile time and thus open the door for "smart
+									libraries" that come with domain-specific optimizations and checks.
+									Unlike Scala macros, JIT macros are not a front-end system, but
+									tightly integrated with regular JIT compiler optimizations and
+									VM functionality like speculative optimization and re-optimization.
+								</p>
 							</div>
 							<div class="speaker">
-								<h2>TBD Speaker</h2>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+								<h2>Tiark Rompf</h2>
+								<p>Tiark Rompf is a post-doctoral researcher at Oracle Labs and EPFL.</p>
 							</div>
 						</div>
 					</div>
-					<div class="track tbd room2" data-time="15:30-16:15">
-						<h2>TBD Session</h2>
-						<p class="speaker">TBD Speaker</p>
-						<p class="speakersbio"><!--Speaker Title--></p>
+					<div class="track room2" data-time="15:30-16:15">
+						<h2>Practical type mining in Scala</h2>
+						<p class="speaker">Rose Katherine Toomey</p>
+						<p class="speakersbio"><!--todo--></p>
 						<div class="details">
 							<div class="track">
-								<h2>TBD Session</h2>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac est enim, ut sodales diam. Donec libero odio, porta auctor placerat a, scelerisque nec purus. Pellentesque commodo consectetur ligula, sit amet commodo est pellentesque ac. Praesent suscipit, purus eget volutpat iaculis, dolor ligula imperdiet risus, sit amet adipiscing mauris massa non erat. Nullam vitae turpis erat. Fusce nibh orci, vestibulum eu dapibus id.</p>
+								<h2>Practical type mining in Scala</h2>
+								<p>As the author of an open-source serialization library in Scala, I've undergone a lot of struggle to understand and harness the power of Scala's type system.  My library was based on parsing pickled Scala signatures, which was a subterranean and sparely documented feature of Scala 2.8.  I wanted to serialize and deserialize options, lists and maps, which required defeating type erasure when serializing while skating by on type erasure when deserializing.  I struggled with multiple constructors, checking for annotation types, specialization, more.  The new reflection libraries introduced in Scala 2.10 provided easier access to the same information I had been getting from the pickled signatures.  This talk will address practical aspects of type mining, providing a library of hands-on examples using the Scala 2.10 reflection API.</p>
 							</div>
 							<div class="speaker">
-								<h2>TBD Speaker</h2>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+								<h2>Rose Katherine Toomey</h2>
+								<p><!--todo--></p>
 							</div>
 						</div>
 					</div>
-					<div class="track tbd room3" data-time="15:30-16:15">
-						<h2>TBD Session</h2>
-						<p class="speaker">TBD Speaker</p>
-						<p class="speakersbio"><!--Speaker Title--></p>
+					<div class="track room3" data-time="15:30-16:15">
+						<h2>Scala for Data Pipelines</h2>
+						<p class="speaker">Josh Wills</p>
+						<p class="speakersbio">Director of Data Science at Cloudera</p>
 						<div class="details">
 							<div class="track">
-								<h2>TBD Session</h2>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac est enim, ut sodales diam. Donec libero odio, porta auctor placerat a, scelerisque nec purus. Pellentesque commodo consectetur ligula, sit amet commodo est pellentesque ac. Praesent suscipit, purus eget volutpat iaculis, dolor ligula imperdiet risus, sit amet adipiscing mauris massa non erat. Nullam vitae turpis erat. Fusce nibh orci, vestibulum eu dapibus id.</p>
+								<h2>Scala for Data Pipelines</h2>
+								<p>Scala's mix of functional and object oriented programming paradigms is ideal for building data pipelines. Many smart people have noticed this, and as a result, we now have three distinct APIs for creating MapReduce pipelines in Scala (Scrunch, Scoobi, and Scalding), as well as a standalone data processing framework developed purely in Scala (Spark). Although all of these tools showcase the power and elegance of Scala, there is a larger opportunity for the community to give pipeline developers a single API to use for both in-memory and batch-style data processing. We'll discuss some of the challenges in creating an API that balances the features of both in-memory and batch processing and demonstrate the benefits that this creates in ETL development, exploratory data analysis, and machine learning.</p>
 							</div>
 							<div class="speaker">
-								<h2>TBD Speaker</h2>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+								<h2>Josh Wills</h2>
+								<p><!--todo--></p>
 							</div>
 						</div>
 					</div>
 
-                    <div class="track tbd room1" data-time="16:30-17:15">
-                        <h2>TBD Session</h2>
-                        <p class="speaker">TBD Speaker</p>
-                        <p class="speakersbio"><!--Speaker Title--></p>
-                        <div class="details">
-                            <div class="track">
-                                <h2>TBD Session</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac est enim, ut sodales diam. Donec libero odio, porta auctor placerat a, scelerisque nec purus. Pellentesque commodo consectetur ligula, sit amet commodo est pellentesque ac. Praesent suscipit, purus eget volutpat iaculis, dolor ligula imperdiet risus, sit amet adipiscing mauris massa non erat. Nullam vitae turpis erat. Fusce nibh orci, vestibulum eu dapibus id.</p>
-                            </div>
-                            <div class="speaker">
-                                <h2>TBD Speaker</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="track tbd room2" data-time="16:30-17:15">
-                        <h2>TBD Session</h2>
-                        <p class="speaker">TBD Speaker</p>
-                        <p class="speakersbio"><!--Speaker Title--></p>
-                        <div class="details">
-                            <div class="track">
-                                <h2>TBD Session</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac est enim, ut sodales diam. Donec libero odio, porta auctor placerat a, scelerisque nec purus. Pellentesque commodo consectetur ligula, sit amet commodo est pellentesque ac. Praesent suscipit, purus eget volutpat iaculis, dolor ligula imperdiet risus, sit amet adipiscing mauris massa non erat. Nullam vitae turpis erat. Fusce nibh orci, vestibulum eu dapibus id.</p>
-                            </div>
-                            <div class="speaker">
-                                <h2>TBD Speaker</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="track tbd room3" data-time="16:30-17:15">
-                        <h2>TBD Session</h2>
-                        <p class="speaker">TBD Speaker</p>
-                        <p class="speakersbio"><!--Speaker Title--></p>
-                        <div class="details">
-                            <div class="track">
-                                <h2>TBD Session</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac est enim, ut sodales diam. Donec libero odio, porta auctor placerat a, scelerisque nec purus. Pellentesque commodo consectetur ligula, sit amet commodo est pellentesque ac. Praesent suscipit, purus eget volutpat iaculis, dolor ligula imperdiet risus, sit amet adipiscing mauris massa non erat. Nullam vitae turpis erat. Fusce nibh orci, vestibulum eu dapibus id.</p>
-                            </div>
-                            <div class="speaker">
-                                <h2>TBD Speaker</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                            </div>
-                        </div>
-                    </div>
+					<div class="track room1" data-time="16:30-17:15">
+						<h2>Realtime Web, The Urge for a Programming Model</h2>
+						<p class="speaker">Sadache Aldrobi</p>
+						<p class="speakersbio"><!--todo--></p>
+						<div class="details">
+							<div class="track">
+								<h2>Realtime Web, The Urge for a Programming Model</h2>
+								<p>
+									Realtime Web Applications are applications making use of Websockets, Server Sent Events, Comet or other protocols to offer an open socket between the browser and the server for continuous communication. Several web frameworks target the development of this type of applications but they mostly feature a basic API that allows developers to push/receive messages from/to an open channel:
+									channel.push(message)
+									//and
+									channel.onMessage { callback }
+									These APIs fall short when it comes to manipuling a rich set of streams of data, which is central to the Realtime Web model. It presents indeed several challenges in terms of creating, adapting, manipulating, filtering and merging streams of data as well as in terms of synchronization involved.
+									To respond to this challenges, it is crucial to have a programming model that identifies clearly what a stream of data is and defines composable components to deal with it.
+									Play2 uses Iteratees together with Futures for dealing reactively with streams of data, providing a very rich model for programming rich Realtime Web Applications.
+								</p>
+							</div>
+							<div class="speaker">
+								<h2>Sadache Aldrobi</h2>
+								<p><!--todo--></p>
+							</div>
+						</div>
+					</div>
+					<div class="track room2" data-time="16:30-17:15">
+						<h2>Lenses: Fields as Values</h2>
+						<p class="speaker">Seth Tisue</p>
+						<p class="speakersbio"><!--todo--></p>
+						<div class="details">
+							<div class="track">
+								<h2>Lenses: Fields as Values</h2>
+								<p>
+									A lens represents a readable and "settable" location in a possibly
+									nested immutable object.  Lenses aren't in the Scala standard library,
+									but several libraries provide them, including Scalaz and Shapeless. I'll
+									show how you to use the Shapeless version, and we'll look at how it's
+									implemented.
+
+									This may interest you if:
+									...you use immutable objects
+									...you use nested immutable objects
+									...you want to abstract over different fields in your immutable objects
+									...you're interested in functional programming
+
+									This is an informal, introductory talk, suitable for newcomers to Scala
+									and newcomers to functional programming.
+								</p>
+							</div>
+							<div class="speaker">
+								<h2>Seth Tisue</h2>
+								<p><!--todo--></p>
+							</div>
+						</div>
+					</div>
+					<div class="track room3" data-time="16:30-17:15">
+						<h2>The Spark Stack: Fast and Expressive Big Data Analytics in Scala</h2>
+						<p class="speaker">Matei Zaharia &amp; Reynold Xin</p>
+						<p class="speakersbio">PhD Students</p>
+						<div class="details">
+							<div class="track">
+								<h2>The Spark Stack: Fast and Expressive Big Data Analytics in Scala</h2>
+								<p>As big data becomes a concern for more and more organizations, there is a need for both faster tools to process it and easier-to-use APIs. Spark is a Hadoop-compatible cluster computing engine that addresses these needs through (1) in-memory computing primitives that let it run 100x faster than Hadoop and (2) a concise and high-level Scala API that can be used both in standalone programs and interactively from the Scala shell. Increasingly, Spark is also being used to power a stack of higher-level computing frameworks, including Shark, a port of the Hive SQL engine, and GraphX, a graph computing package that can describe algorithms like PageRank in a few lines of code. In this talk, we'll introduce the Spark ecosystem, focusing on Spark's native Scala API and GraphX. We'll also cover use cases from Spark's open source community, which has grown significantly since we released the project in 2010 -- in the past year, 15 companies have contributed code to Spark.</p>
+							</div>
+							<div class="speaker">
+								<h2>Matei Zaharia &amp; Reynold Xin</h2>
+								<p>
+									Matei Zaharia is a PhD student at UC Berkeley, working on topics in systems, cloud computing and big data. He is the originator of the Spark project, as well as a committer on Apache Mesos and Apache Hadoop. His work is supported by a Google PhD fellowship.<br/>
+									Reynold Xin is a PhD student in the AMP Lab and the Database Group at UC Berkeley. He is the lead developer of the Shark project and the GraphX project. Before graduate school, he had 3 short engineering stints at Google, IBM, and Altera. His interests include data management systems, distributed systems, and algorithms for large-scale data processing.
+								</p>
+							</div>
+						</div>
+					</div>
 					
 					<div class="pause drink" data-time="18:30-19:30">
 						<h2>Conference party</h2>
@@ -675,140 +717,186 @@
 						</div>
 					</div>
 					
-					<div class="track tbd room1" data-time="14:30-15:15">
-						<h2>TBD Session</h2>
-						<p class="speaker">TBD Speaker</p>
-						<p class="speakersbio"><!--Speaker Title--></p>
+					<div class="track room1" data-time="14:30-15:15">
+						<h2>Scala.js: write in Scala for the browser</h2>
+						<p class="speaker">Sébastien Doeraene</p>
+						<p class="speakersbio">Scientific assistant at EPFL</p>
 						<div class="details">
 							<div class="track">
-								<h2>TBD Session</h2>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac est enim, ut sodales diam. Donec libero odio, porta auctor placerat a, scelerisque nec purus. Pellentesque commodo consectetur ligula, sit amet commodo est pellentesque ac. Praesent suscipit, purus eget volutpat iaculis, dolor ligula imperdiet risus, sit amet adipiscing mauris massa non erat. Nullam vitae turpis erat. Fusce nibh orci, vestibulum eu dapibus id.</p>
+								<h2>Scala.js: write in Scala for the browser</h2>
+								<p>
+									Ever dreamed of writing you next Rich Internet Application in Scala, enjoying all the Scala goodness, but not sacrificing JavaScript interoperability? Then come and meet <a href="http://lampwww.epfl.ch/~doeraene/scala-js/">Scala.js</a>, a JavaScript backend for Scala.
+
+									Scala.js compiles full-fledged Scala code down to JavaScript, which can be integrated in your Web application. It provides very good interoperability with JavaScript code, both from Scala.js to JavaScript and vice versa. E.g., use jQuery and HTML5 from your Scala.js code, either in a typed or untyped way. Or create Scala.js objects and call their methods from JavaScript.
+
+									For the most part of the talk, we will show off Scala.js and its features through some examples and code samples. We will then present our future plans for Scala.js, and we'll be very interested in knowing what *you* want Scala.js to be.
+								</p>
 							</div>
 							<div class="speaker">
-								<h2>TBD Speaker</h2>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+								<h2>Sébastien Doeraene</h2>
+								<p>Sébastien Doeraene is a compiler/runtime systems hacker and a Scala enthusiast. He currently works at EPFL in the programming methods laboratory (LAMP) led by Martin Odersky, also known as the Scala team, where he designs and develops Scala.js. He holds bachelor and master degrees in computer science engineering from Université Catholique de Louvain in Belgium. When he is not busy coding, he sings in choirs and a cappella groups, or he plays unicycle basketball.</p>
 							</div>
 						</div>
 					</div>
-					<div class="track tbd room2" data-time="14:30-15:15">
-						<h2>TBD Session</h2>
-						<p class="speaker">TBD Speaker</p>
-						<p class="speakersbio"><!--Speaker Title--></p>
+					<div class="track room2" data-time="14:30-15:15">
+						<h2>Expanding eta-expansion: shapeless polymorphic function values meet macros</h2>
+						<p class="speaker">Miles Sabin</p>
+						<p class="speakersbio"><!--todo--></p>
 						<div class="details">
 							<div class="track">
-								<h2>TBD Session</h2>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac est enim, ut sodales diam. Donec libero odio, porta auctor placerat a, scelerisque nec purus. Pellentesque commodo consectetur ligula, sit amet commodo est pellentesque ac. Praesent suscipit, purus eget volutpat iaculis, dolor ligula imperdiet risus, sit amet adipiscing mauris massa non erat. Nullam vitae turpis erat. Fusce nibh orci, vestibulum eu dapibus id.</p>
+								<h2>Expanding eta-expansion: shapeless polymorphic function values meet macros</h2>
+								<p>
+									Polymorphic function values are one of the key abstractions in
+									shapeless: they are crucial to enabling sequence-like operations such
+									as map, flatMap and filter to be performed on HLists (data structures
+									which combine the heterogeneous typing of tuples with list-like
+									characteristics). Their encoding in Scala has been refined over a
+									number of iterations, but remains a little heavyweight relative to the
+									syntactic ease with which ordinary monomorphic functions or
+									polymorphic methods can be defined. In this talk I will show how we
+									can use macros to automatically promote polymorphic methods to
+									polymorphic function values and how that improves the usability of
+									shapeless.
+								</p>
 							</div>
 							<div class="speaker">
-								<h2>TBD Speaker</h2>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+								<h2>Miles Sabin</h2>
+								<p><!--todo--></p>
 							</div>
 						</div>
 					</div>
-					<div class="track tbd room3" data-time="14:30-15:15">
-						<h2>TBD Session</h2>
-						<p class="speaker">TBD Speaker</p>
-						<p class="speakersbio"><!--Speaker Title--></p>
+					<div class="track room3" data-time="14:30-15:15">
+						<h2>Slick vs. ORM</h2>
+						<p class="speaker">Christopher Vogt &amp; Stefan Zeiger</p>
+						<p class="speakersbio"><!--todo--></p>
 						<div class="details">
 							<div class="track">
-								<h2>TBD Session</h2>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac est enim, ut sodales diam. Donec libero odio, porta auctor placerat a, scelerisque nec purus. Pellentesque commodo consectetur ligula, sit amet commodo est pellentesque ac. Praesent suscipit, purus eget volutpat iaculis, dolor ligula imperdiet risus, sit amet adipiscing mauris massa non erat. Nullam vitae turpis erat. Fusce nibh orci, vestibulum eu dapibus id.</p>
+								<h2>Slick vs. ORM</h2>
+								<p>
+									Slick is not an object-relational mapper, but a functional-relational
+									mapper leading to unique benefits. Using Slick efficiently may be
+									counter-intuitive to people familiar with ORM systems. This talk
+									explains how common ORM use cases should me implemented differently
+									using Slick and what the benefits are. In short, ORM systems suffer from
+									the consequences of the object-relational impedance mismatch, where in
+									contrast Slick's mapping to functional programming constructs is rather
+									straight forward. This allows for tight integration with Scala and
+									highly re-useable code for composing queries.
+								</p>
 							</div>
 							<div class="speaker">
-								<h2>TBD Speaker</h2>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-							</div>
-						</div>
-					</div>
-					
-					<div class="track tbd room1" data-time="15:30-16:15">
-						<h2>TBD Session</h2>
-						<p class="speaker">TBD Speaker</p>
-						<p class="speakersbio"><!--Speaker Title--></p>
-						<div class="details">
-							<div class="track">
-								<h2>TBD Session</h2>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac est enim, ut sodales diam. Donec libero odio, porta auctor placerat a, scelerisque nec purus. Pellentesque commodo consectetur ligula, sit amet commodo est pellentesque ac. Praesent suscipit, purus eget volutpat iaculis, dolor ligula imperdiet risus, sit amet adipiscing mauris massa non erat. Nullam vitae turpis erat. Fusce nibh orci, vestibulum eu dapibus id.</p>
-							</div>
-							<div class="speaker">
-								<h2>TBD Speaker</h2>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-							</div>
-						</div>
-					</div>
-					<div class="track tbd room2" data-time="15:30-16:15">
-						<h2>TBD Session</h2>
-						<p class="speaker">TBD Speaker</p>
-						<p class="speakersbio"><!--Speaker Title--></p>
-						<div class="details">
-							<div class="track">
-								<h2>TBD Session</h2>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac est enim, ut sodales diam. Donec libero odio, porta auctor placerat a, scelerisque nec purus. Pellentesque commodo consectetur ligula, sit amet commodo est pellentesque ac. Praesent suscipit, purus eget volutpat iaculis, dolor ligula imperdiet risus, sit amet adipiscing mauris massa non erat. Nullam vitae turpis erat. Fusce nibh orci, vestibulum eu dapibus id.</p>
-							</div>
-							<div class="speaker">
-								<h2>TBD Speaker</h2>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-							</div>
-						</div>
-					</div>
-					<div class="track tbd room3" data-time="15:30-16:15">
-						<h2>TBD Session</h2>
-						<p class="speaker">TBD Speaker</p>
-						<p class="speakersbio"><!--Speaker Title--></p>
-						<div class="details">
-							<div class="track">
-								<h2>TBD Session</h2>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac est enim, ut sodales diam. Donec libero odio, porta auctor placerat a, scelerisque nec purus. Pellentesque commodo consectetur ligula, sit amet commodo est pellentesque ac. Praesent suscipit, purus eget volutpat iaculis, dolor ligula imperdiet risus, sit amet adipiscing mauris massa non erat. Nullam vitae turpis erat. Fusce nibh orci, vestibulum eu dapibus id.</p>
-							</div>
-							<div class="speaker">
-								<h2>TBD Speaker</h2>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+								<h2>Christopher Vogt &amp; Stefan Zeiger</h2>
+								<p><!--todo--></p>
 							</div>
 						</div>
 					</div>
 					
-					<div class="track tbd room1" data-time="16:30-17:15">
-						<h2>TBD Session</h2>
-						<p class="speaker">TBD Speaker</p>
-						<p class="speakersbio"><!--Speaker Title--></p>
+					<div class="track room1" data-time="15:30-16:15">
+						<h2>One API to rule them all</h2>
+						<p class="speaker">Ismael Juma &amp; Alois Cochard</p>
+						<p class="speakersbio"><!--todo--></p>
 						<div class="details">
 							<div class="track">
-								<h2>TBD Session</h2>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac est enim, ut sodales diam. Donec libero odio, porta auctor placerat a, scelerisque nec purus. Pellentesque commodo consectetur ligula, sit amet commodo est pellentesque ac. Praesent suscipit, purus eget volutpat iaculis, dolor ligula imperdiet risus, sit amet adipiscing mauris massa non erat. Nullam vitae turpis erat. Fusce nibh orci, vestibulum eu dapibus id.</p>
+								<h2>One API to rule them all</h2>
+								<p>
+									Designing a REST API for multiple applications and devices is typically an exercise in trade-offs. A single API offers efficiency in terms of building and maintenance costs; specialised APIs, though tedious to build, can be optimised for each particular use-case, removing unnecessary computational overheads.
+
+									At Time Out (http://www.timeout.com/), we are experimenting with a Graph-based approach that takes full advantage of Scala's functionality to provide the best of both worlds: an optimised and flexible API with no boilerplate.
+
+									In this talk, we discuss how your domain can be modeled as a graph and introduce Shona, a library which facilitates integration of data from heterogeneous data sources and links it together in a consistent and flexible Graph API. We compare Shona with other approaches (LinkedIn, Netflix and Facebook) highlighting its strengths along with possible areas for development.
+								</p>
 							</div>
 							<div class="speaker">
-								<h2>TBD Speaker</h2>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+								<h2>Ismael Juma &amp; Alois Cochard</h2>
+								<p><!--todo--></p>
 							</div>
 						</div>
 					</div>
-					<div class="track tbd room2" data-time="16:30-17:15">
-						<h2>TBD Session</h2>
-						<p class="speaker">TBD Speaker</p>
-						<p class="speakersbio"><!--Speaker Title--></p>
+					<div class="track room2" data-time="15:30-16:15">
+						<h2>Designing for performance</h2>
+						<p class="speaker">Rex Kerr</p>
+						<p class="speakersbio"><!--todo--></p>
 						<div class="details">
 							<div class="track">
-								<h2>TBD Session</h2>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac est enim, ut sodales diam. Donec libero odio, porta auctor placerat a, scelerisque nec purus. Pellentesque commodo consectetur ligula, sit amet commodo est pellentesque ac. Praesent suscipit, purus eget volutpat iaculis, dolor ligula imperdiet risus, sit amet adipiscing mauris massa non erat. Nullam vitae turpis erat. Fusce nibh orci, vestibulum eu dapibus id.</p>
+								<h2>Designing for performance</h2>
+								<p>Scala provides a wide variety of productivity- and correctness-enhancing features, but some of those come at the cost of performance.  I will discuss how to design Scala applications to take maximal advantage of Scala's best features while still yielding Java-like performance--or better since you can spend your time thinking and optimizing instead of writing boilerplate!  Topics will include how and when to write microbenchmarks, the intrinsic speed of various common library routines, the pitfalls of the first-get-it-working-then-run-the-profiler mode of optimization when performance really matters (and how to let the profiler help you), and patterns to favor when you know a priori or via profiling or benchmarking that performance is critical.</p>
 							</div>
 							<div class="speaker">
-								<h2>TBD Speaker</h2>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+								<h2>Rex Kerr</h2>
+								<p><!--todo--></p>
 							</div>
 						</div>
 					</div>
-					<div class="track tbd room3" data-time="16:30-17:15">
-						<h2>TBD Session</h2>
-						<p class="speaker">TBD Speaker</p>
-						<p class="speakersbio"><!--Speaker Title--></p>
+					<div class="track room3" data-time="15:30-16:15">
+						<h2>On Pickles and Spores: Improving Scala's Support for Distributed Programming</h2>
+						<p class="speaker">Heather Miller</p>
+						<p class="speakersbio"><!--todo--></p>
 						<div class="details">
 							<div class="track">
-								<h2>TBD Session</h2>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac est enim, ut sodales diam. Donec libero odio, porta auctor placerat a, scelerisque nec purus. Pellentesque commodo consectetur ligula, sit amet commodo est pellentesque ac. Praesent suscipit, purus eget volutpat iaculis, dolor ligula imperdiet risus, sit amet adipiscing mauris massa non erat. Nullam vitae turpis erat. Fusce nibh orci, vestibulum eu dapibus id.</p>
+								<h2>On Pickles and Spores: Improving Scala's Support for Distributed Programming</h2>
+								<p>
+									Despite unifying frameworks like Akka, distributed systems often look like a patchwork of special-purpose tools, libraries, and frameworks. For example, the essential task of persisting objects by pickling (or serializing) them to a binary or text representation is typically outsourced to a third-party serialization framework. Many of these frameworks, like Google's Protocol Buffers, lack support by the Scala compiler or integration with the Scala standard library, resulting in suboptimal performance, unsatisfying Scala support, or both. Furthermore, to obtain good performance using one of these frameworks, it's often necessary to roll your own type-specialized custom serializers, requiring significant boilerplate.
+
+									This talk presents a new pickling framework designed for Scala with a few attractive properties: (1) using the framework requires little to no boilerplate, (2) using Scala's implicit parameters, users can add their own easily-swappable pickle format enabling users to persist to a number of formats, binary, JSON, or your own custom format, (3) using the type class pattern, users can provide their own custom picklers to override the default behavior of the pickling framework, (4) static, macro-based generation of picklers enables significant performance improvements. In microbenchmarks our framework achieves a factor 6 speedup over Java Serialization, and performs on par or up to 3 times faster than popular fast Java serialization frameworks like Kryo. We'll show how this new framework can be used as a drop-in replacement for other serialization frameworks, and what's in store for Java compatibility.
+
+									Finally, we'll present an experimental abstraction, called spores, well-behaved, composable pieces of functional behavior that can be cleanly pickled, transported over the wire, unpickled, planted, and more.
+								</p>
 							</div>
 							<div class="speaker">
-								<h2>TBD Speaker</h2>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+								<h2>Heather Miller</h2>
+								<p><!--todo--></p>
+							</div>
+						</div>
+					</div>
+					
+					<div class="track room1" data-time="16:30-17:15">
+						<h2>Scala Async: A New Way to Simplify Asynchronous Code (Make the Compiler Do It!)</h2>
+						<p class="speaker">Philipp Haller &amp; Jason Zaugg</p>
+						<p class="speakersbio"><!--todo--></p>
+						<div class="details">
+							<div class="track">
+								<h2>Scala Async: A New Way to Simplify Asynchronous Code (Make the Compiler Do It!)</h2>
+								<p>Ever wished the compiler could make asynchronous programming easier? Enter Scala Async. Do asynchronous I/O like “normal” blocking I/O, program with Futures and Promises even more naturally! Scala Async makes it possible to “suspend” at arbitrary points in a block of regular Scala code, and to “resume” from that point later— all without blocking. This not only makes it possible to make concurrent code look sequential, it makes it possible to actually use even the most unfamiliar asynchronous libraries in a familiar blocking style. What’s more, not only does it come out-of-the-box seamlessly integrated with Scala 2.10’s new Futures and Promises API, but you can also easily use it with any other event-driven Scala or Java library of your choice.</p>
+							</div>
+							<div class="speaker">
+								<h2>Philipp Haller &amp; Jason Zaugg</h2>
+								<p><!--todo--></p>
+							</div>
+						</div>
+					</div>
+					<div class="track room2" data-time="16:30-17:15">
+						<h2>Spark Streaming: Fast Distributed Stream Processing with a High-Level API</h2>
+						<p class="speaker">Tathagata Das</p>
+						<p class="speakersbio"><!--todo--></p>
+						<div class="details">
+							<div class="track">
+								<h2>Spark Streaming: Fast Distributed Stream Processing with a High-Level API</h2>
+								<p>Spark Streaming is a new extension to the Spark cluster computing framework that enables high-speed, fault-tolerant stream processing through a high-level Scala API. It builds on a new execution model called "discretized streams" to provide exactly-once processing without the heavy cost of transactions required by previous systems (e.g. Storm), allowing it to process significantly higher rates of data per node while still recovering from faults in seconds. It also greatly simplifies stream programming by providing a set of high-level operators (e.g. maps, filters, and windows) in Scala. Perhaps the most exciting feature of Spark Streaming, however, is that it combines seamlessly with Spark's interactive and batch processing features, allowing ad-hoc queries on stream state and programs that combine streaming and historical data. Spark Streaming scales linearly to 100 nodes and has been used to build applications including session-level metrics reporting and online machine learning.</p>
+							</div>
+							<div class="speaker">
+								<h2>Tathagata Das</h2>
+								<p><!--todo--></p>
+							</div>
+						</div>
+					</div>
+					<div class="track room3" data-time="16:30-17:15">
+						<h2>Scala Puzzlers Reloaded</h2>
+						<p class="speaker">Andrew Phillips &amp; Nermin Serifovic</p>
+						<p class="speakersbio"><!--todo--></p>
+						<div class="details">
+							<div class="track">
+								<h2>Scala Puzzlers Reloaded</h2>
+								<p>
+									One of the most advanced programming languages of today has surely outgrown the gotchas, puzzlers and head-scratchers of the past. Really?
+
+									Scala Puzzlers returns with a totally new range of seemingly simple examples which demonstrate that there's plenty of head-scratching left in Scala 2.10!
+
+									Let your mind be challenged by unexpected and unintuitive behaviour and results and learn something about your favourite language in the process. And unlike in a real magic show, we'll even be giving away the solutions :-)
+								</p>
+							</div>
+							<div class="speaker">
+								<h2>Andrew Phillips &amp; Nermin Serifovic</h2>
+								<p><!--todo--></p>
 							</div>
 						</div>
 					</div>
@@ -874,13 +962,13 @@
 
   function trackOutboundLink(link, category, action) {
 
-      try {
-          _gaq.push(['_trackEvent', category , action]);
-      } catch(err){}
+	  try {
+		  _gaq.push(['_trackEvent', category , action]);
+	  } catch(err){}
 
-      setTimeout(function() {
-          document.location.href = link.href;
-      }, 100);
+	  setTimeout(function() {
+		  document.location.href = link.href;
+	  }, 100);
   }
 
 </script>
