@@ -841,7 +841,8 @@ ul.flip-thing {
 
 #partners {
 	text-align: center;
-	padding: 100px 0;
+	padding-bottom: 20px;
+	padding-top: 80px;
 	word-spacing: 0;
 	font-size: 0;
 	position: relative;
@@ -866,12 +867,16 @@ ul.flip-thing {
 }
 
 #partners article {
-    width: 100%;
     padding: 5px;
     height: 45px;
     background-color: #7fdff9;
     color: #fff;
     font-size: 30px;
+    max-width: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
 }
 
 #partners a {
@@ -884,12 +889,12 @@ ul.flip-thing {
 
 #partners img.hostedby {
     max-width: 700px;
-    max-height: 100px;
+    max-height: 120px;
 }
 
 #partners img.platinum {
     max-width: 600px;
-    max-height: 80px;
+    max-height: 90px;
 }
 
 #partners img.gold {
@@ -898,12 +903,12 @@ ul.flip-thing {
 }
 
 #partners img.silver {
-    max-width: 300px;
+    max-width: 200px;
     max-height: 50px;
 }
 
 #partners img.friends {
-    max-width: 300px;
+    max-width: 200px;
     max-height: 50px;
 }
 
