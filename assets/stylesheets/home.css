@@ -712,6 +712,7 @@ ul.flip-thing {
 	white-space: nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
+    padding-top: 5px;
 }
 
 #schedule .tracks .keynote .speaker {
@@ -719,10 +720,11 @@ ul.flip-thing {
 }
 #schedule .tracks .keynote .speakersbio {
 	color: #39859a;
+    padding-top: 5px;
 }
 #schedule .tracks .keynote .description {
-    color: #ffffff;
-    padding-top: 20px;
+    color: #333;
+    padding-top: 5px;
 }
 
 #schedule .tracks .track:hover {
