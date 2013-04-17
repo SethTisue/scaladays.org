@@ -744,12 +744,10 @@ ul.flip-thing {
 	color: #ccc;
 }
 #schedule .track.active .speaker {
-	display: inline-block;
 	margin-right: 5px;
 	color: #fff;
 }
 #schedule .track.active .speakersbio {
-	display: inline-block;
 	color: #7fdff9;
 }
 
