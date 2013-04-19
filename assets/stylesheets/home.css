@@ -1029,6 +1029,7 @@ footer {
 	#details .description, #details .track, #details .speaker {
 		padding: 10px;
 		position: static;
+		width: auto !important;
 	}
 	.track, .keynote {
 		overflow: hidden !important;
@@ -1085,17 +1086,47 @@ footer {
 
 
 	#schedule aside {
-		width: 50px;
-		font-size: 11px;
-	}
-	#schedule .time {
-		font-size: 10px;
-		right: 30px;
-		margin-top: -7px;
+		display: none;
 	}
 	#schedule .tracks {
-		left: 60px;
+		position: static;
 	}
+	#schedule .day {
+		height: auto !important;
+		padding: 80px 0 5px;
+	}
+	#schedule .tracks .track, #schedule .tracks .keynote, #schedule .tracks > div {
+		width: auto !important;
+		position: relative !important;
+		left: 0 !important;
+		top: auto !important;
+		margin: 4px 0;
+		height: auto !important;
+	}
+	#schedule .tracks > div:before {
+		display: block;
+		color: rgba(255,255,255,.6);
+		background: inherit;
+		padding: 5px 0;
+		text-align: center;
+	}
+	#schedule .tracks .keynote:before {
+		content: "room 1 at " attr(data-time);
+		color: #fff;
+	}
+	#schedule .tracks .room1:before {
+		content: "room 1 at " attr(data-time);
+	}
+	#schedule .tracks .room2:before {
+		content: "room 2 at " attr(data-time);
+	}
+	#schedule .tracks .room3:before {
+		content: "room 3 at " attr(data-time);
+	}
+	#schedule .track p.speaker, #schedule .tracks p.speakersbio {
+		display: inline-block !important;
+	}
+
 
 	#schedule,
 	#details.fixed,
