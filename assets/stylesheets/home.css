@@ -1072,6 +1072,17 @@ footer {
 		left: 0;
 	}
 
+	#partners {
+		width: 100%;
+		margin: 0;
+		overflow: hidden;
+	}
+
+	#partners img {
+		max-width: 200px !important;
+		overflow: hidden;
+	}
+
 
 	#schedule aside {
 		width: 50px;
