@@ -542,7 +542,6 @@ ul.flip-thing {
 	width: 100%;
 	z-index: 99;
 	box-shadow: 0 -4px rgba(0,0,0,.2);
-
 }
 #details.fixed {
 	position: fixed;
@@ -572,6 +571,7 @@ ul.flip-thing {
 	left: 150px;
 	right: 0px;
 	bottom: 0px;
+	overflow: auto;
 }
 #details .track {
 	position: absolute;
@@ -1020,13 +1020,18 @@ footer {
 
 	#details {
 		height: 300px;
-		overflow: auto !important;
+	}
+	#details .description {
+		position: static;
+		height: 300px;
+		width: 100%;
+		overflow: auto;
 		-webkit-overflow-scrolling: touch !important;
 	}
 	#details .times {
 		display: none;
 	}
-	#details .description, #details .track, #details .speaker {
+	#details .track, #details .speaker {
 		padding: 10px;
 		position: static;
 		width: auto !important;
