@@ -1018,6 +1018,25 @@ footer {
 		display: none;
 	}
 
+	#details {
+		height: 300px;
+		overflow: auto !important;
+		-webkit-overflow-scrolling: touch !important;
+	}
+	#details .times {
+		display: none;
+	}
+	#details .description, #details .track, #details .speaker {
+		padding: 10px;
+		position: static;
+	}
+	.track, .keynote {
+		overflow: hidden !important;
+	}
+	.pause {
+		text-indent: -999em;
+	}
+
 	#conferences {
 		height: auto;
 		width: auto;
@@ -1046,15 +1065,40 @@ footer {
 	}
     
 	#venue {
-		height: 400px;
+		height: 600px;
 	}
 	#venue article {
 		width: auto;
 		left: 0;
 	}
 
-	#partners a {
-		display: block;
-		padding: 10px;
+	#partners {
+		/* too heavy !! */
+		display: none;
 	}
+
+
+	#schedule aside {
+		width: 50px;
+		font-size: 11px;
+	}
+	#schedule .time {
+		font-size: 10px;
+		right: 30px;
+		margin-top: -7px;
+	}
+	#schedule .tracks {
+		left: 60px;
+	}
+
+	#schedule,
+	#details.fixed,
+	#schedule .day header.fixed {
+		width: 100%;
+	}
+
 }
+
+
+
+
