@@ -791,7 +791,7 @@ ul.flip-thing {
 
 #venue {
 	position: relative;
-	height: 90%;
+	height: 60%;
 	width: 100%;
 }
 
@@ -1071,7 +1071,7 @@ footer {
 	}
     
 	#venue {
-		height: 600px;
+		height: 300px;
 	}
 	#venue article {
 		width: auto;
