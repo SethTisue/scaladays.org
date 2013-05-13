@@ -1116,17 +1116,17 @@ footer {
 		text-align: center;
 	}
 	#schedule .tracks .keynote:before {
-		content: "room 1 at " attr(data-time);
+		content: "Hudson Theater at " attr(data-time);
 		color: #fff;
 	}
 	#schedule .tracks .room1:before {
-		content: "room 1 at " attr(data-time);
+		content: "Room 4.11 at " attr(data-time);
 	}
 	#schedule .tracks .room2:before {
-		content: "room 2 at " attr(data-time);
+		content: "Room 3.11 at " attr(data-time);
 	}
 	#schedule .tracks .room3:before {
-		content: "room 3 at " attr(data-time);
+		content: "Metropolis at " attr(data-time);
 	}
 	#schedule .track p.speaker, #schedule .tracks p.speakersbio {
 		display: inline-block !important;
