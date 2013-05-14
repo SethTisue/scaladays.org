@@ -781,12 +781,21 @@ ul.flip-thing {
 #schedule .tracks .pause.drink h2 {
 	background-position: center -200px;
 }
+#schedule .tracks .pause.drink h4 {
+    color: #777777;
+}
+#schedule .tracks .pause.drink section img {
+    -webkit-filter: grayscale(1);
+    -moz-filter: grayscale(1);
+    filter: grayscale(1);
+    max-height: 26px;
+    padding-right: 10px;
+    margin-top: 10px;
+}
 #schedule .tracks .pause.eat h2 {
 	background-position: center -100px;
 }
-#schedule .tracks .pause.drunk h2 {
-	background-position: center -300px;
-}
+
 
 
 #venue {
