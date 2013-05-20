@@ -770,7 +770,6 @@ ul.flip-thing {
 #schedule .tracks .pause h2 {
 	margin: 0;
 	height: 100px;
-	line-height: 100px;
 	color: #ccc;
 	background: url(../images/pauses.png) center center no-repeat;
 }
