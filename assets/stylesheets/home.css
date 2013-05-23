@@ -195,13 +195,12 @@ h2 {
 }
 
 #conferences article {
-	height: 350px;
-  padding: 0 1px;
+	height: 220px;
+    padding: 0 1px;
 	position: relative;
 }
 
 #conferences section {
-	width: 50%;
 	height: inherit;
 	float: left;
 	padding: 0 30px;
