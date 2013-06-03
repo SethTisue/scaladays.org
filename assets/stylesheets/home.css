@@ -678,14 +678,19 @@ ul.flip-thing {
 	bottom: 8px;
 	right: 5px;
 }
+
+#schedule .tracks .keynote:before {
+    content: "Hudson Theater at " attr(data-time);
+    color: #fff;
+}
 #schedule .tracks .room1:before {
-	content: "Room 4.11";
+    content: "Room 4.11 at " attr(data-time);
 }
 #schedule .tracks .room2:before {
-	content: "Room 3.11";
+    content: "Room 3.11 at " attr(data-time);
 }
 #schedule .tracks .room3:before {
-	content: "Metropolis";
+    content: "Metropolis at " attr(data-time);
 }
 
 
@@ -1139,22 +1144,6 @@ footer {
 		background: inherit;
 		padding: 5px 0;
 		text-align: center;
-	}
-	#schedule .tracks .keynote:before {
-		content: "Hudson Theater at " attr(data-time);
-		color: #fff;
-	}
-	#schedule .tracks .room1:before {
-		content: "Room 4.11 at " attr(data-time);
-	}
-	#schedule .tracks .room2:before {
-		content: "Room 3.11 at " attr(data-time);
-	}
-	#schedule .tracks .room3:before {
-		content: "Metropolis at " attr(data-time);
-	}
-	#schedule .track p.speaker, #schedule .tracks p.speakersbio {
-		display: inline-block !important;
 	}
 
 
