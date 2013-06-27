@@ -385,25 +385,15 @@ h2 {
 	left: 66.666%;
 }
 
-#schedule .tracks > div:before {
+#schedule .tracks > div > a {
 	color: rgba(255,255,255,.6);
 	position: absolute;
 	bottom: 8px;
 	right: 5px;
 }
 
-#schedule .tracks .keynote:before {
-    content: "Hudson Theater at " attr(data-time);
+#schedule .tracks .keynote > a {
     color: #fff;
-}
-#schedule .tracks .room1:before {
-    content: "Room 4.11 at " attr(data-time);
-}
-#schedule .tracks .room2:before {
-    content: "Room 3.11 at " attr(data-time);
-}
-#schedule .tracks .room3:before {
-    content: "Metropolis at " attr(data-time);
 }
 
 

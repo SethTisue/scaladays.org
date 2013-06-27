@@ -194,6 +194,10 @@ loop();
 			window.location.hash = "/";
 	});
 	var allTracks = $("#schedule .tracks .track").click(function(e){
+        if (e.target.tagName == "A") {
+            return;
+        }
+        
 		e.preventDefault();
 		
 		if ( $(this).hasClass("tbd") ) {
