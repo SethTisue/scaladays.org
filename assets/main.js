@@ -24,7 +24,7 @@ if (is_mobile || !supportsTransitions){
 
 
 // 2014 June 14th 9am, Berlin time
-var end = 1402729200000;
+var end = 1402902000000;
 
 // days, hours, minutes
 var _second = 1000,
