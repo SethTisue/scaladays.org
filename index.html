@@ -70,5 +70,44 @@
 
 	<script src="assets/jquery-1.9.1.min.js" type="text/javascript" charset="utf-8"></script>
 	<script type="text/javascript" src="assets/main.js"></script>
+	<script type="text/javascript">
+
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-38718275-1']);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+
+
+	  function trackOutboundLink(link, category, action) {
+
+		  try {
+			  _gaq.push(['_trackEvent', category , action]);
+		  } catch(err){}
+
+		  setTimeout(function() {
+			  document.location.href = link.href;
+		  }, 100);
+	  }
+
+	</script>
+	<script type="text/javascript">
+	  /* <![CDATA[ */
+	  document.write (
+	    '<img src="http://marketing.typesafe.com/acton/bn/3608/visitor.gif?ts='+
+	    new Date().getTime()+
+	    '&ref='+escape(document.referrer) + '">'
+	  );
+	  var aoAccountId = '3608';
+	  var aoCookieMode = 'STANDARD';
+	  var aoCookieDomain = 'typesafe.com';
+	  var aoServerContext = 'http://marketing.typesafe.com/acton';
+	  /* ]]> */
+	</script>
+
 </body>
 </html>
