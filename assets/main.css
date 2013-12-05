@@ -16,7 +16,7 @@ body {
 }
 
 p {
-	margin: 1.5em 0 .5em;
+	margin: .5em 0 1.5em;
 	line-height: 1.2em;
 }
 a {
@@ -31,6 +31,10 @@ a {
 	margin: 30px auto;
 	text-align: center;
 	width: 200px;
+	border-bottom: 3px solid #42b8d7;
+}
+.button.large {
+	width: 250px;
 }
 .button:hover {
 	background: #61C9E6;
@@ -38,6 +42,7 @@ a {
 
 header {
 	background: #7FDFF9;
+	background: #53CDEC;
 	color: #fff;
 	padding: 1px;
 }
@@ -74,22 +79,46 @@ header {
 	background: #D64843;
 }
 
-#cfp {
+.typo {
 	padding: 1px;
 }
-#cfp article {
+.typo article {
 	max-width: 700px;
 	margin: 50px auto;
 	padding: 20px;
 }
-#cfp .surtitle {
+.typo .surtitle {
 	text-align: center;
 	color: #8EA6AD;
+	margin-bottom: 0em
 }
-#cfp h1 {
+.typo h1 {
 	color: #E5554D;
 	text-align: center;
 	font-size: 40px;
+	margin: .5em 0 1em 0;
+	line-height: 1.2em;
+}
+.typo h2 {
+	font-size: 20px;
+	margin: .5em .25px 0 0;
+}
+.typo ul {
+	margin: .5em 0 1.5em 1em;
+}
+
+
+.typo ul li {
+	margin-left: 20px;
+	line-height: 1.5em;
+	font-size: 17px;
+	list-style-type: circle;
+	color: #E5554D;
+
+
+}
+.typo ul li > span {
+	color: #547078
 }
 
 #counter {
