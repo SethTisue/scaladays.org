@@ -13,16 +13,17 @@ body {
 	background: #F8FEFF;
 	color: #547078;
 	font: 20px "Helvetica Neue", Helvetica, sans-serif;
+
 }
 
 p {
 	margin: .5em 0 1.5em;
-	line-height: 1.2em;
+	line-height: 1.25em;
 }
 a {
 	color: #fff;
 }
-.button {
+.button  {
 	display: block;
 	background: #7FDFF9;
 	text-decoration: none;
@@ -32,6 +33,7 @@ a {
 	text-align: center;
 	width: 200px;
 	border-bottom: 3px solid #42b8d7;
+	text-shadow: 1px 1px 1px rgba(0,0,0,.1);
 }
 .button.large {
 	width: 250px;
@@ -39,9 +41,57 @@ a {
 .button:hover {
 	background: #61C9E6;
 }
+form {
+	text-align: center;
+}
+label {
+	display: block;
+	margin-bottom: .25em;
+
+}
+input[type="text"],
+textarea {
+	display: block;
+	border: 1px solid #fff;
+	width: 300px;
+	margin: 0 auto .5em auto;
+	height: 40px;
+	line-height: 30px;
+	padding: 4px 10px;
+	font-size: 20px;
+	background-color: rgba(0,0,0,.05);
+	color: #8BA1B0;
+	border-top-color: #c2d2dc;
+	border-left-color: #c2d2dc;
+	border-right-color: #c2d2dc;
+	border-bottom-color: #c2d2dc;
+}
+input[type="submit"] {
+	color: #fff;
+	font-size: 20px;
+}
+textarea {
+	height: 100px;
+}
+
+
+fieldset input[type="text"] {
+	float: left;
+	margin: 0 2% .5em 2%;
+	width: 48%
+}
+fieldset input[type="text"]:first-child {
+	margin: 0 2% .5em 0;
+}
+fieldset input[type="text"]:last-child {
+	margin: 0 0 .5em 2%;
+}
+fieldset textarea {
+	width: 100%;
+	margin: 0 0 .5em 0%;
+}
 
 header {
-	background: #7FDFF9;
 	background: #53CDEC;
 	color: #fff;
 	padding: 1px;
@@ -114,12 +164,29 @@ header {
 	font-size: 17px;
 	list-style-type: circle;
 	color: #E5554D;
-
-
 }
 .typo ul li > span {
 	color: #547078
 }
+
+
+.slate-ltr-bg {
+	background: #3e515e;
+	color: #f0f3f6;
+}
+.slate-ltr-bg .surtitle {
+	color: #f0f3f6;
+}
+.typo.slate-ltr-bg h2 {
+
+}
+.typo.slate-ltr-bg  ul li {
+	color: #53CDEC;
+}
+.typo.slate-ltr-bg ul li > span {
+	color: #f0f3f6
+}
+
 
 #counter {
 	margin: 70px auto;
