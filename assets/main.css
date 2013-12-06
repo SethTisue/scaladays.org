@@ -35,19 +35,12 @@ a {
 	border-bottom: 3px solid #42b8d7;
 	text-shadow: 1px 1px 1px rgba(0,0,0,.1);
 }
-.button.large {
-	width: 250px;
-}
+
 .button:hover {
 	background: #61C9E6;
 }
 form {
 	text-align: center;
-}
-label {
-	display: block;
-	margin-bottom: .25em;
-
 }
 input[type="text"],
 textarea {
@@ -58,7 +51,7 @@ textarea {
 	height: 40px;
 	line-height: 30px;
 	padding: 4px 10px;
-	font-size: 20px;
+	font-size: 1em;
 	background-color: rgba(0,0,0,.05);
 	color: #8BA1B0;
 	border-top-color: #c2d2dc;
@@ -68,13 +61,11 @@ textarea {
 }
 input[type="submit"] {
 	color: #fff;
-	font-size: 20px;
+	font-size: 1em;
 }
 textarea {
 	height: 100px;
 }
-
-
 fieldset input[type="text"] {
 	float: left;
 	margin: 0 2% .5em 2%;
@@ -145,7 +136,7 @@ header {
 .typo h1 {
 	color: #E5554D;
 	text-align: center;
-	font-size: 40px;
+	font-size: 2em;
 	margin: .5em 0 1em 0;
 	line-height: 1.2em;
 }
@@ -168,7 +159,9 @@ header {
 .typo ul li > span {
 	color: #547078
 }
-
+#thank-you  {
+	text-align: center;
+}
 
 .slate-ltr-bg {
 	background: #3e515e;
@@ -177,15 +170,7 @@ header {
 .slate-ltr-bg .surtitle {
 	color: #f0f3f6;
 }
-.typo.slate-ltr-bg h2 {
 
-}
-.typo.slate-ltr-bg  ul li {
-	color: #53CDEC;
-}
-.typo.slate-ltr-bg ul li > span {
-	color: #f0f3f6
-}
 
 
 #counter {
@@ -448,4 +433,31 @@ footer img {
 	}
 
 }
+@media only screen and (max-width: 550px) {
+	.typo h1 {
+		font-size: 1.5em;
+	}
+	.typo h2 {
+		font-size: 0.9em;
+	}
+	.typo p {
+		font-size: 0.8em;
+	}
+	input[type="text"], textarea {
+		font-size: 0.8em;
+	}
+	fieldset input[type="text"] {
+		margin: 0 0 .5em 0%;
+		width: 100%;
+		
+	}
+	fieldset input[type="text"]:first-child {
+		margin: 0 0 .5em 0%;
 
+	}
+	fieldset input[type="text"]:last-child {
+		margin: 0 0 .5em 0%;
+	}
+	
+
+}
