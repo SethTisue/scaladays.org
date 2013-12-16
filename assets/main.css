@@ -13,16 +13,17 @@ body {
 	background: #F8FEFF;
 	color: #547078;
 	font: 20px "Helvetica Neue", Helvetica, sans-serif;
+
 }
 
 p {
-	margin: 1.5em 0 .5em;
-	line-height: 1.2em;
+	margin: .5em 0 1.5em;
+	line-height: 1.25em;
 }
 a {
 	color: #fff;
 }
-.button {
+.button  {
 	display: block;
 	background: #7FDFF9;
 	text-decoration: none;
@@ -31,13 +32,58 @@ a {
 	margin: 30px auto;
 	text-align: center;
 	width: 200px;
+	border-bottom: 3px solid #42b8d7;
+	text-shadow: 1px 1px 1px rgba(0,0,0,.1);
 }
+
 .button:hover {
 	background: #61C9E6;
 }
+form {
+	text-align: center;
+}
+input[type="text"],
+textarea {
+	display: block;
+	border: 1px solid #fff;
+	width: 300px;
+	margin: 0 auto .5em auto;
+	height: 40px;
+	line-height: 30px;
+	padding: 4px 10px;
+	font-size: 1em;
+	background-color: rgba(0,0,0,.05);
+	color: #8BA1B0;
+	border-top-color: #c2d2dc;
+	border-left-color: #c2d2dc;
+	border-right-color: #c2d2dc;
+	border-bottom-color: #c2d2dc;
+}
+input[type="submit"] {
+	color: #fff;
+	font-size: 1em;
+}
+textarea {
+	height: 100px;
+}
+fieldset input[type="text"] {
+	float: left;
+	margin: 0 2% .5em 2%;
+	width: 48%
+}
+fieldset input[type="text"]:first-child {
+	margin: 0 2% .5em 0;
+}
+fieldset input[type="text"]:last-child {
+	margin: 0 0 .5em 2%;
+}
+fieldset textarea {
+	width: 100%;
+	margin: 0 0 .5em 0%;
+}
 
 header {
-	background: #7FDFF9;
+	background: #53CDEC;
 	color: #fff;
 	padding: 1px;
 }
@@ -74,23 +120,58 @@ header {
 	background: #D64843;
 }
 
-#cfp {
+.typo {
 	padding: 1px;
 }
-#cfp article {
+.typo article {
 	max-width: 700px;
 	margin: 50px auto;
 	padding: 20px;
 }
-#cfp .surtitle {
+.typo .surtitle {
 	text-align: center;
 	color: #8EA6AD;
+	margin-bottom: 0em
 }
-#cfp h1 {
+.typo h1 {
 	color: #E5554D;
 	text-align: center;
-	font-size: 40px;
+	font-size: 2em;
+	margin: .5em 0 1em 0;
+	line-height: 1.2em;
 }
+.typo h2 {
+	font-size: 20px;
+	margin: .5em .25px 0 0;
+}
+.typo ul {
+	margin: .5em 0 1.5em 1em;
+}
+
+
+.typo ul li {
+	margin-left: 20px;
+	line-height: 1.5em;
+	font-size: 17px;
+	list-style-type: circle;
+	color: #E5554D;
+}
+.typo ul li > span {
+	color: #547078
+}
+#thank-you  {
+	text-align: center;
+}
+
+.slate-ltr-bg {
+	background: #3e515e;
+	color: #f0f3f6;
+}
+.slate-ltr-bg .surtitle {
+	color: #f0f3f6;
+}
+
+
 
 #counter {
 	margin: 70px auto;
@@ -352,4 +433,31 @@ footer img {
 	}
 
 }
+@media only screen and (max-width: 550px) {
+	.typo h1 {
+		font-size: 1.5em;
+	}
+	.typo h2 {
+		font-size: 0.9em;
+	}
+	.typo p {
+		font-size: 0.8em;
+	}
+	input[type="text"], textarea {
+		font-size: 0.8em;
+	}
+	fieldset input[type="text"] {
+		margin: 0 0 .5em 0%;
+		width: 100%;
+		
+	}
+	fieldset input[type="text"]:first-child {
+		margin: 0 0 .5em 0%;
 
+	}
+	fieldset input[type="text"]:last-child {
+		margin: 0 0 .5em 0%;
+	}
+	
+
+}
