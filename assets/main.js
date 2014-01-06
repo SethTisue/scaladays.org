@@ -17,7 +17,7 @@ if (is_mobile || !supportsTransitions){
 		"<ul><li><span class='back none'>0</span><span class='front'>0</span></li>"+
 		"<li><span class='back none'>6</span><span class='front'>6</span></li></ul>"+
 		"<ul><li><span class='back none'>1</span><span class='front'>1</span></li>"+
-		"<li><span class='back none'>4</span><span class='front'>6</span></li></ul>");
+		"<li><span class='back none'>6</span><span class='front'>6</span></li></ul>");
 	$(".legend").remove();
 	return void 0;
 }
