@@ -1,0 +1,203 @@
+@import "nib"
+@import "fonts"
+
+// REDS
+red =           #F16665
+red-dkr =       #E25758
+red-ltr =       #F6ACAC
+red-text =      #D64546
+
+// BLUES
+blue =          #53CDEC
+blue-dkr =      #42b8d7
+blue-ltr =      #c3eef8
+blue-text =     #19aacf
+blue-ts =       #7BDCF5
+blue-teal =     #187086
+
+// navys
+navy =          #103a51
+
+// slates
+slate =         #364550
+slate-dkr =     #2a363e
+slate-ltr =     #3e515e
+slate-text =    #28353e
+
+
+// GREYS
+grey =          #899CA9
+grey-dkr =      #6F7F89
+grey-ltr =      #8BA1B0
+grey-text =     #778a99
+
+// GREENS
+green =         #69af04
+
+// whites
+white =         #ffffff
+white-ltr =     #f0f3f6
+white-dkr =     #c2d2dc
+
+//typesafe together
+slate-tt =      #354854
+
+body, html
+	height: 100%
+	width: 100%
+
+*
+	margin: 0
+	padding: 0
+	outline: 0
+	border: 0
+	list-style-type: none
+	box-sizing: border-box
+
+body
+	font: 20px "Source Sans Pro", "Open Sans","Helvetica Neue",sans-serif
+	background: blue
+	color: grey-text
+	-webkit-font-smoothing: antialiased
+	-webkit-font-size-adjust: none
+
+p
+	margin: .5em 0 1.5em
+	line-height: 1.25em
+
+a
+	color: #fff
+
+h1, h2, h3, h4
+	color: slate
+
+.button
+	display: block
+	font: inherit
+	background: red
+	text-decoration: none
+	padding: 10px 20px
+	border-radius: 3px
+	text-align: center
+	width: 200px
+	box-shadow: 0 3px 0 red-dkr
+	text-shadow: 1px 1px 1px rgba(0,0,0,.1)
+	text-transform: uppercase
+	font-weight: 700
+
+
+nav
+	position: fixed
+	z-index: 9999
+	top: 50px
+	right: 50px
+	background: white
+	width: 250px
+	a
+		font-size: 20px
+		font-weight: 600
+		padding: 10px 30px
+		display: block
+		color: red
+		text-decoration: none
+	.big
+		font-weight: 700
+		font-size: 30px
+		padding: 20px 30px
+		border-bottom: 2px solid white-ltr
+
+section
+	min-height: 100%
+	position: relative
+	padding: 80px 330px 80px 80px
+	&:after
+		content: ' '
+		display: block
+		clear: both
+
+#home
+	background: url(../images/map.svg) center right no-repeat
+	background-size: contain
+
+#logo
+	position: absolute
+	top: 50px
+	left: 80px
+	h1
+		margin: 0
+		font-size: 100px
+		font-weight: 500
+		color: white
+	strong
+		color: red
+		font-weight: 700
+	p
+		position: absolute
+		left: 0
+		top: 110px
+		font-size: 30px
+		color: white
+		margin: 0
+
+#home article
+	position: absolute
+	left: 80px
+	top: 250px
+	width: 500px
+
+
+#about
+	padding: 80px 330px
+	background: red
+	color: white
+	article
+		max-width: 600px
+		margin: 30px auto
+	h1
+		font-size: 40px
+		color: #A93A3B
+
+#speakers
+	article
+		width: 48%
+		padding: 20px
+		background: white
+		float: left
+		margin: 2% 0 2% 2%
+		&:nth-child(even)
+			margin-left: 0
+			margin-right: 2%
+
+#schedule
+	background: blue-dkr
+
+#venue
+	background: grey-dkr
+	padding: 0
+#map 
+	width: 100%
+	height: 100%
+#address
+	width: 300px
+	background: red
+	position: absolute
+	top: 80px
+	left: 80px
+	padding: 20px
+	color: white
+	z-index: 8888
+
+#sponsors
+	background: slate-ltr
+	text-align: center
+	img
+		background: white
+		padding: 10px
+		max-height: 100px
+		max-width: 200px
+
+#contact
+	background: slate-dkr
+
+
+@import "schedule"

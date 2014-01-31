@@ -1,0 +1,278 @@
+#schedule 
+	padding: 0
+	position: relative
+
+#schedule > h1
+	padding: 30px 80px
+
+#schedule.open 
+	padding-bottom: 240px
+
+#details 
+	display: none
+	background: white
+	color: blue
+	position: absolute
+	top: 60px
+	height: 240px
+	width: 100%
+	z-index: 99
+	box-shadow: 0 -4px rgba(0,0,0,.2)
+
+#details.fixed 
+	position: fixed
+	bottom: 0
+	top: auto
+	width: 90%
+
+#details.after 
+	top: auto
+	bottom: 0
+
+#details .times 
+	position: absolute
+	top: 0
+	left: 0
+	width: 150px
+	height: 100%
+	background: #383838 url(../images/time-dark.png) top right repeat-y
+
+#details .times .time 
+	color: #7fdff9
+
+
+#details .description 
+	position: absolute
+	top: 0px
+	left: 150px
+	right: 0px
+	bottom: 0px
+	overflow: auto
+
+#details .track 
+	position: absolute
+	top: 20px
+	left: 20px
+	right: 36.666%
+	bottom: 20px
+
+#details .speaker 
+	position: absolute
+	width: 30%
+	top: 20px
+	right: 20px
+	bottom: 20px
+
+
+#schedule .day 
+	position: relative
+
+
+#schedule .day header 
+	position: absolute
+	top: 0
+	width: 100%
+	padding: 0 80px
+	height: 60px
+	background: red
+	color: white
+	z-index: 9
+	-webkit-transform: translate3d(0,0,0)
+	box-shadow: 0 4px rgba(0,0,0,.1)
+	h1
+		color: white
+		line-height: 60px
+
+#schedule .day header.fixed 
+	position: fixed
+	top: 0
+	width: 100%
+
+#schedule .day header.after 
+	position: absolute
+	bottom: 0
+	top: auto
+
+
+
+#schedule aside 
+	position: absolute
+	top: 60px
+	left: 0
+	bottom: 0
+	width: 150px
+	background: blue-ltr url(../images/time-schedule2.png) right -51px repeat-y
+
+
+#schedule aside .time 
+	color: #e25651
+
+#schedule .time 
+	position: absolute
+	right: 40px
+	font-weight: 900
+	font-size: 20px
+	margin-top: -17px
+
+#schedule .tracks 
+	position: absolute
+	top: 60px
+	right: 301px
+	bottom: 0
+	left: 151px
+
+#schedule .tracks .details 
+	display: none
+
+
+#schedule .tracks > div
+	font-size: 12px
+	position: absolute
+	padding: 5px
+	border: 1px solid blue-dkr
+
+#schedule .keynote 
+	width: 100%
+	background: #7fdff9
+
+#schedule .tracks .track 
+	width: 33.333%
+	-webkit-transition: all 200ms ease-in-out
+	background: blue
+	h2
+		font-size: 15px
+		color: white
+
+
+
+#schedule .tracks .track.room1 
+	left: 0
+
+#schedule .tracks .track.room2 
+	left: 33.333%
+
+#schedule .tracks .track.room3 
+	left: 66.666%
+
+
+#schedule .tracks > div > a 
+	color: rgba(255,255,255,.6)
+	position: absolute
+	bottom: 8px
+	right: 5px
+
+
+#schedule .tracks .keynote > a 
+    color: #fff
+
+
+
+#schedule h2 
+	color: #fff
+	margin: 0
+	font-size: 20px
+	text-align: left
+
+
+
+#schedule .tracks .speaker 
+	display: block
+	margin-right: 5px
+	color: #391010
+	-webkit-transition: all 200ms ease-in-out
+	white-space: nowrap
+	overflow: hidden
+	text-overflow: ellipsis
+
+#schedule .tracks .speakersbio 
+	display: block
+	color: #8a2420
+	-webkit-transition: all 200ms ease-in-out
+	white-space: nowrap
+	overflow: hidden
+	text-overflow: ellipsis
+    padding-top: 5px
+	margin-right: 70px
+
+
+#schedule .tracks .keynote .speaker 
+	color: #1b505e
+
+#schedule .tracks .keynote .speakersbio 
+	color: #39859a
+    padding-top: 5px
+
+#schedule .tracks .keynote .description 
+    color: #333
+    padding-top: 5px
+
+
+#schedule .tracks .track:hover 
+	background: #555
+	color: #ccc
+	cursor: pointer
+
+#schedule .track:hover .speaker 
+	color: #ccc
+
+#schedule .track:hover .speakersbio 
+	color: #999
+
+
+#schedule .tracks .track.active 
+	background: #444
+	color: #ccc
+
+#schedule .track.active .speaker 
+	margin-right: 5px
+	color: #fff
+
+#schedule .track.active .speakersbio 
+	color: #7fdff9
+
+
+#schedule .tracks .track.tbd 
+	background: #e25651
+	color: #fff !important
+	opacity: .3
+	cursor: default
+
+#schedule .track.tbd .speaker 
+	color: #ed9a96
+
+
+
+#schedule .tracks .pause 
+	width: 100%
+	padding: 0 !important
+
+
+#schedule .tracks .pause h2 
+	margin: 0
+	height: 100px
+	color: #ccc
+	background: url(../images/pauses.png) center center no-repeat
+
+
+#schedule .tracks .pause.register h2 
+	background-position: center 0
+
+#schedule .tracks .pause.drink h2 
+	background-position: center -200px
+
+#schedule .tracks .pause.drink h4 
+    color: #777777
+
+#schedule .tracks .pause.drink section img 
+    -webkit-filter: grayscale(1)
+    -moz-filter: grayscale(1)
+    filter: grayscale(1)
+    max-height: 26px
+    padding-right: 10px
+    margin-top: 10px
+
+#schedule .tracks .pause.eat h2 
+	background-position: center -100px
+
+
+
