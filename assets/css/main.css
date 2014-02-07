@@ -51,7 +51,7 @@ body {
   -webkit-font-size-adjust: none;
 }
 p {
-  margin: 0.5em 0 1.5em;
+  margin: 0.5em 0;
   line-height: 1.25em;
 }
 a {
@@ -63,7 +63,9 @@ h3,
 h4 {
   color: #364550;
 }
-.button {
+.button,
+.all-speakers,
+.buy-button {
   display: block;
   font: inherit;
   background: #f16665;
@@ -72,7 +74,7 @@ h4 {
   -webkit-border-radius: 3px;
   border-radius: 3px;
   text-align: center;
-  width: 200px;
+  width: 300px;
   -webkit-box-shadow: 0 3px 0 #e25758;
   box-shadow: 0 3px 0 #e25758;
   text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
@@ -159,19 +161,47 @@ section:after {
   font-size: 40px;
   color: #a93a3b;
 }
-#speakers article {
-  width: 48%;
-  padding: 20px;
-  background: #fff;
-  float: left;
-  margin: 2% 0 2% 2%;
+#speakers h1 {
+  margin: 1px 0 10px;
 }
-#speakers article:nth-child(even) {
-  margin-left: 0;
-  margin-right: 2%;
+#speakers h2 {
+  font-size: 25px;
+  color: #fff;
+}
+#speakers article {
+  padding: 20px 0 30px;
+  border-bottom: 1px solid #42b8d7;
+  max-width: 900px;
+  margin: 1px 0;
+  color: #3e515e;
+}
+#speakers article ul:before {
+  content: "Talks:";
+}
+#speakers article li {
+  padding: 0 20px;
+}
+#speakers article a {
+  color: #2a363e;
+}
+.all-speakers {
+  margin: 20px auto;
+  color: #fff;
 }
 #schedule {
   background: #42b8d7;
+}
+#buy {
+  text-align: center;
+  min-height: 10px;
+  background: #364550;
+}
+#buy h1 {
+  color: #fff;
+  margin: 0 0 20px;
+}
+.buy-button {
+  margin: 0 auto;
 }
 #venue {
   background: #6f7f89;
@@ -204,70 +234,133 @@ section:after {
 #contact {
   background: #2a363e;
 }
-#schedule {
-  padding: 0;
-  position: relative;
-}
-#schedule > h1 {
-  padding: 30px 80px;
-}
-#schedule.open {
-  padding-bottom: 240px;
-}
-#details {
-  display: none;
-  background: #fff;
-  color: #53cdec;
+#rooms {
+  background: #f0f3f6;
+  height: 50px;
+  line-height: 50px;
+  padding: 0 350px 0 0;
   position: absolute;
-  top: 60px;
-  height: 240px;
+  top: 80px;
   width: 100%;
-  z-index: 99;
-  -webkit-box-shadow: 0 -4px rgba(0,0,0,0.2);
-  box-shadow: 0 -4px rgba(0,0,0,0.2);
+  z-index: 1111;
 }
-#details.fixed {
+#rooms.fixed {
   position: fixed;
-  bottom: 0;
-  top: auto;
-  width: 90%;
+  top: 0;
 }
-#details.after {
+#rooms.after {
   top: auto;
-  bottom: 0;
+  bottom: 60px;
 }
-#details .times {
+#rooms .wrapper {
+  height: 50px;
+  position: relative;
+  z-index: 1;
+}
+#rooms span {
+  display: block;
   position: absolute;
   top: 0;
   left: 0;
-  width: 150px;
-  height: 100%;
-  background: #383838 url("../images/time-dark.png") top right repeat-y;
+  width: 25%;
+  height: inherit;
+  background: #fff;
+  -webkit-transition: all 200ms ease-in-out;
+  -moz-transition: all 200ms ease-in-out;
+  -o-transition: all 200ms ease-in-out;
+  -ms-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
 }
-#details .times .time {
-  color: #7fdff9;
+@media (min-width: 961px) {
+  #rooms span {
+    width: 50%;
+  }
 }
-#details .description {
-  position: absolute;
-  top: 0px;
-  left: 150px;
-  right: 0px;
-  bottom: 0px;
+@media (min-width: 1201px) {
+  #rooms span {
+    width: 75%;
+  }
+}
+@media (min-width: 1441px) {
+  #rooms span {
+    width: 100%;
+  }
+}
+.off-1 #rooms span {
+  left: 25%;
+}
+.off-2 #rooms span {
+  left: 50%;
+}
+.off-3 #rooms span {
+  left: 75%;
+}
+#rooms ul {
+  position: relative;
+  z-index: 3;
+}
+#rooms li {
+  position: relative;
+  width: 25%;
+  text-align: center;
+  float: left;
+  z-index: 1;
+  text-transform: uppercase;
+  font-weight: 700;
+  cursor: pointer;
+}
+#schedule #details {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
   overflow: auto;
+  font-size: 16px;
+  background: #364550;
+  z-index: 11111;
+  display: none;
+  padding: 80px;
 }
-#details .track {
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  right: 36.666%;
-  bottom: 20px;
+#schedule #details h2 {
+  color: #fff;
+  padding: 0;
+  line-height: 30px;
+  font-size: 30px;
 }
-#details .speaker {
+#schedule {
+  padding: 0;
+  position: relative;
+  font-size: 14px;
+  overflow: hidden;
+}
+#schedule:after {
+  content: " ";
   position: absolute;
-  width: 30%;
-  top: 20px;
-  right: 20px;
-  bottom: 20px;
+  top: 87px;
+  right: 0;
+  bottom: 0;
+  width: 350px;
+  background: rgba(195,238,248,0.6);
+}
+#schedule h1 {
+  padding: 0 80px;
+  height: 80px;
+  line-height: 80px;
+  margin-bottom: 50px;
+}
+#schedule h2 {
+  color: #fff;
+  line-height: 60px;
+  margin: 0;
+  font-size: 20px;
+  text-align: left;
+}
+#schedule h3 {
+  color: #fff;
+  line-height: 20px;
+  font-size: 20px;
+  margin: 5px 0;
 }
 #schedule .day {
   position: relative;
@@ -280,23 +373,23 @@ section:after {
   height: 60px;
   background: #f16665;
   color: #fff;
-  z-index: 9;
+  z-index: 999;
   -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
   -webkit-box-shadow: 0 4px rgba(0,0,0,0.1);
   box-shadow: 0 4px rgba(0,0,0,0.1);
 }
-#schedule .day header h1 {
-  color: #fff;
-  line-height: 60px;
-}
 #schedule .day header.fixed {
   position: fixed;
-  top: 0;
+  top: 50px;
   width: 100%;
 }
 #schedule .day header.after {
   position: absolute;
-  bottom: 0;
+  bottom: 0px;
   top: auto;
 }
 #schedule aside {
@@ -306,11 +399,11 @@ section:after {
   bottom: 0;
   width: 150px;
   background: #c3eef8 url("../images/time-schedule2.png") right -51px repeat-y;
+  background: rgba(195,238,248,0.6);
+  z-index: 99;
 }
 #schedule aside .time {
   color: #e25651;
-}
-#schedule .time {
   position: absolute;
   right: 40px;
   font-weight: 900;
@@ -320,60 +413,132 @@ section:after {
 #schedule .tracks {
   position: absolute;
   top: 60px;
-  right: 301px;
+  right: 350px;
   bottom: 0;
   left: 151px;
 }
-#schedule .tracks .details {
-  display: none;
-}
 #schedule .tracks > div {
-  font-size: 12px;
   position: absolute;
-  padding: 5px;
+  padding: 5px 8px;
   border: 1px solid #42b8d7;
 }
 #schedule .keynote {
+  background: #3e515e;
+  color: #8ba1b0;
   width: 100%;
-  background: #7fdff9;
 }
-#schedule .tracks .track {
-  width: 33.333%;
+@media (max-width: 1440px) {
+  #schedule .keynote {
+    width: 133.3333%;
+  }
+}
+@media (max-width: 1200px) {
+  #schedule .keynote {
+    width: 200%;
+  }
+}
+#schedule .track {
+  width: 25%;
   -webkit-transition: all 200ms ease-in-out;
+  -moz-transition: all 200ms ease-in-out;
+  -o-transition: all 200ms ease-in-out;
+  -ms-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
   background: #53cdec;
+  color: #f0f3f6;
 }
-#schedule .tracks .track h2 {
-  font-size: 15px;
-  color: #fff;
+@media (max-width: 1440px) {
+  #schedule .track {
+    width: 33.3333%;
+  }
 }
-#schedule .tracks .track.room1 {
+@media (max-width: 1200px) {
+  #schedule .track {
+    width: 50%;
+  }
+}
+@media (max-width: 960px) {
+  #schedule .track {
+    width: 100%;
+  }
+}
+#schedule .track.room1 {
   left: 0;
 }
-#schedule .tracks .track.room2 {
-  left: 33.333%;
+#schedule .track.room2 {
+  left: 25%;
 }
-#schedule .tracks .track.room3 {
-  left: 66.666%;
+#schedule .track.room3 {
+  left: 50%;
 }
-#schedule .tracks > div > a {
-  color: rgba(255,255,255,0.6);
-  position: absolute;
-  bottom: 8px;
-  right: 5px;
+#schedule .track.room4 {
+  left: 75%;
 }
-#schedule .tracks .keynote > a,
-color: #fff,
-#schedule h2 {
-  color: #fff;
-  margin: 0;
-  font-size: 20px;
-  text-align: left;
+@media (max-width: 1440px) {
+  #schedule .track.room1 {
+    left: 0;
+  }
+  #schedule .track.room2 {
+    left: 33.3333%;
+  }
+  #schedule .track.room3 {
+    left: 66.6666%;
+  }
+  #schedule .track.room4 {
+    left: 100%;
+  }
+}
+@media (max-width: 1200px) {
+  #schedule .track.room1 {
+    left: 0;
+  }
+  #schedule .track.room2 {
+    left: 50%;
+  }
+  #schedule .track.room3 {
+    left: 100%;
+  }
+  #schedule .track.room4 {
+    left: 150%;
+  }
+}
+@media (max-width: 960px) {
+  #schedule .track.room1 {
+    left: 0;
+  }
+  #schedule .track.room2 {
+    left: 100%;
+  }
+  #schedule .track.room3 {
+    left: 200%;
+  }
+  #schedule .track.room4 {
+    left: 300%;
+  }
+}
+#schedule.off-1 .track {
+  -webkit-transform: translateX(-100%);
+  -moz-transform: translateX(-100%);
+  -o-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
+  transform: translateX(-100%);
+}
+#schedule.off-2 .track {
+  -webkit-transform: translateX(-200%);
+  -moz-transform: translateX(-200%);
+  -o-transform: translateX(-200%);
+  -ms-transform: translateX(-200%);
+  transform: translateX(-200%);
+}
+#schedule.off-3 .track {
+  -webkit-transform: translateX(-300%);
+  -moz-transform: translateX(-300%);
+  -o-transform: translateX(-300%);
+  -ms-transform: translateX(-300%);
+  transform: translateX(-300%);
 }
 #schedule .tracks .speaker {
   display: block;
-  margin-right: 5px;
-  color: #391010;
-  -webkit-transition: all 200ms ease-in-out;
   white-space: nowrap;
   overflow: hidden;
   -o-text-overflow: ellipsis;
@@ -388,76 +553,6 @@ color: #fff,
   -o-text-overflow: ellipsis;
   text-overflow: ellipsis;
 }
-padding-top: 5px {
+#schedule padding-top: 5px {
   margin-right: 70px;
-}
-#schedule .tracks .keynote .speaker {
-  color: #1b505e;
-}
-#schedule .tracks .keynote .speakersbio {
-  color: #39859a;
-}
-padding-top: 5px,
-#schedule .tracks .keynote .description,
-color: #333,
-#schedule .tracks .track:hover {
-  background: #555;
-  color: #ccc;
-  cursor: pointer;
-}
-#schedule .track:hover .speaker {
-  color: #ccc;
-}
-#schedule .track:hover .speakersbio {
-  color: #999;
-}
-#schedule .tracks .track.active {
-  background: #444;
-  color: #ccc;
-}
-#schedule .track.active .speaker {
-  margin-right: 5px;
-  color: #fff;
-}
-#schedule .track.active .speakersbio {
-  color: #7fdff9;
-}
-#schedule .tracks .track.tbd {
-  background: #e25651;
-  color: #fff !important;
-  opacity: 0.3;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
-  filter: alpha(opacity=30);
-  cursor: default;
-}
-#schedule .track.tbd .speaker {
-  color: #ed9a96;
-}
-#schedule .tracks .pause {
-  width: 100%;
-  padding: 0 !important;
-}
-#schedule .tracks .pause h2 {
-  margin: 0;
-  height: 100px;
-  color: #ccc;
-  background: url("../images/pauses.png") center center no-repeat;
-}
-#schedule .tracks .pause.register h2 {
-  background-position: center 0;
-}
-#schedule .tracks .pause.drink h2 {
-  background-position: center -200px;
-}
-#schedule .tracks .pause.drink h4,
-color: #777777,
-#schedule .tracks .pause.drink section img,
--webkit-filter: grayscale(1),
--moz-filter: grayscale(1),
-filter: grayscale(1),
-max-height: 26px,
-padding-right: 10px,
-margin-top: 10px,
-#schedule .tracks .pause.eat h2 {
-  background-position: center -100px;
 }

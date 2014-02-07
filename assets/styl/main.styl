@@ -62,7 +62,7 @@ body
 	-webkit-font-size-adjust: none
 
 p
-	margin: .5em 0 1.5em
+	margin: .5em 0
 	line-height: 1.25em
 
 a
@@ -79,7 +79,7 @@ h1, h2, h3, h4
 	padding: 10px 20px
 	border-radius: 3px
 	text-align: center
-	width: 200px
+	width: 300px
 	box-shadow: 0 3px 0 red-dkr
 	text-shadow: 1px 1px 1px rgba(0,0,0,.1)
 	text-transform: uppercase
@@ -158,25 +158,51 @@ section
 		color: #A93A3B
 
 #speakers
+	h1
+		margin: 1px 0 10px
+	h2
+		font-size: 25px
+		color: white
 	article
-		width: 48%
-		padding: 20px
-		background: white
-		float: left
-		margin: 2% 0 2% 2%
-		&:nth-child(even)
-			margin-left: 0
-			margin-right: 2%
+		padding: 20px 0 30px
+		border-bottom: 1px solid blue-dkr
+		max-width: 900px
+		margin: 1px 0
+		color: slate-ltr
+		ul:before
+			content: "Talks:"
+		li
+			padding: 0 20px
+		a 
+			color: slate-dkr
+
+.all-speakers
+	@extend .button;
+	margin: 20px auto
+	color: white
 
 #schedule
 	background: blue-dkr
 
+#buy
+	text-align: center
+	min-height: 10px
+	background: slate
+	h1
+		color: white
+		margin: 0 0 20px
+.buy-button
+	@extend .button;
+	margin: 0 auto
+
 #venue
 	background: grey-dkr
 	padding: 0
+
 #map 
 	width: 100%
 	height: 100%
+
 #address
 	width: 300px
 	background: red
