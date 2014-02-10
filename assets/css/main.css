@@ -39,6 +39,8 @@ html {
   outline: 0;
   border: 0;
   list-style-type: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 body {
@@ -65,15 +67,21 @@ h4 {
 input[type='submit'],
 .all-speakers,
 .buy-button {
+  -webkit-transition: all 200ms ease-in-out;
+  -moz-transition: all 200ms ease-in-out;
+  -o-transition: all 200ms ease-in-out;
+  -ms-transition: all 200ms ease-in-out;
   transition: all 200ms ease-in-out;
   display: block;
   font: inherit;
   background: #f16665;
   text-decoration: none;
   padding: 10px 20px;
+  -webkit-border-radius: 3px;
   border-radius: 3px;
   text-align: center;
   width: 300px;
+  -webkit-box-shadow: 0 3px 0 #e25758;
   box-shadow: 0 3px 0 #e25758;
   text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
   text-transform: uppercase;
@@ -95,6 +103,7 @@ nav {
   background: #103a51;
   width: 250px;
   border-bottom: 2px solid #000;
+  -webkit-border-radius: 3px;
   border-radius: 3px;
 }
 nav a {
@@ -127,6 +136,8 @@ section:after {
 }
 #home {
   background: url("../images/map.svg") center right no-repeat;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
   background-size: contain;
   margin-bottom: 100px;
 }
@@ -168,7 +179,11 @@ section:after {
 }
 #about .clouds {
   background: #53cdec url("../images/clouds-alt.png") no-repeat 0 bottom;
+  -webkit-background-size: 740px 188px;
+  -moz-background-size: 740px 188px;
   background-size: 740px 188px;
+  -webkit-background-size: 1996px 188px;
+  -moz-background-size: 1996px 188px;
   background-size: 1996px 188px;
   height: 210px;
   margin-top: -178px;
@@ -200,10 +215,12 @@ section:after {
   margin: 40px 0;
   color: #103a51;
   background-color: #f0f3f6;
+  -webkit-border-radius: 3px;
   border-radius: 3px;
   position: relative;
 }
 #speakers article > img {
+  -webkit-border-radius: 200px;
   border-radius: 200px;
   border: 10px solid #f0f3f6;
   position: absolute;
@@ -277,6 +294,7 @@ section:after {
   text-transform: uppercase;
   background-color: #53cdec;
   padding: 10px;
+  -webkit-border-radius: 3px;
   border-radius: 3px;
 }
 #sponsors img {
@@ -310,6 +328,7 @@ section:after {
   background-color: #3e515e;
   color: #c2d2dc;
   border-color: #899ca9;
+  -webkit-border-radius: 3px;
   border-radius: 3px;
 }
 #contact textarea {
@@ -361,6 +380,10 @@ section:after {
   width: 25%;
   height: inherit;
   background: #fff;
+  -webkit-transition: all 200ms ease-in-out;
+  -moz-transition: all 200ms ease-in-out;
+  -o-transition: all 200ms ease-in-out;
+  -ms-transition: all 200ms ease-in-out;
   transition: all 200ms ease-in-out;
 }
 @media (min-width: 961px) {
@@ -466,7 +489,12 @@ section:after {
   background: #f16665;
   color: #fff;
   z-index: 999;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
+  -webkit-box-shadow: 0 4px rgba(0,0,0,0.1);
   box-shadow: 0 4px rgba(0,0,0,0.1);
 }
 #schedule .day header.fixed {
@@ -526,6 +554,10 @@ section:after {
 }
 #schedule .track {
   width: 25%;
+  -webkit-transition: all 200ms ease-in-out;
+  -moz-transition: all 200ms ease-in-out;
+  -o-transition: all 200ms ease-in-out;
+  -ms-transition: all 200ms ease-in-out;
   transition: all 200ms ease-in-out;
   background: #53cdec;
   color: #f0f3f6;
@@ -604,18 +636,31 @@ section:after {
   }
 }
 #schedule.off-1 .track {
+  -webkit-transform: translateX(-100%);
+  -moz-transform: translateX(-100%);
+  -o-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
   transform: translateX(-100%);
 }
 #schedule.off-2 .track {
+  -webkit-transform: translateX(-200%);
+  -moz-transform: translateX(-200%);
+  -o-transform: translateX(-200%);
+  -ms-transform: translateX(-200%);
   transform: translateX(-200%);
 }
 #schedule.off-3 .track {
+  -webkit-transform: translateX(-300%);
+  -moz-transform: translateX(-300%);
+  -o-transform: translateX(-300%);
+  -ms-transform: translateX(-300%);
   transform: translateX(-300%);
 }
 #schedule .tracks .speaker {
   display: block;
   white-space: nowrap;
   overflow: hidden;
+  -o-text-overflow: ellipsis;
   text-overflow: ellipsis;
 }
 #schedule .tracks .speakersbio {
@@ -624,6 +669,7 @@ section:after {
   -webkit-transition: all 200ms ease-in-out;
   white-space: nowrap;
   overflow: hidden;
+  -o-text-overflow: ellipsis;
   text-overflow: ellipsis;
 }
 #schedule padding-top: 5px {
