@@ -1,4 +1,4 @@
-@import "nib"
+//@import "nib"
 @import "fonts"
 
 // REDS
@@ -42,6 +42,11 @@ white-dkr =     #c2d2dc
 //typesafe together
 slate-tt =      #354854
 
+
+//default border-radius
+br = 3px
+header-size = 40px
+
 body, html
 	height: 100%
 	width: 100%
@@ -62,28 +67,34 @@ body
 	-webkit-font-size-adjust: none
 
 p
-	margin: .5em 0
-	line-height: 1.25em
+	margin: .7em 0
+	line-height: 1.3em
 
 a
 	color: #fff
 
 h1, h2, h3, h4
-	color: slate
+	color: navy
 
-.button
+.button,
+input[type='submit']
+	transition: all 200ms ease-in-out
 	display: block
 	font: inherit
 	background: red
 	text-decoration: none
 	padding: 10px 20px
-	border-radius: 3px
+	border-radius: br
 	text-align: center
 	width: 300px
 	box-shadow: 0 3px 0 red-dkr
 	text-shadow: 1px 1px 1px rgba(0,0,0,.1)
 	text-transform: uppercase
 	font-weight: 700
+	cursor: pointer
+	color: white
+	&:hover
+		background-color: red-dkr
 
 
 nav
@@ -91,20 +102,25 @@ nav
 	z-index: 9999
 	top: 50px
 	right: 50px
-	background: white
+	background: navy
 	width: 250px
+	border-bottom: 2px solid black
+	border-radius: br
 	a
 		font-size: 20px
 		font-weight: 600
 		padding: 10px 30px
 		display: block
-		color: red
+		color: white
 		text-decoration: none
+		cursor: pointer
+		&:hover
+			background: blue-dkr
 	.big
 		font-weight: 700
 		font-size: 30px
 		padding: 20px 30px
-		border-bottom: 2px solid white-ltr
+		border-bottom: 2px solid rgba(white-ltr, .2)
 
 section
 	min-height: 100%
@@ -118,6 +134,7 @@ section
 #home
 	background: url(../images/map.svg) center right no-repeat
 	background-size: contain
+	margin-bottom: 100px
 
 #logo
 	position: absolute
@@ -147,28 +164,55 @@ section
 
 
 #about
-	padding: 80px 330px
-	background: red
-	color: white
+	padding-top: 0
+	padding-left: 0
+	background: white-ltr
+	color: navy
+	background: white-ltr url(../images/berlin-skyline.svg) no-repeat 790px bottom
+
+	.clouds
+		background: blue url(../images/clouds-alt.png) no-repeat 0 bottom
+		background-size: 740px 188px
+		background-size: 1996px 188px
+		height: 210px
+		margin-top: -178px
+		margin-top: 0
+		width: 100%
+		position: absolute
+
 	article
-		max-width: 600px
-		margin: 30px auto
+		max-width: 680px
+		padding-left: 80px
+		
 	h1
-		font-size: 40px
-		color: #A93A3B
+		font-size: header-size
+		padding-top: 240px
+		color: navy
+		
 
 #speakers
 	h1
-		margin: 1px 0 10px
+		margin: 0 0 20px 0
+		font-size: header-size
 	h2
 		font-size: 25px
-		color: white
+		color: blue-text
 	article
-		padding: 20px 0 30px
-		border-bottom: 1px solid blue-dkr
-		max-width: 900px
-		margin: 1px 0
-		color: slate-ltr
+		padding: 20px 150px 20px 30px
+		border-bottom: 2px solid white-dkr
+		max-width: 800px
+		margin: 40px 0
+		color: navy
+		background-color: white-ltr
+		border-radius: br
+		position: relative
+		> img
+			border-radius: 200px
+			border: 10px solid white-ltr
+			position: absolute
+			right: -25px
+			top: -25px
+			width: 150px
 		ul:before
 			content: "Talks:"
 		li
@@ -178,7 +222,7 @@ section
 
 .all-speakers
 	@extend .button;
-	margin: 20px auto
+	margin: 20px 0
 	color: white
 
 #schedule
@@ -224,6 +268,9 @@ section
 
 #contact
 	background: slate-dkr
+	h1
+		color: white
+		font-size: header-size
 
 
 @import "schedule"
