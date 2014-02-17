@@ -61,8 +61,8 @@ body, html
 
 body
 	font: 20px "Source Sans Pro", "Open Sans","Helvetica Neue",sans-serif
-	background: blue
-	color: grey-text
+	background: red
+	color: navy
 	-webkit-font-smoothing: antialiased
 	-webkit-font-size-adjust: none
 
@@ -86,13 +86,14 @@ input[type='submit']
 	padding: 10px 20px
 	border-radius: br
 	text-align: center
-	width: 300px
+	width: auto
 	box-shadow: 0 3px 0 red-dkr
 	text-shadow: 1px 1px 1px rgba(0,0,0,.1)
 	text-transform: uppercase
 	font-weight: 700
 	cursor: pointer
 	color: white
+	display: inline-block
 	&:hover
 		background-color: red-dkr
 
@@ -102,28 +103,49 @@ nav
 	z-index: 9999
 	top: 50px
 	right: 50px
-	background: navy
 	width: 250px
-	border-bottom: 2px solid black
 	border-radius: br
+	box-shadow: 0px 0px 0px 2px rgba(0, 0, 0, 0.1)
 	a
-		font-size: 20px
-		font-weight: 600
-		padding: 10px 30px
+		font-weight: 700
+		padding: 15px 30px
 		display: block
 		color: white
 		text-decoration: none
 		cursor: pointer
-		&:hover
-			background: blue-dkr
+
+
+			
 	.big
 		font-weight: 700
-		font-size: 30px
-		padding: 20px 30px
-		border-bottom: 2px solid rgba(white-ltr, .2)
+		font-size: 26px
+		background-color: navy
+		border-radius: br br 0 0
+		padding: 10px 0
+		a 
+			margin: 0 0 10px
+			padding: 10px 30px
+			&:hover
+				background-color: transparent
+				color: blue
+	.small
+		padding-top: 10px
+		padding-bottom: 20px
+		border-top: 4px solid red-text
+		border-bottom: 2px solid red-text
+
+		background-color: red-dkr
+		border-radius: 0 0 br br
+		font-size: 16px
+		a 
+			margin: 5px 0
+			padding: 5px 30px
+			&:hover
+				background-color: transparent
+				color: navy
+		
 
 section
-	min-height: 100%
 	position: relative
 	padding: 80px 330px 80px 80px
 	&:after
@@ -132,14 +154,60 @@ section
 		clear: both
 
 #home
-	background: url(../images/map.svg) center right no-repeat
-	background-size: contain
-	margin-bottom: 100px
+	min-height: 400px
+	background: blue
+	position: relative
+	display: block
+	padding: 40px 330px 300px 80px
+	h2
+		color: blue-text
+		margin-left: 180px
+		font-size: 20px
+	article
+		clear: both
+		margin-bottom: 20px
+
+		&:after
+			content: ' '
+			display: block
+			clear: both
+		img
+			border-radius: 200px
+			border: 10px solid white-ltr
+			width: 150px
+			float: left
+			margin-right: 30px
+		div 
+			position: relative
+			float: left
+			h3
+				color: red-text
+				margin-top: 20px
+				background: transparent url("../images/speaker.svg") no-repeat top left
+				padding: 0 0 0 20px
+				font-size: 24px
+				height: 24px
+				line-height: 24px
+			h2
+				color: white
+				font-size: 40px
+				margin: 0
+			h4
+				color: navy
+				font-weight: 400
+				font-size: 18px
+				
+		
+	.button
+		background: blue-dkr
+		box-shadow: 0 3px 0 blue-text
+		margin-left: 180px
+		&:hover
+			background-color: blue-text
 
 #logo
-	position: absolute
-	top: 50px
-	left: 80px
+	position: relative
+	margin-bottom: 60px
 	h1
 		margin: 0
 		font-size: 100px
@@ -156,69 +224,188 @@ section
 		color: white
 		margin: 0
 
-#home article
+
+	
+
+
+
+
+.group1
+	position: relative
+	width: 100%
+	height: 400px
+	margin-top: -200px
+
+	
+
+#mountains2  
+	background: transparent url("../images/mountains2.png") no-repeat center top
+#mountains  
+	background: transparent url("../images/mountains.png") no-repeat center top
+#clouds3
+	background: transparent url("../images/clouds3.png") no-repeat center top
+#clouds2  
+	background: transparent url("../images/clouds2.png") no-repeat center top
+	
+#land  
+	background: transparent url("../images/land.png") no-repeat center top
+#clouds  
+	background: transparent url("../images/clouds.png") no-repeat center top
+#cloudsF  
+	background: transparent url("../images/cloudsF.png") 
+
+#mountains,
+#clouds,
+#clouds2,
+#clouds3,
+#cloudsF,
+#land
 	position: absolute
-	left: 80px
-	top: 250px
-	width: 500px
+	-webkit-transform: translate3d(0, 0, 0)
+	-moz-transform: translate3d(0, 0, 0)
+	transform: translate3d(0, 0, 0)
+	height: 287px
+	width: 100%
+	top: 40px
+
+#mountains
+	top: 0
+	
+
+
+#mountains2 
+	position: relative
+	-webkit-transform: translate3d(0, 0, 0)
+	-moz-transform: translate3d(0, 0, 0)
+	transform: translate3d(0, 0, 0)
+	height: 800px
+
+
+#cloudsF 
+	position: absolute
+	width: 100%
+	height: 500px
+	left: 0
+	margin: 0
+	margin-top: 280px
+	z-index: 10
+
+
+#m1 
+	position: absolute
+	width: 100%
+	height: 800px
+	padding: 100px 0 0 0
+	margin-top: 400px
+	background: red
+	text-align: center
+
+	
 
 
 #about
-	padding-top: 0
-	padding-left: 0
-	background: white-ltr
-	color: navy
-	background: white-ltr url(../images/berlin-skyline.svg) no-repeat 790px bottom
+	color: white
+	display: block
+	text-align: center
+	padding: 0px 0 150px 0
+	margin: 0
+	margin-top: 0px
+	background: red url("../images/berlin.svg") no-repeat center bottom
+	background-size: 75%
+	.beer 
+		position: relative
+		width: 300px
+		margin-bottom: 60px
+		margin-top: -200px
+		display: inline-block
+		-webkit-transform: translate(0, 100)
+		-moz-transform: translate(0,100)
+		transform: translate(0, 100)
+		opacity: 0
 
-	.clouds
-		background: blue url(../images/clouds-alt.png) no-repeat 0 bottom
-		background-size: 740px 188px
-		background-size: 1996px 188px
-		height: 210px
-		margin-top: -178px
-		margin-top: 0
-		width: 100%
-		position: absolute
+	#beerRight
+		transform:rotate(10deg);
+		-ms-transform:rotate(10deg); /* IE 9 */
+		-webkit-transform:rotate(10deg); /* Safari and Chrome */
+		top: 60px
+		right: 170px
+	#beerLeft
+		transform:rotate(-7deg);
+		-ms-transform:rotate(-7deg); /* IE 9 */
+		-webkit-transform:rotate(-7deg); /* Safari and Chrome */
+		left: 170px
 
 	article
 		max-width: 680px
-		padding-left: 80px
+		margin: 0 auto
 		
 	h1
 		font-size: header-size
-		padding-top: 240px
 		color: navy
+	p 
+		font-size: 24px
+		margin-bottom: 2em
 		
 
 #speakers
+	background: blue
 	h1
 		margin: 0 0 20px 0
 		font-size: header-size
 	h2
 		font-size: 25px
 		color: blue-text
+	
 	article
-		padding: 20px 150px 20px 30px
-		border-bottom: 2px solid white-dkr
-		max-width: 800px
-		margin: 40px 0
-		color: navy
-		background-color: white-ltr
-		border-radius: br
-		position: relative
-		> img
+		clear: both
+		margin-bottom: 40px
+
+
+		&:after
+			content: ' '
+			display: block
+			clear: both
+		img
 			border-radius: 200px
 			border: 10px solid white-ltr
-			position: absolute
-			right: -25px
-			top: -25px
 			width: 150px
-		ul:before
-			content: "Talks:"
-		li
-			padding: 0 20px
-		a 
-			color: slate-dkr
+			float: left
+			margin-right: 30px
+		div 
+			position: relative
+			float: left
+			border-bottom: 0px solid blue-dkr
+			padding-bottom: 20px
+			h2
+				color: red-text
+				margin-top: 20px
+				background: transparent url("../images/speaker.svg") no-repeat top left
+				padding: 0 0 0 20px
+				font-size: 24px
+				height: 24px
+				line-height: 24px
+			p 
+				color: white
+				max-width: 600px
+			h4
+				color: navy
+				font-weight: 400
+				font-size: 18px
+			ul li 
+				color: blue-text
+				font-weight: 700
+				margin-right: 5px
+				font-size: 16px
+				margin-bottom: 5px
+				a
+					font-size: 16px
+					padding: 5px 10px
+					margin-right: 5px
+					background: blue-dkr
+					box-shadow: 0 3px 0 blue-text
+					&:hover
+						background: blue-text
+
 
 .all-speakers
 	@extend .button
@@ -275,8 +462,6 @@ section
 			background-color: blue
 			padding: 10px
 			border-radius: br
-			
-
 	img
 		background: transparent
 		padding: 20px
@@ -284,30 +469,29 @@ section
 		max-width: 200px
 
 #contact
-	background: slate-dkr
+	background: blue
 	h1
-		color: blue
+		color: navy
 		font-size: header-size
 		margin-bottom: 0.7em
 
 
 	form
-		text-align: center
+		text-align: left
 		max-width: 680px
 
 	input[type="text"],
 	textarea
 		display: block
-		border: 1px solid #fff
 		width: 300px
 		margin: 0 auto .5em auto
 		height: 40px
 		line-height: 30px
 		padding: 4px 10px
 		font-size: 1em
-		background-color: slate-ltr
-		color: white-dkr
-		border-color: grey
+		background-color: white-ltr
+		color: blue-text
+		border: 1px solid blue-dkr
 		border-radius: br
 
 	textarea
