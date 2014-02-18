@@ -428,7 +428,7 @@ section:after {
   line-height: 24px;
 }
 #speakers article div p {
-  color: #fff;
+  color: #103a51;
   max-width: 600px;
 }
 #speakers article div h4 {
@@ -437,7 +437,7 @@ section:after {
   font-size: 18px;
 }
 #speakers article div ul li {
-  color: #19aacf;
+  color: #103a51;
   font-weight: 700;
   margin-right: 5px;
   font-size: 16px;
@@ -602,6 +602,20 @@ section:after {
   -ms-transition: all 200ms ease-in-out;
   transition: all 200ms ease-in-out;
 }
+#rooms span:before {
+  content: ">";
+  left: 10px;
+  position: absolute;
+  font-weight: 700;
+  color: #f16665;
+}
+#rooms span:after {
+  content: "<";
+  right: 10px;
+  position: absolute;
+  font-weight: 700;
+  color: #f16665;
+}
 @media (min-width: 961px) {
   #rooms span {
     width: 50%;
@@ -672,7 +686,7 @@ section:after {
   right: 0;
   bottom: 0;
   width: 350px;
-  background: rgba(195,238,248,0.6);
+  background: rgba(195,238,248,0.8);
 }
 #schedule h1 {
   padding: 0 80px;
@@ -730,7 +744,7 @@ section:after {
   bottom: 0;
   width: 150px;
   background: #c3eef8 url("../images/time-schedule2.png") right -51px repeat-y;
-  background: rgba(195,238,248,0.6);
+  background: rgba(195,238,248,0.8);
   z-index: 99;
 }
 #schedule aside .time {
@@ -797,17 +811,35 @@ section:after {
 #schedule .track:hover {
   background: #364550;
 }
+#schedule .track:before {
+  color: #103a51;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 12px;
+}
 #schedule .track.room1 {
   left: 0;
+}
+#schedule .track.room1:before {
+  content: "theatre";
 }
 #schedule .track.room2 {
   left: 25%;
 }
+#schedule .track.room2:before {
+  content: "room 1";
+}
 #schedule .track.room3 {
   left: 50%;
 }
+#schedule .track.room3:before {
+  content: "room 2";
+}
 #schedule .track.room4 {
   left: 75%;
+}
+#schedule .track.room4:before {
+  content: "hands on";
 }
 @media (max-width: 1440px) {
   #schedule .track.room1 {
@@ -878,6 +910,8 @@ section:after {
   overflow: hidden;
   -o-text-overflow: ellipsis;
   text-overflow: ellipsis;
+  font-weight: 400;
+  color: #103a51;
 }
 #schedule .tracks .speakersbio {
   display: block;
