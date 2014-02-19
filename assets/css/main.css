@@ -481,15 +481,38 @@ section:after {
   width: 100%;
   height: 100%;
 }
-#address {
+#locations {
+  position: absolute;
+  left: 80px;
+  top: 80px;
+}
+#locations .address {
   width: 300px;
   background: #f16665;
-  position: absolute;
-  top: 80px;
-  left: 80px;
+  position: relative;
   padding: 20px;
   color: #fff;
   z-index: 8888;
+  margin-bottom: 20px;
+}
+#locations .address p {
+  margin: 5px 0 10px 0;
+}
+#locations .address .rate {
+  font-size: 14px;
+}
+#locations .address:before {
+  display: block;
+  color: #103a51;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+#locations #expo:before {
+  content: "Venue";
+}
+#locations #hotel:before {
+  content: "Lodging";
 }
 #sponsors {
   background: #fff;

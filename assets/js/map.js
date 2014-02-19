@@ -125,10 +125,12 @@ var mapStyle = [
 ];
 
 
-var hotelPosition = new google.maps.LatLng(52.5168394,13.4499112);
+var venuePosition = new google.maps.LatLng(52.5168394,13.4499112);
+var hotelPosition = new google.maps.LatLng(52.524202, 13.417203);
+var center = new google.maps.LatLng(52.520234, 13.429183);
 var mapOptions = {
-	center: hotelPosition,
-	zoom: 15,
+	center: center,
+	zoom: 14,
 	mapTypeId: google.maps.MapTypeId.ROADMAP,
 	scaleControl: false,
 	scrollwheel: false,
@@ -136,9 +138,13 @@ var mapOptions = {
 }
 
 var map = new google.maps.Map(document.getElementById("map"), mapOptions);
-var marker = new google.maps.Marker({
-	position: hotelPosition,
+var markerVenue = new google.maps.Marker({
+	position: venuePosition,
 	map: map,
 	title: 'Kosmos Berlin'
 });
-
+var markerHotel = new google.maps.Marker({
+  position: hotelPosition,
+  map: map,
+  title: 'Hotel Indigo'
+});
