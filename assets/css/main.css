@@ -695,6 +695,7 @@ section:after {
   display: none;
   padding: 80px;
   color: #fff;
+  cursor: pointer;
 }
 #schedule #details h3 {
   color: #53cdec;

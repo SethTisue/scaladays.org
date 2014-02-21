@@ -66,7 +66,7 @@
     $("#details #content").html(detail.currentTarget.innerHTML);
     $("#details").show();
   });
-  $("#details .close").on("click", function(){
+  $("#details").on("click", function(){
     
     $("#details").hide();
   });
