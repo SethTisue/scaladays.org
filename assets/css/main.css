@@ -631,14 +631,14 @@ section:after {
   transition: all 200ms ease-in-out;
 }
 #rooms span:before {
-  content: ">";
+  content: "";
   left: 10px;
   position: absolute;
   font-weight: 700;
   color: #f16665;
 }
 #rooms span:after {
-  content: "<";
+  content: "";
   right: 10px;
   position: absolute;
   font-weight: 700;
@@ -696,14 +696,19 @@ section:after {
   padding: 80px;
   color: #fff;
 }
-#schedule #details h2 {
+#schedule #details h3 {
   color: #53cdec;
   padding: 0;
   line-height: 30px;
   font-size: 30px;
 }
+#schedule #details p {
+  max-width: 600px;
+}
 #schedule #details .date {
-  color: #fff;
+  color: #f16665;
+  font-weight: 700;
+  margin-top: 0;
 }
 #schedule #details .close {
   position: absolute;
@@ -922,6 +927,12 @@ section:after {
   background: #53cdec;
   color: #f0f3f6;
   cursor: pointer;
+}
+#schedule .track p {
+  display: none;
+}
+#schedule .track ul.speaker img {
+  display: none;
 }
 @media (max-width: 1440px) {
   #schedule .track {

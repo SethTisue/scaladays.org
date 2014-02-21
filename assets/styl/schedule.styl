@@ -27,13 +27,13 @@
 		background: white
 		transition: all 200ms ease-in-out
 		&:before
-			content: ">"
+			content: ""
 			left: 10px
 			position: absolute
 			font-weight: 700
 			color: red
 		&:after
-			content: "<"
+			content: ""
 			right: 10px
 			position: absolute
 			font-weight: 700
@@ -76,13 +76,17 @@
 	display: none
 	padding: 80px
 	color: white
-	h2
+	h3
 		color: blue
 		padding: 0
 		line-height: 30px
 		font-size: 30px
+	p 
+		max-width: 600px
 	.date
-		color: white
+		color: red
+		font-weight: 700
+		margin-top: 0
 	.close
 		position: absolute
 		top: 80px
@@ -271,6 +275,11 @@
 		background: blue
 		color: white-ltr
 		cursor: pointer
+		p 
+			display: none
+		ul.speaker
+			img
+				display: none
 		@media (max-width: 1440px)
 			width: 33.3333%
 		@media (max-width: 1200px)

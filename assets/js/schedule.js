@@ -62,10 +62,12 @@
   loop();
 
 
-  $("#schedule").on("click", ".track", function(){
+  $("#schedule").on("click", ".track", function(detail){
+    $("#details #content").html(detail.currentTarget.innerHTML);
     $("#details").show();
   });
   $("#details .close").on("click", function(){
+    
     $("#details").hide();
   });
 
