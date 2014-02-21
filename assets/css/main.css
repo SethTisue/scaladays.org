@@ -697,14 +697,14 @@ section:after {
   color: #fff;
   cursor: pointer;
 }
-#schedule #details h3 {
+#schedule #details #content {
+  max-width: 600px;
+}
+#schedule #details #content h3 {
   color: #53cdec;
   padding: 0;
   line-height: 30px;
   font-size: 30px;
-}
-#schedule #details p {
-  max-width: 600px;
 }
 #schedule #details .date {
   color: #f16665;
@@ -862,6 +862,9 @@ section:after {
   float: left;
   margin-right: 2%;
 }
+#schedule .tracks .pause h3 span {
+  font-size: 14px;
+}
 #schedule .tracks .pause.register {
   margin-top: -45px;
 }
@@ -928,9 +931,14 @@ section:after {
   background: #53cdec;
   color: #f0f3f6;
   cursor: pointer;
+  overflow: hidden;
 }
 #schedule .track p {
   display: none;
+}
+#schedule .track h3 {
+  font-size: 16px;
+  color: #103a51;
 }
 #schedule .track ul.speaker img {
   display: none;
@@ -961,7 +969,7 @@ section:after {
   color: #f0f3f6;
 }
 #schedule .track:before {
-  color: #103a51;
+  color: #19aacf;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 12px;

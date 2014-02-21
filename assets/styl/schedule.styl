@@ -77,13 +77,13 @@
 	padding: 80px
 	color: white
 	cursor: pointer
-	h3
-		color: blue
-		padding: 0
-		line-height: 30px
-		font-size: 30px
-	p 
+	#content 
 		max-width: 600px
+		h3
+			color: blue
+			padding: 0
+			line-height: 30px
+			font-size: 30px
 	.date
 		color: red
 		font-weight: 700
@@ -226,6 +226,9 @@
 			h3
 				float: left
 				margin-right: 2%
+				span
+					font-size: 14px
+			
 			&.register
 				margin-top: -45px
 				
@@ -276,8 +279,12 @@
 		background: blue
 		color: white-ltr
 		cursor: pointer
+		overflow: hidden
 		p 
 			display: none
+		h3
+			font-size: 16px
+			color: navy
 		ul.speaker
 			img
 				display: none
@@ -295,7 +302,7 @@
 			&:before
 				color: white-ltr
 		&:before
-			color: navy
+			color: blue-text
 			font-weight: 700
 			text-transform: uppercase
 			font-size: 12px
