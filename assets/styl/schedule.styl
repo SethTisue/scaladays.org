@@ -75,11 +75,40 @@
 	z-index: 11111
 	display: none
 	padding: 80px
+	color: white
 	h2
-		color: white
+		color: blue
 		padding: 0
 		line-height: 30px
 		font-size: 30px
+	.date
+		color: white
+	.close
+		position: absolute
+		top: 80px
+		right: 80px
+		cursor: pointer
+		font-size: 30px
+		font-weight: 200
+		text-transform: uppercase
+	.speaker
+		&:after
+			content: ' '
+			display: block
+			clear: both
+		li
+			padding-bottom: 10px 
+			clear: both
+			display: block
+			height: 70px
+			line-height: 60px
+		img
+			border-radius: 200px
+			border: 5px solid white-ltr
+			height: 60px
+			float: left
+			margin-right: 10px
+
 
 #schedule
 	padding: 0
@@ -151,7 +180,7 @@
 		z-index: 99
 
 		.time 
-			color: #e25651
+			color: navy
 			position: absolute
 			right: 40px
 			font-weight: 900
@@ -170,6 +199,40 @@
 			padding: 5px 8px
 			border: 1px solid blue-dkr
 
+		.speaker
+			display: block
+			white-space: nowrap
+			overflow: hidden
+			text-overflow: ellipsis
+			font-weight: 400
+			color: white
+		
+		.speakersbio 
+			display: block
+			color: #8a2420
+			-webkit-transition: all 200ms ease-in-out
+			white-space: nowrap
+			overflow: hidden
+			text-overflow: ellipsis
+		    padding-top: 5px
+			margin-right: 70px
+		.pause
+			width: 100%
+			h3
+				float: left
+				margin-right: 2%
+			&.register
+				margin-top: -45px
+				
+			.svg-icon-registration
+				width: 51px
+				height: 60px
+			.svg-icon-drink
+				width: 80px
+				height: 49px
+			.svg-icon-eat
+				width: 60px
+				height: 41px
 	.keynote 
 		background: slate-ltr
 		color: grey-ltr
@@ -178,6 +241,28 @@
 			width: 133.3333%
 		@media (max-width: 1200px)
 			width: 200%
+		h3
+			color: red
+			font-size: 26px
+			margin-bottom: 0.4em
+			text-shadow: 1px 1px 1px rgba(0,0,0,.2)
+		.speaker
+			&:after
+				content: ' '
+				display: block
+				clear: both
+			li
+				padding-bottom: 10px 
+				clear: both
+				display: block
+				height: 50px
+				line-height: 40px
+			img
+				border-radius: 200px
+				border: 2px solid white-ltr
+				height: 40px
+				float: left
+				margin-right: 10px
 
 
 	.track 
@@ -194,6 +279,11 @@
 			width: 100%
 		&:hover
 			background: slate
+			color: white-ltr
+			h3 
+				color: blue
+			&:before
+				color: white-ltr
 		&:before
 			color: navy
 			font-weight: 700
@@ -259,21 +349,5 @@
 			transform: translateX(-300%)
 
 
-	.tracks .speaker
-		display: block
-		white-space: nowrap
-		overflow: hidden
-		text-overflow: ellipsis
-		font-weight: 400
-		color: navy
-
-	.tracks .speakersbio 
-		display: block
-		color: #8a2420
-		-webkit-transition: all 200ms ease-in-out
-		white-space: nowrap
-		overflow: hidden
-		text-overflow: ellipsis
-	    padding-top: 5px
-		margin-right: 70px
+	
 

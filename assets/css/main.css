@@ -325,7 +325,6 @@ section:after {
   padding: 0px 0 150px 0;
   margin: 0;
   margin-top: 0px;
-  background: #f16665 url("../images/berlin.svg") no-repeat center bottom;
   -webkit-background-size: 75%;
   -moz-background-size: 75%;
   background-size: 75%;
@@ -381,8 +380,14 @@ section:after {
   color: #103a51;
 }
 #about p {
-  font-size: 24px;
+  font-size: 22px;
   margin-bottom: 2em;
+}
+#sponsor-strip a {
+  display: inline;
+}
+#sponsor-strip a img {
+  height: 50px;
 }
 #speakers {
   background: #53cdec;
@@ -419,9 +424,9 @@ section:after {
   padding-bottom: 20px;
 }
 #speakers article div h2 {
-  color: #d64546;
+  color: #fff;
   margin-top: 20px;
-  background: transparent url("../images/speaker.svg") no-repeat top left;
+  background: transparent url("../images/speaker-white.svg") no-repeat top left;
   padding: 0 0 0 20px;
   font-size: 24px;
   height: 24px;
@@ -689,12 +694,45 @@ section:after {
   z-index: 11111;
   display: none;
   padding: 80px;
+  color: #fff;
 }
 #schedule #details h2 {
-  color: #fff;
+  color: #53cdec;
   padding: 0;
   line-height: 30px;
   font-size: 30px;
+}
+#schedule #details .date {
+  color: #fff;
+}
+#schedule #details .close {
+  position: absolute;
+  top: 80px;
+  right: 80px;
+  cursor: pointer;
+  font-size: 30px;
+  font-weight: 200;
+  text-transform: uppercase;
+}
+#schedule #details .speaker:after {
+  content: ' ';
+  display: block;
+  clear: both;
+}
+#schedule #details .speaker li {
+  padding-bottom: 10px;
+  clear: both;
+  display: block;
+  height: 70px;
+  line-height: 60px;
+}
+#schedule #details .speaker img {
+  -webkit-border-radius: 200px;
+  border-radius: 200px;
+  border: 5px solid #f0f3f6;
+  height: 60px;
+  float: left;
+  margin-right: 10px;
 }
 #schedule {
   padding: 0;
@@ -771,7 +809,7 @@ section:after {
   z-index: 99;
 }
 #schedule aside .time {
-  color: #e25651;
+  color: #103a51;
   position: absolute;
   right: 40px;
   font-weight: 900;
@@ -790,6 +828,49 @@ section:after {
   padding: 5px 8px;
   border: 1px solid #42b8d7;
 }
+#schedule .tracks .speaker {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  font-weight: 400;
+  color: #fff;
+}
+#schedule .tracks .speakersbio {
+  display: block;
+  color: #8a2420;
+  -webkit-transition: all 200ms ease-in-out;
+  white-space: nowrap;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+}
+#schedule .tracks padding-top: 5px {
+  margin-right: 70px;
+}
+#schedule .tracks .pause {
+  width: 100%;
+}
+#schedule .tracks .pause h3 {
+  float: left;
+  margin-right: 2%;
+}
+#schedule .tracks .pause.register {
+  margin-top: -45px;
+}
+#schedule .tracks .pause .svg-icon-registration {
+  width: 51px;
+  height: 60px;
+}
+#schedule .tracks .pause .svg-icon-drink {
+  width: 80px;
+  height: 49px;
+}
+#schedule .tracks .pause .svg-icon-eat {
+  width: 60px;
+  height: 41px;
+}
 #schedule .keynote {
   background: #3e515e;
   color: #8ba1b0;
@@ -804,6 +885,32 @@ section:after {
   #schedule .keynote {
     width: 200%;
   }
+}
+#schedule .keynote h3 {
+  color: #f16665;
+  font-size: 26px;
+  margin-bottom: 0.4em;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+}
+#schedule .keynote .speaker:after {
+  content: ' ';
+  display: block;
+  clear: both;
+}
+#schedule .keynote .speaker li {
+  padding-bottom: 10px;
+  clear: both;
+  display: block;
+  height: 50px;
+  line-height: 40px;
+}
+#schedule .keynote .speaker img {
+  -webkit-border-radius: 200px;
+  border-radius: 200px;
+  border: 2px solid #f0f3f6;
+  height: 40px;
+  float: left;
+  margin-right: 10px;
 }
 #schedule .track {
   width: 25%;
@@ -833,6 +940,13 @@ section:after {
 }
 #schedule .track:hover {
   background: #364550;
+  color: #f0f3f6;
+}
+#schedule .track:hover h3 {
+  color: #53cdec;
+}
+#schedule .track:hover:before {
+  color: #f0f3f6;
 }
 #schedule .track:before {
   color: #103a51;
@@ -926,25 +1040,4 @@ section:after {
   -o-transform: translateX(-300%);
   -ms-transform: translateX(-300%);
   transform: translateX(-300%);
-}
-#schedule .tracks .speaker {
-  display: block;
-  white-space: nowrap;
-  overflow: hidden;
-  -o-text-overflow: ellipsis;
-  text-overflow: ellipsis;
-  font-weight: 400;
-  color: #103a51;
-}
-#schedule .tracks .speakersbio {
-  display: block;
-  color: #8a2420;
-  -webkit-transition: all 200ms ease-in-out;
-  white-space: nowrap;
-  overflow: hidden;
-  -o-text-overflow: ellipsis;
-  text-overflow: ellipsis;
-}
-#schedule padding-top: 5px {
-  margin-right: 70px;
 }
