@@ -66,8 +66,11 @@
     $("#details #content").html(detail.currentTarget.innerHTML);
     $("#details").show();
   });
+  $("#schedule").on("click", ".keynote", function(detail){
+    $("#details #content").html(detail.currentTarget.innerHTML);
+    $("#details").show();
+  });
   $("#details").on("click", function(){
-    
     $("#details").hide();
   });
 

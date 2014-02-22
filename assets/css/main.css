@@ -175,7 +175,7 @@ section:after {
 }
 #home h2 {
   color: #19aacf;
-  margin-left: 180px;
+  margin-left: 140px;
   font-size: 20px;
 }
 #home article {
@@ -190,8 +190,8 @@ section:after {
 #home article img {
   -webkit-border-radius: 200px;
   border-radius: 200px;
-  border: 10px solid #f0f3f6;
-  width: 150px;
+  border: 5px solid #f0f3f6;
+  width: 110px;
   float: left;
   margin-right: 30px;
 }
@@ -201,16 +201,16 @@ section:after {
 }
 #home article div h3 {
   color: #d64546;
-  margin-top: 20px;
+  margin-top: 15px;
   background: transparent url("../images/speaker.svg") no-repeat top left;
   padding: 0 0 0 20px;
-  font-size: 24px;
-  height: 24px;
-  line-height: 24px;
+  font-size: 20px;
+  height: 20px;
+  line-height: 20px;
 }
 #home article div h2 {
   color: #fff;
-  font-size: 40px;
+  font-size: 30px;
   margin: 0;
 }
 #home article div h4 {
@@ -222,7 +222,7 @@ section:after {
   background: #42b8d7;
   -webkit-box-shadow: 0 3px 0 #19aacf;
   box-shadow: 0 3px 0 #19aacf;
-  margin-left: 180px;
+  margin-left: 140px;
 }
 #home .button:hover {
   background-color: #19aacf;
@@ -753,7 +753,7 @@ section:after {
   -webkit-border-radius: 200px;
   border-radius: 200px;
   border: 5px solid #f0f3f6;
-  width: 15%;
+  width: 17%;
   float: left;
   margin-right: 3%;
 }
@@ -922,6 +922,7 @@ section:after {
   background: #3e515e;
   color: #8ba1b0;
   width: 100%;
+  cursor: pointer;
 }
 @media (max-width: 1440px) {
   #schedule .keynote {
@@ -937,7 +938,12 @@ section:after {
   color: #f16665;
   font-size: 26px;
   margin-bottom: 0.4em;
-  text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+}
+#schedule .keynote h4 {
+  color: #fff;
+}
+#schedule .keynote .details {
+  display: none;
 }
 #schedule .keynote .speaker:after {
   content: ' ';
@@ -955,7 +961,7 @@ section:after {
   -webkit-border-radius: 200px;
   border-radius: 200px;
   border: 2px solid #f0f3f6;
-  height: 40px;
+  height: 60px;
   float: left;
   margin-right: 10px;
 }
