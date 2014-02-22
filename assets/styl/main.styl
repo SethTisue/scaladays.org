@@ -72,6 +72,10 @@ p
 
 a
 	color: #fff
+	text-decoration: none
+	&:hover
+		text-decoration: underline
+		color: red-text
 
 h1, h2, h3, h4
 	color: navy
@@ -113,6 +117,9 @@ nav
 		color: white
 		text-decoration: none
 		cursor: pointer
+		&:hover
+			text-decoration: none 
+
 
 
 			
@@ -291,8 +298,8 @@ section
 #about
 	color: white
 	display: block
-	text-align: center
-	padding: 0px 0 150px 0
+	text-align: left
+	padding: 0px 0 100px 0
 	margin: 0
 	margin-top: 0px
 	//background: red url("../images/berlin.svg") no-repeat center bottom
@@ -300,6 +307,7 @@ section
 	.beer 
 		position: relative
 		width: 300px
+		margin-left: 80px
 		margin-bottom: 60px
 		margin-top: -200px
 		display: inline-block
@@ -321,8 +329,9 @@ section
 		left: 170px
 
 	article
+		text-align: left
 		max-width: 680px
-		margin: 0 auto
+		margin: 0 330px 0 80px
 		
 	h1
 		font-size: header-size

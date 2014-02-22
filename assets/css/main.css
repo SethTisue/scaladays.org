@@ -56,6 +56,11 @@ p {
 }
 a {
   color: #fff;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+  color: #d64546;
 }
 h1,
 h2,
@@ -114,6 +119,9 @@ nav a {
   color: #fff;
   text-decoration: none;
   cursor: pointer;
+}
+nav a:hover {
+  text-decoration: none;
 }
 nav .big {
   font-weight: 700;
@@ -321,8 +329,8 @@ section:after {
 #about {
   color: #fff;
   display: block;
-  text-align: center;
-  padding: 0px 0 150px 0;
+  text-align: left;
+  padding: 0px 0 100px 0;
   margin: 0;
   margin-top: 0px;
   -webkit-background-size: 75%;
@@ -332,6 +340,7 @@ section:after {
 #about .beer {
   position: relative;
   width: 300px;
+  margin-left: 80px;
   margin-bottom: 60px;
   margin-top: -200px;
   display: inline-block;
@@ -372,8 +381,9 @@ section:after {
   left: 170px;
 }
 #about article {
+  text-align: left;
   max-width: 680px;
-  margin: 0 auto;
+  margin: 0 330px 0 80px;
 }
 #about h1 {
   font-size: 40px;
@@ -697,20 +707,6 @@ section:after {
   color: #fff;
   cursor: pointer;
 }
-#schedule #details #content {
-  max-width: 600px;
-}
-#schedule #details #content h3 {
-  color: #53cdec;
-  padding: 0;
-  line-height: 30px;
-  font-size: 30px;
-}
-#schedule #details .date {
-  color: #f16665;
-  font-weight: 700;
-  margin-top: 0;
-}
 #schedule #details .close {
   position: absolute;
   top: 80px;
@@ -720,25 +716,59 @@ section:after {
   font-weight: 200;
   text-transform: uppercase;
 }
-#schedule #details .speaker:after {
+#schedule #details #content {
+  max-width: 600px;
+}
+#schedule #details #content h3 {
+  color: #53cdec;
+  padding: 0;
+  line-height: 33px;
+  font-size: 30px;
+  margin: 0 0 20px 0;
+}
+#schedule #details #content h4 {
+  color: #53cdec;
+  margin: 20px 0 0 0;
+  font-size: 18px;
+}
+#schedule #details #content p {
+  margin-top: 0;
+}
+#schedule #details #content .date {
+  color: #f16665;
+  font-weight: 700;
+  margin: 0 0 5px 0;
+}
+#schedule #details #content .speaker:after {
   content: ' ';
   display: block;
   clear: both;
 }
-#schedule #details .speaker li {
+#schedule #details #content .speaker li {
   padding-bottom: 10px;
   clear: both;
   display: block;
-  height: 70px;
-  line-height: 60px;
 }
-#schedule #details .speaker img {
+#schedule #details #content .speaker li img {
   -webkit-border-radius: 200px;
   border-radius: 200px;
   border: 5px solid #f0f3f6;
-  height: 60px;
+  width: 15%;
   float: left;
-  margin-right: 10px;
+  margin-right: 3%;
+}
+#schedule #details #content .speaker li > span {
+  float: left;
+  width: 80%;
+  padding-top: 5px;
+  font-size: 20px;
+}
+#schedule #details #content .speaker li > span h4 {
+  margin: 10px 0 0 0;
+  font-size: 18px;
+}
+#schedule #details #content .speaker li > span p {
+  font-size: 16px;
 }
 #schedule {
   padding: 0;
@@ -760,6 +790,7 @@ section:after {
   height: 80px;
   line-height: 80px;
   margin-bottom: 50px;
+  font-size: 40px;
 }
 #schedule h2 {
   color: #fff;
@@ -813,14 +844,21 @@ section:after {
   background: #c3eef8 url("../images/time-schedule2.png") right -51px repeat-y;
   background: rgba(195,238,248,0.8);
   z-index: 99;
+  text-align: right;
 }
 #schedule aside .time {
   color: #103a51;
   position: absolute;
-  right: 40px;
+  right: 0px;
   font-weight: 900;
   font-size: 20px;
-  margin-top: -17px;
+  margin-top: -1px;
+  border-top: 2px solid rgba(25,170,207,0.2);
+  width: 100%;
+  padding: 5px 20px 0 0;
+}
+#schedule aside .time:first-child {
+  border: none;
 }
 #schedule .tracks {
   position: absolute;
@@ -933,12 +971,15 @@ section:after {
   cursor: pointer;
   overflow: hidden;
 }
-#schedule .track p {
+#schedule .track .details {
   display: none;
 }
 #schedule .track h3 {
-  font-size: 16px;
+  font-size: 15px;
+  line-height: 18px;
   color: #103a51;
+  margin-top: 2px;
+  margin-bottom: 2px;
 }
 #schedule .track ul.speaker img {
   display: none;
@@ -969,10 +1010,11 @@ section:after {
   color: #f0f3f6;
 }
 #schedule .track:before {
-  color: #19aacf;
+  color: rgba(16,58,81,0.5);
   font-weight: 700;
   text-transform: uppercase;
-  font-size: 12px;
+  font-size: 11px;
+  margin: 0;
 }
 #schedule .track.room1 {
   left: 0;

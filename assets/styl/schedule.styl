@@ -77,17 +77,6 @@
 	padding: 80px
 	color: white
 	cursor: pointer
-	#content 
-		max-width: 600px
-		h3
-			color: blue
-			padding: 0
-			line-height: 30px
-			font-size: 30px
-	.date
-		color: red
-		font-weight: 700
-		margin-top: 0
 	.close
 		position: absolute
 		top: 80px
@@ -96,23 +85,52 @@
 		font-size: 30px
 		font-weight: 200
 		text-transform: uppercase
-	.speaker
-		&:after
-			content: ' '
-			display: block
-			clear: both
-		li
-			padding-bottom: 10px 
-			clear: both
-			display: block
-			height: 70px
-			line-height: 60px
-		img
-			border-radius: 200px
-			border: 5px solid white-ltr
-			height: 60px
-			float: left
-			margin-right: 10px
+	#content 
+		max-width: 600px
+		h3
+			color: blue
+			padding: 0
+			line-height: 33px
+			font-size: 30px
+			margin: 0 0 20px 0
+		h4
+			color: blue
+			margin: 20px 0 0 0
+			font-size: 18px
+		p
+			margin-top: 0
+		.date
+			color: red
+			font-weight: 700
+			margin: 0 0 5px 0
+		
+		.speaker
+			&:after
+				content: ' '
+				display: block
+				clear: both
+			li
+				padding-bottom: 10px 
+				clear: both
+				display: block
+				
+				img
+					border-radius: 200px
+					border: 5px solid white-ltr
+					width: 15%
+					float: left
+					margin-right: 3%
+				> span
+					float: left
+					width: 80%
+					padding-top: 5px
+					font-size: 20px
+					h4
+						margin: 10px 0 0 0
+						font-size: 18px
+					p
+						font-size: 16px
+
 
 
 #schedule
@@ -135,6 +153,7 @@
 		height: 80px
 		line-height: 80px
 		margin-bottom: 50px
+		font-size: 40px
 
 	h2
 		color: white
@@ -183,14 +202,20 @@
 		background: blue-ltr url(../images/time-schedule2.png) right -51px repeat-y
 		background: rgba(blue-ltr, .8)
 		z-index: 99
+		text-align: right
 
 		.time 
 			color: navy
 			position: absolute
-			right: 40px
+			right: 0px
 			font-weight: 900
 			font-size: 20px
-			margin-top: -17px
+			margin-top: -1px
+			border-top: 2px solid rgba(blue-text, 0.2)
+			width: 100%
+			padding: 5px 20px 0 0
+			&:first-child
+				border: none
 
 	.tracks
 		position: absolute
@@ -280,11 +305,14 @@
 		color: white-ltr
 		cursor: pointer
 		overflow: hidden
-		p 
+		.details 
 			display: none
 		h3
-			font-size: 16px
+			font-size: 15px
+			line-height: 18px
 			color: navy
+			margin-top: 2px
+			margin-bottom: 2px
 		ul.speaker
 			img
 				display: none
@@ -302,10 +330,11 @@
 			&:before
 				color: white-ltr
 		&:before
-			color: blue-text
+			color: rgba(navy,0.5)
 			font-weight: 700
 			text-transform: uppercase
-			font-size: 12px
+			font-size: 11px
+			margin: 0
 			
 	.track.room1 
 		left: 0
