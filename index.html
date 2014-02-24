@@ -253,7 +253,9 @@
             </ul>
             <div class="details">
                 <h4>Abstract</h4>
-                <p>Integer a feugiat erat. Nunc a ligula nec odio condimentum suscipit sit amet vel tellus. Aenean congue accumsan neque, sit amet vehicula quam faucibus vitae. Pellentesque at odio sit amet quam porttitor pharetra ac in nunc. Aenean est risus, cursus vitae lacus a, viverra vehicula nisl. Etiam aliquet, turpis accumsan tristique hendrerit, felis nisi condimentum lacus, sit amet elementum nisl eros non erat. Proin sed convallis mauris. In suscipit ultrices mollis.</p>
+                <p>One of the fundamental problems of I/O is a core problem of communication: </p>How do I know that the recipient is ready to receive my information?</p>
+                <p>In a pure push model, without taking into consideration Little's Law, it is very easy to produce data at a faster pace than it can be consumed, leading to loss of information, contention on the medium, or even full system failure.</p>
+                <p>Reactive Streams provide an asynchronous, concurrent, back-pressured/demand-driven solution for that and other problems—as will be demonstrated in this session.</p>
             </div>
           </div>
           <div class="track room2" data-time="16:30-17:15" style="top: 300px; height: 100px;">
@@ -314,7 +316,7 @@
                 <span>
                   Michael Armbrust (<strong><a href="twitter.com">@doe</a></strong>)
                   <span class="details">
-                    <h4>Company Inc</h4>
+                    <h4>Databricks</h4>
                     <p>Nunc a ligula nec odio condimentum suscipit sit amet vel tellus. Aenean congue accumsan neque, sit amet vehicula quam faucibus vitae.</p>
                   </span>
                 </span>
@@ -322,7 +324,13 @@
             </ul>
             <div class="details">
                 <h4>Abstract</h4>
-                <p>Integer a feugiat erat. Nunc a ligula nec odio condimentum suscipit sit amet vel tellus. Aenean congue accumsan neque, sit amet vehicula quam faucibus vitae. Pellentesque at odio sit amet quam porttitor pharetra ac in nunc. Aenean est risus, cursus vitae lacus a, viverra vehicula nisl. Etiam aliquet, turpis accumsan tristique hendrerit, felis nisi condimentum lacus, sit amet elementum nisl eros non erat. Proin sed convallis mauris. In suscipit ultrices mollis.</p>
+                <p>Shark is a SQL engine built on Apache Hive, that replaces Hive’s MapReduce execution engine with Apache Spark.  Spark’s fine-grained resource model and efficient execution engine allow Shark to outperform Hive by over 100x for data stored in memory. However, until now, Shark’s performance has been limited by the flexibility of Hive’s query optimizer.  Catalyst aims to remedy this situation by building a simple yet powerful optimization framework using Scala language features.</p>
+                <p>Query optimization can greatly improve both the productivity of developers and the performance of the queries that they write.  A good query optimizer is capable of automatically rewriting relational queries to execute more efficiently, using techniques such as filtering data early, utilizing available indexes, and even ensuring different data sources are joined in the most efficient order.  By performing these transformations, the optimizer not only improves the execution times of relational queries, but also frees the developer to focus on the semantics of their application instead of its performance.  </p>
+                <p>Unfortunately, building an optimizer is an incredibly complex engineering task and thus many open source systems perform only very simple optimizations.  Past research [1,2] has attempted to combat this complexity by providing frameworks that allow the creators of optimizers to write possible optimizations as a set of declarative rules.  However, the use of such frameworks has required the creation and maintenance of special “optimizer compilers” and forced the burden of learning a complex domain specific language upon those wishing to add features to the optimizer. </p>
+                <p>Catalyst solves this problem by leveraging Scala’s powerful pattern matching and runtime reflection. This framework allows developers to concisely specify complex optimizations, such as pushing filters past joins functionally.  Increased conciseness allows our developers both to create new optimizations faster and more easily reason about the correctness of the optimization.</p>
+                <p>Catalyst also uses the new reflection capabilities in Scala 2.10 to generate custom classes at runtime for storing intermediate results and evaluating complex relational expressions.  Doing so allows us to avoid boxing of primitive values and has been shown to improve performance by orders of magnitude in some cases.</p>
+                <p>[1]  Graefe, G. The Cascades Framework for Query Optimization. In Data Engineering Bulletin. Sept. 1995.<br />
+                [2] Goetz Graefe , David J. DeWitt, The EXODUS optimizer generator, Proceedings of the 1987 ACM SIGMOD international conference on Management of data, p.160-172, May 27-29, 1987, San Francisco, California, United States</p>
             </div>
           </div>
           <div class="track room2" style="top: 400px; height: 100px;">
@@ -392,7 +400,7 @@
                 <span>
                   Rúnar Bjarnason (<strong><a href="twitter.com">@doe</a></strong>)
                   <span class="details">
-                    <h4>Company Inc</h4>
+                    <h4>Runar</h4>
                     <p>Nunc a ligula nec odio condimentum suscipit sit amet vel tellus. Aenean congue accumsan neque, sit amet vehicula quam faucibus vitae.</p>
                   </span>
                 </span>
@@ -400,7 +408,7 @@
             </ul>
             <div class="details">
                 <h4>Abstract</h4>
-                <p>Integer a feugiat erat. Nunc a ligula nec odio condimentum suscipit sit amet vel tellus. Aenean congue accumsan neque, sit amet vehicula quam faucibus vitae. Pellentesque at odio sit amet quam porttitor pharetra ac in nunc. Aenean est risus, cursus vitae lacus a, viverra vehicula nisl. Etiam aliquet, turpis accumsan tristique hendrerit, felis nisi condimentum lacus, sit amet elementum nisl eros non erat. Proin sed convallis mauris. In suscipit ultrices mollis.</p>
+                <p>Most of us have an experience of functional programming that is isolated to small libraries or specific immutable data structures. But can we design our entire application architecture in a purely functional way? Can we do "aspect-oriented" programming with cross-cutting concerns that are compositional and checked by the type system? Yes we can, and in this talk we will look at a conceptually simple recipe for making that happen. We will see that the best things in Scala are Free.</p>
             </div>
           </div>
           <div class="track room2" style="top: 600px; height: 100px;">
@@ -455,7 +463,7 @@
                 <span>
                   Daniel Westheide (<strong><a href="twitter.com">@doe</a></strong>)
                   <span class="details">
-                    <h4>Company Inc</h4>
+                    <h4>innoQ Deutschland GmbH</h4>
                     <p>Nunc a ligula nec odio condimentum suscipit sit amet vel tellus. Aenean congue accumsan neque, sit amet vehicula quam faucibus vitae.</p>
                   </span>
                 </span>
@@ -463,7 +471,10 @@
             </ul>
             <div class="details">
                 <h4>Abstract</h4>
-                <p>Integer a feugiat erat. Nunc a ligula nec odio condimentum suscipit sit amet vel tellus. Aenean congue accumsan neque, sit amet vehicula quam faucibus vitae. Pellentesque at odio sit amet quam porttitor pharetra ac in nunc. Aenean est risus, cursus vitae lacus a, viverra vehicula nisl. Etiam aliquet, turpis accumsan tristique hendrerit, felis nisi condimentum lacus, sit amet elementum nisl eros non erat. Proin sed convallis mauris. In suscipit ultrices mollis.</p>
+                <p>SBT has been the subject of quite a bit of controversy among Scala developers. It's different enough from other build tools that not everyone has the patience of really getting into it. As a natural consequence, they tend to either go back to the build tools they know or employ SBT in a way that is similar to what they are used to and doesn't require them to fully understand it.</p>
+                <p>While it is possible to build your projects with only a minimal comprehension of SBT, there is a lot to gain from  really understanding how it works. If you are one of the people who have never gone a lot further than "sbt test", this talk is for you. </p>
+                <p>You will learn how it can make your daily Scala development workflow more productive. We'll dive into the concepts behind SBT and see how we can embrace its interactive shell, how to customise our build to our needs, and what the SBT ecosystem of plugins has to offer to improve our development workflow.</p>
+                <p>This talk will involve a lot of live SBT interaction, and also some coding. At the end of the talk, we will  have seen not only what SBT and the existing ecosystem has to offer, but also built our own little SBT plugin.</p>
             </div>
           </div>
 
@@ -480,7 +491,7 @@
                 <span>
                   Mathias Doenitz (<strong><a href="twitter.com">@doe</a></strong>)
                   <span class="details">
-                    <h4>Company Inc</h4>
+                    <h4>Typesafe Inc</h4>
                     <p>Nunc a ligula nec odio condimentum suscipit sit amet vel tellus. Aenean congue accumsan neque, sit amet vehicula quam faucibus vitae.</p>
                   </span>
                 </span>
@@ -488,7 +499,10 @@
             </ul>
             <div class="details">
                 <h4>Abstract</h4>
-                <p>Integer a feugiat erat. Nunc a ligula nec odio condimentum suscipit sit amet vel tellus. Aenean congue accumsan neque, sit amet vehicula quam faucibus vitae. Pellentesque at odio sit amet quam porttitor pharetra ac in nunc. Aenean est risus, cursus vitae lacus a, viverra vehicula nisl. Etiam aliquet, turpis accumsan tristique hendrerit, felis nisi condimentum lacus, sit amet elementum nisl eros non erat. Proin sed convallis mauris. In suscipit ultrices mollis.</p>
+                <p>The new akka-http module, the successor of spray.io, provides a fast and fully-featured client- and server-side HTTP stack. It allows you to easily build REST/HTTP-based integration layers for connecting your Scala applications to the world.</p>
+                <p>In this session we'll look into what akka-http brings to the table, how it is used and where it will add the most value in your overall application architecture.</p>
+                <p>Plenty of code examples will highlight the various client- and server-side APIs as well as give you an idea for what "RESTful" programming with akka-http looks like.</p>
+                <p>We'll also talk about the improvements it brings over spray and what is on the agenda regarding the transition from Netty to akka-http as the HTTP "driver" for the Play framework.</p>
             </div>
           </div>
           <div class="track room2" style="top: 700px; height: 100px;">
@@ -554,7 +568,7 @@
                 <span>
                   Lee Mighdoll (<strong><a href="twitter.com">@doe</a></strong>)
                   <span class="details">
-                    <h4>Company Inc</h4>
+                    <h4>Nest</h4>
                     <p>Nunc a ligula nec odio condimentum suscipit sit amet vel tellus. Aenean congue accumsan neque, sit amet vehicula quam faucibus vitae.</p>
                   </span>
                 </span>
@@ -562,7 +576,7 @@
             </ul>
             <div class="details">
                 <h4>Abstract</h4>
-                <p>Integer a feugiat erat. Nunc a ligula nec odio condimentum suscipit sit amet vel tellus. Aenean congue accumsan neque, sit amet vehicula quam faucibus vitae. Pellentesque at odio sit amet quam porttitor pharetra ac in nunc. Aenean est risus, cursus vitae lacus a, viverra vehicula nisl. Etiam aliquet, turpis accumsan tristique hendrerit, felis nisi condimentum lacus, sit amet elementum nisl eros non erat. Proin sed convallis mauris. In suscipit ultrices mollis.</p>
+                <p>In this talk I'll introduce sparkle, an open source framework for data visualization.  Sparkle combines the snazzy animation facilities in d3 with the powerful data management and analysis primitives in Scala.  The current version of sparkle is oriented towards analyzing time series data.</p>
             </div>
           </div>
           <div class="track room2" style="top: 800px; height: 100px;">
@@ -625,7 +639,8 @@
             </ul>
             <div class="details">
                 <h4>Abstract</h4>
-                <p>Integer a feugiat erat. Nunc a ligula nec odio condimentum suscipit sit amet vel tellus. Aenean congue accumsan neque, sit amet vehicula quam faucibus vitae. Pellentesque at odio sit amet quam porttitor pharetra ac in nunc. Aenean est risus, cursus vitae lacus a, viverra vehicula nisl. Etiam aliquet, turpis accumsan tristique hendrerit, felis nisi condimentum lacus, sit amet elementum nisl eros non erat. Proin sed convallis mauris. In suscipit ultrices mollis.</p>
+                <p>When working in teams, the best way to keep an eye on code quality is to setup an automated process of quality assurance. </p>
+                <p>In this talk I'll introduce SCCT (Scala code coverage tool) and explain how Jenkins or Travis can be used to assist you in the integration of new changes and their deployment.</p>
             </div>
           </div>
 
@@ -648,7 +663,9 @@
             </ul>
             <div class="details">
                 <h4>Abstract</h4>
-                <p>Integer a feugiat erat. Nunc a ligula nec odio condimentum suscipit sit amet vel tellus. Aenean congue accumsan neque, sit amet vehicula quam faucibus vitae. Pellentesque at odio sit amet quam porttitor pharetra ac in nunc. Aenean est risus, cursus vitae lacus a, viverra vehicula nisl. Etiam aliquet, turpis accumsan tristique hendrerit, felis nisi condimentum lacus, sit amet elementum nisl eros non erat. Proin sed convallis mauris. In suscipit ultrices mollis.</p>
+                <p>Data these days: there's a crapton of it, and a lot of it is crap. Can we get just-in-time processing AND secure error handling AND a modular flexibility like OO has never seen?
+                <p>Welcome to a new world of data streaming. Multiple sources -- asynchronous, isolated I/O -- on-the-fly decisions: we have it all!</p>
+                <p>This talk introduces scalaz-stream, with code that modifies its flow at runtime. This library showcases Scala's talents with a productively lazy, reassuringly safe, purely functional style. And modularity! I think code re-use is overrated, except like this. In this session, be on the watch for advanced FP patterns disguised in ordinary English. You may never think about richly decadent type systems the same way again."</p>
             </div>
           </div>
           <div class="track room2" style="top: 900px; height: 100px;">
@@ -726,7 +743,7 @@
                 <span>
                   Heather Miller (<strong><a href="twitter.com">@doe</a></strong>)
                   <span class="details">
-                    <h4>Company Inc</h4>
+                    <h4>EPFL</h4>
                     <p>Nunc a ligula nec odio condimentum suscipit sit amet vel tellus. Aenean congue accumsan neque, sit amet vehicula quam faucibus vitae.</p>
                   </span>
                 </span>
@@ -734,7 +751,7 @@
             </ul>
             <div class="details">
                 <h4>Abstract</h4>
-                <p>Integer a feugiat erat. Nunc a ligula nec odio condimentum suscipit sit amet vel tellus. Aenean congue accumsan neque, sit amet vehicula quam faucibus vitae. Pellentesque at odio sit amet quam porttitor pharetra ac in nunc. Aenean est risus, cursus vitae lacus a, viverra vehicula nisl. Etiam aliquet, turpis accumsan tristique hendrerit, felis nisi condimentum lacus, sit amet elementum nisl eros non erat. Proin sed convallis mauris. In suscipit ultrices mollis.</p>
+                <p>Functional programming (FP) is regularly touted as the way forward for bringing parallel, concurrent, and distributed programming to the mainstream. The popularity of the rationale behind this viewpoint (immutable data transformed by function application) has even lead to a number of object-oriented (OO) programming languages adopting functional features such as lambdas (functions) and thereby function closures. However, despite this established viewpoint of FP as an enabler, reliably distributing function closures over a network, or using them in concurrent environments nonetheless remains a challenge across FP and OO languages. </p><p>This talk presents an approach for more principled distributed and concurrent programming by introducing a new closure-like abstraction and type system, called spores, that can guarantee closures to be serializable, thread-safe, or even have general, custom user-defined properties. Crucially, our system is based on the principle of encoding type information corresponding to captured variables in the type of a spore. We'll see the power of the guarantees that this safe foundation for migratable closures facilitates through a case analysis touching upon several real-world frameworks such as Akka and Spark.</p>
             </div>
           </div>
           <div class="track room2" style="top: 1000px; height: 100px;">
@@ -797,7 +814,22 @@
             </ul>
             <div class="details">
                 <h4>Abstract</h4>
-                <p>Integer a feugiat erat. Nunc a ligula nec odio condimentum suscipit sit amet vel tellus. Aenean congue accumsan neque, sit amet vehicula quam faucibus vitae. Pellentesque at odio sit amet quam porttitor pharetra ac in nunc. Aenean est risus, cursus vitae lacus a, viverra vehicula nisl. Etiam aliquet, turpis accumsan tristique hendrerit, felis nisi condimentum lacus, sit amet elementum nisl eros non erat. Proin sed convallis mauris. In suscipit ultrices mollis.</p>
+                <p>Also known as: The beginners guide to starting a Scala project.</p>
+                <p>Starting a Scala project should be easy, but with a Simple Build Tool that appears anything but whats the best way to get started and stay sure footed?</p>
+                <p>In this beginners talk we'll help get you up and running quickly and well on the road to success. In five simple steps you'll be able to release your code to the wild, safe in the knowledge you've set up a good foundation to build upon.</p>
+                <p>The 5 Steps to a happy project:</p>
+                <ol>
+                  <li>Simple Build Tool (SBT)<br />
+                     Having a build tool is core to getting started, so let SBT do the work for you.  You might not find it simple, but it doesn't have to be complex.</li>
+                  <li>Console management.<br />
+                     Mastering the REPL is the key to quick debugging / testing of code.</li>
+                  <li>Testing<br />
+                     You need to know your code works and recent changes haven't broken anything.  As with any modern language theres a wealth of choice and we'll have a quick look at most popular two: ScalaTest, Specs2</li>
+                  <li>Checks and Balances<br />
+                     Just because your test suite is green doesn't mean your code is any good. Using ScalaCheck you can conform to style and JaCoC will show you code that is missing tests.</li>
+                  <li>Publishing<br />
+                     Now your code is tested, how do you publish it and share with the world? We'll look at how to set up SBT to publish your code.</li>
+                </ol>
             </div>
           </div>
 
@@ -862,7 +894,6 @@
                 <span>
                   Shadaj Laddad (<strong><a href="twitter.com">@doe</a></strong>)
                   <span class="details">
-                    <h4>Company Inc</h4>
                     <p>Nunc a ligula nec odio condimentum suscipit sit amet vel tellus. Aenean congue accumsan neque, sit amet vehicula quam faucibus vitae.</p>
                   </span>
                 </span>
@@ -870,7 +901,11 @@
             </ul>
             <div class="details">
                 <h4>Abstract</h4>
-                <p>Integer a feugiat erat. Nunc a ligula nec odio condimentum suscipit sit amet vel tellus. Aenean congue accumsan neque, sit amet vehicula quam faucibus vitae. Pellentesque at odio sit amet quam porttitor pharetra ac in nunc. Aenean est risus, cursus vitae lacus a, viverra vehicula nisl. Etiam aliquet, turpis accumsan tristique hendrerit, felis nisi condimentum lacus, sit amet elementum nisl eros non erat. Proin sed convallis mauris. In suscipit ultrices mollis.</p>
+                <p>The power of Scala keeps showing up in expected--and unexpected--places. In this talk, I will share how I used Scala in bioinformatics, neuroscience, online games, mobile applications, and desktop applications. </p>
+                <p>In bioinformatics, the beauty of Scala really shines. Thanks to the abstraction in the Scala collection framework, creating collection types for DNA, RNA, and Protein Chains is super easy. With the proper collections at my disposal, I was able to implement algorithms such as Sequence Alignment, Genome Assembly, and Gibbs Sampling by focusing on the core ideas of the algorithm and not on the nitty-gritty details. On the top of it, Scala makes dynamic programming, which is fundamental in many bioinformatics algorithms, easy to implement and understand. </p>
+                <p>Last year, I talked about using brainwaves to play games. Since then, I have taken things up a notch and started working to solve more practical problems such as maintaining attention while performing tasks (something that my age group suffers from a lot). This exposed me to a whole new and exciting world of Digital Signal Processing. This project benefited a lot from Reactive programming techniques in cleaning my code and making it more reliable.</p>
+                <p>Not to be outdone by the serious work of algorithms, I took the desktop version of Collidium and converted it to an online HTML5 Game using Scala.js. I have also improved my Android game, Wordsteal. I even used Scala with Swing to save a few bucks for our budget-starved Student Store by creating a simple cash register application.</p>
+                <p>In this talk, I will share many interesting techniques I learned and convey why I continue to be a huge fan of Scala. See you there!</p>
             </div>
           </div>
           <div class="track room2" data-time="16:30-17:15" style="top: 300px; height: 100px;">
@@ -944,7 +979,7 @@
                 <span>
                   Sébastien Doeraene (<strong><a href="twitter.com">@doe</a></strong>)
                   <span class="details">
-                    <h4>Company Inc</h4>
+                    <h4>EPFL</h4>
                     <p>Nunc a ligula nec odio condimentum suscipit sit amet vel tellus. Aenean congue accumsan neque, sit amet vehicula quam faucibus vitae.</p>
                   </span>
                 </span>
@@ -952,7 +987,8 @@
             </ul>
             <div class="details">
                 <h4>Abstract</h4>
-                <p>Integer a feugiat erat. Nunc a ligula nec odio condimentum suscipit sit amet vel tellus. Aenean congue accumsan neque, sit amet vehicula quam faucibus vitae. Pellentesque at odio sit amet quam porttitor pharetra ac in nunc. Aenean est risus, cursus vitae lacus a, viverra vehicula nisl. Etiam aliquet, turpis accumsan tristique hendrerit, felis nisi condimentum lacus, sit amet elementum nisl eros non erat. Proin sed convallis mauris. In suscipit ultrices mollis.</p>
+                <p>Since Scala.js' first announcement at Scala Days NYC last year, we have made a lot of progress, and a community has been building around it. With two core developers, several active contributors, people giving talks about it in several conferences around the world, and a few tens of enthusiasts writing toy apps and even cross-compiling libraries, Scala.js is definitely gaining traction.</p>
+                <p>In this talk, we will give a survey of some exciting new features of Scala.js, as well as projects from the community. We will end the talk with maybe the craziest of them: a chat application written entirely in Scala+Akka, both on the Play server and on the client, with transparent communication between the two via message passing between actors.</p>
             </div>
           </div>
           <div class="track room2" style="top: 400px; height: 100px;">
@@ -1035,7 +1071,7 @@
                 <span>
                   Philipp Haller (<strong><a href="twitter.com">@doe</a></strong>)
                   <span class="details">
-                    <h4>Company Inc</h4>
+                    <h4>Typesafe Inc</h4>
                     <p>Nunc a ligula nec odio condimentum suscipit sit amet vel tellus. Aenean congue accumsan neque, sit amet vehicula quam faucibus vitae.</p>
                   </span>
                 </span>
@@ -1043,7 +1079,7 @@
             </ul>
             <div class="details">
                 <h4>Abstract</h4>
-                <p>Integer a feugiat erat. Nunc a ligula nec odio condimentum suscipit sit amet vel tellus. Aenean congue accumsan neque, sit amet vehicula quam faucibus vitae. Pellentesque at odio sit amet quam porttitor pharetra ac in nunc. Aenean est risus, cursus vitae lacus a, viverra vehicula nisl. Etiam aliquet, turpis accumsan tristique hendrerit, felis nisi condimentum lacus, sit amet elementum nisl eros non erat. Proin sed convallis mauris. In suscipit ultrices mollis.</p>
+                <p>Async is a new Scala module designed to simplify non-blocking concurrency using futures. At first glance, Async appears to be yet another option to do concurrent or parallel programming in Scala, besides actors, futures, and parallel collections. This talk attempts to provide simple and clear guidelines on when to use futures and when to use Async. Concrete real-world examples will shed light on the relationship between futures and Async and their synergy. By showing the idiomatic use of futures and Async, the talk aims to simplify the choice of concurrency constructs in Scala.</p>
             </div>
           </div>
           <div class="track room2" style="top: 600px; height: 100px;">
@@ -1142,7 +1178,8 @@
             </ul>
             <div class="details">
                 <h4>Abstract</h4>
-                <p>Integer a feugiat erat. Nunc a ligula nec odio condimentum suscipit sit amet vel tellus. Aenean congue accumsan neque, sit amet vehicula quam faucibus vitae. Pellentesque at odio sit amet quam porttitor pharetra ac in nunc. Aenean est risus, cursus vitae lacus a, viverra vehicula nisl. Etiam aliquet, turpis accumsan tristique hendrerit, felis nisi condimentum lacus, sit amet elementum nisl eros non erat. Proin sed convallis mauris. In suscipit ultrices mollis.</p>
+                <p>Scala has come a long way since the summer of '04, when Miles and Jon first ran scalac. This year celebrates the ten-year anniversary of Scala's first public release, and to celebrate the occasion, we will relive some of the highlights of the last decade, taking an archaeological rummage through mailing list archives, commit messages, bug reports and some old-fashioned Scala code, semicolons and all!</p>
+                <p>In this lighthearted trip into Scala's past, we look at everything that's changed about the language since 2004, and with help from some special guests, will attempt to fight the bitrot with a vintage live-coding session on Scala version 1.3!</p>
             </div>
           </div>
           <div class="track room2" style="top: 700px; height: 100px;">
@@ -1208,7 +1245,7 @@
                 <span>
                   Eugene Burmako (<strong><a href="twitter.com">@doe</a></strong>)
                   <span class="details">
-                    <h4>Company Inc</h4>
+                    <h4>EPFL</h4>
                     <p>Nunc a ligula nec odio condimentum suscipit sit amet vel tellus. Aenean congue accumsan neque, sit amet vehicula quam faucibus vitae.</p>
                   </span>
                 </span>
@@ -1216,7 +1253,10 @@
             </ul>
             <div class="details">
                 <h4>Abstract</h4>
-                <p>Integer a feugiat erat. Nunc a ligula nec odio condimentum suscipit sit amet vel tellus. Aenean congue accumsan neque, sit amet vehicula quam faucibus vitae. Pellentesque at odio sit amet quam porttitor pharetra ac in nunc. Aenean est risus, cursus vitae lacus a, viverra vehicula nisl. Etiam aliquet, turpis accumsan tristique hendrerit, felis nisi condimentum lacus, sit amet elementum nisl eros non erat. Proin sed convallis mauris. In suscipit ultrices mollis.</p>
+                <p>Scala 2.10 has seen a flurry of macro flavors: def macros, implicit macros, untyped macros, type macros and more recently macro annotations. These flavors have brought a lot of feedback, and we've been thinking hard how to make sense of it.</p>
+                <p>At this point it is clear that macros are useful. However there's still quite some work to be done in order to make macros enjoyable. The main issues that remain to be addressed are verbosity and complexity of the underlying API, difficulties with tool integration, and potential for confusion caused by leaking compiler internals and cryptic error messages.</p>
+                <p>The goal of Project Palladium is to make macros as natural and as universal as typed functions: simple to write, simple to use, and simple to reason about. Towards that end, we have rethought our macro engine and the underlying reflection API, keeping existing functionality in place and at the same time fixing fundamental problems intrinsic to the original implementation.</p>
+                <p>In this talk I will present our results, showing how easy it is to metaprogram with Palladium, and outline the place of our developments in the future of Scala.</p>
             </div>
           </div>
           <div class="track room2" style="top: 800px; height: 100px;">
@@ -1372,7 +1412,8 @@
             </ul>
             <div class="details">
                 <h4>Abstract</h4>
-                <p>Integer a feugiat erat. Nunc a ligula nec odio condimentum suscipit sit amet vel tellus. Aenean congue accumsan neque, sit amet vehicula quam faucibus vitae. Pellentesque at odio sit amet quam porttitor pharetra ac in nunc. Aenean est risus, cursus vitae lacus a, viverra vehicula nisl. Etiam aliquet, turpis accumsan tristique hendrerit, felis nisi condimentum lacus, sit amet elementum nisl eros non erat. Proin sed convallis mauris. In suscipit ultrices mollis.</p>
+                <p>Scala Puzzlers returns with a twist: not only will we be presenting a brand new set of puzzlers for Scala 2.11 that will challenge you with unexpected and unintuitive behavior and help you learn something about your favorite language in the process.</p>
+                <p>This time, we've added a key set of tips and recommendations to help you avoid these pitfalls when real deadlines are at stake. That's not the time for head-scratching - better to laugh and learn at ScalaDays 2014!</p>
             </div>
           </div>
 

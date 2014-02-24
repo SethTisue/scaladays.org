@@ -43,6 +43,11 @@ html {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
+ol li {
+  list-style-type: decimal;
+  list-style-position: inside;
+  margin-bottom: 0.7em;
+}
 body {
   font: 20px "Source Sans Pro", "Open Sans", "Helvetica Neue", sans-serif;
   background: #f16665;
@@ -52,7 +57,7 @@ body {
 }
 p {
   margin: 0.7em 0;
-  line-height: 1.3em;
+  line-height: 1.4em;
 }
 a {
   color: #fff;
