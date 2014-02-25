@@ -63,10 +63,6 @@ a {
   color: #fff;
   text-decoration: none;
 }
-a:hover {
-  text-decoration: underline;
-  color: #d64546;
-}
 h1,
 h2,
 h3,
@@ -176,7 +172,7 @@ section:after {
   background: #53cdec;
   position: relative;
   display: block;
-  padding: 40px 330px 300px 80px;
+  padding: 40px 330px 400px 80px;
 }
 #home h2 {
   color: #19aacf;
@@ -534,6 +530,13 @@ section:after {
 #locations #hotel:before {
   content: "Lodging";
 }
+#training {
+  background: #364550;
+  color: #fff;
+}
+#training h1 {
+  color: #53cdec;
+}
 #sponsors {
   background: #fff;
   text-align: left;
@@ -809,6 +812,10 @@ section:after {
   line-height: 20px;
   font-size: 20px;
   margin: 5px 0;
+}
+#schedule a:hover {
+  text-decoration: underline;
+  color: #d64546;
 }
 #schedule .day {
   position: relative;
