@@ -62,6 +62,7 @@
 		text-transform: uppercase
 		font-weight: 700
 		cursor: pointer
+		color: slate
 
 #schedule #details
 	position: fixed
@@ -204,8 +205,7 @@
 		left: 0
 		bottom: 0
 		width: 150px
-		background: blue-ltr url(../images/time-schedule2.png) right -51px repeat-y
-		background: rgba(blue-ltr, .8)
+		background: rgba(blue-ltr, .8) url('../images/time-schedule.png') right 0 repeat-y
 		z-index: 99
 		text-align: right
 
@@ -322,9 +322,23 @@
 			color: navy
 			margin-top: 2px
 			margin-bottom: 2px
+			a 
+				text-decoration: none
+				color: inherit
+				&:after
+					display: block
+					content: " "
+					position: absolute
+					top: 0
+					left: 0
+					right: 0
+					bottom: 0
 		ul.speaker
 			img
 				display: none
+			a 
+				position: relative
+				z-index: 99
 		@media (max-width: 1440px)
 			width: 33.3333%
 		@media (max-width: 1200px)
@@ -345,52 +359,52 @@
 			font-size: 11px
 			margin: 0
 			
-	.track.room1 
+	.track.track1 
 		left: 0
 		&:before
 			content: "theatre"
 			
-	.track.room2 
+	.track.track2 
 		left: 25%
 		&:before
 			content: "room 1"
 
-	.track.room3 
+	.track.track3 
 		left: 50%
 		&:before
 			content: "room 2"
 
-	.track.room4
+	.track.track4
 		left: 75%
 		&:before
 			content: "hands on"
 
 	@media (max-width: 1440px)
-		.track.room1 
+		.track.track1 
 			left: 0
-		.track.room2 
+		.track.track2 
 			left: 33.3333%
-		.track.room3 
+		.track.track3 
 			left: 66.6666%
-		.track.room4
+		.track.track4
 			left: 100%
 	@media (max-width: 1200px)
-		.track.room1 
+		.track.track1 
 			left: 0
-		.track.room2 
+		.track.track2 
 			left: 50%
-		.track.room3 
+		.track.track3 
 			left: 100%
-		.track.room4
+		.track.track4
 			left: 150%
 	@media (max-width: 960px)
-		.track.room1 
+		.track.track1 
 			left: 0
-		.track.room2 
+		.track.track2 
 			left: 100%
-		.track.room3 
+		.track.track3 
 			left: 200%
-		.track.room4
+		.track.track4
 			left: 300%
 
 	&.off-1

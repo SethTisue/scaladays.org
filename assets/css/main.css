@@ -699,6 +699,7 @@ section:after {
   text-transform: uppercase;
   font-weight: 700;
   cursor: pointer;
+  color: #364550;
 }
 #schedule #details {
   position: fixed;
@@ -856,8 +857,7 @@ section:after {
   left: 0;
   bottom: 0;
   width: 150px;
-  background: #c3eef8 url("../images/time-schedule2.png") right -51px repeat-y;
-  background: rgba(195,238,248,0.8);
+  background: rgba(195,238,248,0.8) url("../images/time-schedule.png") right 0 repeat-y;
   z-index: 99;
   text-align: right;
 }
@@ -1002,8 +1002,25 @@ section:after {
   margin-top: 2px;
   margin-bottom: 2px;
 }
+#schedule .track h3 a {
+  text-decoration: none;
+  color: inherit;
+}
+#schedule .track h3 a:after {
+  display: block;
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
 #schedule .track ul.speaker img {
   display: none;
+}
+#schedule .track ul.speaker a {
+  position: relative;
+  z-index: 99;
 }
 @media (max-width: 1440px) {
   #schedule .track {
@@ -1037,69 +1054,69 @@ section:after {
   font-size: 11px;
   margin: 0;
 }
-#schedule .track.room1 {
+#schedule .track.track1 {
   left: 0;
 }
-#schedule .track.room1:before {
+#schedule .track.track1:before {
   content: "theatre";
 }
-#schedule .track.room2 {
+#schedule .track.track2 {
   left: 25%;
 }
-#schedule .track.room2:before {
+#schedule .track.track2:before {
   content: "room 1";
 }
-#schedule .track.room3 {
+#schedule .track.track3 {
   left: 50%;
 }
-#schedule .track.room3:before {
+#schedule .track.track3:before {
   content: "room 2";
 }
-#schedule .track.room4 {
+#schedule .track.track4 {
   left: 75%;
 }
-#schedule .track.room4:before {
+#schedule .track.track4:before {
   content: "hands on";
 }
 @media (max-width: 1440px) {
-  #schedule .track.room1 {
+  #schedule .track.track1 {
     left: 0;
   }
-  #schedule .track.room2 {
+  #schedule .track.track2 {
     left: 33.3333%;
   }
-  #schedule .track.room3 {
+  #schedule .track.track3 {
     left: 66.6666%;
   }
-  #schedule .track.room4 {
+  #schedule .track.track4 {
     left: 100%;
   }
 }
 @media (max-width: 1200px) {
-  #schedule .track.room1 {
+  #schedule .track.track1 {
     left: 0;
   }
-  #schedule .track.room2 {
+  #schedule .track.track2 {
     left: 50%;
   }
-  #schedule .track.room3 {
+  #schedule .track.track3 {
     left: 100%;
   }
-  #schedule .track.room4 {
+  #schedule .track.track4 {
     left: 150%;
   }
 }
 @media (max-width: 960px) {
-  #schedule .track.room1 {
+  #schedule .track.track1 {
     left: 0;
   }
-  #schedule .track.room2 {
+  #schedule .track.track2 {
     left: 100%;
   }
-  #schedule .track.room3 {
+  #schedule .track.track3 {
     left: 200%;
   }
-  #schedule .track.room4 {
+  #schedule .track.track4 {
     left: 300%;
   }
 }

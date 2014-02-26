@@ -141,10 +141,12 @@ var map = new google.maps.Map(document.getElementById("map"), mapOptions);
 var markerVenue = new google.maps.Marker({
 	position: venuePosition,
 	map: map,
-	title: 'Kosmos Berlin'
+	title: 'Kosmos Berlin',
+  icon: 'assets/images/red-marker.png'
 });
 var markerHotel = new google.maps.Marker({
   position: hotelPosition,
   map: map,
-  title: 'Hotel Indigo'
+  title: 'Hotel Indigo',
+  icon: 'assets/images/blue-marker.png'
 });
