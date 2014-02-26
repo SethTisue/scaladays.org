@@ -156,19 +156,20 @@
 </script>
 
 <script id="trackTpl" type="text/template">
-    <div class="track <%= track.value.toLowerCase() %>">
-        <h3><a href='#<%= url %>'><%= title.value %></a></h3>
+    <div class="track track<%= room %>">
+        <h3><a href='#<%= url %>'><%= title %></a></h3>
         <ul class="speaker">
             <% 
             for(var _speaker in speakers) {
-                var _speakerId = speakers[_speaker].value.document.id;
-                var speaker = speakersList[_speakerId].data.speaker;
+                var speaker = speakers[_speaker];
             %>
                 <li>
-                    <%= speaker.fullname.value %>
-                    (<a href="http://twitter.com/<%= speaker.twitter.value %>">
-                        @<%= speaker.twitter.value %>
+                    <%= speaker.fullname %>
+                    <% if (speaker.twitter){ %>
+                    (<a href="http://twitter.com/<%= speaker.twitter %>">
+                        <%= speaker.twitter %>
                     </a>)
+                    <% } %>
                 </li>
             <% } %>
         </ul>
@@ -177,19 +178,20 @@
 
 <script id="keynoteTpl" type="text/template">
     <div class="keynote">
-        <h3><%= title.value %></h3>
+        <h3><%= title %></h3>
         <ul class="speaker">
             <% 
             for(var _speaker in speakers) {
-                var _speakerId = speakers[_speaker].value.document.id;
-                var speaker = speakersList[_speakerId].data.speaker;
+                var speaker = speakers[_speaker];
             %>
                 <li>
                     <img src="assets/images/speakers/martin.jpg">
-                    <%= speaker.fullname.value %>
-                    (<a href="http://twitter.com/<%= speaker.twitter.value %>">
-                        @<%= speaker.twitter.value %>
+                    <%= speaker.fullname %>
+                    <% if (speaker.twitter){ %>
+                    (<a href="http://twitter.com/<%= speaker.twitter %>">
+                        <%= speaker.twitter %>
                     </a>)
+                    <% } %>
                 </li>
             <% } %>
         </ul>
@@ -204,52 +206,48 @@
 </script>
 
 <script id="eatTpl" type="text/template">
-    <div class="pause eat" style="top: 500px; height: 100px;">
-        <h3><%= title.value %></h3>
+    <div class="pause eat">
+        <h3><%= title %></h3>
     </div>
 </script>
 
 <script id="drinkTpl" type="text/template">
     <div class="pause drink">
-        <h3><%= title.value %></h3>
+        <h3><%= title %></h3>
     </div>
 </script>
 
 <script id="detailsTpl" type="text/template">
-    <h3><%= title.value %></h3>
+    <h3><%= title %></h3>
     <ul class="speaker">
         <% 
         for(var _speaker in speakers) {
-            var _speakerId = speakers[_speaker].value.document.id;
-            var speaker = speakersList[_speakerId].data.speaker;
+            var speaker = speakers[_speaker];
         %>
             <li>
-                <img src="assets/images/speakers/martin.jpg">
-                <h4><%= speaker.fullname.value %></h4>
-                <p><a href="http://twitter.com/<%= speaker.twitter.value %>">
-                    @<%= speaker.twitter.value %>
+                <% if (speaker.avatar){ %>
+                <img src="<%= speaker.avatar %>">
+                <% } %>
+                <h4><%= speaker.fullname %></h4>
+                <% if (speaker.twitter){ %>
+                <p><a href="http://twitter.com/<%= speaker.twitter %>">
+                    <%= speaker.twitter %>
                 </a></p>
-                <h4><%= "companyName.value" %></h4>
-                <p><%= "companyDesc.value" %></p>
+                <% } %>
+                <% if (speaker.company){ %>
+                <h4><%= speaker.company %></h4>
+                <% } %>
+                <% if (speaker.bio){ %>
+                <p><%= speaker.bio %></p>
+                <% } %>
             </li>
         <% } %>
     </ul>
     <div class="details">
         <h4>Abstract</h4>
-        <%= description.value %>
+        <%= description %>
     </div>
 </script>
-
-<script id="groupTpl" type="text/template">
-    <article>
-        <h2><%= title %></h2>
-    </article>
-</script>
-
-<script id="sponsorTpl" type="text/template">
-    <a href="<%= 'url' %>" target="_blank"><img src="<%= 'url' %>"></a>
-</script>
-
 
         <script src="assets/js/vendor/jquery-2.0.3.min.js"></script>
         <script src="assets/js/vendor/prismic.io-1.0.9.min.js"></script>

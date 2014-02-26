@@ -1,32 +1,11 @@
-$.getJSON('https://scaladays.prismic.io/api', function(data) {
-    var ref = data.refs[0].ref;
-    var url = 'https://scaladays.prismic.io/api/documents/search?page=1&pageSize=100&ref='+ref;
+$.getJSON('data.json', function(data) {
 
-    $.getJSON(url, function(data) {
+    days = data;
+    Schedule(days);
+    TrackDetails.init();
 
-        // Organize documents
-        $(data.results).each(function(index, it) {
-            switch(it.type){
-                case 'speaker':
-                    speakers[it.id] = it;
-                    break;
-                case 'track':
-                    days[it.data.track.day.value].tracks[it.id] = it;
-                    break;
-                case 'sponsor':
-                    sponsors[it.data.sponsor.type.value].list = it;
-                    break;
-                case 'article':
-                    about = it;
-                    break;
-            }
-        });
-
-        Schedule(days);
-        Sponsors(sponsors);
-        TrackDetails.init();
-    });
 });
+
 
 $.fn.scrollReveal = function(){
     $("<a href='#'>&nbsp;</a>").insertAfter(this).focus().remove();
@@ -57,54 +36,10 @@ var registerTpl     = tpl('registerTpl');
 var eatTpl          = tpl('eatTpl');
 var drinkTpl        = tpl('drinkTpl');
 var detailsTpl      = tpl('detailsTpl');
-var groupTpl        = tpl('groupTpl');
-var sponsorTpl      = tpl('sponsorTpl');
+
 
 // Collections
-var speakers = {},
-    days = {
-        'Day1': {
-            id: 'june-16',
-            title: 'Monday June 16th',
-            time: '16:30-22:00',
-            tracks: {}
-        },
-        'Day2': {
-            id: 'june-17',
-            title: 'Tuesday June 17th',
-            time: '08:00-22:00',
-            tracks: {}
-        },
-        'Day3': {
-            id: 'june-18',
-            title: 'Wednesday June 18th',
-            time: '08:00-18:00',
-            tracks: {}
-        }
-    },
-    sponsors = {
-        "Hosted by": {
-            title: "Hosted by",
-            list: {}
-        },
-        "Platinium": {
-            title: "Platinium",
-            list: {}
-        },
-        "Gold": {
-            title: "Gold",
-            list: {}
-        },
-        "Silver": {
-            title: "Silver",
-            list: {}
-        },
-        "Friends": {
-            title: "Friends",
-            list: {}
-        }
-    },
-    about;
+var days;
 
 // Sick of jQuery.each that put index first...
 function forEach(list, callback){
@@ -169,32 +104,41 @@ function BindDay(day, data) {
 
 function Track(data){
     // Reference to all speakers
-    data.data.track.speakersList = speakers;
-    data.data.track.url = 'schedule/'+data.data.track.title.value.replace(/[^a-z]/ig, '-');
     switch(data.type){
         case 'track':
-            return BindTrack(trackTpl(data.data.track), data.data.track);
+            data.url = 'schedule/'+data.title.replace(/[^a-z]/ig, '-');
+            return BindTrack(trackTpl(data), data);
         case 'keynote':
-            return keynoteTpl(data.data.track);
-        case 'register':
-            return registerTpl(data.data.track);
-        case 'eat':
-            return eatTpl(data.data.track);
-        case 'drink':
-            return drinkTpl(data.data.track);
+            data.url = 'schedule/'+data.title.replace(/[^a-z]/ig, '-');
+            return BindTrack(keynoteTpl(data), data);
+        case 'pause':
+        switch(data.style){
+            case 'register':
+                return PositionTrack(registerTpl(data), data);
+            case 'eat':
+                return PositionTrack(eatTpl(data), data);
+            case 'drink':
+                return PositionTrack(drinkTpl(data), data);
+        }
     }
 };
 
-function BindTrack(track, data){
-    var times = parseTime(data.hour.value);
-    var top = (times[0]-currentTimes[0])*hourSize + (times[1]-currentTimes[1])*hourSize/60
-    var height = (times[2]-times[0])*hourSize + (times[3]-currentTimes[1])*hourSize/60
+function PositionTrack(track, data){
+    var times = parseTime(data.time);
+    var top = ( (times[0]-currentTimes[0])*60 + (times[1]-currentTimes[1]) ) * hourSize/60
+    console.log(data.title)
+    console.log(( (times[0]-currentTimes[0])*60 + (times[1]-currentTimes[1]) ) * hourSize/60, (times[0]-currentTimes[0]) , (times[1]-currentTimes[1]) )
+    var height = ( (times[2]-times[0])*60 + (times[3]-times[1]) ) * hourSize/60
     track.css({
         top: top+"px",
         height: height+"px"
     });
-    TrackDetails.register(data.url, data, track);
     return track;
+}
+
+function BindTrack(track, data){
+    TrackDetails.register(data.url, data, track);
+    return PositionTrack(track, data);
 }
 
 // Show/hides the track details
@@ -236,43 +180,6 @@ var TrackDetails = (function() {
         }
     }
 }());
-
-
-function Sponsors(data){
-    var sponsors = $('#sponsors');
-    forEach(data, function(_group, name) {
-        sponsors.append(SponsorGroup(_group));
-    });
-}
-
-function SponsorGroup(data){
-    var group = groupTpl(data);
-    forEach(data, function(_sponsor) {
-        group.append(Sponsor(_sponsor));
-    });
-    return group;
-};
-
-function Sponsor(data){
-    return sponsorTpl(data);
-};
-
-
-function findTalksForSpeaker(id, but) {
-    var talks = [];
-    // As a french, I might go on strike
-    // to request `for comprehension` in JS!
-    forEach(days, function(day) {
-        forEach(day.tracks, function(track) {
-            forEach(track.speakers, function(speaker) {
-                if (speaker.id == id && track.id != but){
-                    talks.push(track);
-                }
-            });
-        });
-    });
-    return talks;
-}
 
 function BindSchedule(schedule){
 
