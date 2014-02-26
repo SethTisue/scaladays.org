@@ -715,6 +715,9 @@ section:after {
   color: #fff;
   cursor: pointer;
 }
+#schedule #details .details-hide {
+  display: none;
+}
 #schedule #details .close {
   position: absolute;
   top: 80px;
