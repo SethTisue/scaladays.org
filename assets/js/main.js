@@ -114,31 +114,28 @@ function Track(data){
         case 'pause':
         switch(data.style){
             case 'register':
-                return PositionTrack(registerTpl(data), data);
+                return BindTrack(registerTpl(data), data);
             case 'eat':
-                return PositionTrack(eatTpl(data), data);
+                return BindTrack(eatTpl(data), data);
             case 'drink':
-                return PositionTrack(drinkTpl(data), data);
+                return BindTrack(drinkTpl(data), data);
         }
     }
 };
 
-function PositionTrack(track, data){
+function BindTrack(track, data){
+    if (data.url)
+        TrackDetails.register(data.url, data, track);
+
     var times = parseTime(data.time);
     var top = ( (times[0]-currentTimes[0])*60 + (times[1]-currentTimes[1]) ) * hourSize/60
-    console.log(data.title)
-    console.log(( (times[0]-currentTimes[0])*60 + (times[1]-currentTimes[1]) ) * hourSize/60, (times[0]-currentTimes[0]) , (times[1]-currentTimes[1]) )
     var height = ( (times[2]-times[0])*60 + (times[3]-times[1]) ) * hourSize/60
     track.css({
         top: top+"px",
         height: height+"px"
     });
-    return track;
-}
 
-function BindTrack(track, data){
-    TrackDetails.register(data.url, data, track);
-    return PositionTrack(track, data);
+    return track;
 }
 
 // Show/hides the track details
