@@ -13,16 +13,16 @@
             },
             {
                 "type": "keynote",
-                "title": "Keynote: Scala with Style",
-                "description": "",
+                "title": "Keynote",
+                "description": "Need This",
                 "time": "18:00-19:30",
                 "speakers": [
                     {
-                        "twitter": "",
+                        "twitter": "@odersky",
                         "fullname": "Martin Odersky",
                         "avatar": "assets/images/speakers/martin.jpg",
                         "company": "EPFL & Typesafe Inc",
-                        "bio": "No bio."
+                        "bio": "<p>Martin Odersky created the Scala programming language and is a professor in the programming research group at EPFL, the leading technical university in Switzerland. Martin is also the Chairman and Co-Founder of Typesafe. Throughout his career, Martin's singular objective has been to make the basic job of writing programs faster, easier and more enjoyable. In the process, he has personally written more lines of Java and Scala code than almost any other individual in the world. He wrote javac, the compiler used by the majority of today's Java programmers, and scalac, the compiler used by the fast-growing Scala community. He authored 'Programming in Scala,' the best-selling book on Scala. Previously he has held positions at IBM Research, Yale University, University of Karlsruhe and University of South Australia, after having obtained his doctorate from ETH Zürich as a student of Niklaus Wirth, the creator of Pascal.</p>"
                     }
                 ]
             },
@@ -49,16 +49,16 @@
             },
             {
                 "type": "keynote",
-                "title": "Keynote: Reactive Scala",
+                "title": "Keynote",
                 "description": "",
                 "time": "09:00-10:00",
                 "speakers": [
                     {
-                        "twitter": "",
+                        "twitter": "@headinthebox",
                         "fullname": "Erik Meijer",
                         "avatar": "assets/images/speakers/erik.png",
                         "company": "",
-                        "bio": "No bio."
+                        "bio": "<p><a href='(http://en.wikipedia.org/wiki/Erik_Meijer_(computer_scientist)' >Erik Meijer</a> is a Dutch computer scientist and entrepreneur. From 2000 to early 2013 he was a software architect for Microsoft where he headed the Cloud Programmability Team.[1] He then founded Applied Duality Inc.[2] in 2013. Before that, he was an associate professor at Utrecht University. He received his Ph.D from Nijmegen University in 1992.</p>"
                     }
                 ]
             },
@@ -67,14 +67,14 @@
                 "title": "Reactive Streams: And why you should care.",
                 "room": 1,
                 "time": "10:05-11:00",
-                "description": "\n\n<p>One of the fundamental problems of I/O is a core problem of communication: </p>How do I know that the recipient is ready to receive my information?<p></p>\n<p>In a pure push model, without taking into consideration Little's Law, it is very easy to produce data at a faster pace than it can be consumed, leading to loss of information, contention on the medium, or even full system failure.</p>\n<p>Reactive Streams provide an asynchronous, concurrent, back-pressured/demand-driven solution for that and other problems—as will be demonstrated in this session.</p>\n            ",
+                "description": "\n\n<p>One of the fundamental problems of I/O is a core problem of communication: How do I know that the recipient is ready to receive my information?</p><p>In a pure push model, without taking into consideration Little's Law, it is very easy to produce data at a faster pace than it can be consumed, leading to loss of information, contention on the medium, or even full system failure.</p><p>Reactive Streams provide an asynchronous, concurrent, back-pressured/demand-driven solution for that and other problems. We will discuss this and more in this session.</p>\n            ",
                 "speakers": [
                     {
-                        "twitter": "",
+                        "twitter": "@viktorklang",
                         "fullname": "Viktor Klang",
-                        "avatar": "",
-                        "company": "",
-                        "bio": "No bio."
+                        "avatar": "assets/images/speakers/klang.jpg",
+                        "company": "Typesafe Inc",
+                        "bio": "<p>Hailing from southern Sweden, Viktor Klang has been a passionate Scala hacker since 2007, a Java enterprise systems architect since 2003 and a programmer since 1998. He's a big fan of agile development, scalable software and elegant code. He joined the Akka team in the middle of 2009 as one of the earliest committers. Viktor currently serves as Chief Architect at Typesafe.</p>"
                     }
                 ]
             },
@@ -83,13 +83,13 @@
                 "title": "Quote or be quoted",
                 "time": "10:05-11:00",
                 "room": 2,
-                "description": "\n\n<p>Integer a feugiat erat. No bio. Pellentesque at odio sit amet quam porttitor pharetra ac in nunc. Aenean est risus, cursus vitae lacus a, viverra vehicula nisl. Etiam aliquet, turpis accumsan tristique hendrerit, felis nisi condimentum lacus, sit amet elementum nisl eros non erat. Proin sed convallis mauris. In suscipit ultrices mollis.</p>\n            ",
+                "description": "\n\n<p>In Scala 2.11 we introduced quasiquotes, a rich domain-specific api for tree manipulation. Despite advanced functionality and deep integration into the language, the api itself is just a library that relies on existing language features: string interpolation, macros, type classes etc. This talk will walk through implementation of custom quotations for a tiny language embedded within Scala and introduce you to core concepts used in quasiquotes: splicing, cardinality, lifting/unlifting and show how all of this makes your life easier.</p>\n            ",
                 "speakers": [
                     {
                         "twitter": "@den_sh",
                         "fullname": "Denys Shabalin",
                         "avatar": "assets/images/speakers/shabalin.jpg",
-                        "company": "Typesafe Inc",
+                        "company": "Typesafe Inc & EPFL",
                         "bio": "Denys is the author of Scala 2.11's quasiquotes, a project aimed at making AST manipulation a pleasure. He is also an active contributor to scala/scala repository, hacking on compiler internals, reflection API and macros. At the moment he works as intern at Typesafe researching ways to introduce referential transparency and hygiene concepts to Scala compiler and macro system."
                     }
                 ]
@@ -99,23 +99,23 @@
                 "title": "Solving Data Analytics Problems with Delite",
                 "room": 3,
                 "time": "10:05-11:00",
-                "description": "\n\n<p>Integer a feugiat erat. No bio. Pellentesque at odio sit amet quam porttitor pharetra ac in nunc. Aenean est risus, cursus vitae lacus a, viverra vehicula nisl. Etiam aliquet, turpis accumsan tristique hendrerit, felis nisi condimentum lacus, sit amet elementum nisl eros non erat. Proin sed convallis mauris. In suscipit ultrices mollis.</p>\n            ",
+                "description": "\n\n<p>In Scala 2.11 we introduced quasiquotes, a rich domain-specific api for tree manipulation. Despite advanced functionality and deep integration into the language, the api itself is just a library that relies on existing language features: string interpolation, macros, type classes etc. This talk will walk through implementation of custom quotations for a tiny language embedded within Scala and introduce you to core concepts used in quasiquotes: splicing, cardinality, lifting/unlifting and show how all of this makes your life easier.</p><p>As data sizes become larger and processor architectures become more parallel, programmers are often forced to resort to using low-level programming models in order to improve performance and scalability. The introduction of heterogeneous accelerators such as GPUs make the programmers’ jobs even more difficult, as they must often combine code for multiple different programming models together in ad-hoc ways. Domain-specific languages (DSLs) offer an alternative approach, as high-level implicitly parallel domain abstractions can be transparently lowered to multiple heterogeneous architectures. We have developed a suite of data analytic DSLs for machine learning, graph analysis, and data manipulation that use the Delite framework in Scala to achieve high performance parallel execution across multiple processors, GPUs, and clusters of machines.<p/><p>This talk will describe how we can combine these DSLs together to build larger applications to solve complex, real-world problems in multiple domains with both higher programmer productivity and higher performance than alternative solutions. After introducing the infrastructure and DSLs themselves, the talk will provide a survey of some of the applications currently being developed by other research groups at Stanford using these DSLs and the resulting productivity and performance benefits. Each application represents an ongoing collaboration in areas such as computational biology, biomedical imaging, data mining, inference engines, and large scale graph analysis.<p/>\n            ",
                 "speakers": [
                     {
                         "twitter": "",
                         "fullname": "Kevin Brown",
                         "avatar": "",
-                        "company": "",
-                        "bio": "No bio."
+                        "company": "Stanford",
+                        "bio": ""
                     }
                 ]
             },
             {
                 "type": "track",
-                "title": "Workshop #1",
+                "title": "Workshop",
                 "time": "10:05-11:00",
                 "room": 4,
-                "description": "\n\n<p>Integer a feugiat erat. No bio. Pellentesque at odio sit amet quam porttitor pharetra ac in nunc. Aenean est risus, cursus vitae lacus a, viverra vehicula nisl. Etiam aliquet, turpis accumsan tristique hendrerit, felis nisi condimentum lacus, sit amet elementum nisl eros non erat. Proin sed convallis mauris. In suscipit ultrices mollis.</p>\n            ",
+                "description": "\n\n<p>Details coming soon!</p>\n            ",
                 "speakers": []
             },
             {
@@ -126,11 +126,11 @@
                 "description": "\n\n<p>Shark is a SQL engine built on Apache Hive, that replaces Hive’s MapReduce execution engine with Apache Spark.  Spark’s fine-grained resource model and efficient execution engine allow Shark to outperform Hive by over 100x for data stored in memory. However, until now, Shark’s performance has been limited by the flexibility of Hive’s query optimizer.  Catalyst aims to remedy this situation by building a simple yet powerful optimization framework using Scala language features.</p>\n<p>Query optimization can greatly improve both the productivity of developers and the performance of the queries that they write.  A good query optimizer is capable of automatically rewriting relational queries to execute more efficiently, using techniques such as filtering data early, utilizing available indexes, and even ensuring different data sources are joined in the most efficient order.  By performing these transformations, the optimizer not only improves the execution times of relational queries, but also frees the developer to focus on the semantics of their application instead of its performance.  </p>\n<p>Unfortunately, building an optimizer is an incredibly complex engineering task and thus many open source systems perform only very simple optimizations.  Past research [1,2] has attempted to combat this complexity by providing frameworks that allow the creators of optimizers to write possible optimizations as a set of declarative rules.  However, the use of such frameworks has required the creation and maintenance of special “optimizer compilers” and forced the burden of learning a complex domain specific language upon those wishing to add features to the optimizer. </p>\n<p>Catalyst solves this problem by leveraging Scala’s powerful pattern matching and runtime reflection. This framework allows developers to concisely specify complex optimizations, such as pushing filters past joins functionally.  Increased conciseness allows our developers both to create new optimizations faster and more easily reason about the correctness of the optimization.</p>\n<p>Catalyst also uses the new reflection capabilities in Scala 2.10 to generate custom classes at runtime for storing intermediate results and evaluating complex relational expressions.  Doing so allows us to avoid boxing of primitive values and has been shown to improve performance by orders of magnitude in some cases.</p>\n<p>[1]  Graefe, G. The Cascades Framework for Query Optimization. In Data Engineering Bulletin. Sept. 1995.<br>\n[2] Goetz Graefe , David J. DeWitt, The EXODUS optimizer generator, Proceedings of the 1987 ACM SIGMOD international conference on Management of data, p.160-172, May 27-29, 1987, San Francisco, California, United States</p>\n            ",
                 "speakers": [
                     {
-                        "twitter": "",
+                        "twitter": "@michaelarmbrust",
                         "fullname": "Michael Armbrust",
-                        "avatar": "",
+                        "avatar": "assets/images/speakers/armbrust.jpg",
                         "company": "Databricks",
-                        "bio": "No bio."
+                        "bio": "Software Engineer at Databricks, interested in distributed databases, query languages, scala, and more."
                     }
                 ]
             },
@@ -142,11 +142,11 @@
                 "description": "\n\n<p>JScala is a Scala macro that produces JavaScript from Scala code. I'll present JScala features, including client-server code sharing via @Javascript annotation, macro-based TypeScript definitions import via @Typescripted annotation, automatic macro-based toJson/fromJson serialization and browser Tetris example.</p>\n    <p>Additionally, I'll talk about further plans, Lift/Play integration and popular JavaScript libraries (jQuery, Angular.js)support.</p>\n            ",
                 "speakers": [
                     {
-                        "twitter": "",
+                        "twitter": "@atlanter",
                         "fullname": "Alexander Nemish",
-                        "avatar": "",
+                        "avatar": "assets/images/speakers/nemish.jpg",
                         "company": "",
-                        "bio": "No bio."
+                        "bio": ""
                     }
                 ]
             },
@@ -155,23 +155,23 @@
                 "title": "Good to Great: IntelliJ IDEA and Scala",
                 "room": 3,
                 "time": "11:05-12:00",
-                "description": "\n\n<p>Integer a feugiat erat. No bio. Pellentesque at odio sit amet quam porttitor pharetra ac in nunc. Aenean est risus, cursus vitae lacus a, viverra vehicula nisl. Etiam aliquet, turpis accumsan tristique hendrerit, felis nisi condimentum lacus, sit amet elementum nisl eros non erat. Proin sed convallis mauris. In suscipit ultrices mollis.</p>\n            ",
+                "description": "\n\n<p>Most people agree that you become more productive by using IntelliJ IDEA for Scala. However it’s not always clear how much more. In this talk we’ll take a look at the key features of IntelliJ IDEA and reveal some of its usage statistics. And of course we’ll get a report on what’s going on with the IntelliJ IDEA plugin for Scala: what have been recently done and what’s is coming in the future.</p>\n            ",
                 "speakers": [
                     {
                         "twitter": "",
                         "fullname": "Alexander Podkhalyuzin",
-                        "avatar": "",
+                        "avatar": "assets/images/speakers/pod.jpg",
                         "company": "",
-                        "bio": "No bio."
+                        "bio": ""
                     }
                 ]
             },
             {
                 "type": "track",
-                "title": "Workshop or Sponsor",
+                "title": "Workshop",
                 "room": 4,
                 "time": "11:05-12:00",
-                "description": "\n\n<p>Integer a feugiat erat. No bio. Pellentesque at odio sit amet quam porttitor pharetra ac in nunc. Aenean est risus, cursus vitae lacus a, viverra vehicula nisl. Etiam aliquet, turpis accumsan tristique hendrerit, felis nisi condimentum lacus, sit amet elementum nisl eros non erat. Proin sed convallis mauris. In suscipit ultrices mollis.</p>\n            ",
+                "description": "\n\n<p>Details Coming Soon!</p>\n            ",
                 "speakers": []
             },
             {
@@ -192,7 +192,7 @@
                         "twitter": "@runarorama",
                         "fullname": "Rúnar Bjarnason",
                         "avatar": "assets/images/speakers/runar.jpg",
-                        "company": "Runar",
+                        "company": "",
                         "bio": "Runar is an independent software developer, co-author of \"Functional Programming in Scala\" (Manning, 2014), and a functional programming extremist."
                     }
                 ]
@@ -202,14 +202,14 @@
                 "title": "Building a 3D Multiplayer Game with Play, Akka, and THREE.js",
                 "room": 2,
                 "time": "13:00-13:55",
-                "description": "\n\n<p>Integer a feugiat erat. No bio. Pellentesque at odio sit amet quam porttitor pharetra ac in nunc. Aenean est risus, cursus vitae lacus a, viverra vehicula nisl. Etiam aliquet, turpis accumsan tristique hendrerit, felis nisi condimentum lacus, sit amet elementum nisl eros non erat. Proin sed convallis mauris. In suscipit ultrices mollis.</p>\n            ",
+                "description": "\n\n<p>Using Three.js, a JavaScript 3D rendering library, Play Framework's web front-end and RESTful API capabilities, and supported by an Akka cluster, we can easily build an online multiplayer 3D game. In this presentation I'll walk you through the building blocks of such a game.</p>\n            ",
                 "speakers": [
                     {
-                        "twitter": "",
+                        "twitter": "@KevinHoffman",
                         "fullname": "Kevin Hoffman",
-                        "avatar": "",
-                        "company": "",
-                        "bio": "No bio."
+                        "avatar": "assets/images/speakers/hoffman.jpg",
+                        "company": "Barclays",
+                        "bio": ""
                     }
                 ]
             },
@@ -217,8 +217,8 @@
                 "type": "track",
                 "title": "Scalding - the not-so basics",
                 "room": 3,
-                "time": "13:00-13:55",
-                "description": "\n\n<p>Integer a feugiat erat. No bio. Pellentesque at odio sit amet quam porttitor pharetra ac in nunc. Aenean est risus, cursus vitae lacus a, viverra vehicula nisl. Etiam aliquet, turpis accumsan tristique hendrerit, felis nisi condimentum lacus, sit amet elementum nisl eros non erat. Proin sed convallis mauris. In suscipit ultrices mollis.</p>\n            ",
+                "time": "13:00-13:45",
+                "description": "\n\n<p>Hadoop and all it's ecosystem have settled down for good (or bad) in our hearts and / or minds. It's quite old and has proven to be quite reliable for certain kinds of tasks. Yet one problem still remains - writing Map Reduce jobs in plain Java is really a pain. The API is clunky and does it's best to hide the actual algorithm beneath tons of boilerplate. </p><p>Luckily there are abstractions on top of it - like the great Cascading library, and the even better Scalding DSL built on top of it.</p><p>During this talk we'll execute what looks like a Scala map() but using a few dozen worker nodes, and then explore some of the more advanced features of Scalding - like joins, aggregation tricks and tips on how to build not only Jobs, but entire MapReduce Pipelines.</p>\n            ",
                 "speakers": [
                     {
                         "twitter": "@ktosopl",
@@ -253,11 +253,11 @@
                 "description": "\n\n<p>The new akka-http module, the successor of spray.io, provides a fast and fully-featured client- and server-side HTTP stack. It allows you to easily build REST/HTTP-based integration layers for connecting your Scala applications to the world.</p>\n<p>In this session we'll look into what akka-http brings to the table, how it is used and where it will add the most value in your overall application architecture.</p>\n<p>Plenty of code examples will highlight the various client- and server-side APIs as well as give you an idea for what \"RESTful\" programming with akka-http looks like.</p>\n<p>We'll also talk about the improvements it brings over spray and what is on the agenda regarding the transition from Netty to akka-http as the HTTP \"driver\" for the Play framework.</p>\n            ",
                 "speakers": [
                     {
-                        "twitter": "",
+                        "twitter": "@sirthias",
                         "fullname": "Mathias Doenitz",
-                        "avatar": "",
+                        "avatar": "assets/images/speakers/doenitz.png",
                         "company": "Typesafe Inc",
-                        "bio": "No bio."
+                        "bio": "Mathias is lead developer of spray.io, Akka committer and passionate Scala-ista. He is a long-time and active member of the Java and Scala open source community."
                     }
                 ]
             },
@@ -266,14 +266,14 @@
                 "title": "The Trouble with Tests",
                 "room": 2,
                 "time": "14:00-14:55",
-                "description": "\n\n<p>Integer a feugiat erat. No bio. Pellentesque at odio sit amet quam porttitor pharetra ac in nunc. Aenean est risus, cursus vitae lacus a, viverra vehicula nisl. Etiam aliquet, turpis accumsan tristique hendrerit, felis nisi condimentum lacus, sit amet elementum nisl eros non erat. Proin sed convallis mauris. In suscipit ultrices mollis.</p>\n            ",
+                "description": "\n\n<p>Tests provide benefits, but also incur costs. Tests can help you achieve and maintain desired levels of software quality, but they take time (and therefore cost money) to write, compile, and run. They can give you confidence to perform needed refactoring, but can slow you down during refactors that break many tests. And although they can help you find bugs, they can't prove the absence of bugs.</p><p>So how do you maximize the return on your investment in tests? In this talk, Bill Venners, lead developer of ScalaTest, will tackle this question and give his opinions. You'll come away with a set of specific guidelines that can help you decide how best to employ testing in your projects.</p>\n            ",
                 "speakers": [
                     {
-                        "twitter": "",
+                        "twitter": "@bvenners",
                         "fullname": "Bill Venners",
-                        "avatar": "",
-                        "company": "",
-                        "bio": "No bio."
+                        "avatar": "assets/images/speakers/venners.jpg",
+                        "company": "Artima",
+                        "bio": "Bill Venners is president of Artima, Inc., publisher of Scala books, and co-founder of Escalate Software, LLC, provider of Scala training and consulting. He is the lead developer and designer of ScalaTest, an open source testing tool for Scala and Java developers, and coauthor with Martin Odersky and Lex Spoon of the book, Programming in Scala."
                     }
                 ]
             },
@@ -282,7 +282,7 @@
                 "title": "Fun Functional-Reactive Programming with Scala.Rx",
                 "room": 3,
                 "time": "14:00-14:55",
-                "description": "\n\n<p>Integer a feugiat erat. No bio. Pellentesque at odio sit amet quam porttitor pharetra ac in nunc. Aenean est risus, cursus vitae lacus a, viverra vehicula nisl. Etiam aliquet, turpis accumsan tristique hendrerit, felis nisi condimentum lacus, sit amet elementum nisl eros non erat. Proin sed convallis mauris. In suscipit ultrices mollis.</p>\n            ",
+                "description": "\n\n<p>FRP has long been the domain of academics and research projects, and a lot of work has gone into studying the intricacies of such systems. However, most of these systems have one huge disadvantage: they're not backwards compatible toward the messy, impure world that most programmers live in today. This means that to make the jump to FRP, you have to give up your old libraries, paradigms and even entire languages in order to reap its benefits.</p><p>Scala.Rx is a FRP library inspired which aims to be as compatible as possible with existing libraries and paradigms. Scala.Rx provides just two simple building blocks for making FRP systems: mutable cells and continuous signals. I'll show that these simple building blocks can be combined in a range of different ways, and are expressive enough to model a whole range of scenarios.</p><p>I'll demonstrate how Scala.Rx code fits seamlessly into a larger Scala application, and that FRP code and traditional imperative/functional code can be completely mixed together without any confusion or boilerplate. We'll see that Scala.Rx lets you reap the benefits of FRP while still writing code in the 'old-fashioned' imperative/OO/functional styles, a quality that is unique among FRP systems.</p><p>Do you want to have big, mutable objects which encapsulate state within them? Want to pipe immutable data through long chains of functions? I both cases you'll be able to enjoy the benefits of FRP. Mutation, which is abhorred in purer settings, turns out to be perfect for modelling many extremely common scenarios. Even throwing and catching exceptions works in a way that is surprisingly elegant and intuitive.</p><p>Lastly, we'll dive into the short ~800 lines of code that implements Scala.Rx. I'll go into the tradeoffs that have been made in order to give it the qualities described above, and how it's design is limited by the constraints of the JVM on which it runs. In particular, I'll talk about how giving freedom to the developer to do whatever he wants in the FRP world is a straitjacket that limits the sort of guarantees and semantics Scala.Rx can provide. Throughout the talk, I'll go through demos, both textual and graphical, to show off the techniques that can be used in applying Scala.Rx to hands-on problems.</p>\n            ",
                 "speakers": [
                     {
                         "fullname": "Li Haoyi",
@@ -294,25 +294,25 @@
             },
             {
                 "type": "track",
-                "title": "Sponsor Session",
+                "title": "Workshop",
                 "room": 4,
                 "time": "14:00-14:55",
-                "description": "\n\n<p>Integer a feugiat erat. No bio. Pellentesque at odio sit amet quam porttitor pharetra ac in nunc. Aenean est risus, cursus vitae lacus a, viverra vehicula nisl. Etiam aliquet, turpis accumsan tristique hendrerit, felis nisi condimentum lacus, sit amet elementum nisl eros non erat. Proin sed convallis mauris. In suscipit ultrices mollis.</p>\n            ",
+                "description": "\n\n<p>Details Coming Soon!</p>\n            ",
                 "speakers": []
             },
             {
                 "type": "track",
-                "title": "Sparkle: scala + d3.  Reactive streams for data visualization in the browser",
+                "title": "Coming Soon!*****Sparkle: scala + d3. Reactive streams for data visualization in the browser*******",
                 "room": 1,
                 "time": "15:00-15:55",
-                "description": "\n\n<p>In this talk I'll introduce sparkle, an open source framework for data visualization.  Sparkle combines the snazzy animation facilities in d3 with the powerful data management and analysis primitives in Scala.  The current version of sparkle is oriented towards analyzing time series data.</p>\n            ",
+                "description": "\n\n<p>Coming Soon!*****In this talk I'll introduce sparkle, an open source framework for data visualization.  Sparkle combines the snazzy animation facilities in d3 with the powerful data management and analysis primitives in Scala.  The current version of sparkle is oriented towards analyzing time series data.</p>\n            ",
                 "speakers": [
                     {
-                        "twitter": "",
-                        "fullname": "???---Lee Mighdoll---can we display????",
-                        "avatar": "",
-                        "company": "Nest",
-                        "bio": "No bio."
+                        "twitter": "@mighdoll",
+                        "fullname": "*******Lee Mighdoll******",
+                        "avatar": "assets/images/speakers/lee.jpg",
+                        "company": "",
+                        "bio": ""
                     }
                 ]
             },
@@ -321,14 +321,14 @@
                 "title": "Macros for the Rest of Us",
                 "room": 2,
                 "time": "15:00-15:55",
-                "description": "\n\n<p>Integer a feugiat erat. No bio. Pellentesque at odio sit amet quam porttitor pharetra ac in nunc. Aenean est risus, cursus vitae lacus a, viverra vehicula nisl. Etiam aliquet, turpis accumsan tristique hendrerit, felis nisi condimentum lacus, sit amet elementum nisl eros non erat. Proin sed convallis mauris. In suscipit ultrices mollis.</p>\n            ",
+                "description": "\n\n<p>Macros are a powerful feature of Scala 2.10 that have received significant updates in Scala 2.11. For the journeyman Scala programmer, however, they can be difficult to approach. There is a scarcity of detailed documentation on important concepts such as AST creation, type inspection, and debugging, that can make your first non-trivial macro a daunting prospect.</p><p>In this talk, Dave Gurnell will approach Scala 2.11's macros from the point of view of the journeyman programmer. He will walk through the creation of a simple macro-based library for data validation, highlighting hints, tips, and best practices that will dramatically lower the barrier to entry into the world of macros. Topics covered will include:</p><ul><li>project setup and separate compilation</li><li>AST creation</li><li>quasiquotes</li><li>type inspection</li><li>macro debugging</li></ul><p>Dave is a Scala consultant and developer working for Underscore in London, UK. He has been a Scala developer since 2010 and a functional programmer for nearly a decade.</p>\n            ",
                 "speakers": [
                     {
-                        "twitter": "",
+                        "twitter": "@davegurnell",
                         "fullname": "Dave Gurnell",
-                        "avatar": "",
+                        "avatar": "assets/images/speakers/gurnell.jpg",
                         "company": "",
-                        "bio": "No bio."
+                        "bio": "Dave is a Scala consultant and trainer for Underscore, with a decade's experience developing software using functional programming languages."
                     }
                 ]
             },
@@ -337,14 +337,14 @@
                 "title": "Lightning-Fast Standard Collections With ScalaBlitz",
                 "room": 3,
                 "time": "15:00-15:55",
-                "description": "\n\n<p>Integer a feugiat erat. No bio. Pellentesque at odio sit amet quam porttitor pharetra ac in nunc. Aenean est risus, cursus vitae lacus a, viverra vehicula nisl. Etiam aliquet, turpis accumsan tristique hendrerit, felis nisi condimentum lacus, sit amet elementum nisl eros non erat. Proin sed convallis mauris. In suscipit ultrices mollis.</p>\n            ",
+                "description": "\n\n<p>As a typical representative of highly abstract Scala libraries, standard collection library faces a number of performance challenges that arise when genericity and high-order code meet the JVM. In particular, commonly used standard Scala collections operations such as 'reduce', 'map', 'filter' suffer huge slowdowns in comparison with equivalent Java code because of abundant boxing and HotSpot-unfriendly code patterns.</p><p>One of the standard approaches to performance-critical design in Scala is eschewing high-level abstractions and churning low-level code with predictable performance characteristics. However, the advent of macros in Scala 2.10 enables a better opportunity that we've seized in ScalaBlitz, a library of highly optimized collection operations. The best thing about this approach is that you don’t need to rewrite your code to get advantages.</p><p>In ScalaBlitz, we have written a macro that inlines and specializes operations on Scala collections, turning high-level abstractions into fine-tuned, performant code. This decreases memory pressure and provides speedups(ie up to 30x for Range.reduce) all that while retaining the conventional, compatible interface of standard collections.</p><p>In this talk we will identify the most common pitfalls that prevent vanilla collections from being fast and explain how we dealt with them. We will show how using ScalaBlitz can help you achieve better performance, while continuing to write code against the familiar interface.</p>\n            ",
                 "speakers": [
                     {
-                        "twitter": "",
+                        "twitter": "@_axel22_",
                         "fullname": "Alexandar Prokopec",
-                        "avatar": "",
-                        "company": "",
-                        "bio": "No bio."
+                        "avatar": "assets/images/speakers/prokopec.jpg",
+                        "company": "EPFL LAMP",
+                        "bio": "Doctoral assistant at the EPFL. Author of Scala Parallel Collections, ScalaMeter and ScalaBlitz."
                     }
                 ]
             },
@@ -356,11 +356,11 @@
                 "description": "\n\n<p>When working in teams, the best way to keep an eye on code quality is to setup an automated process of quality assurance. </p>\n<p>In this talk I'll introduce SCCT (Scala code coverage tool) and explain how Jenkins or Travis can be used to assist you in the integration of new changes and their deployment.</p>\n            ",
                 "speakers": [
                     {
-                        "twitter": "",
+                        "twitter": "@D_Roch",
                         "fullname": "Roch Delsalle",
-                        "avatar": "",
-                        "company": "",
-                        "bio": "No bio."
+                        "avatar": "assets/images/speakers/roch.jpg",
+                        "company": "Mister Bell",
+                        "bio": "Scala Developer at Misterbell"
                     }
                 ]
             },
@@ -385,14 +385,14 @@
                 "title": "Using the Scalatest Selenium DSL - an introduction and return on experience",
                 "room": 2,
                 "time": "16:00-16:55",
-                "description": "\n\n<p>Integer a feugiat erat. No bio. Pellentesque at odio sit amet quam porttitor pharetra ac in nunc. Aenean est risus, cursus vitae lacus a, viverra vehicula nisl. Etiam aliquet, turpis accumsan tristique hendrerit, felis nisi condimentum lacus, sit amet elementum nisl eros non erat. Proin sed convallis mauris. In suscipit ultrices mollis.</p>\n            ",
+                "description": "\n\n<p>Selenium is a technology used to test web sites by firing up a browser and then interacting with a web site. It can be used from a number of languages - Java, Python, Ruby. Scalatest 2.0 introduced a DSL which simplifies the writing of tests in Selenium. More importantly, it simplifies the process of reading and understanding the tests. It becomes easier to walk through a test with a semi-technical person.</p><p>We present a introduction where we test an application with heavy use of Javascript using the DSL, along with advantages and disadvantages of the approach that we took. We also look to the future to see what could be done better.</p>\n            ",
                 "speakers": [
                     {
-                        "twitter": "",
+                        "twitter": "@matthewfarwell",
                         "fullname": "Matthew Farwell",
-                        "avatar": "",
+                        "avatar": "assets/images/speakers/farwell.jpg",
                         "company": "",
-                        "bio": "No bio."
+                        "bio": "Senior software developer at Nexthink SA and Project Lead on Scalastyle. Co-author of ‘SBT in Action’ and contributor to JUnit."
                     }
                 ]
             },
@@ -401,7 +401,7 @@
                 "title": "BirdWatch",
                 "room": 3,
                 "time": "16:00-16:55",
-                "description": "\n\n<p>Integer a feugiat erat. No bio. Pellentesque at odio sit amet quam porttitor pharetra ac in nunc. Aenean est risus, cursus vitae lacus a, viverra vehicula nisl. Etiam aliquet, turpis accumsan tristique hendrerit, felis nisi condimentum lacus, sit amet elementum nisl eros non erat. Proin sed convallis mauris. In suscipit ultrices mollis.</p>\n            ",
+                "description": "\n\n<p><a href='https://github.com/matthiasn/BirdWatch'>BirdWatch</a> is a reactive web application that initially got started as a fun side project in order to learn more about writing applications with the TypeSafe stack. In the meantime it found some more serious users, including political science research projects:</p><p>’French political science researcher Joel Gombin is planning to use BirdWatch to monitor various topics during the campaign for the European elections. The app's flexible architecture allows to casually explore the data, while the ElasticSearch database allows other custom-devised tools in other languages, such as R, to use the collected tweets and analyse it along multiple facets. This will allow to gain precious insights about relevant issues in the European debate, and then analyse them with greater depth and details.’</p><p>In this talk we will have a look at the application architecture and how the TypeSafe stack is helpful in writing this kind of application. Specifically we will look at the Iteratee library and how it can be used to route information to many clients per server. We will also discuss the lessons learned from using this tool in the European elections, which will be held in May 2014.</p>\n            ",
                 "speakers": [
                     {
                         "twitter": "@matthiasnehlsen",
@@ -417,14 +417,14 @@
                 "title": "Simplifying Scala — The Past, Present and Future",
                 "room": 4,
                 "time": "16:00-16:55",
-                "description": "\n\n<p>Integer a feugiat erat. No bio. Pellentesque at odio sit amet quam porttitor pharetra ac in nunc. Aenean est risus, cursus vitae lacus a, viverra vehicula nisl. Etiam aliquet, turpis accumsan tristique hendrerit, felis nisi condimentum lacus, sit amet elementum nisl eros non erat. Proin sed convallis mauris. In suscipit ultrices mollis.</p>\n            ",
+                "description": "\n\n<p>Making a programming language simpler and more consistent by removing cruft, confusing language elements and obstacles frequently hit by developers is an important part of language design, as it reduces the time developers need to get proficient in Scala.</p><p>However, changing a language to remove corner cases and oversights is not without pitfalls, because every change has an associated cost, which sometimes requires changes to the whole stack to provide an easy migration path, helpful error messages and IDE support.</p><p>In the first part of this talk, we will walk through past and recent improvements and simplifications of Scala and its libraries and discover the delicate balance between useful fixes which improve developers' lives and pointless changes which just waste their time.</p><p>In the second part, we will discuss the efforts currently underway to improve the design and the consistency of Scala, giving an optimistic overview of things still to come and the tools we can leverage to pull this off.</p><p>In the final part, I will offer my vision of the direction Scala should be heading, and present an alternative runtime that could allow us to vastly simplify our compiler implementation¹ and give us much-needed improvements like proper tail calls, continuations, ahead-of-time compilation, small static binaries, and much more.</p><p>¹ At least if we didn't need to keep supporting legacy VMs ...</p>\n            ",
                 "speakers": [
                     {
                         "twitter": "",
                         "fullname": "Simon Ochsenreither",
-                        "avatar": "",
+                        "avatar": "assets/images/speakers/simon.jpg",
                         "company": "",
-                        "bio": "No bio."
+                        "bio": ""
                     }
                 ]
             },
@@ -436,11 +436,11 @@
                 "description": "\n\n<p>Functional programming (FP) is regularly touted as the way forward for bringing parallel, concurrent, and distributed programming to the mainstream. The popularity of the rationale behind this viewpoint (immutable data transformed by function application) has even lead to a number of object-oriented (OO) programming languages adopting functional features such as lambdas (functions) and thereby function closures. However, despite this established viewpoint of FP as an enabler, reliably distributing function closures over a network, or using them in concurrent environments nonetheless remains a challenge across FP and OO languages. </p><p>This talk presents an approach for more principled distributed and concurrent programming by introducing a new closure-like abstraction and type system, called spores, that can guarantee closures to be serializable, thread-safe, or even have general, custom user-defined properties. Crucially, our system is based on the principle of encoding type information corresponding to captured variables in the type of a spore. We'll see the power of the guarantees that this safe foundation for migratable closures facilitates through a case analysis touching upon several real-world frameworks such as Akka and Spark.</p>\n            ",
                 "speakers": [
                     {
-                        "twitter": "",
+                        "twitter": "@heathercmiller",
                         "fullname": "Heather Miller",
-                        "avatar": "",
+                        "avatar": "assets/images/speakers/miller.jpg",
                         "company": "EPFL",
-                        "bio": "No bio."
+                        "bio": "Scala team member & PhD student with Martin Odersky at EPFL working on better programming language support for distributed and concurrent programming."
                     }
                 ]
             },
@@ -449,7 +449,7 @@
                 "title": "Why Scala is Taking Over the Big Data World",
                 "room": 2,
                 "time": "17:00-17:55",
-                "description": "\n\n<p>Integer a feugiat erat. No bio. Pellentesque at odio sit amet quam porttitor pharetra ac in nunc. Aenean est risus, cursus vitae lacus a, viverra vehicula nisl. Etiam aliquet, turpis accumsan tristique hendrerit, felis nisi condimentum lacus, sit amet elementum nisl eros non erat. Proin sed convallis mauris. In suscipit ultrices mollis.</p>\n            ",
+                "description": "\n\n<p>Users of Big (and not so Big) Data roughly divide into three groups, developers like us, traditional data analysts, and a hybrid called data scientists. The analysis prefer SQL, SAS, and similar traditional tools. The scientists (mostly statisticians, really) prefer Python and R, with Julia emerging. The Developers started with Java, but they are being seduced by Scala, because it offers ideal tools for data-centric applications.</p><p>This talk explains why data-centric applications are driving Scala adoption. Scala already provides these essentials:</p> <ul><li>Expressive DSLs</li><li>The JVM</li><li>Actors for distributed scaling</li><li>Primitive handling</li><li>Functional combinators</li></ul><p>We'll examine code examples from the following tools:</p> <ul><li>Scalding and Summingbird - for Hadoop and Storm</li><li>Spark and H2O - the Next Generation...</li><li>Spire and Algebird - Mathematics</li></ul><p>Finally, we'll discuss what's missing and what's ahead.</p>\n            ",
                 "speakers": [
                     {
                         "twitter": "@deanwampler",
@@ -465,14 +465,14 @@
                 "title": "Effective APIs",
                 "room": 3,
                 "time": "17:00-17:55",
-                "description": "\n\n<p>Integer a feugiat erat. No bio. Pellentesque at odio sit amet quam porttitor pharetra ac in nunc. Aenean est risus, cursus vitae lacus a, viverra vehicula nisl. Etiam aliquet, turpis accumsan tristique hendrerit, felis nisi condimentum lacus, sit amet elementum nisl eros non erat. Proin sed convallis mauris. In suscipit ultrices mollis.</p>\n            ",
+                "description": "\n\n<p>Scala provides a lot of power for the application developer. Even more the library author. This talk will walk through various tricks/techniques that can be used to expose a well-designed API for your users. We focus on three areas:</p><ul><li>Exposing design through types</li><li>Designing for binary compatibility</li><li>Remaining versatile in the runtime</li></ul>\n            ",
                 "speakers": [
                     {
-                        "twitter": "",
+                        "twitter": "@jsuereth",
                         "fullname": "Josh Suereth",
-                        "avatar": "",
+                        "avatar": "assets/images/speakers/josh.jpg",
                         "company": "",
-                        "bio": "No bio."
+                        "bio": "Josh Suereth is a Senior Software Engineer at Typesafe and the author of \"Scala In Depth\". He has been a Scala enthusiast ever since he came to know this beautiful language in 2007. He started his professional career as a software developer in 2004 using programming languages like C++, Perl and Java. In 2009 he began writing the book \"Scala In Depth\" which provides practical support for using Scala in every day applications. Josh regularly shares his expertise in articles and talks."
                     }
                 ]
             },
@@ -515,7 +515,7 @@
             },
             {
                 "type": "keynote",
-                "title": "Keynote - Need Title",
+                "title": "Keynote",
                 "time": "09:00-10:00",
                 "description": "",
                 "speakers": [
@@ -549,20 +549,21 @@
                 "title": "The Raspberry Pi Akka Supercomputer",
                 "room": 2,
                 "time": "10:05-11:00",
-                "description": "\n\n<p>Integer a feugiat erat. No bio. Pellentesque at odio sit amet quam porttitor pharetra ac in nunc. Aenean est risus, cursus vitae lacus a, viverra vehicula nisl. Etiam aliquet, turpis accumsan tristique hendrerit, felis nisi condimentum lacus, sit amet elementum nisl eros non erat. Proin sed convallis mauris. In suscipit ultrices mollis.</p>\n            ",
+                "description": "\n\n<p>Also known as: The beginners guide to starting a Scala project.</p><p>Starting a Scala project should be easy, but with a Simple Build Tool that appears anything but whats the best way to get started and stay sure footed?</p><p>In this beginners talk we'll help get you up and running quickly and well on the road to success. In five simple steps you'll be able to release your code to the wild, safe in the knowledge you've set up a good foundation to build upon.</p><p>The 5 Steps to a happy project:</p><ol><li>Simple Build Tool (SBT): Having a build tool is core to getting started, so let SBT do the work for you. You might not find it simple, but it doesn't have to be complex.</li><li>Console management: Mastering the REPL is the key to quick debugging / testing of code.</li><li>Testing: You need to know your code works and recent changes haven't broken anything. As with any modern language theres a wealth of choice and we'll have a quick look at most popular two: ScalaTest, Specs2</li><li>Checks and Balances: Just because your test suite is green doesn't mean your code is any good. Using ScalaCheck you can conform to style and JaCoC will show you code that is missing tests.</li><liPublishing: Now your code is tested, how do you publish it and share with the world? We'll look at how to set up SBT to publish your code.</li></ol>\n            ",
                 "speakers": [
                     {
-                        "twitter": "",
+                        "twitter": "@steveonjava",
                         "fullname": "Stephen Chin",
-                        "avatar": "",
-                        "company": "",
-                        "bio": "No bio."
+                        "avatar": "assets/images/speakers/chin.jpg",
+                        "company": "Oracle",
+                        "bio": "Stephen is a JavaFX evangelist, author, speaker and open-source hacker."
                     },
                     {
-                        "twitter": "@do\n<span>\n  e</span>",
-                        "fullname": "e",
-                        "company": "",
-                        "bio": "No bio."
+                        "twitter": "@_JamesWard",
+                        "fullname": "James Ward",
+                        "avatar": "assets/images/speakers/ward.jpg",
+                        "company": "Typesafe Inc",
+                        "bio": "James Ward works for Typesafe where he teaches developers the Typesafe Platform (Play Framework, Scala, and Akka)."
                     }
                 ]
             },
@@ -571,23 +572,23 @@
                 "title": "Building a DBMS in Scala or how types can turn a SQL interpreter into a SQL compiler",
                 "room": 3,
                 "time": "10:05-11:00",
-                "description": "\n\n<p>Integer a feugiat erat. No bio. Pellentesque at odio sit amet quam porttitor pharetra ac in nunc. Aenean est risus, cursus vitae lacus a, viverra vehicula nisl. Etiam aliquet, turpis accumsan tristique hendrerit, felis nisi condimentum lacus, sit amet elementum nisl eros non erat. Proin sed convallis mauris. In suscipit ultrices mollis.</p>\n            ",
+                "description": "\n\n<p>Commercial and open source database systems consist of millions of lines of highly optimized C code. Yet, their performance on individual queries falls 10x or 100x short of what a hand-written, specialized, implementation of the same query can achieve.</p><p>In a recent joint project at Oracle Labs and the DATA Lab at EPFL, we have set out to implement a database query engine in Scala. With just about 3000 lines of Scala code, our prototype supports the full TPCH benchmark suite and runs queries several times as fast as highly-tuned commercial systems (> 10x peak speedup).</p><p>This talk will focus on the key aspect that sets the system apart from other DB engines: where other systems interpret query plans, operator by operator, we generate and compile low-level C code for whole queries using the LMS (Lightweight Modular Staging) framework.</p><p>In particular, we will discuss powerful design patterns that leverage generative programming to provide a high degree of abstraction without performance penalty, and thus make Scala a more productive alternative to C for systems-level programming where the last drop of performance matters.</p><p>Among these design patterns are mixed-stage data structures that contains both static and dynamic parts (e.g. static schema and dynamic values for data records) and staged interpreters which can be mechanically turned into compilers (e.g. for SQL queries or regular expressions).</p>\n            ",
                 "speakers": [
                     {
-                        "twitter": "",
+                        "twitter": "@tiarkrompf",
                         "fullname": "Tiark Rompf",
-                        "avatar": "",
-                        "company": "",
-                        "bio": "No bio."
+                        "avatar": "assets/images/speakers/rompf.png",
+                        "company": "Oracle Labs / EPFL",
+                        "bio": ""
                     }
                 ]
             },
             {
                 "type": "track",
-                "title": "Workshop or Sponsor",
+                "title": "Workshop",
                 "room": 4,
                 "time": "10:05-11:00",
-                "description": "\n\n<p>Integer a feugiat erat. No bio. Pellentesque at odio sit amet quam porttitor pharetra ac in nunc. Aenean est risus, cursus vitae lacus a, viverra vehicula nisl. Etiam aliquet, turpis accumsan tristique hendrerit, felis nisi condimentum lacus, sit amet elementum nisl eros non erat. Proin sed convallis mauris. In suscipit ultrices mollis.</p>\n            ",
+                "description": "\n\n<p>Details Coming Soon!</p>\n            ",
                 "speakers": []
             },
             {
@@ -598,11 +599,11 @@
                 "description": "\n\n<p>Since Scala.js' first announcement at Scala Days NYC last year, we have made a lot of progress, and a community has been building around it. With two core developers, several active contributors, people giving talks about it in several conferences around the world, and a few tens of enthusiasts writing toy apps and even cross-compiling libraries, Scala.js is definitely gaining traction.</p>\n<p>In this talk, we will give a survey of some exciting new features of Scala.js, as well as projects from the community. We will end the talk with maybe the craziest of them: a chat application written entirely in Scala+Akka, both on the Play server and on the client, with transparent communication between the two via message passing between actors.</p>\n            ",
                 "speakers": [
                     {
-                        "twitter": "",
+                        "twitter": "@sjrdoeraene",
                         "fullname": "Sébastien Doeraene",
-                        "avatar": "",
+                        "avatar": "assets/images/speakers/doeraene.jpg",
                         "company": "EPFL",
-                        "bio": "No bio."
+                        "bio": "Scala enthusiast interested in language design, compilers and virtual machines, and in teaching computer science."
                     }
                 ]
             },
@@ -611,14 +612,14 @@
                 "title": "Building a Reactive Application",
                 "room": 2,
                 "time": "11:05-12:00",
-                "description": "\n\n<p>Integer a feugiat erat. No bio. Pellentesque at odio sit amet quam porttitor pharetra ac in nunc. Aenean est risus, cursus vitae lacus a, viverra vehicula nisl. Etiam aliquet, turpis accumsan tristique hendrerit, felis nisi condimentum lacus, sit amet elementum nisl eros non erat. Proin sed convallis mauris. In suscipit ultrices mollis.</p>\n            ",
+                "description": "\n\n<p>My session proposal would focus on the tenets and tools for building a reactive application, as well as a simple real world example. Following is an outline of the sequence of topics that would be covered.</p>\n            ",
                 "speakers": [
                     {
-                        "twitter": "",
+                        "twitter": "@ironfish",
                         "fullname": "Duncan DeVore",
-                        "avatar": "",
+                        "avatar": "assets/images/speakers/devore.jpg",
                         "company": "",
-                        "bio": "No bio."
+                        "bio": "Duncan DeVore has been hooked on Scala since 2008. As the VP of Engineering for Viridity energy, He's a strong advocate for Event based reactive architectures."
                     }
                 ]
             },
@@ -627,7 +628,7 @@
                 "title": "Yin-Yang: Programming DSLs Made Simple",
                 "room": 3,
                 "time": "11:05-12:00",
-                "description": "\n\n<p>Integer a feugiat erat. No bio. Pellentesque at odio sit amet quam porttitor pharetra ac in nunc. Aenean est risus, cursus vitae lacus a, viverra vehicula nisl. Etiam aliquet, turpis accumsan tristique hendrerit, felis nisi condimentum lacus, sit amet elementum nisl eros non erat. Proin sed convallis mauris. In suscipit ultrices mollis.</p>\n            ",
+                "description": "\n\n<p>Interfaces of deep embedded DSLs, like Slick and Squeryl, are inconsistent with the Scala standard library. Furthermore, they rely on complicated types and implicit conversions. This pollutes the API and makes type errors difficult to understand. For these reasons, designing a beautiful DSL API is a challenging and time consuming task.</p><p>In this talk I will explain how Yin-Yang makes designing and using DSLs a breeze. I will show DSLs with an idiomatic Scala API that are translated with macros to the complicated deep embedding. Then I show how we used Yin-Yang to give Slick’s interface a face-lift and improved its performance threefold with just a few hundred lines of code. I finish the talk by live coding a DSL for big decimal numbers.</p>\n            ",
                 "speakers": [
                     {
                         "twitter": "@vojjov",
@@ -643,14 +644,14 @@
                 "title": "Scala in Numbers - The Ecosystem Census",
                 "room": 4,
                 "time": "11:05-12:00",
-                "description": "\n\n<p>Integer a feugiat erat. No bio. Pellentesque at odio sit amet quam porttitor pharetra ac in nunc. Aenean est risus, cursus vitae lacus a, viverra vehicula nisl. Etiam aliquet, turpis accumsan tristique hendrerit, felis nisi condimentum lacus, sit amet elementum nisl eros non erat. Proin sed convallis mauris. In suscipit ultrices mollis.</p>\n            ",
+                "description": "\n\n<p>What are the ten most commonly used local variable names? What are the most often called methods? Which library contains the biggest methods? How complex are common pattern matches? Where are the most implicit parameters defined? Of what type? How many dependencies do you need to revert a string? How many unicode operators are really defined by scalaz? These and other questions are the topic of this talk.</p><p>I set out to dissect the typical Scala library into statistics, hard numbers, and easy to understand piecharts. My census bot crawled through the source code of the most common Scala libraries and collected lots of interesting data, trivia and maybe even hidden gems I want to share with you.</p>\n            ",
                 "speakers": [
                     {
-                        "twitter": "",
+                        "twitter": "@virtualvoid",
                         "fullname": "Johannes Rudolph",
-                        "avatar": "",
+                        "avatar": "assets/images/speakers/rudolph.jpg",
                         "company": "",
-                        "bio": "No bio."
+                        "bio": "Scala enthusiast. Loves the creative interplay between human mind and compiler's regimen. Developer of several small Scala libraries: * Scala Enhanced String plugin * Scala Reflectionator * Mnemonics, Bytecode Generation with Scala"
                     }
                 ]
             },
@@ -669,11 +670,11 @@
                 "description": "\n\n<p>Async is a new Scala module designed to simplify non-blocking concurrency using futures. At first glance, Async appears to be yet another option to do concurrent or parallel programming in Scala, besides actors, futures, and parallel collections. This talk attempts to provide simple and clear guidelines on when to use futures and when to use Async. Concrete real-world examples will shed light on the relationship between futures and Async and their synergy. By showing the idiomatic use of futures and Async, the talk aims to simplify the choice of concurrency constructs in Scala.</p>\n            ",
                 "speakers": [
                     {
-                        "twitter": "",
+                        "twitter": "@philippkhaller",
                         "fullname": "Philipp Haller",
-                        "avatar": "",
+                        "avatar": "assets/images/speakers/haller.png",
                         "company": "Typesafe Inc",
-                        "bio": "No bio."
+                        "bio": "Philipp Haller has been a member of the Scala team since 2006. His research at EPFL on concurrent programming with race-free actors in Scala has been published in leading conferences, winning a best paper award. He is the creator of Scala's first actors library, as well as a contributor to the Scala language, standard library, and tools. He is co-author of the book \"Actors in Scala\"."
                     }
                 ]
             },
@@ -682,7 +683,7 @@
                 "title": "Customizable code generation and other Slick 2 features",
                 "room": 2,
                 "time": "13:00-13:55",
-                "description": "\n\n<p>Integer a feugiat erat. No bio. Pellentesque at odio sit amet quam porttitor pharetra ac in nunc. Aenean est risus, cursus vitae lacus a, viverra vehicula nisl. Etiam aliquet, turpis accumsan tristique hendrerit, felis nisi condimentum lacus, sit amet elementum nisl eros non erat. Proin sed convallis mauris. In suscipit ultrices mollis.</p>\n            ",
+                "description": "\n\n<p>Slick 2 comes with a customizable code generator. It can simply be used to auto-generate all boiler plate code necessary to instantly write type-safe queries against your existing database. It is also a powerful tool for data-model-driven code-generation, which allows you to customize your Slick integration, auto-generate Framework bindings (e.g. for Play) or even code unrelated to Slick like html-forms. If there is time, we will also talk about other new features in Slick 2 like pre-compiled updates and better support for auto-incremented columns and pre-compiled queries.</p>\n            ",
                 "speakers": [
                     {
                         "twitter": "@cvogt",
@@ -698,14 +699,14 @@
                 "title": "What’s in your pocket? The state of the art in Android programming with Scala",
                 "room": 3,
                 "time": "13:00-13:55",
-                "description": "\n\n<p>Integer a feugiat erat. No bio. Pellentesque at odio sit amet quam porttitor pharetra ac in nunc. Aenean est risus, cursus vitae lacus a, viverra vehicula nisl. Etiam aliquet, turpis accumsan tristique hendrerit, felis nisi condimentum lacus, sit amet elementum nisl eros non erat. Proin sed convallis mauris. In suscipit ultrices mollis.</p>\n            ",
+                "description": "\n\n<p>Throughout the years, we’ve seen a few Android-related presentations on Scala Days. However, the current state of the art has remained unclear: is it just a mad fancy, or is indeed Scala the modern mobile developer’s dream? This talk covers the matter in depth, along with tales of joy and frustration, and focuses on the following three topics:</p><p>THE ECOSYSTEM / STARTING OUT</p><ul><li>SBT plugins </li><li>IDE support </li><li>Using library projects</li><li>Fitting into memory / method count limits with ProGuard</li><li>Pain points and best practices</li></ul><p>THE WHY-S</p><ul><li>Scala 2.11’s SAM support </li><li>lazy vals and reactive extensions meet UI lifecycle</li><li>Options are cool</li><li>Cherishing the UI thread: futures, execution contexts, scala-async, and Akka</li><li>Being productive with Scaloid and Macroid </li></ul><p>MACROID (disclosure: I’m the author)</p><ul><li>An experimental GUI DSL for Android</li><li>Clean layout structure with macros and typeclasses</li><li>True modularity and composability</li><li>Advanced features: functor goodness, dataflow-style animations, functional reactive programming</li></ul><p>LIVE CODING (if any time left)</p><p>A very short demo of creating and running a simple app.</p>\n            ",
                 "speakers": [
                     {
                         "twitter": "@stanchme",
                         "fullname": "Nick Stanchenko",
                         "avatar": "assets/images/speakers/nick.jpg",
-                        "company": "",
-                        "bio": "Nick is a Scala enthusiast, studying and researching HCI at the University of Lisbon. He is the creator of Macroid — the Android Scala DSL."
+                        "company": "University of Lisbon",
+                        "bio": "Following a five year degree in computer science, I have enrolled in a Master’s degree with focus on human-computer interaction at the University of Lisbon, Portugal. I’ve been programming in Scala for more than a year, an Android app being my very first Scala program (the app, now a part of my master thesis, might be publicly available by the time of presentation). I’m somewhat active on the scala-on-android mailing list; I enjoy 70s detective movies and jazz fusion."
                     }
                 ]
             },
@@ -714,14 +715,14 @@
                 "title": "Git Going Faster... with Scala",
                 "room": 4,
                 "time": "13:00-13:55",
-                "description": "\n\n<p>Integer a feugiat erat. No bio. Pellentesque at odio sit amet quam porttitor pharetra ac in nunc. Aenean est risus, cursus vitae lacus a, viverra vehicula nisl. Etiam aliquet, turpis accumsan tristique hendrerit, felis nisi condimentum lacus, sit amet elementum nisl eros non erat. Proin sed convallis mauris. In suscipit ultrices mollis.</p>\n            ",
+                "description": "\n\n<p><p>Scala’s effectiveness in rapid-prototyping is only one of the properties that make it a fantastic tool for eviscerating Git's guts. Taking advantage of the others allowed The BFG (an alternative to git-filter-branch, written in Scala) to outperform the native ‘git-filter-branch’ command by a factor of 50x or more - turning an overnight job into one that takes less than 5 minutes.</p><p>This talk will share experiences from building The BFG (successfully prototyped in a single high-stakes journey on the London Underground), highlight properties of Scala that made it possible, and explain the reformed-alcoholic pattern of user behavior.</p><p><a href='http://rtyley.github.io/bfg-repo-cleaner/' >http://rtyley.github.io/bfg-repo-cleaner/</a></p></p>\n            ",
                 "speakers": [
                     {
-                        "twitter": "",
+                        "twitter": "@rtyley",
                         "fullname": "Roberto Tyley",
-                        "avatar": "",
-                        "company": "",
-                        "bio": "No bio."
+                        "avatar": "assets/images/speakers/tyley.jpg",
+                        "company": "The Guardian",
+                        "bio": "<p>Roberto Tyley is the author of Agit (the Git client for Android devices) and The BFG Repo-Cleaner (a faster, simpler alternative to git-filter-branch), a software developer at The Guardian, and contributor to various open-source projects. He's worked at GitHub, 'invented' animated diffs, and loves explaining things.</p>"
                     }
                 ]
             },
@@ -733,18 +734,18 @@
                 "description": "\n\n<p>Scala has come a long way since the summer of '04, when Miles and Jon first ran scalac. This year celebrates the ten-year anniversary of Scala's first public release, and to celebrate the occasion, we will relive some of the highlights of the last decade, taking an archaeological rummage through mailing list archives, commit messages, bug reports and some old-fashioned Scala code, semicolons and all!</p>\n<p>In this lighthearted trip into Scala's past, we look at everything that's changed about the language since 2004, and with help from some special guests, will attempt to fight the bitrot with a vintage live-coding session on Scala version 1.3!</p>\n            ",
                 "speakers": [
                     {
-                        "twitter": "",
+                        "twitter": "@propensive",
                         "fullname": "Jon Pretty",
-                        "avatar": "",
+                        "avatar": "assets/images/speakers/pretty.jpg",
                         "company": "",
-                        "bio": "No bio."
+                        "bio": "Jon Pretty is an experienced Scala developer, consultant and evangelist. Having launched the very first commercial Scala applications in 2005, Jon has been involved with Scala for the last eight years and has overseen numerous successful Scala deploy."
                     },
                     {
-                        "twitter": "",
+                        "twitter": "@milessabin",
                         "fullname": "Miles Sabin",
-                        "avatar": "",
+                        "avatar": "assets/images/speakers/sabin.jpg",
                         "company": "",
-                        "bio": "No bio."
+                        "bio": "Miles Sabin is perhaps best known in the Scala world for his outstanding contribution to the Scala IDE for Eclipse."
                     }
                 ]
             },
@@ -753,14 +754,14 @@
                 "title": "A whirlwind tour of specs2 2.x",
                 "room": 2,
                 "time": "14:00-14:55",
-                "description": "\n\n<p>Integer a feugiat erat. No bio. Pellentesque at odio sit amet quam porttitor pharetra ac in nunc. Aenean est risus, cursus vitae lacus a, viverra vehicula nisl. Etiam aliquet, turpis accumsan tristique hendrerit, felis nisi condimentum lacus, sit amet elementum nisl eros non erat. Proin sed convallis mauris. In suscipit ultrices mollis.</p>\n            ",
+                "description": "\n\n<p>So you want to specify your Scala application but you don't know where to start?</p><p>Enter specs2 and follow the guide to discover how to write both unit tests and acceptance scenarios, from simple (specifying functions) to complex (managing contexts). Then learn how to enhance them with DSL matchers, mocks, ScalaCheck properties, data tables, tags, precise failure messages, snippets and much more!</p><p>This talk will help beginners to get started writing specs and will also show useful tips and tricks to seasoned users. But most importantly it will remind us that writing specifications is *fun*!</p>\n            ",
                 "speakers": [
                     {
-                        "twitter": "",
+                        "twitter": "@etorreborre",
                         "fullname": "Eric Torreborre",
-                        "avatar": "",
-                        "company": "",
-                        "bio": "No bio."
+                        "avatar": "assets/images/speakers/torreborre.jpg",
+                        "company": "NICTA",
+                        "bio": "Scala developer <a href='https://twitter.com/NICTA'>@NICTA</a>, pushing research ideas to the wide world, creator of the specs2 library, developer of the Scoobi library for Hadoop."
                     }
                 ]
             },
@@ -769,23 +770,23 @@
                 "title": "How to manage large amounth of data with Iteratee",
                 "room": 3,
                 "time": "14:00-14:55",
-                "description": "\n\n<p>Integer a feugiat erat. No bio. Pellentesque at odio sit amet quam porttitor pharetra ac in nunc. Aenean est risus, cursus vitae lacus a, viverra vehicula nisl. Etiam aliquet, turpis accumsan tristique hendrerit, felis nisi condimentum lacus, sit amet elementum nisl eros non erat. Proin sed convallis mauris. In suscipit ultrices mollis.</p>\n            ",
+                "description": "\n\n<p>How to manage a large file with HTTP? Is it possible to manage data stream when you are in a HTTP POST request? How to be relax when managing data stream (ie : not use while(true) hack or something I/O block)?</p><p>This talk is about Play! iteratee and how to use it on real project : what is an iteratee? why it's useful? how to use it? how to manage it? is it clean? is your code readable or not?</p><p>Real use + theories + example + animated gif</p><p>I give this talk in tokyo, nantes, seoul... Scala.io organizer + regular speaker in various conference.</p>\n            ",
                 "speakers": [
                     {
-                        "twitter": "",
-                        "fullname": "Quentin ADAM",
-                        "avatar": "",
-                        "company": "",
-                        "bio": "No bio."
+                        "twitter": "@waxzce",
+                        "fullname": "Quentin Adam",
+                        "avatar": "assets/images/speakers/adam.jpg",
+                        "company": "Clever Cloud",
+                        "bio": "CEO of Clever Cloud, a PaaS cloud computing company. Interested in entrepreneurship, technologies, startups, cloud, nosql, java/scala/JVM, html5."
                     }
                 ]
             },
             {
                 "type": "track",
-                "title": "Sponsor",
+                "title": "Workshop",
                 "room": 4,
                 "time": "14:00-14:55",
-                "description": "\n\n<p>Integer a feugiat erat. No bio. Pellentesque at odio sit amet quam porttitor pharetra ac in nunc. Aenean est risus, cursus vitae lacus a, viverra vehicula nisl. Etiam aliquet, turpis accumsan tristique hendrerit, felis nisi condimentum lacus, sit amet elementum nisl eros non erat. Proin sed convallis mauris. In suscipit ultrices mollis.</p>\n            ",
+                "description": "\n\n<p>Details Coming Soon!</p>\n            ",
                 "speakers": []
             },
             {
@@ -798,7 +799,7 @@
                     {
                         "twitter": "@xeno_by",
                         "fullname": "Eugene Burmako",
-                        "avatar": "",
+                        "avatar": "assets/images/speakers/burmako.jpg",
                         "company": "EPFL",
                         "bio": "Programming languages enthusiast, PhD student at EPFL, member of Scala team, Scala macros guy."
                     }
@@ -809,14 +810,14 @@
                 "title": "Forgotten Heroes: Less Fashionable Patterns in Scala",
                 "room": 2,
                 "time": "15:00-15:55",
-                "description": "\n\n<p>Integer a feugiat erat. No bio. Pellentesque at odio sit amet quam porttitor pharetra ac in nunc. Aenean est risus, cursus vitae lacus a, viverra vehicula nisl. Etiam aliquet, turpis accumsan tristique hendrerit, felis nisi condimentum lacus, sit amet elementum nisl eros non erat. Proin sed convallis mauris. In suscipit ultrices mollis.</p>\n            ",
+                "description": "\n\n<p>Abstract-Here</p>\n            ",
                 "speakers": [
                     {
-                        "twitter": "",
+                        "twitter": "@dickwall",
                         "fullname": "Dick Wall",
-                        "avatar": "",
+                        "avatar": "assets/images/speakers/wall.jpg",
                         "company": "",
-                        "bio": "No bio."
+                        "bio": "Dick Wall is a member of the JavaPosse and partner of Escalate Software. Dick was also the recipient of last year's Phil Bagwell Award for his dedication to the Scala community."
                     }
                 ]
             },
@@ -825,12 +826,13 @@
                 "title": "Testing Stateful Systems with ScalaCheck",
                 "room": 3,
                 "time": "15:00-15:55",
-                "description": "\n\n<p>Integer a feugiat erat. No bio. Pellentesque at odio sit amet quam porttitor pharetra ac in nunc. Aenean est risus, cursus vitae lacus a, viverra vehicula nisl. Etiam aliquet, turpis accumsan tristique hendrerit, felis nisi condimentum lacus, sit amet elementum nisl eros non erat. Proin sed convallis mauris. In suscipit ultrices mollis.</p>\n            ",
+                "description": "\n\n<p>Property-based testing can be applied to more than just small units of code! Come see how to write ScalaCheck properties that define the behavior of complete, stateful systems. Nicely randomised and automatically simplified test cases come free with ScalaCheck, as usual.</p><p>Stateful testing has been part of ScalaCheck for a long time, but never promoted much. Now, a complete rewrite inspired by Erlang QuickCheck adds exciting new functionality for finding concurrency issues in your code.</p><p>You'll also see interesting examples on how to scale up the idea of test case generation. Why settle for generating function inputs, when you can parameterise your entire server infrastructure and let ScalaCheck find out which variant break down?</p><p>Scale up your tests and scale up confidence in the system you're building.</p>\n            ",
                 "speakers": [
-                    {
+                  {
+                        "twitter": "@rickynils",
                         "fullname": "Rickard Nilsson",
                         "avatar": "assets/images/speakers/nilsson.jpg",
-                        "company": "",
+                        "company": "ScalaCheck",
                         "bio": "Rickard is a freelance programmer and sysadmin, interested in declarative development and deployment. He is the creator of ScalaCheck."
                     }
                 ]
@@ -840,14 +842,14 @@
                 "title": "Meet parboiled2 – A Macro-Based PEG Parser Generator for Scala 2.10.3+",
                 "room": 4,
                 "time": "15:00-15:55",
-                "description": "\n\n<p>Integer a feugiat erat. No bio. Pellentesque at odio sit amet quam porttitor pharetra ac in nunc. Aenean est risus, cursus vitae lacus a, viverra vehicula nisl. Etiam aliquet, turpis accumsan tristique hendrerit, felis nisi condimentum lacus, sit amet elementum nisl eros non erat. Proin sed convallis mauris. In suscipit ultrices mollis.</p>\n            ",
+                "description": "\n\n<p>Are you interested in Scala Macros, type-level programming and shapeless applied to PEG parser generators? In this talk I will introduce to you parboiled2, a powerful library for encoding of PEG rules in DSL. We will work through a running example to have a hands on experience and clear understanding of library's functionality. We will consider how well-typed shapeless-based DSL saves developers from shooting themselves in a leg while doing value stack manipulations. Finally, we will look under the hood of parboiled2 to see how Macro Paradise makes it so fast and effective.</p>\n            ",
                 "speakers": [
                     {
-                        "twitter": "",
+                        "twitter": "@Alex_Myltsev",
                         "fullname": "Alexander Myltsev",
-                        "avatar": "",
+                        "avatar": "assets/images/speakers/myltsev.jpg",
                         "company": "",
-                        "bio": "No bio."
+                        "bio": "Entrepreneur and researcher, Scala programmer."
                     }
                 ]
             },
@@ -861,9 +863,9 @@
                     {
                         "twitter": "@jaguarul",
                         "fullname": "Iulian Dragos",
-                        "avatar": "",
+                        "avatar": "assets/images/speakers/dragos.jpg",
                         "company": "Typesafe",
-                        "bio": "No bio."
+                        "bio": "Iulian Dragos is a Typesafe senior engineer and the Head of Typesafe Switzerland. He joined Typesafe from day 1. Before that, he obtained a PhD in programming languages at EPFL under the supervision of Prof. Martin Odersky, where he became one of the most prolific committers on the Scala codebase. At Typesafe he is leading the Scala IDE team, improving tooling for the Typesafe platform through the likes of the Scala and Play IDE or the asynchronous debugger."
                     }
                 ]
             },
@@ -872,13 +874,13 @@
                 "title": "Enterprise brownfield: Scala to the rescue",
                 "room": 2,
                 "time": "16:00-16:55",
-                "description": "\n\n<p>Integer a feugiat erat. No bio. Pellentesque at odio sit amet quam porttitor pharetra ac in nunc. Aenean est risus, cursus vitae lacus a, viverra vehicula nisl. Etiam aliquet, turpis accumsan tristique hendrerit, felis nisi condimentum lacus, sit amet elementum nisl eros non erat. Proin sed convallis mauris. In suscipit ultrices mollis.</p>\n            ",
+                "description": "\n\n<p>When an Enterprise Java software product celebrates its decennial, maintenance becomes hard, and new features tend to increase complexity exponentially. Development comes dangerously close to grinding to a halt.</p><p>At this point, the team decides to switch to Scala. Without the luxury of green fields, this has to happen incrementally, yet fast.</p><p>This talk describes what happens next: How the infrastructure, tools, libraries and architecture change, how the team copes with all this, what lessons are learned and finally, what consequences there are for the product.<p>The talk is based on the experience of the software development team at imbus with moving to Scala for product development.</p>\n            ",
                 "speakers": [
                     {
                         "twitter": "@johofer",
                         "fullname": "Joachim Hofer",
-                        "avatar": "assets/images/speakers/hofer.jpg",
-                        "company": "imbus",
+                        "avatar": "assets/images/speakers/hofer.png",
+                        "company": "imbus AG",
                         "bio": "Joachim Hofer is lead developer at imbus, Scala enthusiast, and active contributor to Open Source."
                     }
                 ]
@@ -888,7 +890,7 @@
                 "title": "Miniboxing: Specialization on a Diet",
                 "room": 3,
                 "time": "16:00-16:55",
-                "description": "\n\n<p>Integer a feugiat erat. No bio. Pellentesque at odio sit amet quam porttitor pharetra ac in nunc. Aenean est risus, cursus vitae lacus a, viverra vehicula nisl. Etiam aliquet, turpis accumsan tristique hendrerit, felis nisi condimentum lacus, sit amet elementum nisl eros non erat. Proin sed convallis mauris. In suscipit ultrices mollis.</p>\n            ",
+                "description": "\n\n<p>Miniboxing is a research project at EPFL aimed at improving the performance of generic code running on the Java Virtual Machine. It is implemented as a Scala compiler plugin, and can speed up generics by up to 22x when used for numeric types, such as integer or double.</p><p>The key element that makes miniboxing desirable over specialization is the limited bytecode growth, which allows optimizing Function2 and Tuple3 without bloating the Scala library. This means one day, the entire Scala collections library may be optimized by miniboxing without prohibitive increases in bytecode size.</p><p>Aside from the bytecode size, miniboxing addresses other shortcomings of specialization, such as duplicate fields (SI-3585) and specialized inheritance.</p><p>In this talk I will compare the performance of miniboxing and specialization on the spire and breeze libraries. I will also present performance numbers for a mock-up of the Scala collections library that is specialized using miniboxing.</p><p>I would also like to use the opportunity to open up and listen to the pain points in the community, discuss possible solutions and use the discussion to guide compiler and virtual machine research at EPFL.</p><p>More details on miniboxing are available at <a href='http://www.scala-miniboxing.org'>scala-miniboxing.org</a>.</p>\n            ",
                 "speakers": [
                     {
                         "twitter": "@VladUreche",
@@ -907,18 +909,18 @@
                 "description": "\n\n<p>Scala Puzzlers returns with a twist: not only will we be presenting a brand new set of puzzlers for Scala 2.11 that will challenge you with unexpected and unintuitive behavior and help you learn something about your favorite language in the process.</p>\n<p>This time, we've added a key set of tips and recommendations to help you avoid these pitfalls when real deadlines are at stake. That's not the time for head-scratching - better to laugh and learn at ScalaDays 2014!</p>\n            ",
                 "speakers": [
                     {
-                        "twitter": "",
+                        "twitter": "@higherkinded",
                         "fullname": "Nermin Serifovic",
-                        "avatar": "",
-                        "company": "",
-                        "bio": "No bio."
+                        "avatar": "assets/images/speakers/nermin.jpg",
+                        "company": "Scala Puzzlers",
+                        "bio": "Nermin Serifovic has been a Scala enthusiast since 2009 and professional practitioner since 2011. He is a co-creator of <a href='http://scalapuzzlers.com/'>scalapuzzlers.com</a>"
                     },
                     {
-                        "twitter": "",
+                        "twitter": "@ScalaPuzzlers",
                         "fullname": "Andrew Phillips",
-                        "avatar": "",
-                        "company": "",
-                        "bio": "No bio."
+                        "avatar": "assets/images/speakers/andrew.jpg",
+                        "company": "Scala Puzzlers",
+                        "bio": "Andrew is a long-time JVM developer and now VP Products for XebiaLabs. He actively contributes to open source projects and co-maintains the Scala Puzzlers website."
                     }
                 ]
             },

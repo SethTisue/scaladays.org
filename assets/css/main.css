@@ -527,6 +527,9 @@ section:after {
 #locations #expo:before {
   content: "Venue";
 }
+#locations #hotel {
+  background-color: #53cdec;
+}
 #locations #hotel:before {
   content: "Lodging";
 }
@@ -750,6 +753,17 @@ section:after {
   color: #f16665;
   font-weight: 700;
   margin: 0 0 5px 0;
+}
+#schedule #details #content a {
+  color: #d64546;
+}
+#schedule #details #content ul {
+  margin-bottom: 10px;
+  padding-left: 10px;
+}
+#schedule #details #content ul li {
+  list-style-type: disc;
+  list-style-position: inside;
 }
 #schedule #details #content .speaker:after {
   content: ' ';
@@ -1058,25 +1072,25 @@ section:after {
   left: 0;
 }
 #schedule .track.track1:before {
-  content: "theatre";
+  content: "room 1";
 }
 #schedule .track.track2 {
   left: 25%;
 }
 #schedule .track.track2:before {
-  content: "room 1";
+  content: "room 2";
 }
 #schedule .track.track3 {
   left: 50%;
 }
 #schedule .track.track3:before {
-  content: "room 2";
+  content: "room 3";
 }
 #schedule .track.track4 {
   left: 75%;
 }
 #schedule .track.track4:before {
-  content: "hands on";
+  content: "room 4";
 }
 @media (max-width: 1440px) {
   #schedule .track.track1 {
