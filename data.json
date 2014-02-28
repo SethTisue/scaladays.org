@@ -20,7 +20,7 @@
             },
             {
                 "type": "keynote",
-                "title": "Monday Keynote",
+                "title": "Scala: More Simple Parts",
                 "description": "Need This",
                 "time": "16:30-17:30",
                 "speakers": [
@@ -626,7 +626,7 @@
                 "title": "Building a Reactive Application",
                 "room": 2,
                 "time": "11:05-12:00",
-                "description": "\n\n<p>My session proposal would focus on the tenets and tools for building a reactive application, as well as a simple real world example. Following is an outline of the sequence of topics that would be covered.</p>\n            ",
+                "description": "\n\n<p></p>\n            ",
                 "speakers": [
                     {
                         "twitter": "@ironfish",
@@ -781,7 +781,7 @@
             },
             {
                 "type": "track",
-                "title": "How to manage large amounth of data with Iteratee",
+                "title": "How to manage large amounts of data with Iteratee",
                 "room": 3,
                 "time": "14:00-14:55",
                 "description": "\n\n<p>How to manage a large file with HTTP? Is it possible to manage data stream when you are in a HTTP POST request? How to be relax when managing data stream (ie : not use while(true) hack or something I/O block)?</p><p>This talk is about Play! iteratee and how to use it on real project : what is an iteratee? why it's useful? how to use it? how to manage it? is it clean? is your code readable or not?</p><p>Real use + theories + example + animated gif</p><p>I give this talk in tokyo, nantes, seoul... Scala.io organizer + regular speaker in various conference.</p>\n            ",
