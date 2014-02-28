@@ -2,7 +2,7 @@
     "Day1": {
         "id": "june-16",
         "title": "Monday June 16th",
-        "time": "16:00-21:00",
+        "time": "16:00-20:00",
         "tracks": [
             {
                 "type": "pause",
@@ -30,7 +30,7 @@
                 "type": "pause",
                 "style": "drink",
                 "title": "After Party At Kosmos",
-                "time": "19:30-22:00",
+                "time": "19:30-20:30",
                 "extra": ""
             }
         ]
@@ -38,7 +38,7 @@
     "Day2": {
         "id": "june-17",
         "title": "Tuesday June 17th",
-        "time": "08:00-21:00",
+        "time": "08:00-19:00",
         "tracks": [
             {
                 "type": "pause",
@@ -496,7 +496,7 @@
                 "type": "pause",
                 "style": "drink",
                 "title": "Hospitality Suites at Kosmos and Community Party",
-                "time": "18:00-22:00",
+                "time": "18:00-19:30",
                 "extra": ""
             }
         ]
