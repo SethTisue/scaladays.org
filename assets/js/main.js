@@ -184,6 +184,7 @@ var TrackDetails = (function() {
                 // routes[url][1].scrollReveal();
             } else {
                 dom.hide();
+                document.body.className = "";
             }
         }
     }

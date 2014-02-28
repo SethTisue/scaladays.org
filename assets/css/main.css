@@ -28,7 +28,7 @@ section{position:relative;padding:80px 330px 80px 80px;}
 @media (max-width: 960px){section{padding:30px}
 }section:after{content:' ';display:block;clear:both}
 section header h1{font-size:30px}
-#home{min-height:400px;background:#53cdec;position:relative;display:block;padding:40px 330px 400px 80px;}
+#home{min-height:400px;background:#53cdec;position:relative;display:block;padding:40px 330px 200px 80px;}
 @media (max-width: 960px){#home{padding:40px}
 }#home h2{color:#19aacf;margin-left:140px;font-size:20px}
 #home article{clear:both;margin-bottom:20px;}
@@ -127,7 +127,7 @@ section header h1{font-size:30px}
 @media (max-width:640px){#schedule #details{padding:60px 15px}
 }#schedule #details .details-hide{display:none}
 #schedule #details .close{position:absolute;top:80px;right:80px;cursor:pointer;font-size:30px;font-weight:200;text-transform:uppercase;}
-@media (max-width:640px){#schedule #details .close{top:10px;right:10px}
+@media (max-width:960px){#schedule #details .close{top:10px;right:10px}
 }#schedule #details #content{max-width:600px;}
 #schedule #details #content h3{color:#53cdec;padding:0;line-height:33px;font-size:30px;margin:0 0 20px 0}
 #schedule #details #content h4{color:#53cdec;margin:20px 0 0 0;font-size:18px}
