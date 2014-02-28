@@ -260,7 +260,8 @@
 		.speakersbio 
 			display: block
 			color: #8a2420
-			-webkit-transition: all 200ms ease-in-out
+			transition: all 200ms ease-in-out
+			width: 100%
 			white-space: nowrap
 			overflow: hidden
 			text-overflow: ellipsis
@@ -268,24 +269,24 @@
 			margin-right: 70px
 		.pause
 			width: 100%
+			margin-top: 1px
 			h3
 				float: left
 				margin-right: 2%
 				span
 					font-size: 14px
-			
-			&.register
-				margin-top: -45px
-				
-			.svg-icon-registration
-				width: 51px
-				height: 60px
-			.svg-icon-drink
-				width: 80px
-				height: 49px
-			.svg-icon-eat
-				width: 60px
-				height: 41px
+		.register
+			background: url(../images/register.svg) 30px 10px no-repeat
+			padding-left: 150px
+			background-size: 100px auto
+		.drink
+			background: url(../images/drink.svg) 30px 10px no-repeat
+			padding-left: 150px
+			background-size: 100px auto
+		.eat
+			background: url(../images/eat.svg) 30px 10px no-repeat
+			padding-left: 150px
+			background-size: 100px auto
 	.keynote 
 		background: slate-ltr
 		color: grey-ltr
@@ -299,6 +300,17 @@
 			color: red
 			font-size: 26px
 			margin-bottom: 0.4em
+			a 
+				text-decoration: none
+				color: inherit
+				&:after
+					display: block
+					content: " "
+					position: absolute
+					top: 0
+					left: 0
+					right: 0
+					bottom: 0
 		h4
 			color: white
 		.details
