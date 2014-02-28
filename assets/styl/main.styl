@@ -45,7 +45,7 @@ slate-tt =      #354854
 
 //default border-radius
 br = 3px
-header-size = 40px
+header-size = 30px
 
 body, html
 	height: 100%
@@ -161,6 +161,8 @@ section
 		content: ' '
 		display: block
 		clear: both
+	header h1
+		font-size: header-size
 
 #home
 	min-height: 400px
@@ -471,12 +473,21 @@ section
 	background: slate
 	color: white
 	h1
-		color: blue		
+		color: blue
+	article
+		max-width: 680px		
 #tickets
 	background: blue
 	color: white
 	h1
-		color: white	
+		color: navy
+	table
+		margin: 20px 0
+		background-color: blue-dkr
+		padding: 20px	
+		text-align: center
+		th 
+			
 
 #sponsors
 	background: white
@@ -487,7 +498,7 @@ section
 		margin-bottom: 0
 	article
 		text-align: center
-		margin: 50px 0
+		margin: 30px 0
 		h2
 			color: white
 			font-weight: 400
@@ -508,6 +519,8 @@ section
 		color: blue
 	a 
 		color: red-text	
+	article
+		max-width: 680px
 #contact
 	background: blue
 	h1

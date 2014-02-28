@@ -167,6 +167,9 @@ section:after {
   display: block;
   clear: both;
 }
+section header h1 {
+  font-size: 30px;
+}
 #home {
   min-height: 400px;
   background: #53cdec;
@@ -387,7 +390,7 @@ section:after {
   margin: 0 330px 0 80px;
 }
 #about h1 {
-  font-size: 40px;
+  font-size: 30px;
   color: #103a51;
 }
 #about p {
@@ -405,7 +408,7 @@ section:after {
 }
 #speakers h1 {
   margin: 0 0 20px 0;
-  font-size: 40px;
+  font-size: 30px;
 }
 #speakers h2 {
   font-size: 25px;
@@ -540,25 +543,35 @@ section:after {
 #training h1 {
   color: #53cdec;
 }
+#training article {
+  max-width: 680px;
+}
 #tickets {
   background: #53cdec;
   color: #fff;
 }
 #tickets h1 {
-  color: #fff;
+  color: #103a51;
+}
+#tickets table {
+  margin: 20px 0;
+  background-color: #42b8d7;
+  padding: 20px;
+  text-align: center;
+th
 }
 #sponsors {
   background: #fff;
   text-align: left;
 }
 #sponsors header h1 {
-  font-size: 40px;
+  font-size: 30px;
   color: #103a51;
   margin-bottom: 0;
 }
 #sponsors article {
   text-align: center;
-  margin: 50px 0;
+  margin: 30px 0;
 }
 #sponsors article h2 {
   color: #fff;
@@ -586,12 +599,15 @@ section:after {
 #conduct a {
   color: #d64546;
 }
+#conduct article {
+  max-width: 680px;
+}
 #contact {
   background: #53cdec;
 }
 #contact h1 {
   color: #103a51;
-  font-size: 40px;
+  font-size: 30px;
   margin-bottom: 0.7em;
 }
 #contact form {
@@ -833,7 +849,7 @@ section:after {
   height: 80px;
   line-height: 80px;
   margin-bottom: 50px;
-  font-size: 40px;
+  font-size: 30px;
 }
 #schedule h2 {
   color: #fff;
