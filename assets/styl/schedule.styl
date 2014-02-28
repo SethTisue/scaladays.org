@@ -294,9 +294,10 @@
 		ul.speaker
 			img
 				display: none
-			a 
-				position: relative
-				z-index: 99
+			@media (min-width: 960px)
+				a 
+					position: relative
+					z-index: 99
 		@media (max-width: 1430px)
 			width: 30%
 		@media (max-width: 1200px)
