@@ -27,7 +27,7 @@ while (props[i]) {
 
 if (!!('ontouchstart' in window) || !requestAnimFrame || !cssTransform) return false;
 
-document.body.className = "animate";
+$(document.body).addClass("animate");
 
 var lastPosition = -10,
     wHeight = window.innerHeight,
