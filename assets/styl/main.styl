@@ -69,8 +69,11 @@ body
 	color: navy
 	-webkit-font-smoothing: antialiased
 	-webkit-font-size-adjust: none
+	-webkit-tap-highlight-color: rgba(0,0,0,0)
 	@media (max-width: 960px)
 		font-size: 12px
+	&.no-scroll
+		overflow: hidden
 
 p
 	margin: .7em 0
@@ -127,8 +130,6 @@ nav
 		&:hover
 			text-decoration: none 
 
-
-
 			
 	.big
 		font-weight: 700
@@ -177,6 +178,8 @@ section
 	position: relative
 	display: block
 	padding: 40px 330px 400px 80px
+	@media (max-width: 960px)
+		padding: 40px
 	h2
 		color: blue-text
 		margin-left: 140px
@@ -230,6 +233,8 @@ section
 		font-size: 100px
 		font-weight: 500
 		color: white
+		@media (max-width: 960px)
+			font-size: 60px
 	strong
 		color: red
 		font-weight: 700
@@ -240,6 +245,9 @@ section
 		font-size: 30px
 		color: white
 		margin: 0
+		@media (max-width: 960px)
+			top: 60px
+			font-size: 20px
 
 .group1
 	position: relative
@@ -310,7 +318,7 @@ section
 	color: white
 	display: block
 	text-align: left
-	padding: 0px 0 100px 0
+	padding: 100px 0
 	margin: 0
 	margin-top: 0px
 	//background: red url("../images/berlin.svg") no-repeat center bottom
@@ -326,6 +334,8 @@ section
 		-moz-transform: translate(0,100)
 		transform: translate(0, 100)
 		opacity: 0
+		@media (max-width: 960px)
+			display: none
 
 	#beerRight
 		transform:rotate(10deg);

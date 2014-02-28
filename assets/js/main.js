@@ -166,10 +166,12 @@ var TrackDetails = (function() {
             routes[url] = [data, track];
         },
         show: function(data) {
+            document.body.className = "no-scroll";
             detailsTpl(data).appendTo(content.html(''));
             dom.show();
         },
         close: function() {
+            document.body.className = "";
             dom.hide();
             window.location.hash = '#close';
         },

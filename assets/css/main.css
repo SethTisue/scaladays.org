@@ -54,11 +54,15 @@ body {
   color: #103a51;
   -webkit-font-smoothing: antialiased;
   -webkit-font-size-adjust: none;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 @media (max-width: 960px) {
   body {
     font-size: 12px;
   }
+}
+body.no-scroll {
+  overflow: hidden;
 }
 p {
   margin: 0.7em 0;
@@ -192,6 +196,11 @@ section header h1 {
   display: block;
   padding: 40px 330px 400px 80px;
 }
+@media (max-width: 960px) {
+  #home {
+    padding: 40px;
+  }
+}
 #home h2 {
   color: #19aacf;
   margin-left: 140px;
@@ -256,6 +265,11 @@ section header h1 {
   font-weight: 500;
   color: #fff;
 }
+@media (max-width: 960px) {
+  #logo h1 {
+    font-size: 60px;
+  }
+}
 #logo strong {
   color: #f16665;
   font-weight: 700;
@@ -267,6 +281,12 @@ section header h1 {
   font-size: 30px;
   color: #fff;
   margin: 0;
+}
+@media (max-width: 960px) {
+  #logo p {
+    top: 60px;
+    font-size: 20px;
+  }
 }
 .group1 {
   position: relative;
@@ -349,7 +369,7 @@ section header h1 {
   color: #fff;
   display: block;
   text-align: left;
-  padding: 0px 0 100px 0;
+  padding: 100px 0;
   margin: 0;
   margin-top: 0px;
   -webkit-background-size: 75%;
@@ -373,6 +393,11 @@ section header h1 {
   opacity: 0;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   filter: alpha(opacity=0);
+}
+@media (max-width: 960px) {
+  #about .beer {
+    display: none;
+  }
 }
 #about #beerRight {
   -webkit-transform: rotate(10deg);
@@ -686,6 +711,11 @@ th
   color: #fff;
   cursor: pointer;
 }
+@media (max-width:640px) {
+  #schedule #details {
+    padding: 60px 15px;
+  }
+}
 #schedule #details .details-hide {
   display: none;
 }
@@ -697,6 +727,12 @@ th
   font-size: 30px;
   font-weight: 200;
   text-transform: uppercase;
+}
+@media (max-width:640px) {
+  #schedule #details .close {
+    top: 10px;
+    right: 10px;
+  }
 }
 #schedule #details #content {
   max-width: 600px;
@@ -773,7 +809,6 @@ th
   padding: 0 80px;
   height: 80px;
   line-height: 80px;
-  margin-bottom: 50px;
   font-size: 30px;
 }
 #schedule h2 {
