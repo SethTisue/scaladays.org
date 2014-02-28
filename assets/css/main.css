@@ -141,7 +141,6 @@ section header h1{font-size:30px}
 #contact fieldset input[type="text"]:first-child{margin:0 2% .5em 0}
 #contact fieldset input[type="text"]:last-child{margin:0 0 .5em 2%}
 #contact fieldset textarea{width:100%;margin:0 0 .5em 0%}
-#schedule{z-index:1001;background:#42b8d7}
 #schedule #details{position:fixed;top:0;right:0;bottom:0;left:0;overflow:auto;font-size:16px;background:#364550;z-index:11111;display:none;padding:80px;color:#fff;cursor:pointer;}
 @media (max-width:640px){#schedule #details{padding:60px 15px}
 }#schedule #details .details-hide{display:none}
@@ -161,7 +160,7 @@ section header h1{font-size:30px}
 #schedule #details #content .speaker li > span{float:left;width:80%;padding-top:5px;font-size:20px;}
 #schedule #details #content .speaker li > span h4{margin:10px 0 0 0;font-size:18px}
 #schedule #details #content .speaker li > span p{font-size:16px}
-#schedule{padding:0;position:relative;font-size:14px;overflow:hidden;}
+#schedule{padding:0;position:relative;font-size:14px;z-index:1001;background:#42b8d7;}
 #schedule h1{padding:0 80px;height:80px;line-height:80px;font-size:30px}
 #schedule h2{color:#fff;line-height:60px;margin:0;font-size:20px;text-align:left}
 #schedule h3{color:#fff;line-height:20px;font-size:20px;margin:5px 0}

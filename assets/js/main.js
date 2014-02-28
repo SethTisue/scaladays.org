@@ -8,7 +8,7 @@ $.getJSON('data.json', function(data) {
 
 
 $.fn.scrollReveal = function(){
-    $("<a href='#'>&nbsp;</a>").insertAfter(this).focus().remove();
+    $("<a href='#'>&nbsp;</a>").appendTo(this).focus().remove();
 }
 
 // Templating
@@ -166,12 +166,12 @@ var TrackDetails = (function() {
             routes[url] = [data, track];
         },
         show: function(data) {
-            document.body.className = "no-scroll";
+            $(document.body).addClass("no-scroll");
             detailsTpl(data).appendTo(content.html(''));
             dom.show();
         },
         close: function() {
-            document.body.className = "";
+            $(document.body).removeClass("no-scroll");
             dom.hide();
             window.location.hash = '#close';
         },
@@ -181,10 +181,11 @@ var TrackDetails = (function() {
                 // Show
                 TrackDetails.show(routes[url][0]);
                 // Scroll to it
-                // routes[url][1].scrollReveal();
+                console.log(routes[url][1])
+                routes[url][1].scrollReveal();
             } else {
                 dom.hide();
-                document.body.className = "";
+                $(document.body).removeClass("no-scroll");
             }
         }
     }
