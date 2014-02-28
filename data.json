@@ -2,20 +2,27 @@
     "Day1": {
         "id": "june-16",
         "title": "Monday June 16th",
-        "time": "16:00-20:00",
+        "time": "15:00-20:00",
         "tracks": [
             {
                 "type": "pause",
                 "style": "register",
                 "title": "Registration Open",
-                "time": "16:30-18:00",
-                "extra": "<h4>&amp; Reception in foyer</h4>"
+                "time": "15:00-16:00",
+                "extra": "<br /><span>&amp; Reception in foyer</span>"
+            },
+            {
+                "type": "pause",
+                "style": "",
+                "title": "Intro",
+                "time": "16:00-16:30",
+                "extra": ""
             },
             {
                 "type": "keynote",
-                "title": "Keynote",
+                "title": "Monday Keynote",
                 "description": "Need This",
-                "time": "18:00-19:30",
+                "time": "16:30-17:30",
                 "speakers": [
                     {
                         "twitter": "@odersky",
@@ -29,8 +36,8 @@
             {
                 "type": "pause",
                 "style": "drink",
-                "title": "After Party At Kosmos",
-                "time": "19:30-20:30",
+                "title": "After Party At Kosmos<br /><span>Including Germany vs Portugal World Cup Match</span>",
+                "time": "18:00-20:00",
                 "extra": ""
             }
         ]
@@ -49,8 +56,8 @@
             },
             {
                 "type": "keynote",
-                "title": "Keynote",
-                "description": "",
+                "title": "Tuesday Keynote",
+                "description": "Coming Soon!",
                 "time": "09:00-10:00",
                 "speakers": [
                     {
@@ -504,7 +511,7 @@
     "Day3": {
         "id": "june-18",
         "title": "Wednesday June 18th",
-        "time": "08:00-18:00",
+        "time": "08:00-19:00",
         "tracks": [
             {
                 "type": "pause",
@@ -515,16 +522,16 @@
             },
             {
                 "type": "keynote",
-                "title": "Keynote",
+                "title": "Wednesday Keynote",
                 "time": "09:00-10:00",
-                "description": "",
+                "description": "Coming Soon!",
                 "speakers": [
                     {
                         "twitter": "",
                         "fullname": "Chad Fowler",
                         "avatar": "assets/images/speakers/fowler.png",
                         "company": "",
-                        "bio": "No bio."
+                        "bio": ""
                     }
                 ]
             },

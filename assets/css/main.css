@@ -169,12 +169,12 @@ section header h1{font-size:30px}
 #schedule .tracks .speakersbio,#schedule .statics .speakersbio{display:block;color:#8a2420;-webkit-transition:all 200ms ease-in-out;-moz-transition:all 200ms ease-in-out;-o-transition:all 200ms ease-in-out;-ms-transition:all 200ms ease-in-out;transition:all 200ms ease-in-out;width:100%;white-space:nowrap;overflow:hidden;-o-text-overflow:ellipsis;text-overflow:ellipsis}
 #schedule .tracks padding-top: 5px,#schedule .statics padding-top: 5px{margin-right:70px}
 #schedule .tracks .pause,#schedule .statics .pause{width:100%;margin-top:1px;}
-#schedule .tracks .pause h3,#schedule .statics .pause h3{float:left;margin-right:2%;}
-#schedule .tracks .pause h3 span,#schedule .statics .pause h3 span{font-size:14px}
+#schedule .tracks .pause h3,#schedule .statics .pause h3{float:left;margin-right:2%;font-size:24px;line-height:1.1em;}
+#schedule .tracks .pause h3 span,#schedule .statics .pause h3 span{font-size:17px}
 #schedule .tracks .register,#schedule .statics .register{background:url("../images/register.svg") 30px 10px no-repeat;padding-left:150px;-webkit-background-size:100px auto;-moz-background-size:100px auto;background-size:100px auto}
 #schedule .tracks .drink,#schedule .statics .drink{background:url("../images/drink.svg") 30px 10px no-repeat;padding-left:150px;-webkit-background-size:100px auto;-moz-background-size:100px auto;background-size:100px auto}
 #schedule .tracks .eat,#schedule .statics .eat{background:url("../images/eat.svg") 30px 10px no-repeat;padding-left:150px;-webkit-background-size:100px auto;-moz-background-size:100px auto;background-size:100px auto}
-#schedule .keynote{background:#3e515e;color:#8ba1b0;width:100%;cursor:pointer;}
+#schedule .keynote{background:#3e515e;color:#8ba1b0;width:100%;}
 #schedule .keynote h3{color:#f16665;font-size:26px;margin-bottom:.4em;}
 #schedule .keynote h3 a{text-decoration:none;color:inherit;}
 #schedule .keynote h3 a:after{display:block;content:" ";position:absolute;top:0;left:0;right:0;bottom:0}
