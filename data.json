@@ -118,7 +118,7 @@
                     {
                         "twitter": "",
                         "fullname": "Kevin Brown",
-                        "avatar": "",
+                        "avatar": "assets/images/speakers/brown.jpg",
                         "company": "Stanford",
                         "bio": "Kevin Brown is a PhD candidate at Stanford University. His research focuses on simplifying parallel programming using DSLs and compilers."
                     }
