@@ -100,7 +100,18 @@ section header h1{font-size:30px}
 #locations #hotel:before{content:"Lodging"}
 #training{background:#364550;color:#fff;}
 #training h1{color:#53cdec}
-#training article{max-width:680px}
+#training article{max-width:680px;}
+#training article a{color:#d64546}
+#training ul{margin-bottom:10px;padding-left:10px;}
+#training ul li{list-style-type:disc;list-style-position:inside}
+#training .toggle-item{-webkit-transition:all 200ms ease-in-out;-moz-transition:all 200ms ease-in-out;-o-transition:all 200ms ease-in-out;-ms-transition:all 200ms ease-in-out;transition:all 200ms ease-in-out;margin:10px 0;padding:20px 20px 20px 20px;-webkit-border-radius:3px;border-radius:3px;background-color:#3e515e;}
+#training .toggle-item .toggle-control{background-color:transparent;cursor:pointer;color:#d64546;display:block;font-weight:400;}
+#training .toggle-item .toggle-control:after{content:"\25BE";float:right}
+#training .toggle-item .toggle-content{opacity:0;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";filter:alpha(opacity=0);display:none;-webkit-transition:all 200ms ease-in-out;-moz-transition:all 200ms ease-in-out;-o-transition:all 200ms ease-in-out;-ms-transition:all 200ms ease-in-out;transition:all 200ms ease-in-out}
+#training .toggle-item.on{padding:20px;background-color:#3e515e;}
+#training .toggle-item.on .toggle-control{display:block;}
+#training .toggle-item.on .toggle-control:after{content:"close \2716";float:right;color:#fff;text-transform:uppercase;font-weight:200}
+#training .toggle-item.on .toggle-content{opacity:1;-ms-filter:none;filter:none;display:block;-webkit-transition:all 200ms ease-in-out;-moz-transition:all 200ms ease-in-out;-o-transition:all 200ms ease-in-out;-ms-transition:all 200ms ease-in-out;transition:all 200ms ease-in-out}
 #tickets{background:#53cdec;color:#fff;}
 #tickets h1{color:#103a51}
 #tickets table{margin:20px 0;-webkit-border-radius:3px;border-radius:3px;text-align:center;font-size:18px;}

@@ -247,3 +247,8 @@ function BindSchedule(schedule){
     if (!('ontouchstart' in window)) loop();
 
 }
+
+
+$(".toggle-item").on("click", ".toggle-control",function(){
+    $(this).parent().toggleClass('on');
+});

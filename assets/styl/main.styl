@@ -493,7 +493,55 @@ section
 	h1
 		color: blue
 	article
-		max-width: 680px		
+		max-width: 680px
+		a 
+			color: red-text
+	ul 
+		margin-bottom: 10px
+		padding-left: 10px
+		li
+			list-style-type: disc
+			list-style-position: inside
+
+
+	.toggle-item
+		transition: all 200ms ease-in-out
+		margin: 10px 0
+		padding: 20px 20px 20px 20px
+		border-radius: br
+		background-color: slate-ltr
+		.toggle-control
+			background-color: transparent
+			cursor: pointer
+			color: red-text
+			display: block
+			font-weight: 400
+			&:after
+				content: "\25BE"
+				float: right
+		.toggle-content
+			opacity: 0
+			display: none
+			transition: all 200ms ease-in-out
+		&.on
+			padding: 20px
+			background-color: slate-ltr
+			.toggle-control
+				display: block
+				&:after
+					content: "close \2716"
+					float: right
+					color: white
+					text-transform: uppercase
+					font-weight: 200
+
+
+			.toggle-content
+				opacity: 1
+				display: block
+				transition: all 200ms ease-in-out
+			
+
 #tickets
 	background: blue
 	color: white
