@@ -81,7 +81,14 @@
                         "fullname": "Viktor Klang",
                         "avatar": "assets/images/speakers/klang.jpg",
                         "company": "Typesafe Inc",
-                        "bio": "<p>Hailing from southern Sweden, Viktor Klang has been a passionate Scala hacker since 2007, a Java enterprise systems architect since 2003 and a programmer since 1998. He's a big fan of agile development, scalable software and elegant code. He joined the Akka team in the middle of 2009 as one of the earliest committers. Viktor currently serves as Chief Architect at Typesafe.</p>"
+                        "bio": "Hailing from southern Sweden, Viktor Klang has been a passionate Scala hacker since 2007, a Java enterprise systems architect since 2003 and a programmer since 1998. He's a big fan of agile development, scalable software and elegant code. He joined the Akka team in the middle of 2009 as one of the earliest committers. Viktor currently serves as Chief Architect at Typesafe."
+                    },
+                    {
+                        "twitter": "@rolandkuhn",
+                        "fullname": "Roland Khun",
+                        "avatar": "assets/images/speakers/roland.jpg",
+                        "company": "Typesafe Inc",
+                        "bio": "After earning a PhD in high-energy particle physics and while working as a systems engineer in the space business, Roland came in contact with Akka. He started contributing to the open-source project in 2010 and has been employed by Typesafe since 2011 where he has been leading the Akka team since November 2012."
                     }
                 ]
             },
@@ -113,7 +120,7 @@
                         "fullname": "Kevin Brown",
                         "avatar": "",
                         "company": "Stanford",
-                        "bio": ""
+                        "bio": "Kevin Brown is a PhD candidate at Stanford University. His research focuses on simplifying parallel programming using DSLs and compilers."
                     }
                 ]
             },
@@ -153,7 +160,7 @@
                         "fullname": "Alexander Nemish",
                         "avatar": "assets/images/speakers/nemish.jpg",
                         "company": "",
-                        "bio": ""
+                        "bio": "Alexander Nemish is a software engineer, Scala enthusiast, musician, skydiver and a bit more."
                     }
                 ]
             },
@@ -169,7 +176,7 @@
                         "fullname": "Alexander Podkhalyuzin",
                         "avatar": "assets/images/speakers/pod.jpg",
                         "company": "",
-                        "bio": ""
+                        "bio": "I graduated from Saint-Petersburg State University in 2010, department of mathematics, I have a lot of prizes from international and regional mathematical competitions. In 2008, I started to work for JetBrains, where I became Scala plugin for IntelliJ IDEA team leader. In 2012 I started teaching Scala in Saint-Petersburg Academic University."
                     }
                 ]
             },
@@ -216,7 +223,7 @@
                         "fullname": "Kevin Hoffman",
                         "avatar": "assets/images/speakers/hoffman.jpg",
                         "company": "Barclays",
-                        "bio": ""
+                        "bio": "Kevin Hoffman started programming when he was 10 years old, when his grandfather gave him a Commodore VIC-20 that he rescued from the trash. Ever since then, he has been hooked on programming, learning programming languages, and infecting others with his passion for simple, elegant code. He has written or co-written over 15 books on various coding and architecture topics. He is also getting ready to publish his first novel, a young adult fantasy. He regularly blogs at <a href='http://www.kotancode.com'>kotancode.com</a> and can be found on Twitter <a href='https://twitter.com/@KevinHoffman'>@KevinHoffman</a>."
                     }
                 ]
             },
@@ -399,7 +406,7 @@
                         "fullname": "Matthew Farwell",
                         "avatar": "assets/images/speakers/farwell.jpg",
                         "company": "",
-                        "bio": "Senior software developer at Nexthink SA and Project Lead on Scalastyle. Co-author of ‘SBT in Action’ and contributor to JUnit."
+                        "bio": "Matthew Farwell works for Nexthink SA in Lausanne, Switzerland. He is the Project Lead for <a href='http://www.scalastyle.org/'>Scalastyle</a> (Checkstyle for Scala), and co-author of <a href='http://www.manning.com/suereth2/'>\"SBT in Action\"</a>. He contributes to multiple open source projects, notably JUnit and Scala-IDE. He presented <a href='http://skillsmatter.com/podcast/scala/coding-with-style-the-scalastyle-style-checker'>Scalastyle</a> at Scala Days 2012."
                     }
                 ]
             },
@@ -586,7 +593,7 @@
                         "fullname": "Tiark Rompf",
                         "avatar": "assets/images/speakers/rompf.jpg",
                         "company": "Oracle Labs / EPFL",
-                        "bio": ""
+                        "bio": "Tiark Rompf is a researcher at Oracle Labs and EPFL, working on runtime code generation and advanced compiler technology. As part of Martin Odersky's team at EPFL, he contributed to Scala in various ways."
                     }
                 ]
             },
@@ -856,7 +863,7 @@
                         "fullname": "Alexander Myltsev",
                         "avatar": "assets/images/speakers/myltsev.jpg",
                         "company": "",
-                        "bio": "Entrepreneur and researcher, Scala programmer."
+                        "bio": "Programmer, researcher, and big data hacker passionately building scalable software products in the garage on his own and as an outsource consultant. Geek of Akka, <a href='http://spray.io/'>spray.io</a>, and a core developer of <a href='http://parboiled2.org/'>parboiled2.org</a> PEG parsing library. His work on parboiled2.org was supported by Google with GSoC 2013 grant. He is also a co-author of the book on GPGPU."
                     }
                 ]
             },
