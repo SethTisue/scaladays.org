@@ -540,6 +540,13 @@ section:after {
 #training h1 {
   color: #53cdec;
 }
+#tickets {
+  background: #53cdec;
+  color: #fff;
+}
+#tickets h1 {
+  color: #fff;
+}
 #sponsors {
   background: #fff;
   text-align: left;
@@ -568,6 +575,16 @@ section:after {
   padding: 20px;
   max-height: 100px;
   max-width: 200px;
+}
+#conduct {
+  background: #364550;
+  color: #fff;
+}
+#conduct h1 {
+  color: #53cdec;
+}
+#conduct a {
+  color: #d64546;
 }
 #contact {
   background: #53cdec;
