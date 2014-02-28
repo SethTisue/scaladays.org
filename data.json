@@ -113,7 +113,7 @@
                 "title": "Solving Data Analytics Problems with Delite",
                 "room": 3,
                 "time": "10:05-11:00",
-                "description": "\n\n<p>In Scala 2.11 we introduced quasiquotes, a rich domain-specific api for tree manipulation. Despite advanced functionality and deep integration into the language, the api itself is just a library that relies on existing language features: string interpolation, macros, type classes etc. This talk will walk through implementation of custom quotations for a tiny language embedded within Scala and introduce you to core concepts used in quasiquotes: splicing, cardinality, lifting/unlifting and show how all of this makes your life easier.</p><p>As data sizes become larger and processor architectures become more parallel, programmers are often forced to resort to using low-level programming models in order to improve performance and scalability. The introduction of heterogeneous accelerators such as GPUs make the programmers’ jobs even more difficult, as they must often combine code for multiple different programming models together in ad-hoc ways. Domain-specific languages (DSLs) offer an alternative approach, as high-level implicitly parallel domain abstractions can be transparently lowered to multiple heterogeneous architectures. We have developed a suite of data analytic DSLs for machine learning, graph analysis, and data manipulation that use the Delite framework in Scala to achieve high performance parallel execution across multiple processors, GPUs, and clusters of machines.<p/><p>This talk will describe how we can combine these DSLs together to build larger applications to solve complex, real-world problems in multiple domains with both higher programmer productivity and higher performance than alternative solutions. After introducing the infrastructure and DSLs themselves, the talk will provide a survey of some of the applications currently being developed by other research groups at Stanford using these DSLs and the resulting productivity and performance benefits. Each application represents an ongoing collaboration in areas such as computational biology, biomedical imaging, data mining, inference engines, and large scale graph analysis.<p/>\n            ",
+                "description": "\n\n<p>In Scala 2.11 we introduced quasiquotes, a rich domain-specific api for tree manipulation. Despite advanced functionality and deep integration into the language, the api itself is just a library that relies on existing language features: string interpolation, macros, type classes etc. This talk will walk through implementation of custom quotations for a tiny language embedded within Scala and introduce you to core concepts used in quasiquotes: splicing, cardinality, lifting/unlifting and show how all of this makes your life easier.</p><p>As data sizes become larger and processor architectures become more parallel, programmers are often forced to resort to using low-level programming models in order to improve performance and scalability. The introduction of heterogeneous accelerators such as GPUs make the programmers' jobs even more difficult, as they must often combine code for multiple different programming models together in ad-hoc ways. Domain-specific languages (DSLs) offer an alternative approach, as high-level implicitly parallel domain abstractions can be transparently lowered to multiple heterogeneous architectures. We have developed a suite of data analytic DSLs for machine learning, graph analysis, and data manipulation that use the Delite framework in Scala to achieve high performance parallel execution across multiple processors, GPUs, and clusters of machines.<p/><p>This talk will describe how we can combine these DSLs together to build larger applications to solve complex, real-world problems in multiple domains with both higher programmer productivity and higher performance than alternative solutions. After introducing the infrastructure and DSLs themselves, the talk will provide a survey of some of the applications currently being developed by other research groups at Stanford using these DSLs and the resulting productivity and performance benefits. Each application represents an ongoing collaboration in areas such as computational biology, biomedical imaging, data mining, inference engines, and large scale graph analysis.<p/>\n            ",
                 "speakers": [
                     {
                         "twitter": "",
@@ -137,7 +137,7 @@
                 "title": "Catalyst: A Functional Query Optimizer for Spark and Shark",
                 "room": 1,
                 "time": "11:05-12:00",
-                "description": "\n\n<p>Shark is a SQL engine built on Apache Hive, that replaces Hive’s MapReduce execution engine with Apache Spark.  Spark’s fine-grained resource model and efficient execution engine allow Shark to outperform Hive by over 100x for data stored in memory. However, until now, Shark’s performance has been limited by the flexibility of Hive’s query optimizer.  Catalyst aims to remedy this situation by building a simple yet powerful optimization framework using Scala language features.</p>\n<p>Query optimization can greatly improve both the productivity of developers and the performance of the queries that they write.  A good query optimizer is capable of automatically rewriting relational queries to execute more efficiently, using techniques such as filtering data early, utilizing available indexes, and even ensuring different data sources are joined in the most efficient order.  By performing these transformations, the optimizer not only improves the execution times of relational queries, but also frees the developer to focus on the semantics of their application instead of its performance.  </p>\n<p>Unfortunately, building an optimizer is an incredibly complex engineering task and thus many open source systems perform only very simple optimizations.  Past research [1,2] has attempted to combat this complexity by providing frameworks that allow the creators of optimizers to write possible optimizations as a set of declarative rules.  However, the use of such frameworks has required the creation and maintenance of special “optimizer compilers” and forced the burden of learning a complex domain specific language upon those wishing to add features to the optimizer. </p>\n<p>Catalyst solves this problem by leveraging Scala’s powerful pattern matching and runtime reflection. This framework allows developers to concisely specify complex optimizations, such as pushing filters past joins functionally.  Increased conciseness allows our developers both to create new optimizations faster and more easily reason about the correctness of the optimization.</p>\n<p>Catalyst also uses the new reflection capabilities in Scala 2.10 to generate custom classes at runtime for storing intermediate results and evaluating complex relational expressions.  Doing so allows us to avoid boxing of primitive values and has been shown to improve performance by orders of magnitude in some cases.</p>\n<p>[1]  Graefe, G. The Cascades Framework for Query Optimization. In Data Engineering Bulletin. Sept. 1995.<br>\n[2] Goetz Graefe , David J. DeWitt, The EXODUS optimizer generator, Proceedings of the 1987 ACM SIGMOD international conference on Management of data, p.160-172, May 27-29, 1987, San Francisco, California, United States</p>\n            ",
+                "description": "\n\n<p>Shark is a SQL engine built on Apache Hive, that replaces Hive's MapReduce execution engine with Apache Spark.  Spark's fine-grained resource model and efficient execution engine allow Shark to outperform Hive by over 100x for data stored in memory. However, until now, Shark's performance has been limited by the flexibility of Hive's query optimizer.  Catalyst aims to remedy this situation by building a simple yet powerful optimization framework using Scala language features.</p>\n<p>Query optimization can greatly improve both the productivity of developers and the performance of the queries that they write.  A good query optimizer is capable of automatically rewriting relational queries to execute more efficiently, using techniques such as filtering data early, utilizing available indexes, and even ensuring different data sources are joined in the most efficient order.  By performing these transformations, the optimizer not only improves the execution times of relational queries, but also frees the developer to focus on the semantics of their application instead of its performance.  </p>\n<p>Unfortunately, building an optimizer is an incredibly complex engineering task and thus many open source systems perform only very simple optimizations.  Past research [1,2] has attempted to combat this complexity by providing frameworks that allow the creators of optimizers to write possible optimizations as a set of declarative rules.  However, the use of such frameworks has required the creation and maintenance of special “optimizer compilers” and forced the burden of learning a complex domain specific language upon those wishing to add features to the optimizer. </p>\n<p>Catalyst solves this problem by leveraging Scala's powerful pattern matching and runtime reflection. This framework allows developers to concisely specify complex optimizations, such as pushing filters past joins functionally.  Increased conciseness allows our developers both to create new optimizations faster and more easily reason about the correctness of the optimization.</p>\n<p>Catalyst also uses the new reflection capabilities in Scala 2.10 to generate custom classes at runtime for storing intermediate results and evaluating complex relational expressions.  Doing so allows us to avoid boxing of primitive values and has been shown to improve performance by orders of magnitude in some cases.</p>\n<p>[1]  Graefe, G. The Cascades Framework for Query Optimization. In Data Engineering Bulletin. Sept. 1995.<br>\n[2] Goetz Graefe , David J. DeWitt, The EXODUS optimizer generator, Proceedings of the 1987 ACM SIGMOD international conference on Management of data, p.160-172, May 27-29, 1987, San Francisco, California, United States</p>\n            ",
                 "speakers": [
                     {
                         "twitter": "@michaelarmbrust",
@@ -169,7 +169,7 @@
                 "title": "Good to Great: IntelliJ IDEA and Scala",
                 "room": 3,
                 "time": "11:05-12:00",
-                "description": "\n\n<p>Most people agree that you become more productive by using IntelliJ IDEA for Scala. However it’s not always clear how much more. In this talk we’ll take a look at the key features of IntelliJ IDEA and reveal some of its usage statistics. And of course we’ll get a report on what’s going on with the IntelliJ IDEA plugin for Scala: what have been recently done and what’s is coming in the future.</p>\n            ",
+                "description": "\n\n<p>Most people agree that you become more productive by using IntelliJ IDEA for Scala. However it's not always clear how much more. In this talk we'll take a look at the key features of IntelliJ IDEA and reveal some of its usage statistics. And of course we'll get a report on what's going on with the IntelliJ IDEA plugin for Scala: what have been recently done and what's is coming in the future.</p>\n            ",
                 "speakers": [
                     {
                         "twitter": "",
@@ -351,14 +351,14 @@
                 "title": "Lightning-Fast Standard Collections With ScalaBlitz",
                 "room": 3,
                 "time": "15:00-15:55",
-                "description": "\n\n<p>As a typical representative of highly abstract Scala libraries, standard collection library faces a number of performance challenges that arise when genericity and high-order code meet the JVM. In particular, commonly used standard Scala collections operations such as 'reduce', 'map', 'filter' suffer huge slowdowns in comparison with equivalent Java code because of abundant boxing and HotSpot-unfriendly code patterns.</p><p>One of the standard approaches to performance-critical design in Scala is eschewing high-level abstractions and churning low-level code with predictable performance characteristics. However, the advent of macros in Scala 2.10 enables a better opportunity that we've seized in ScalaBlitz, a library of highly optimized collection operations. The best thing about this approach is that you don’t need to rewrite your code to get advantages.</p><p>In ScalaBlitz, we have written a macro that inlines and specializes operations on Scala collections, turning high-level abstractions into fine-tuned, performant code. This decreases memory pressure and provides speedups(ie up to 30x for Range.reduce) all that while retaining the conventional, compatible interface of standard collections.</p><p>In this talk we will identify the most common pitfalls that prevent vanilla collections from being fast and explain how we dealt with them. We will show how using ScalaBlitz can help you achieve better performance, while continuing to write code against the familiar interface.</p>\n            ",
+                "description": "\n\n<p>As a typical representative of highly abstract Scala libraries, standard collection library faces a number of performance challenges that arise when genericity and high-order code meet the JVM. In particular, commonly used standard Scala collections operations such as 'reduce', 'map', 'filter' suffer huge slowdowns in comparison with equivalent Java code because of abundant boxing and HotSpot-unfriendly code patterns.</p><p>One of the standard approaches to performance-critical design in Scala is eschewing high-level abstractions and churning low-level code with predictable performance characteristics. However, the advent of macros in Scala 2.10 enables a better opportunity that we've seized in ScalaBlitz, a library of highly optimized collection operations. The best thing about this approach is that you don't need to rewrite your code to get advantages.</p><p>In ScalaBlitz, we have written a macro that inlines and specializes operations on Scala collections, turning high-level abstractions into fine-tuned, performant code. This decreases memory pressure and provides speedups(ie up to 30x for Range.reduce) all that while retaining the conventional, compatible interface of standard collections.</p><p>In this talk we will identify the most common pitfalls that prevent vanilla collections from being fast and explain how we dealt with them. We will show how using ScalaBlitz can help you achieve better performance, while continuing to write code against the familiar interface.</p>\n            ",
                 "speakers": [
                     {
-                        "twitter": "@_axel22_",
-                        "fullname": "Alexandar Prokopec",
-                        "avatar": "assets/images/speakers/prokopec.jpg",
-                        "company": "EPFL LAMP",
-                        "bio": "Doctoral assistant at the EPFL. Author of Scala Parallel Collections, ScalaMeter and ScalaBlitz."
+                        "twitter": "@dark_dimius",
+                        "fullname": "Dmitry Petrashko",
+                        "avatar": "assets/images/speakers/petrashko.jpg",
+                        "company": "EPFL",
+                        "bio": "Dmytro Petrashko is a programming languages and algorithms researcher and a doctoral assistant at EPFL. He is currently working on a doctorate as a research assistant in the School of Computer and Communication Sciences at the EPFL in Switzerland, in the LAMP laboratory on Scala development under the supervision of Dr. Martin Odersky. Prior to that, he received his Bachelor degree at the Moscow Institute of Physics and Technology. His research interests include parallel and concurrent data structures, I/O efficient algorithms as well as design and implementation of frameworks, languages and tools for data-intensive software development."
                     }
                 ]
             },
@@ -415,7 +415,7 @@
                 "title": "BirdWatch",
                 "room": 3,
                 "time": "16:00-16:55",
-                "description": "\n\n<p><a href='https://github.com/matthiasn/BirdWatch'>BirdWatch</a> is a reactive web application that initially got started as a fun side project in order to learn more about writing applications with the TypeSafe stack. In the meantime it found some more serious users, including political science research projects:</p><p>’French political science researcher Joel Gombin is planning to use BirdWatch to monitor various topics during the campaign for the European elections. The app's flexible architecture allows to casually explore the data, while the ElasticSearch database allows other custom-devised tools in other languages, such as R, to use the collected tweets and analyse it along multiple facets. This will allow to gain precious insights about relevant issues in the European debate, and then analyse them with greater depth and details.’</p><p>In this talk we will have a look at the application architecture and how the TypeSafe stack is helpful in writing this kind of application. Specifically we will look at the Iteratee library and how it can be used to route information to many clients per server. We will also discuss the lessons learned from using this tool in the European elections, which will be held in May 2014.</p>\n            ",
+                "description": "\n\n<p><a href='https://github.com/matthiasn/BirdWatch'>BirdWatch</a> is a reactive web application that initially got started as a fun side project in order to learn more about writing applications with the TypeSafe stack. In the meantime it found some more serious users, including political science research projects:</p><p>'French political science researcher Joel Gombin is planning to use BirdWatch to monitor various topics during the campaign for the European elections. The app's flexible architecture allows to casually explore the data, while the ElasticSearch database allows other custom-devised tools in other languages, such as R, to use the collected tweets and analyse it along multiple facets. This will allow to gain precious insights about relevant issues in the European debate, and then analyse them with greater depth and details.'</p><p>In this talk we will have a look at the application architecture and how the TypeSafe stack is helpful in writing this kind of application. Specifically we will look at the Iteratee library and how it can be used to route information to many clients per server. We will also discuss the lessons learned from using this tool in the European elections, which will be held in May 2014.</p>\n            ",
                 "speakers": [
                     {
                         "twitter": "@matthiasnehlsen",
@@ -626,7 +626,7 @@
                 "title": "Building a Reactive Application",
                 "room": 2,
                 "time": "11:05-12:00",
-                "description": "\n\n<p></p>\n            ",
+                "description": "\n\n<p>This session proposal will focus on the tenets and tools for building a reactive application, as well as a simple real world examples.</p>\n            ",
                 "speakers": [
                     {
                         "twitter": "@ironfish",
@@ -642,7 +642,7 @@
                 "title": "Yin-Yang: Programming DSLs Made Simple",
                 "room": 3,
                 "time": "11:05-12:00",
-                "description": "\n\n<p>Interfaces of deep embedded DSLs, like Slick and Squeryl, are inconsistent with the Scala standard library. Furthermore, they rely on complicated types and implicit conversions. This pollutes the API and makes type errors difficult to understand. For these reasons, designing a beautiful DSL API is a challenging and time consuming task.</p><p>In this talk I will explain how Yin-Yang makes designing and using DSLs a breeze. I will show DSLs with an idiomatic Scala API that are translated with macros to the complicated deep embedding. Then I show how we used Yin-Yang to give Slick’s interface a face-lift and improved its performance threefold with just a few hundred lines of code. I finish the talk by live coding a DSL for big decimal numbers.</p>\n            ",
+                "description": "\n\n<p>Interfaces of deep embedded DSLs, like Slick and Squeryl, are inconsistent with the Scala standard library. Furthermore, they rely on complicated types and implicit conversions. This pollutes the API and makes type errors difficult to understand. For these reasons, designing a beautiful DSL API is a challenging and time consuming task.</p><p>In this talk I will explain how Yin-Yang makes designing and using DSLs a breeze. I will show DSLs with an idiomatic Scala API that are translated with macros to the complicated deep embedding. Then I show how we used Yin-Yang to give Slick's interface a face-lift and improved its performance threefold with just a few hundred lines of code. I finish the talk by live coding a DSL for big decimal numbers.</p>\n            ",
                 "speakers": [
                     {
                         "twitter": "@vojjov",
@@ -710,17 +710,17 @@
             },
             {
                 "type": "track",
-                "title": "What’s in your pocket? The state of the art in Android programming with Scala",
+                "title": "What's in your pocket? The state of the art in Android programming with Scala",
                 "room": 3,
                 "time": "13:00-13:55",
-                "description": "\n\n<p>Throughout the years, we’ve seen a few Android-related presentations on Scala Days. However, the current state of the art has remained unclear: is it just a mad fancy, or is indeed Scala the modern mobile developer’s dream? This talk covers the matter in depth, along with tales of joy and frustration, and focuses on the following three topics:</p><p>THE ECOSYSTEM / STARTING OUT</p><ul><li>SBT plugins </li><li>IDE support </li><li>Using library projects</li><li>Fitting into memory / method count limits with ProGuard</li><li>Pain points and best practices</li></ul><p>THE WHY-S</p><ul><li>Scala 2.11’s SAM support </li><li>lazy vals and reactive extensions meet UI lifecycle</li><li>Options are cool</li><li>Cherishing the UI thread: futures, execution contexts, scala-async, and Akka</li><li>Being productive with Scaloid and Macroid </li></ul><p>MACROID (disclosure: I’m the author)</p><ul><li>An experimental GUI DSL for Android</li><li>Clean layout structure with macros and typeclasses</li><li>True modularity and composability</li><li>Advanced features: functor goodness, dataflow-style animations, functional reactive programming</li></ul><p>LIVE CODING (if any time left)</p><p>A very short demo of creating and running a simple app.</p>\n            ",
+                "description": "\n\n<p>Throughout the years, we've seen a few Android-related presentations on Scala Days. However, the current state of the art has remained unclear: is it just a mad fancy, or is indeed Scala the modern mobile developer's dream? This talk covers the matter in depth, along with tales of joy and frustration, and focuses on the following three topics:</p><p>THE ECOSYSTEM / STARTING OUT</p><ul><li>SBT plugins </li><li>IDE support </li><li>Using library projects</li><li>Fitting into memory / method count limits with ProGuard</li><li>Pain points and best practices</li></ul><p>THE WHY-S</p><ul><li>Scala 2.11's SAM support </li><li>lazy vals and reactive extensions meet UI lifecycle</li><li>Options are cool</li><li>Cherishing the UI thread: futures, execution contexts, scala-async, and Akka</li><li>Being productive with Scaloid and Macroid </li></ul><p>MACROID (disclosure: I'm the author)</p><ul><li>An experimental GUI DSL for Android</li><li>Clean layout structure with macros and typeclasses</li><li>True modularity and composability</li><li>Advanced features: functor goodness, dataflow-style animations, functional reactive programming</li></ul><p>LIVE CODING (if any time left)</p><p>A very short demo of creating and running a simple app.</p>\n            ",
                 "speakers": [
                     {
                         "twitter": "@stanchme",
                         "fullname": "Nick Stanchenko",
                         "avatar": "assets/images/speakers/nick.jpg",
                         "company": "University of Lisbon",
-                        "bio": "Following a five year degree in computer science, I have enrolled in a Master’s degree with focus on human-computer interaction at the University of Lisbon, Portugal. I’ve been programming in Scala for more than a year, an Android app being my very first Scala program (the app, now a part of my master thesis, might be publicly available by the time of presentation). I’m somewhat active on the scala-on-android mailing list; I enjoy 70s detective movies and jazz fusion."
+                        "bio": "Following a five year degree in computer science, I have enrolled in a Master's degree with focus on human-computer interaction at the University of Lisbon, Portugal. I've been programming in Scala for more than a year, an Android app being my very first Scala program (the app, now a part of my master thesis, might be publicly available by the time of presentation). I'm somewhat active on the scala-on-android mailing list; I enjoy 70s detective movies and jazz fusion."
                     }
                 ]
             },
@@ -729,7 +729,7 @@
                 "title": "Git Going Faster... with Scala",
                 "room": 4,
                 "time": "13:00-13:55",
-                "description": "\n\n<p><p>Scala’s effectiveness in rapid-prototyping is only one of the properties that make it a fantastic tool for eviscerating Git's guts. Taking advantage of the others allowed The BFG (an alternative to git-filter-branch, written in Scala) to outperform the native ‘git-filter-branch’ command by a factor of 50x or more - turning an overnight job into one that takes less than 5 minutes.</p><p>This talk will share experiences from building The BFG (successfully prototyped in a single high-stakes journey on the London Underground), highlight properties of Scala that made it possible, and explain the reformed-alcoholic pattern of user behavior.</p><p><a href='http://rtyley.github.io/bfg-repo-cleaner/' >http://rtyley.github.io/bfg-repo-cleaner/</a></p></p>\n            ",
+                "description": "\n\n<p><p>Scala's effectiveness in rapid-prototyping is only one of the properties that make it a fantastic tool for eviscerating Git's guts. Taking advantage of the others allowed The BFG (an alternative to git-filter-branch, written in Scala) to outperform the native ‘git-filter-branch' command by a factor of 50x or more - turning an overnight job into one that takes less than 5 minutes.</p><p>This talk will share experiences from building The BFG (successfully prototyped in a single high-stakes journey on the London Underground), highlight properties of Scala that made it possible, and explain the reformed-alcoholic pattern of user behavior.</p><p><a href='http://rtyley.github.io/bfg-repo-cleaner/' >http://rtyley.github.io/bfg-repo-cleaner/</a></p></p>\n            ",
                 "speakers": [
                     {
                         "twitter": "@rtyley",
@@ -935,6 +935,67 @@
                         "avatar": "assets/images/speakers/andrew.jpg",
                         "company": "Scala Puzzlers",
                         "bio": "Andrew is a long-time JVM developer and now VP Products for XebiaLabs. He actively contributes to open source projects and co-maintains the Scala Puzzlers website."
+                    }
+                ]
+            },
+            {
+                "type": "track",
+                "title": "Coming Soon",
+                "room": 1,
+                "time": "17:00-17:55",
+                "description": "\n\n<p>Coming Soon</p>\n            ",
+                "speakers": [
+                    {
+                        "twitter": "",
+                        "fullname": "",
+                        "avatar": "",
+                        "company": "",
+                        "bio": ""
+                    }
+                ]
+            },{
+                "type": "track",
+                "title": "Experiment: A Reactive 3D Game Engine in Scala",
+                "room": 2,
+                "time": "17:00-17:55",
+                "description": "\n\n<p>Most modern 3D game engines are written close to the metal in C++ to achieve smooth performance and stunning. Managed languages and runtimes are usually avoided for this task since they incur garbage collection lags and other performance penalties.</p><p>We decided to put this conventional wisdom to test with an experiment - we used an Rx-style reactive programming framework enriched with reactive collections and isolates in unison with a high-level OpenGL framework to build a modern 3D engine.</p><p>Game engines are traditionally written in low-level imperative style to achieve optimal performance. Such code can be hard to understand and maintain - the uprising reactive programming is much more natural for writing games, since game engines are in essence discrete event simulations. However, reactive programming comes with performance penalties that we overcome using Scala Specialization, inlining and efficient reactive data containers. Similarly, the OpenGL API exposes a plethora of low-level routines unfit for large scale development - a more structured approach to graphics programming with higher level programming abstractions is desired, but yields a higher performance cost. Through the use of Scala Macros we eliminate these inefficiencies while in the same time retaining the advantages of a structured graphics programming framework.</p><p>Result? A high-throughput reactive 3D real-time game engine achieving smooth 60FPS on modern hardware with high polygon counts, texture blending, GPU-based object instancing, and effects like ambient occlusion, shadow mapping and image filtering.</p><p>No need to spread Fear, Uncertainty and Doubt about performance anymore - Scala is ready for modern real-time game engines, delivering great performance with the convenience of the modern managed language.</p>\n            ",
+                "speakers": [
+                    {
+                        "twitter": "@_axel22_",
+                        "fullname": "Alexandar Prokopec",
+                        "avatar": "assets/images/speakers/prokopec.jpg",
+                        "company": "EPFL LAMP",
+                        "bio": "Doctoral assistant at the EPFL. Author of Scala Parallel Collections, ScalaMeter and ScalaBlitz."
+                    }
+                ]
+            },{
+                "type": "track",
+                "title": "Coming Soon",
+                "room": 3,
+                "time": "17:00-17:55",
+                "description": "\n\n<p>Coming Soon</p>\n            ",
+                "speakers": [
+                    {
+                        "twitter": "",
+                        "fullname": "",
+                        "avatar": "a",
+                        "company": "",
+                        "bio": ""
+                    }
+                ]
+            },{
+                "type": "track",
+                "title": "Coming Soon",
+                "room": 4,
+                "time": "17:00-17:55",
+                "description": "\n\n<p>Coming Soon</p>\n            ",
+                "speakers": [
+                    {
+                        "twitter": "",
+                        "fullname": "",
+                        "avatar": "",
+                        "company": "",
+                        "bio": ""
                     }
                 ]
             },
