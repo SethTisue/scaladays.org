@@ -151,6 +151,11 @@ var TrackDetails = (function() {
             window.onhashchange = function() {
                 TrackDetails.route(window.location.hash);
             }
+            document.body.onkeyup = function(e) {
+                if (e.keyCode == 27) {
+                    TrackDetails.close();
+                }
+            }
             TrackDetails.route(window.location.hash);
         },
         register: function(url, data, track) {
@@ -170,7 +175,7 @@ var TrackDetails = (function() {
                 // Show
                 TrackDetails.show(routes[url][0]);
                 // Scroll to it
-                routes[url][1].scrollReveal();
+                // routes[url][1].scrollReveal();
             } else {
                 dom.hide();
             }
@@ -259,6 +264,11 @@ function BindSchedule(schedule){
 
         requestAnimFrame(loop);
     }
+
+    // =========================
+    // Bind mobile
+    // =========================
+
 
     // =========================
 

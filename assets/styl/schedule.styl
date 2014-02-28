@@ -1,8 +1,10 @@
 #rooms
-	background: white-ltr
+	background: grey
 	height: 50px
 	line-height: 50px
-	padding: 0 350px 0 0
+	padding: 0 350px 0 150px
+	@media (max-width: 960px)
+		padding: 0 0 0 100px
 	position: absolute
 	top: 80px
 	width: 100%
@@ -31,13 +33,11 @@
 			left: 10px
 			position: absolute
 			font-weight: 700
-			color: red
 		&:after
 			content: ""
 			right: 10px
 			position: absolute
 			font-weight: 700
-			color: red
 		@media (min-width: 961px)
 			width: 50%
 		@media (min-width: 1201px)
@@ -62,7 +62,7 @@
 		text-transform: uppercase
 		font-weight: 700
 		cursor: pointer
-		color: slate
+		color: slate-ltr
 
 #schedule #details
 	position: fixed
@@ -142,14 +142,15 @@
 	font-size: 14px
 	overflow: hidden
 
-	&:after
-		content: " "
-		position: absolute
-		top: 87px
-		right: 0
-		bottom: 0
-		width 350px
-		background: rgba(blue-ltr, .8)
+	@media (min-width: 960px)
+		&:after
+			content: " "
+			position: absolute
+			top: 87px
+			right: 0
+			bottom: 0
+			width 350px
+			background: rgba(blue-ltr, .8)
 
 	h1
 		padding: 0 80px
@@ -200,6 +201,8 @@
 				top: auto
 
 	aside 
+		@media (max-width: 640px)
+			display: none
 		position: absolute
 		top: 60px
 		left: 0
@@ -228,6 +231,10 @@
 		right: 350px
 		bottom: 0
 		left: 151px
+		@media (max-width: 960px)
+			right: 0
+		@media (max-width: 640px)
+			left: 0
 
 		> div
 			position: absolute
@@ -397,7 +404,7 @@
 			left: 100%
 		.track.track4
 			left: 150%
-	@media (max-width: 960px)
+	@media (max-width: 640px)
 		.track.track1 
 			left: 0
 		.track.track2 

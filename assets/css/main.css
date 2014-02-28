@@ -55,6 +55,11 @@ body {
   -webkit-font-smoothing: antialiased;
   -webkit-font-size-adjust: none;
 }
+@media (max-width: 960px) {
+  body {
+    font-size: 12px;
+  }
+}
 p {
   margin: 0.7em 0;
   line-height: 1.4em;
@@ -113,6 +118,11 @@ nav {
   -webkit-box-shadow: 0px 0px 0px 2px rgba(0,0,0,0.1);
   box-shadow: 0px 0px 0px 2px rgba(0,0,0,0.1);
 }
+@media (max-width: 960px) {
+  nav {
+    display: none;
+  }
+}
 nav a {
   font-weight: 700;
   padding: 15px 30px;
@@ -161,6 +171,11 @@ nav .small a:hover {
 section {
   position: relative;
   padding: 80px 330px 80px 80px;
+}
+@media (max-width: 960px) {
+  section {
+    padding: 30px;
+  }
 }
 section:after {
   content: ' ';
@@ -386,12 +401,17 @@ section:after {
   max-width: 680px;
   margin: 0 330px 0 80px;
 }
+@media (max-width: 960px) {
+  #about article {
+    margin: 0 30px;
+  }
+}
 #about h1 {
   font-size: 40px;
   color: #103a51;
 }
 #about p {
-  font-size: 22px;
+  font-size: 1.1em;
   margin-bottom: 2em;
 }
 #sponsor-strip a {
@@ -612,14 +632,19 @@ section:after {
   margin: 0 0 0.5em 0%;
 }
 #rooms {
-  background: #f0f3f6;
+  background: #899ca9;
   height: 50px;
   line-height: 50px;
-  padding: 0 350px 0 0;
+  padding: 0 350px 0 150px;
   position: absolute;
   top: 80px;
   width: 100%;
   z-index: 1111;
+}
+@media (max-width: 960px) {
+  #rooms {
+    padding: 0 0 0 100px;
+  }
 }
 #rooms.fixed {
   position: fixed;
@@ -653,14 +678,12 @@ section:after {
   left: 10px;
   position: absolute;
   font-weight: 700;
-  color: #f16665;
 }
 #rooms span:after {
   content: "";
   right: 10px;
   position: absolute;
   font-weight: 700;
-  color: #f16665;
 }
 @media (min-width: 961px) {
   #rooms span {
@@ -699,7 +722,7 @@ section:after {
   text-transform: uppercase;
   font-weight: 700;
   cursor: pointer;
-  color: #364550;
+  color: #3e515e;
 }
 #schedule #details {
   position: fixed;
@@ -788,14 +811,16 @@ section:after {
   font-size: 14px;
   overflow: hidden;
 }
-#schedule:after {
-  content: " ";
-  position: absolute;
-  top: 87px;
-  right: 0;
-  bottom: 0;
-  width: 350px;
-  background: rgba(195,238,248,0.8);
+@media (min-width: 960px) {
+  #schedule:after {
+    content: " ";
+    position: absolute;
+    top: 87px;
+    right: 0;
+    bottom: 0;
+    width: 350px;
+    background: rgba(195,238,248,0.8);
+  }
 }
 #schedule h1 {
   padding: 0 80px;
@@ -861,6 +886,11 @@ section:after {
   z-index: 99;
   text-align: right;
 }
+@media (max-width: 640px) {
+  #schedule aside {
+    display: none;
+  }
+}
 #schedule aside .time {
   color: #103a51;
   position: absolute;
@@ -881,6 +911,16 @@ section:after {
   right: 350px;
   bottom: 0;
   left: 151px;
+}
+@media (max-width: 960px) {
+  #schedule .tracks {
+    right: 0;
+  }
+}
+@media (max-width: 640px) {
+  #schedule .tracks {
+    left: 0;
+  }
 }
 #schedule .tracks > div {
   position: absolute;
@@ -1106,7 +1146,7 @@ section:after {
     left: 150%;
   }
 }
-@media (max-width: 960px) {
+@media (max-width: 640px) {
   #schedule .track.track1 {
     left: 0;
   }
