@@ -91,6 +91,8 @@ section header h1{font-size:30px}
 #venue{background:#6f7f89;padding:0}
 #map{width:100%;height:100%}
 #locations{position:absolute;left:80px;top:80px;}
+#locations a{text-decoration:underline;font-weight:700;}
+#locations a:hover{color:#d64546}
 #locations .address{width:300px;background:#f16665;position:relative;padding:20px;color:#fff;z-index:8888;margin-bottom:20px;}
 #locations .address p{margin:5px 0 10px 0}
 #locations .address .rate{font-size:14px}
@@ -105,7 +107,7 @@ section header h1{font-size:30px}
 #training ul{margin-bottom:10px;padding-left:10px;}
 #training ul li{list-style-type:disc;list-style-position:inside}
 #training .toggle-item{-webkit-transition:all 200ms ease-in-out;-moz-transition:all 200ms ease-in-out;-o-transition:all 200ms ease-in-out;-ms-transition:all 200ms ease-in-out;transition:all 200ms ease-in-out;margin:10px 0;padding:20px 20px 20px 20px;-webkit-border-radius:3px;border-radius:3px;background-color:#3e515e;}
-#training .toggle-item .toggle-control{background-color:transparent;cursor:pointer;color:#d64546;display:block;font-weight:400;}
+#training .toggle-item .toggle-control{background-color:transparent;cursor:pointer;color:#d64546;display:block;font-weight:700;}
 #training .toggle-item .toggle-control:after{content:"\25BE";float:right}
 #training .toggle-item .toggle-content{opacity:0;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";filter:alpha(opacity=0);display:none;-webkit-transition:all 200ms ease-in-out;-moz-transition:all 200ms ease-in-out;-o-transition:all 200ms ease-in-out;-ms-transition:all 200ms ease-in-out;transition:all 200ms ease-in-out}
 #training .toggle-item.on{padding:20px;background-color:#3e515e;}
