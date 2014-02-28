@@ -502,10 +502,23 @@ section
 		color: navy
 	table
 		margin: 20px 0
-		background-color: blue-dkr
-		padding: 20px	
+		border-radius: br
 		text-align: center
-		th 
+		font-size: 18px
+		tr
+			th, td 
+				padding: 20px
+		thead tr th 
+			background-color: blue-text
+			color: navy
+			&.empty
+				background-color: transparent
+		tbody tr 
+			th
+				background-color: navy
+				color: white
+			td
+				background-color: blue-dkr
 			
 
 #sponsors
