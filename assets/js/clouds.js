@@ -55,21 +55,21 @@ var lastPosition = -10,
 
         if (window.pageYOffset < 2000) {
             
-            keynotes.css('opacity', 1.4-(window.pageYOffset/300) );
+            keynotes.css('opacity', 1.4-(window.pageYOffset/400) );
 
-            clouds.css(vendor+'transform', "translate3d(0, "+ (window.pageYOffset/-1.2) +"px,0)" );
-            cloudsF.css(vendor+'transform', "translate3d(0, "+ (window.pageYOffset/-1.2) +"px,0)" );
-            cloudsM.css(vendor+'transform', "translate3d(0, "+ (window.pageYOffset/-1.2) +"px,0)" );
-            clouds2.css(vendor+'transform', "translate3d(0, "+ (window.pageYOffset/-1.35) +"px,0)" );
-            clouds3.css(vendor+'transform', "translate3d(0, "+ (window.pageYOffset/-1.5) +"px,0)" );
+            //clouds.css(vendor+'transform', "translate3d(0, "+ (window.pageYOffset/-1.2) +"px,0)" );
+            //cloudsF.css(vendor+'transform', "translate3d(0, "+ (window.pageYOffset/-1.2) +"px,0)" );
+            //cloudsM.css(vendor+'transform', "translate3d(0, "+ (window.pageYOffset/-1.2) +"px,0)" );
+            //clouds2.css(vendor+'transform', "translate3d(0, "+ (window.pageYOffset/-1.35) +"px,0)" );
+            //clouds3.css(vendor+'transform', "translate3d(0, "+ (window.pageYOffset/-1.5) +"px,0)" );
 
-            mountains.css(vendor+'transform', "translate3d(0, "+ (window.pageYOffset/-1.8) +"px,0)" );
-            mountains2.css(vendor+'transform', "translate3d(0, "+ (window.pageYOffset/-2) +"px,0)" );
+            //mountains.css(vendor+'transform', "translate3d(0, "+ (window.pageYOffset/-1.8) +"px,0)" );
+            //mountains2.css(vendor+'transform', "translate3d(0, "+ (window.pageYOffset/-2) +"px,0)" );
             
-            beerRight.css('opacity', -0.6+(window.pageYOffset/500) );
-            beerLeft.css('opacity', -0.6+(window.pageYOffset/500) );
-            beerLeft.css(vendor+'transform', "rotate(-7deg) translate("+(window.pageYOffset/-6) +"px, "+ (window.pageYOffset/-10) +"px)" );
-            beerRight.css(vendor+'transform', "rotate(10deg) translate("+(window.pageYOffset/+6) +"px, "+ (window.pageYOffset/-10) +"px)" );
+            //beerRight.css('opacity', -0.6+(window.pageYOffset/500) );
+            //beerLeft.css('opacity', -0.6+(window.pageYOffset/500) );
+            beerLeft.css(vendor+'transform', "rotate(-7deg) translate("+(window.pageYOffset/-4.5) +"px, "+ (window.pageYOffset/-6) +"px)" );
+            beerRight.css(vendor+'transform', "rotate(10deg) translate("+(window.pageYOffset/+4.5) +"px, "+ (window.pageYOffset/-6) +"px)" );
 
 
         } else {
