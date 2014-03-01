@@ -85,7 +85,7 @@
                     },
                     {
                         "twitter": "@rolandkuhn",
-                        "fullname": "Roland Khun",
+                        "fullname": "Roland Kuhn",
                         "avatar": "assets/images/speakers/roland.jpg",
                         "company": "Typesafe Inc",
                         "bio": "After earning a PhD in high-energy particle physics and while working as a systems engineer in the space business, Roland came in contact with Akka. He started contributing to the open-source project in 2010 and has been employed by Typesafe since 2011 where he has been leading the Akka team since November 2012."
