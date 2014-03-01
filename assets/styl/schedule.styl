@@ -1,0 +1,380 @@
+#schedule #details
+	position: fixed
+	top: 0
+	right: 0
+	bottom: 0
+	left: 0
+	overflow: auto
+	font-size: 16px
+	background: slate
+	z-index: 11111
+	display: none
+	padding: 80px
+	@media (max-width:640px)
+		padding: 60px 15px
+	color: white
+	cursor: pointer
+	.details-hide
+		display: none
+	.close
+		position: absolute
+		top: 80px
+		right: 80px
+		cursor: pointer
+		font-size: 30px
+		font-weight: 200
+		text-transform: uppercase
+		@media (max-width:960px)
+			top: 10px
+			right: 10px
+	#content 
+		max-width: 600px
+		h3
+			color: blue
+			padding: 0
+			line-height: 33px
+			font-size: 30px
+			margin: 0 0 20px 0
+		h4
+			color: blue
+			margin: 20px 0 0 0
+			font-size: 18px
+		p
+			margin-top: 0
+		.date
+			color: red
+			font-weight: 700
+			margin: 0 0 5px 0
+		a 
+			color: red-text
+		ul 
+			margin-bottom: 10px
+			padding-left: 10px
+			li
+				list-style-type: disc
+				list-style-position: inside
+		
+		.speaker
+			&:after
+				content: ' '
+				display: block
+				clear: both
+			li
+				padding-bottom: 10px 
+				clear: both
+				display: block
+				
+				img
+					border-radius: 200px
+					border: 5px solid white-ltr
+					width: 17%
+					float: left
+					margin-right: 3%
+				> span
+					float: left
+					width: 80%
+					padding-top: 5px
+					font-size: 20px
+					h4
+						margin: 10px 0 0 0
+						font-size: 18px
+					p
+						font-size: 16px
+
+
+
+#schedule
+	padding: 0
+	position: relative
+	font-size: 14px
+	// overflow: hidden
+	z-index: 1001
+	background: blue-dkr
+
+	h1
+		padding: 0 80px
+		height: 80px
+		line-height: 80px
+		font-size: header-size
+
+	h2
+		color: white
+		line-height: 60px
+		margin: 0
+		font-size: 20px
+		text-align: left
+
+	h3
+		color: white
+		line-height: 20px
+		font-size: 20px
+		margin: 5px 0
+	a:hover
+		text-decoration: underline
+		color: red-text
+
+	.day 
+		position: relative
+
+		header 
+			position: absolute
+			top: 0
+			width: 100%
+			padding: 0 80px
+			height: 60px
+			background: red
+			color: white
+			z-index: 999
+			transform: translate3d(0,0,0)
+			box-shadow: 0 4px rgba(0,0,0,.1)
+
+			&.fixed 
+				position: fixed
+				top: 0
+				width: 100%
+
+			&.after
+				position: absolute
+				bottom: 0px
+				top: auto
+
+	aside 
+		@media (max-width: 640px)
+			display: none
+		position: absolute
+		top: 60px
+		left: 0
+		bottom: 0
+		width: 150px
+		background: rgba(blue-ltr, .8) url('../images/time-schedule.png') right 0 repeat-y
+		z-index: 99
+		text-align: right
+
+		.time 
+			color: navy
+			position: absolute
+			right: 0px
+			font-weight: 900
+			font-size: 20px
+			margin-top: -1px
+			border-top: 2px solid rgba(blue-text, 0.2)
+			width: 100%
+			padding: 5px 20px 0 0
+			&:first-child
+				border: none
+
+	.tracks
+		bottom: 0
+		overflow: auto
+		-webkit-overflow-scrolling: touch
+	.tracks, .statics
+		position: absolute
+		top: 60px
+		right: 0
+		left: 151px
+		@media (max-width: 960px)
+			right: 0
+		@media (max-width: 640px)
+			left: 0
+
+		> div
+			position: absolute
+			padding: 5px 8px
+			border: 1px solid blue-dkr
+
+		.speaker
+			display: block
+			white-space: nowrap
+			overflow: hidden
+			text-overflow: ellipsis
+			font-weight: 400
+			color: white
+		
+		.speakersbio 
+			display: block
+			color: #8a2420
+			transition: all 200ms ease-in-out
+			width: 100%
+			white-space: nowrap
+			overflow: hidden
+			text-overflow: ellipsis
+		    padding-top: 5px
+			margin-right: 70px
+		.pause
+			width: 100%
+			margin-top: 1px
+			h3
+				float: left
+				margin-right: 2%
+				font-size: 24px
+				line-height: 1.1em
+				span
+					font-size: 17px
+		.register
+			background: url(../images/register.svg) 30px 10px no-repeat
+			padding-left: 150px
+			background-size: 100px auto
+		.drink
+			background: url(../images/drink.svg) 30px 10px no-repeat
+			padding-left: 150px
+			background-size: 100px auto
+		.eat
+			background: url(../images/eat.svg) 30px 10px no-repeat
+			padding-left: 150px
+			background-size: 100px auto
+	.keynote 
+		background: slate-ltr
+		color: grey-ltr
+		width: 100%
+		h3
+			color: red
+			font-size: 26px
+			margin-bottom: 0.4em
+			a 
+				text-decoration: none
+				color: inherit
+				&:after
+					display: block
+					content: " "
+					position: absolute
+					top: 0
+					left: 0
+					right: 0
+					bottom: 0
+		h4
+			color: white
+		.details
+			display: none
+		.speaker
+			&:after
+				content: ' '
+				display: block
+				clear: both
+			li
+				padding-bottom: 10px 
+				clear: both
+				display: block
+				height: 50px
+				line-height: 40px
+			img
+				border-radius: 200px
+				border: 2px solid white-ltr
+				height: 60px
+				float: left
+				margin-right: 10px
+
+
+	.track 
+		width: 25%
+		// transition: all 200ms ease-in-out
+		background: blue
+		color: white-ltr
+		cursor: pointer
+		overflow: hidden
+		.details 
+			display: none
+		h3
+			font-size: 15px
+			line-height: 18px
+			color: navy
+			margin-top: 2px
+			margin-bottom: 2px
+			a 
+				text-decoration: none
+				color: inherit
+				&:after
+					display: block
+					content: " "
+					position: absolute
+					top: 0
+					left: 0
+					right: 0
+					bottom: 0
+		ul.speaker
+			img
+				display: none
+			@media (min-width: 960px)
+				a 
+					position: relative
+					z-index: 99
+		@media (max-width: 1430px)
+			width: 30%
+		@media (max-width: 1200px)
+			width: 45%
+		@media (max-width: 640px)
+			width: 90%
+		&:hover
+			background: slate
+			color: white-ltr
+			h3 
+				color: blue
+			&:before
+				color: white-ltr
+		&:before
+			color: rgba(navy,0.5)
+			font-weight: 700
+			text-transform: uppercase
+			font-size: 11px
+			margin: 0
+			
+	.track.track1 
+		left: 0
+		&:before
+			content: "room 1"
+			
+	.track.track2 
+		left: 25%
+		&:before
+			content: "room 2"
+
+	.track.track3 
+		left: 50%
+		&:before
+			content: "room 3"
+
+	.track.track4
+		left: 75%
+		&:before
+			content: "room 4"
+
+	@media (max-width: 1430px)
+		.track.track1 
+			left: 0
+		.track.track2 
+			left: 30%
+		.track.track3 
+			left: 60%
+		.track.track4
+			left: 90%
+	@media (max-width: 1200px)
+		.track.track1 
+			left: 0
+		.track.track2 
+			left: 45%
+		.track.track3 
+			left: 90%
+		.track.track4
+			left: 135%
+	@media (max-width: 640px)
+		.track.track1 
+			left: 0
+		.track.track2 
+			left: 90%
+		.track.track3 
+			left: 180%
+		.track.track4
+			left: 270%
+
+	&.off-1
+		.track
+			transform: translateX(-100%)
+	&.off-2
+		.track
+			transform: translateX(-200%)
+	&.off-3
+		.track
+			transform: translateX(-300%)
+
+
+	
+

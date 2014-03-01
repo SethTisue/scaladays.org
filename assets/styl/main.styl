@@ -1,0 +1,659 @@
+//@import "nib"
+@import "fonts"
+
+// REDS
+red =           #F16665
+red-dkr =       #E25758
+red-ltr =       #F6ACAC
+red-text =      #D64546
+
+// BLUES
+blue =          #53CDEC
+blue-dkr =      #42b8d7
+blue-ltr =      #c3eef8
+blue-text =     #19aacf
+blue-ts =       #7BDCF5
+blue-teal =     #187086
+
+// navys
+navy =          #103a51
+
+// slates
+slate =         #364550
+slate-dkr =     #2a363e
+slate-ltr =     #3e515e
+slate-text =    #28353e
+
+
+// GREYS
+grey =          #899CA9
+grey-dkr =      #6F7F89
+grey-ltr =      #8BA1B0
+grey-text =     #778a99
+
+// GREENS
+green =         #69af04
+
+// whites
+white =         #ffffff
+white-ltr =     #f0f3f6
+white-dkr =     #c2d2dc
+
+//typesafe together
+slate-tt =      #354854
+
+
+//default border-radius
+br = 3px
+header-size = 30px
+
+body, html
+	height: 100%
+	width: 100%
+
+*
+	margin: 0
+	padding: 0
+	outline: 0
+	border: 0
+	list-style-type: none
+	box-sizing: border-box
+ol li 
+	list-style-type: decimal
+	list-style-position: inside
+	margin-bottom: .7em
+
+body
+	font: 20px "Source Sans Pro", "Open Sans","Helvetica Neue",sans-serif
+	background: red
+	color: navy
+	-webkit-font-smoothing: antialiased
+	-webkit-font-size-adjust: none
+	-webkit-tap-highlight-color: rgba(0,0,0,0)
+	@media (max-width: 960px)
+		font-size: 12px
+	&.no-scroll
+		overflow: hidden
+	&.thankyou
+		background: blue
+
+p
+	margin: .7em 0
+	line-height: 1.4em
+
+a
+	color: #fff
+	text-decoration: none
+	
+
+h1, h2, h3, h4
+	color: navy
+
+.button,
+input[type='submit']
+	transition: all 200ms ease-in-out
+	display: block
+	font: inherit
+	background: red
+	text-decoration: none
+	padding: 10px 20px
+	border-radius: br
+	text-align: center
+	width: auto
+	box-shadow: 0 3px 0 red-dkr
+	text-shadow: 1px 1px 1px rgba(0,0,0,.1)
+	text-transform: uppercase
+	font-weight: 700
+	cursor: pointer
+	color: white
+	display: inline-block
+	&:hover
+		background-color: red-dkr
+
+
+nav
+	position: fixed
+	z-index: 999
+	top: 50px
+	right: 50px
+	width: 250px
+	border-radius: br
+	box-shadow: 0px 0px 0px 2px rgba(0, 0, 0, 0.1)
+	@media (max-width: 960px)
+		display: none
+
+	a
+		font-weight: 700
+		padding: 15px 30px
+		display: block
+		color: white
+		text-decoration: none
+		cursor: pointer
+		&:hover
+			text-decoration: none 
+
+			
+	.big
+		font-weight: 700
+		font-size: 26px
+		background-color: navy
+		border-radius: br br 0 0
+		padding: 10px 0
+		a 
+			margin: 0 0 10px
+			padding: 10px 30px
+			&:hover
+				background-color: transparent
+				color: blue
+	.small
+		padding-top: 10px
+		padding-bottom: 20px
+		border-top: 4px solid red-text
+		border-bottom: 2px solid red-text
+
+		background-color: red-dkr
+		border-radius: 0 0 br br
+		font-size: 16px
+		a 
+			margin: 5px 0
+			padding: 5px 30px
+			&:hover
+				background-color: transparent
+				color: navy
+		
+
+section
+	position: relative
+	padding: 80px 330px 80px 80px
+	@media (max-width: 960px)
+		padding: 30px
+	&:after
+		content: ' '
+		display: block
+		clear: both
+	header h1
+		font-size: header-size
+
+#home
+	min-height: 400px
+	background: blue
+	position: relative
+	display: block
+	padding: 40px 330px 200px 80px
+	@media (max-width: 960px)
+		padding: 40px
+	h2
+		color: blue-text
+		margin-left: 140px
+		font-size: 20px
+	article
+		clear: both
+		margin-bottom: 20px
+
+		&:after
+			content: ' '
+			display: block
+			clear: both
+		img
+			border-radius: 200px
+			border: 5px solid white-ltr
+			width: 110px
+			float: left
+			margin-right: 30px
+		div 
+			position: relative
+			float: left
+			h3
+				color: red-text
+				margin-top: 15px
+				padding: 0 0 0 0px
+				font-size: 20px
+				height: 20px
+				line-height: 20px
+			h2
+				color: white
+				font-size: 30px
+				margin: 0
+			h4
+				color: navy
+				font-weight: 400
+				font-size: 18px
+	
+	.button
+		background: blue-dkr
+		box-shadow: 0 3px 0 blue-text
+		margin-left: 140px
+		&:hover
+			background-color: blue-text
+
+#logo
+	position: relative
+	margin-bottom: 60px
+	h1
+		margin: 0
+		font-size: 100px
+		font-weight: 500
+		color: white
+		@media (max-width: 960px)
+			font-size: 60px
+	strong
+		color: red
+		font-weight: 700
+	p
+		position: absolute
+		left: 0
+		top: 110px
+		font-size: 30px
+		color: white
+		margin: 0
+		@media (max-width: 960px)
+			top: 60px
+			font-size: 20px
+
+.group1
+	position: relative
+	width: 100%
+	height: 400px
+	margin-top: -200px
+
+#mountains2  
+	background: transparent url("../images/mountains2.png") no-repeat center top
+#mountains  
+	background: transparent url("../images/mountains.png") no-repeat center top
+#clouds3
+	background: transparent url("../images/clouds3.png") no-repeat center top
+#clouds2  
+	background: transparent url("../images/clouds2.png") no-repeat center top
+	
+#land  
+	background: transparent url("../images/land.png") no-repeat center top
+#clouds  
+	background: transparent url("../images/clouds.png") no-repeat center top
+#cloudsF  
+	background: transparent url("../images/cloudsF.png") 
+
+#mountains,
+#clouds,
+#clouds2,
+#clouds3,
+#cloudsF,
+#land
+	position: absolute
+	-webkit-transform: translate3d(0, 0, 0)
+	-moz-transform: translate3d(0, 0, 0)
+	transform: translate3d(0, 0, 0)
+	height: 287px
+	width: 100%
+	top: 40px
+
+#mountains
+	top: 0
+
+#mountains2 
+	position: relative
+	-webkit-transform: translate3d(0, 0, 0)
+	-moz-transform: translate3d(0, 0, 0)
+	transform: translate3d(0, 0, 0)
+	height: 800px
+
+#cloudsF 
+	position: absolute
+	width: 100%
+	height: 500px
+	left: 0
+	margin: 0
+	margin-top: 280px
+	z-index: 10
+
+
+#m1 
+	position: absolute
+	width: 100%
+	height: 800px
+	padding: 100px 0 0 0
+	margin-top: 400px
+	background: red
+	text-align: center
+
+#about
+	color: white
+	display: block
+	text-align: left
+	padding: 100px 0
+	margin: 0
+	margin-top: 0px
+	background-size: 75%
+	z-index: 800
+	.beer 
+		position: relative
+		width: 300px
+		margin-left: 80px
+		margin-bottom: 60px
+		margin-top: -200px
+		display: inline-block
+		-webkit-transform: translate(0, 100)
+		-moz-transform: translate(0,100)
+		transform: translate(0, 100)
+		opacity: 1
+		@media (max-width: 960px)
+			display: none
+
+	#beerRight
+		transform:rotate(10deg);
+		-ms-transform:rotate(10deg); /* IE 9 */
+		-webkit-transform:rotate(10deg); /* Safari and Chrome */
+		top: 60px
+		right: 170px
+	#beerLeft
+		transform:rotate(-7deg);
+		-ms-transform:rotate(-7deg); /* IE 9 */
+		-webkit-transform:rotate(-7deg); /* Safari and Chrome */
+		left: 170px
+
+	article
+		text-align: left
+		max-width: 680px
+		margin: 0 330px 0 80px
+		@media (max-width: 960px)
+			margin: 0 30px
+		
+	h1
+		font-size: header-size
+		color: navy
+	p 
+		font-size: 1.1em
+		margin-bottom: 2em
+
+#sponsor-strip
+	a 
+		display: inline
+		img
+			height: 50px
+#speakers
+	background: blue
+	h1
+		margin: 0 0 20px 0
+		font-size: header-size
+	h2
+		font-size: 25px
+		color: blue-text
+	
+	article
+		clear: both
+		margin-bottom: 40px
+
+
+		&:after
+			content: ' '
+			display: block
+			clear: both
+		img
+			border-radius: 200px
+			border: 10px solid white-ltr
+			width: 150px
+			float: left
+			margin-right: 30px
+		div 
+			position: relative
+			float: left
+			border-bottom: 0px solid blue-dkr
+			padding-bottom: 20px
+			h2
+				color: white
+				margin-top: 20px
+				background: transparent url("../images/speaker-white.svg") no-repeat top left
+				padding: 0 0 0 20px
+				font-size: 24px
+				height: 24px
+				line-height: 24px
+			p 
+				color: navy
+				max-width: 600px
+			h4
+				color: navy
+				font-weight: 400
+				font-size: 18px
+			ul li 
+				color: navy
+				font-weight: 700
+				margin-right: 5px
+				font-size: 16px
+				margin-bottom: 5px
+				a
+					font-size: 16px
+					padding: 5px 10px
+					margin-right: 5px
+					background: blue-dkr
+					box-shadow: 0 3px 0 blue-text
+					&:hover
+						background: blue-text
+
+
+.all-speakers
+	@extend .button
+	margin: 20px 0
+	color: white
+
+#schedule
+	background: blue-dkr
+
+#buy
+	text-align: center
+	min-height: 10px
+	background: slate
+	h1
+		color: white
+		margin: 0 0 20px
+.buy-button
+	@extend .button
+	margin: 0 auto
+
+#venue
+	background: grey-dkr
+	padding: 0
+
+#map 
+	width: 100%
+	height: 100%
+	
+#locations
+	position: absolute
+	left: 80px
+	top: 80px
+	a 
+		text-decoration: underline
+		font-weight: 700
+		&:hover
+			color: red-text
+	.address
+		width: 300px
+		background: red
+		position: relative
+		padding: 20px
+		color: white
+		z-index: 8888
+		margin-bottom: 20px
+		p 
+			margin: 5px 0 10px 0
+		.rate 
+			font-size: 14px
+		&:before
+			display: block
+			color: navy
+			font-weight: 700
+			text-transform: uppercase
+			font-size: 14px
+	#expo:before
+		content: "Venue"
+		
+	#hotel
+		background-color: blue
+		&:before
+			content: "Lodging"
+
+		
+		
+	
+#training
+	background: slate
+	color: white
+	h1
+		color: blue
+	article
+		max-width: 680px
+		a 
+			color: red-text
+	ul 
+		margin-bottom: 10px
+		padding-left: 10px
+		li
+			list-style-type: disc
+			list-style-position: inside
+
+
+	.toggle-item
+		transition: all 200ms ease-in-out
+		margin: 10px 0
+		padding: 20px 20px 20px 20px
+		border-radius: br
+		background-color: slate-ltr
+		.toggle-control
+			background-color: transparent
+			cursor: pointer
+			color: red-text
+			display: block
+			font-weight: 700
+			&:after
+				content: "\25BE"
+				float: right
+		.toggle-content
+			opacity: 0
+			display: none
+			transition: all 200ms ease-in-out
+		&.on
+			padding: 20px
+			background-color: slate-ltr
+			.toggle-control
+				display: block
+				&:after
+					content: "close \2716"
+					float: right
+					color: white
+					text-transform: uppercase
+					font-weight: 200
+
+
+			.toggle-content
+				opacity: 1
+				display: block
+				transition: all 200ms ease-in-out
+			
+
+#tickets
+	background: blue
+	color: white
+	h1
+		color: navy
+	table
+		margin: 20px 0
+		border-radius: br
+		text-align: center
+		font-size: 18px
+		tr
+			th, td 
+				padding: 20px
+		thead tr th 
+			background-color: blue-text
+			color: navy
+			&.empty
+				background-color: transparent
+		tbody tr 
+			th
+				background-color: navy
+				color: white
+			td
+				background-color: blue-dkr
+			
+
+#sponsors
+	background: white
+	text-align: left
+	header h1
+		font-size: header-size
+		color: navy
+		margin-bottom: 0
+	article
+		text-align: center
+		margin: 30px 0
+		h2
+			color: white
+			font-weight: 400
+			font-size: 20px
+			text-transform: uppercase
+			background-color: blue
+			padding: 10px
+			border-radius: br
+	img
+		background: transparent
+		padding: 20px
+		max-height: 100px
+		max-width: 200px
+#conduct
+	background: slate
+	color: white
+	h1
+		color: blue
+	a 
+		color: red-text	
+	article
+		max-width: 680px
+#contact
+	background: blue
+	h1
+		color: navy
+		font-size: header-size
+		margin-bottom: 0.7em
+
+
+	form
+		text-align: left
+		max-width: 680px
+
+	input[type="text"],
+	textarea
+		display: block
+		width: 300px
+		margin: 0 auto .5em auto
+		height: 40px
+		line-height: 30px
+		padding: 4px 10px
+		font-size: 1em
+		background-color: white-ltr
+		color: blue-text
+		border: 1px solid blue-dkr
+		border-radius: br
+
+	textarea
+		height: 200px
+
+	fieldset input[type="text"]
+		float: left
+		margin: 0 2% .5em 2%
+		width: 48%
+
+	fieldset input[type="text"]:first-child
+		margin: 0 2% .5em 0
+
+	fieldset input[type="text"]:last-child
+		margin: 0 0 .5em 2%
+
+	fieldset textarea
+		width: 100%
+		margin: 0 0 .5em 0%
+
+.legal
+	color: white
+	margin: 40px 0 10px 0
+	font-size: 18px
+
+@import "schedule"
