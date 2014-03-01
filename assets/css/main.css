@@ -94,7 +94,7 @@ section header h1{font-size:30px}
 #locations{position:absolute;left:80px;top:80px;}
 #locations a{text-decoration:underline;font-weight:700;}
 #locations a:hover{color:#d64546}
-#locations .address{width:300px;background:#f16665;position:relative;padding:20px;color:#fff;z-index:8888;margin-bottom:20px;}
+#locations .address{width:300px;background:#f16665;position:relative;padding:20px;color:#fff;z-index:900;margin-bottom:20px;}
 #locations .address p{margin:5px 0 10px 0}
 #locations .address .rate{font-size:14px}
 #locations .address:before{display:block;color:#103a51;font-weight:700;text-transform:uppercase;font-size:14px}
