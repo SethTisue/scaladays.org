@@ -953,7 +953,8 @@
                         "bio": ""
                     }
                 ]
-            },{
+            },
+            {
                 "type": "track",
                 "title": "Experiment: A Reactive 3D Game Engine in Scala",
                 "room": 2,
@@ -968,7 +969,8 @@
                         "bio": "Doctoral assistant at the EPFL. Author of Scala Parallel Collections, ScalaMeter and ScalaBlitz."
                     }
                 ]
-            },{
+            },
+            {
                 "type": "track",
                 "title": "Coming Soon",
                 "room": 3,
@@ -983,7 +985,8 @@
                         "bio": ""
                     }
                 ]
-            },{
+            },
+            {
                 "type": "track",
                 "title": "Coming Soon",
                 "room": 4,
