@@ -123,7 +123,11 @@ section header h1{font-size:30px}
 #tickets table thead tr th.empty{background-color:transparent}
 #tickets table tbody tr th{background-color:#103a51;color:#fff}
 #tickets table tbody tr td{background-color:#42b8d7}
-#sponsors{background:#fff;text-align:left;}
+@media (max-width: 960px){#tickets table{font-size:13px}
+#tickets table tr th,#tickets table tr td{padding:10px 5px}
+}@media (max-width: 480px){#tickets table{font-size:10px}
+#tickets table tr th,#tickets table tr td{padding:10px 2px}
+}#sponsors{background:#fff;text-align:left;}
 #sponsors header h1{font-size:30px;color:#103a51;margin-bottom:0}
 #sponsors article{text-align:center;margin:30px 0;}
 #sponsors article h2{color:#fff;font-weight:400;font-size:20px;text-transform:uppercase;background-color:#53cdec;padding:10px;-webkit-border-radius:3px;border-radius:3px}
