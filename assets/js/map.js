@@ -127,10 +127,11 @@ var mapStyle = [
 
 var venuePosition = new google.maps.LatLng(52.5168394,13.4499112);
 var hotelPosition = new google.maps.LatLng(52.524202, 13.417203);
-var center = new google.maps.LatLng(52.520234, 13.429183);
+var trainingPosition = new google.maps.LatLng(52.530908, 13.384623);
+var center = new google.maps.LatLng(52.524202, 13.417203);
 var mapOptions = {
 	center: center,
-	zoom: 14,
+	zoom: 13,
 	mapTypeId: google.maps.MapTypeId.ROADMAP,
 	scaleControl: false,
 	scrollwheel: false,
@@ -150,3 +151,11 @@ var markerHotel = new google.maps.Marker({
   title: 'Hotel Indigo',
   icon: 'assets/images/blue-marker.png'
 });
+var markerTraining = new google.maps.Marker({
+  position: trainingPosition,
+  map: map,
+  title: 'HERE Nokia',
+  icon: 'assets/images/navy-marker.png'
+});
+
+
