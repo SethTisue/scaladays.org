@@ -949,7 +949,7 @@
                         "fullname": "Johannes Rudolph",
                         "avatar": "assets/images/speakers/rudolph.jpg",
                         "company": "",
-                        "bio": "Scala enthusiast. Loves the creative interplay between human mind and compiler's regimen. Developer of several small Scala libraries: * Scala Enhanced String plugin * Scala Reflectionator * Mnemonics, Bytecode Generation with Scala"
+                        "bio": "spray.io and akka-http developer. Loves the creative interplay between human mind and compiler's regimen."
                     }
                 ]
             },
