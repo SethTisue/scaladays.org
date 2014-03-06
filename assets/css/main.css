@@ -91,8 +91,8 @@ section header h1{font-size:30px}
 .buy-button{margin:0 auto}
 #venue{background:#6f7f89;padding:0}
 #map{width:100%;height:100%}
-#locations{position:absolute;left:80px;top:80px;}
-#locations a{text-decoration:underline;font-weight:700;}
+#locations{position:absolute;left:80px;top:20px;}
+#locations a{text-decoration:underline;font-weight:700;font-size:14px;}
 #locations a:hover{color:#d64546}
 #locations .address{width:300px;background:#f16665;position:relative;padding:20px;color:#fff;z-index:900;margin-bottom:20px;}
 #locations .address p{margin:5px 0 10px 0}
@@ -101,6 +101,8 @@ section header h1{font-size:30px}
 #locations #expo:before{content:"Venue"}
 #locations #hotel{background-color:#53cdec;}
 #locations #hotel:before{content:"Lodging"}
+#locations #training{background-color:#103a51;}
+#locations #training:before{content:"Training";color:#fff}
 #training{background:#364550;color:#fff;}
 #training h1{color:#53cdec}
 #training article{max-width:680px;}

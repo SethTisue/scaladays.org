@@ -308,25 +308,47 @@
             },
             {
                 "type": "track",
-                "title": "Workshop",
+                "title": "Play Framework - from 2.2 to 2.3 and Beyond",
                 "room": 4,
                 "time": "14:00-14:55",
-                "description": "\n\n<p>Details Coming Soon!</p>\n            ",
-                "speakers": []
+                "description": "\n\n<p>Play 2.3 is a big release with a focus on streamlining client side development and Java 8 support. The future holds many new things including a simpler reactive IO API, and better integration with Akka through akka-http. In this presentation the core developers of Play will showcase how Play 2.3 and future releases will make your code simpler and more fun to develop.</p>\n            ",
+                "speakers": [
+                    {
+                        "twitter": "@playframework",
+                        "fullname": "Play Framework Team",
+                        "avatar": "assets/images/speakers/play.png",
+                        "company": "Typesafe Inc",
+                        "bio": "<a href='http://twitter.com/_JamesWard' target='_blank'>James Ward</a> will MC as the Play Framework team (<a href='http://twitter.com/jroper' target='_blank'>James Roper</a>, <a href='http://twitter.com/richdougherty' target='_blank'>Rich Doherty</a>, Peter Vlugter and<a href='http://twitter.com/huntchr' target='_blank'> Christopher Hunt</a>) presents Play 2.3"
+                    }
+                ]
             },
             {
                 "type": "track",
-                "title": "Coming Soon!",
+                "title": "Resilient Applications with Akka Persistence",
                 "room": 1,
                 "time": "15:00-15:55",
-                "description": "\n\n<p>Coming Soon!</p>\n            ",
+                "description": "\n\n<p>In this presentation you will learn how to leverage the features introduced in Akka Persistence: opt-in at-least-once delivery semantics between actors and the ability to recover application state after a crash. Both are implemented by storing immutable facts in a persisted append-only log. We will show you how to create persistent actors using command and event sourcing, replicate events with reliable communication, scale out and improve resilience with clustering. All examples will be available as an Activator template allowing you to get started right away.</p>\n            ",
                 "speakers": [
                     {
-                        "twitter": "",
-                        "fullname": "Coming Soon",
-                        "avatar": "",
-                        "company": "",
-                        "bio": ""
+                        "twitter": "@patriknw",
+                        "fullname": "Patrik Nordwall",
+                        "avatar": "assets/images/speakers/patrik.jpg",
+                        "company": "Typesafe Inc",
+                        "bio": "Patrik Nordwall is a developer in the core Akka team since 3 years. He has a passion for technology and new knowledge. Professional developer and software architect since 1996."
+                    },
+                    {
+                        "twitter": "@drewhk",
+                        "fullname": "Endre Varga",
+                        "avatar": "assets/images/speakers/varga.jpg",
+                        "company": "Typesafe Inc",
+                        "bio": "Endre has been a teacher and PhD student at the Technical University of Budapest, where he has been researching complex systems and mobile ad hoc networks. His interest in distributed, high-performance and concurrent systems lead him to the world of actors and Akka in 2012."
+                    },
+                    {
+                        "twitter": "@bantonsson",
+                        "fullname": "Björn Antonsson",
+                        "avatar": "assets/images/speakers/antonsson.jpg",
+                        "company": "Typesafe Inc",
+                        "bio": "Björn Antonsson is a passionate software engineer whose experience ranges from the lowest levels of hardware memory models right through the operating system and the JVM as a founder and long time developer of JRockit, and straight up into high volume financial data systems and large traffic website. He has been part of the Akka team for the last 2 years."
                     }
                 ]
             },
@@ -560,24 +582,17 @@
             },
             {
                 "type": "track",
-                "title": "The Raspberry Pi Akka Supercomputer",
+                "title": "Coming Soon!",
                 "room": 2,
                 "time": "10:05-11:00",
-                "description": "\n\n<p>Also known as: The beginners guide to starting a Scala project.</p><p>Starting a Scala project should be easy, but with a Simple Build Tool that appears anything but whats the best way to get started and stay sure footed?</p><p>In this beginners talk we'll help get you up and running quickly and well on the road to success. In five simple steps you'll be able to release your code to the wild, safe in the knowledge you've set up a good foundation to build upon.</p><p>The 5 Steps to a happy project:</p><ol><li>Simple Build Tool (SBT): Having a build tool is core to getting started, so let SBT do the work for you. You might not find it simple, but it doesn't have to be complex.</li><li>Console management: Mastering the REPL is the key to quick debugging / testing of code.</li><li>Testing: You need to know your code works and recent changes haven't broken anything. As with any modern language theres a wealth of choice and we'll have a quick look at most popular two: ScalaTest, Specs2</li><li>Checks and Balances: Just because your test suite is green doesn't mean your code is any good. Using ScalaCheck you can conform to style and JaCoC will show you code that is missing tests.</li><liPublishing: Now your code is tested, how do you publish it and share with the world? We'll look at how to set up SBT to publish your code.</li></ol>\n            ",
+                "description": "\n\n<p>Coming Soon!</p>\n            ",
                 "speakers": [
                     {
-                        "twitter": "@steveonjava",
-                        "fullname": "Stephen Chin",
-                        "avatar": "assets/images/speakers/chin.jpg",
-                        "company": "Oracle",
-                        "bio": "Stephen is a JavaFX evangelist, author, speaker and open-source hacker."
-                    },
-                    {
-                        "twitter": "@_JamesWard",
-                        "fullname": "James Ward",
-                        "avatar": "assets/images/speakers/ward.jpg",
-                        "company": "Typesafe Inc",
-                        "bio": "James Ward works for Typesafe where he teaches developers the Typesafe Platform (Play Framework, Scala, and Akka)."
+                        "twitter": "",
+                        "fullname": "",
+                        "avatar": "",
+                        "company": "",
+                        "bio": ""
                     }
                 ]
             },
@@ -655,17 +670,24 @@
             },
             {
                 "type": "track",
-                "title": "Scala in Numbers - The Ecosystem Census",
+                "title": "Laugh, Then Learn: Scala Puzzlers Returns!",
                 "room": 4,
                 "time": "11:05-12:00",
-                "description": "\n\n<p>What are the ten most commonly used local variable names? What are the most often called methods? Which library contains the biggest methods? How complex are common pattern matches? Where are the most implicit parameters defined? Of what type? How many dependencies do you need to revert a string? How many unicode operators are really defined by scalaz? These and other questions are the topic of this talk.</p><p>I set out to dissect the typical Scala library into statistics, hard numbers, and easy to understand piecharts. My census bot crawled through the source code of the most common Scala libraries and collected lots of interesting data, trivia and maybe even hidden gems I want to share with you.</p>\n            ",
+                "description": "\n\n<p>Scala Puzzlers returns with a twist: not only will we be presenting a brand new set of puzzlers for Scala 2.11 that will challenge you with unexpected and unintuitive behavior and help you learn something about your favorite language in the process.</p>\n<p>This time, we've added a key set of tips and recommendations to help you avoid these pitfalls when real deadlines are at stake. That's not the time for head-scratching - better to laugh and learn at ScalaDays 2014!</p>\n            ",
                 "speakers": [
                     {
-                        "twitter": "@virtualvoid",
-                        "fullname": "Johannes Rudolph",
-                        "avatar": "assets/images/speakers/rudolph.jpg",
-                        "company": "",
-                        "bio": "Scala enthusiast. Loves the creative interplay between human mind and compiler's regimen. Developer of several small Scala libraries: * Scala Enhanced String plugin * Scala Reflectionator * Mnemonics, Bytecode Generation with Scala"
+                        "twitter": "@higherkinded",
+                        "fullname": "Nermin Serifovic",
+                        "avatar": "assets/images/speakers/nermin.jpg",
+                        "company": "Scala Puzzlers",
+                        "bio": "Nermin Serifovic has been a Scala enthusiast since 2009 and professional practitioner since 2011. He is a co-creator of <a href='http://scalapuzzlers.com/'>scalapuzzlers.com</a>"
+                    },
+                    {
+                        "twitter": "@ScalaPuzzlers",
+                        "fullname": "Andrew Phillips",
+                        "avatar": "assets/images/speakers/andrew.jpg",
+                        "company": "Scala Puzzlers",
+                        "bio": "Andrew is a long-time JVM developer and now VP Products for XebiaLabs. He actively contributes to open source projects and co-maintains the Scala Puzzlers website."
                     }
                 ]
             },
@@ -752,14 +774,14 @@
                         "fullname": "Jon Pretty",
                         "avatar": "assets/images/speakers/pretty.jpg",
                         "company": "",
-                        "bio": "Jon Pretty is an experienced Scala developer, consultant and evangelist. Having launched the very first commercial Scala applications in 2005, Jon has been involved with Scala for the last eight years and has overseen numerous successful Scala deploy."
+                        "bio": "Jon has been developing Scala for the last decade, and has deployed Scala into startups, large corporations, government and open source. He is best known these days for his Rapture IO and JSON libraries. Despite popular belief, Jon did not invent the Cake Pattern."
                     },
                     {
                         "twitter": "@milessabin",
                         "fullname": "Miles Sabin",
                         "avatar": "assets/images/speakers/sabin.jpg",
                         "company": "",
-                        "bio": "Miles Sabin is perhaps best known in the Scala world for his outstanding contribution to the Scala IDE for Eclipse."
+                        "bio": "Miles has been doing stuff with Scala for the last 10 years, most recently with _.underscore and Precog. Rumours that his generic programming library shapeless is an elaborate ploy to try and get people to forget that he ever had anything to do with the Scala IDE for Eclipse are entirely unfounded."
                     }
                 ]
             },
@@ -917,24 +939,17 @@
             },
             {
                 "type": "track",
-                "title": "Laugh, Then Learn: Scala Puzzlers Returns!",
+                "title": "Scala in Numbers - The Ecosystem Census",
                 "room": 4,
                 "time": "16:00-16:55",
-                "description": "\n\n<p>Scala Puzzlers returns with a twist: not only will we be presenting a brand new set of puzzlers for Scala 2.11 that will challenge you with unexpected and unintuitive behavior and help you learn something about your favorite language in the process.</p>\n<p>This time, we've added a key set of tips and recommendations to help you avoid these pitfalls when real deadlines are at stake. That's not the time for head-scratching - better to laugh and learn at ScalaDays 2014!</p>\n            ",
+                "description": "\n\n<p>What are the ten most commonly used local variable names? What are the most often called methods? Which library contains the biggest methods? How complex are common pattern matches? Where are the most implicit parameters defined? Of what type? How many dependencies do you need to revert a string? How many unicode operators are really defined by scalaz? These and other questions are the topic of this talk.</p><p>I set out to dissect the typical Scala library into statistics, hard numbers, and easy to understand piecharts. My census bot crawled through the source code of the most common Scala libraries and collected lots of interesting data, trivia and maybe even hidden gems I want to share with you.</p>\n            ",
                 "speakers": [
                     {
-                        "twitter": "@higherkinded",
-                        "fullname": "Nermin Serifovic",
-                        "avatar": "assets/images/speakers/nermin.jpg",
-                        "company": "Scala Puzzlers",
-                        "bio": "Nermin Serifovic has been a Scala enthusiast since 2009 and professional practitioner since 2011. He is a co-creator of <a href='http://scalapuzzlers.com/'>scalapuzzlers.com</a>"
-                    },
-                    {
-                        "twitter": "@ScalaPuzzlers",
-                        "fullname": "Andrew Phillips",
-                        "avatar": "assets/images/speakers/andrew.jpg",
-                        "company": "Scala Puzzlers",
-                        "bio": "Andrew is a long-time JVM developer and now VP Products for XebiaLabs. He actively contributes to open source projects and co-maintains the Scala Puzzlers website."
+                        "twitter": "@virtualvoid",
+                        "fullname": "Johannes Rudolph",
+                        "avatar": "assets/images/speakers/rudolph.jpg",
+                        "company": "",
+                        "bio": "Scala enthusiast. Loves the creative interplay between human mind and compiler's regimen. Developer of several small Scala libraries: * Scala Enhanced String plugin * Scala Reflectionator * Mnemonics, Bytecode Generation with Scala"
                     }
                 ]
             },
