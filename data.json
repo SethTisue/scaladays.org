@@ -742,7 +742,7 @@
                         "fullname": "Nick Stanchenko",
                         "avatar": "assets/images/speakers/nick.jpg",
                         "company": "University of Lisbon",
-                        "bio": "Nick is a Scala enthusiast, studying and researching HCI at the University of Lisbon. He is the creator of Macroid — the Android Scala DSL"
+                        "bio": "Nick is a Scala enthusiast, studying and researching HCI at the University of Lisbon. He is the creator of Macroid&mdash;the Android Scala DSL"
                     }
                 ]
             },
