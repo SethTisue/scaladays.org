@@ -203,6 +203,8 @@ section
 		div 
 			position: relative
 			float: left
+			max-width: 450px
+			width: auto
 			h3
 				color: red-text
 				margin-top: 15px
@@ -212,12 +214,14 @@ section
 				line-height: 20px
 			h2
 				color: white
-				font-size: 30px
+				font-size: 24px
+				line-height: 1.1em
 				margin: 0
 			h4
 				color: navy
 				font-weight: 400
 				font-size: 18px
+
 	
 	.button
 		background: blue-dkr
@@ -225,6 +229,20 @@ section
 		margin-left: 140px
 		&:hover
 			background-color: blue-text
+
+	@media (max-width: 700px)
+		h2, .button
+			margin-left: 0
+			margin-bottom: 10px
+		article 
+			div 
+				clear: both
+				h2
+					font-size: 20px
+			img 
+				width: 80px
+				margin-right: 0
+
 
 #logo
 	position: relative

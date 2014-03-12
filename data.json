@@ -21,7 +21,7 @@
             {
                 "type": "keynote",
                 "title": "Scala: More Simple Parts",
-                "description": "Need This",
+                "description": "Coming Soon!",
                 "time": "16:30-17:30",
                 "speakers": [
                     {
@@ -56,8 +56,8 @@
             },
             {
                 "type": "keynote",
-                "title": "Tuesday Keynote",
-                "description": "Coming Soon!",
+                "title": "Contravariance is the Dual of Covariance, Observable is the Dual of Iterable",
+                "description": "<p>Every developer that has ever dealt with contra- and covariance in Java or Scala shivers with fear when they have to deal with these concepts in their code. Typically the solution is to click, click, click, click on the 'suggested fix' by the IDE until the error messages finally go away. All this panic is for nothing since at runtime all generics is erased anyway, and for this reason the Dart language made all generic types covariant. However, fear no more!</p><p>In this talk we will provide trauma recovery therapy for victims of variance by explaining the concepts from first principles using real world examples such as vending machines and garbage cans. For additional fun, we will throw in side-effects and show how the simplest possible covariant and contra-variant types are nothing more than the primitive collection types Iterator[+T] and Observer[-T]. Add the idea of self-application, Iterator[Iterator[T] c.q. Observer[Observer[T]], on top of that. and we arrive at well known types Iterable[+T] and Observable[+T] for pull- respectively push-collectionsthat we cannot not live without.</p><p>And in case you wondered why Scala uses + to denote covariance and - for contra-variance, and why a contravariant type in a contravariant position becomes a covariant type, well, that is all part of the magic of coding in a functional language.</p>",
                 "time": "09:00-10:00",
                 "speakers": [
                     {
@@ -182,11 +182,19 @@
             },
             {
                 "type": "track",
-                "title": "Workshop",
+                "title": "Pitching Scala: An Interactive Session on Creating Change in your Organization",
                 "room": 4,
                 "time": "11:05-12:00",
-                "description": "\n\n<p>Details Coming Soon!</p>\n            ",
-                "speakers": []
+                "description": "\n\n<p>Scala, Akka and Play provide groundbreaking opportunities for organizations to solve problems faster and more easily than traditional solutions.  Even with all of the advantages that they provide, adopting these technologies represents a major change in how a team delivers software.  Change of any kind can be difficult and adapting to both a new language such as Scala and new paradigms like actor models or functional programming, doubly so.  In this workshop, the team at BoldRadius will lead a lively and interactive discussion around how best to approach this problem, presenting tools, strategies and resources created with the help of evangelists who have driven successful adoption within their teams.  Join us to share your experience and ideas, provide feedback or simply to hear how others have tackled this challenge.</p>\n            ",
+                "speakers": [
+                    {
+                        "twitter": "@Mkelland",
+                        "fullname": "Mike Kelland",
+                        "avatar": "assets/images/speakers/mike.jpg",
+                        "company": "Tindr",
+                        "bio": "Mike is the head honcho at Tindr Solutions, a firm dedicated to enabling organizations to adopt the Typesafe Reactive Platform.  Mike's been building software for the web since 1997 and has authored patents in physical media integrity and network security.  Mike is a strong advocate for the Typesafe Reactive Platform and has worked with dozens of organizations who have successfully adopted it."
+                    }
+                ]
             },
             {
                 "type": "pause",

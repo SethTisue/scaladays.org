@@ -226,10 +226,16 @@
 		background: slate-ltr
 		color: grey-ltr
 		width: 100%
+		overflow: hidden;
 		h3
 			color: red
 			font-size: 26px
+			line-height:28px;
 			margin-bottom: 0.4em
+			@media (max-width: 640px)
+				font-size: 20px
+				line-height:22px;
+
 			a 
 				text-decoration: none
 				color: inherit

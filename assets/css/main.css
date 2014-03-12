@@ -35,13 +35,17 @@ section header h1{font-size:30px}
 #home article{clear:both;margin-bottom:20px;}
 #home article:after{content:' ';display:block;clear:both}
 #home article img{-webkit-border-radius:200px;border-radius:200px;border:5px solid #f0f3f6;width:110px;float:left;margin-right:30px}
-#home article div{position:relative;float:left;}
+#home article div{position:relative;float:left;max-width:450px;width:auto;}
 #home article div h3{color:#d64546;margin-top:15px;padding:0 0 0 0;font-size:20px;height:20px;line-height:20px}
-#home article div h2{color:#fff;font-size:30px;margin:0}
+#home article div h2{color:#fff;font-size:24px;line-height:1.1em;margin:0}
 #home article div h4{color:#103a51;font-weight:400;font-size:18px}
 #home .button{background:#42b8d7;-webkit-box-shadow:0 3px 0 #19aacf;box-shadow:0 3px 0 #19aacf;margin-left:140px;}
 #home .button:hover{background-color:#19aacf}
-#logo{position:relative;margin-bottom:60px;}
+@media (max-width: 700px){#home h2,#home .button{margin-left:0;margin-bottom:10px}
+#home article div{clear:both;}
+#home article div h2{font-size:20px}
+#home article img{width:80px;margin-right:0}
+}#logo{position:relative;margin-bottom:60px;}
 #logo h1{margin:0;font-size:100px;font-weight:500;color:#fff;}
 @media (max-width: 960px){#logo h1{font-size:60px}
 }#logo strong{color:#f16665;font-weight:700}
@@ -194,9 +198,10 @@ section header h1{font-size:30px}
 #schedule .tracks .register,#schedule .statics .register{background:url("../images/register.svg") 30px 10px no-repeat;padding-left:150px;-webkit-background-size:100px auto;-moz-background-size:100px auto;background-size:100px auto}
 #schedule .tracks .drink,#schedule .statics .drink{background:url("../images/drink.svg") 30px 10px no-repeat;padding-left:150px;-webkit-background-size:100px auto;-moz-background-size:100px auto;background-size:100px auto}
 #schedule .tracks .eat,#schedule .statics .eat{background:url("../images/eat.svg") 30px 10px no-repeat;padding-left:150px;-webkit-background-size:100px auto;-moz-background-size:100px auto;background-size:100px auto}
-#schedule .keynote{background:#3e515e;color:#8ba1b0;width:100%;}
-#schedule .keynote h3{color:#f16665;font-size:26px;margin-bottom:.4em;}
-#schedule .keynote h3 a{text-decoration:none;color:inherit;}
+#schedule .keynote{background:#3e515e;color:#8ba1b0;width:100%;overflow:hidden;}
+#schedule .keynote h3{color:#f16665;font-size:26px;line-height:28px;margin-bottom:.4em;}
+@media (max-width: 640px){#schedule .keynote h3{font-size:20px;line-height:22px}
+}#schedule .keynote h3 a{text-decoration:none;color:inherit;}
 #schedule .keynote h3 a:after{display:block;content:" ";position:absolute;top:0;left:0;right:0;bottom:0}
 #schedule .keynote h4{color:#fff}
 #schedule .keynote .details{display:none}
