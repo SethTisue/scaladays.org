@@ -185,14 +185,14 @@
                 "title": "Pitching Scala: An Interactive Session on Creating Change in your Organization",
                 "room": 4,
                 "time": "11:05-12:00",
-                "description": "\n\n<p>Scala, Akka and Play provide groundbreaking opportunities for organizations to solve problems faster and more easily than traditional solutions.  Even with all of the advantages that they provide, adopting these technologies represents a major change in how a team delivers software.  Change of any kind can be difficult and adapting to both a new language such as Scala and new paradigms like actor models or functional programming, doubly so.  In this workshop, the team at Tindr will lead a lively and interactive discussion around how best to approach this problem, presenting tools, strategies and resources created with the help of evangelists who have driven successful adoption within their teams.  Join us to share your experience and ideas, provide feedback or simply to hear how others have tackled this challenge.</p>\n            ",
+                "description": "\n\n<p>Scala, Akka and Play provide groundbreaking opportunities for organizations to solve problems faster and more easily than traditional solutions.  Even with all of the advantages that they provide, adopting these technologies represents a major change in how a team delivers software.  Change of any kind can be difficult and adapting to both a new language such as Scala and new paradigms like actor models or functional programming, doubly so.  In this workshop, the team at BoldRadius will lead a lively and interactive discussion around how best to approach this problem, presenting tools, strategies and resources created with the help of evangelists who have driven successful adoption within their teams.  Join us to share your experience and ideas, provide feedback or simply to hear how others have tackled this challenge.</p>\n            ",
                 "speakers": [
                     {
                         "twitter": "@Mkelland",
                         "fullname": "Mike Kelland",
                         "avatar": "assets/images/speakers/mike.jpg",
-                        "company": "Tindr",
-                        "bio": "Mike is the head honcho at Tindr Solutions, a firm dedicated to enabling organizations to adopt the Typesafe Reactive Platform.  Mike's been building software for the web since 1997 and has authored patents in physical media integrity and network security.  Mike is a strong advocate for the Typesafe Reactive Platform and has worked with dozens of organizations who have successfully adopted it."
+                        "company": "BoldRadius Solutions",
+                        "bio": "Mike is the head honcho at BoldRadius Solutions, a firm dedicated to enabling organizations to adopt the Typesafe Reactive Platform.  Mike's been building software for the web since 1997 and has authored patents in physical media integrity and network security.  Mike is a strong advocate for the Typesafe Reactive Platform and has worked with dozens of organizations who have successfully adopted it."
                     }
                 ]
             },
