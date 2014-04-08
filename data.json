@@ -246,8 +246,8 @@
                         "twitter": "@ktosopl",
                         "fullname": "Konrad Malawski",
                         "avatar": "assets/images/speakers/malawski.jpg",
-                        "company": "Ebay",
-                        "bio": "Late-night passionate dev currently at ebay in London - where he's working hard for a more Scala Future[_]. Fan of type systems and capybaras."
+                        "company": "Typesafe",
+                        "bio": "Late-night passionate dev currently at Typesafe - where he's working hard for a more Scala Future[_]. Fan of type systems and capybaras."
                     }
                 ]
             },
