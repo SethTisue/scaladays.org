@@ -963,16 +963,16 @@
             },
             {
                 "type": "track",
-                "title": "Coming Soon",
+                "title": "Sparkle: Reactive streams to the browser with scala and d3",
                 "room": 1,
                 "time": "17:00-17:55",
-                "description": "\n\n<p>Coming Soon</p>\n            ",
+                "description": "\n\n<p>In this talk I'll introduce Sparkle, an open source framework for data visualization. Sparkle combines the snazzy animation facilities in d3 with the powerful data management and analysis libraries available in Scala. Sparkle includes:</p><ul><li>An open protocol definition to deliver streams to browsers and mobile clients.</li><li>A server library for loading, storing and transforming data streams, including drivers for Kafka and Cassandra. </li><li>A javascript client library with support for zooming animated graphs.</li></ul><p>Sparkle's server library is designed for sub-second response times. We'll discuss how fast 'request time' analytics can be a useful new extension to data analysis pipelines. Interactive zooming for server hosted big data, streaming live data, dynamic display of incremental results, performance analysis...</p><p>Come see how Sparkle might complement your data workflow.</p>\n            ",
                 "speakers": [
                     {
-                        "twitter": "",
-                        "fullname": "",
-                        "avatar": "",
-                        "company": "",
+                        "twitter": "@mighdoll",
+                        "fullname": "Lee Mighdoll",
+                        "avatar": "assets/images/speakers/lee.jpg",
+                        "company": "Nest",
                         "bio": ""
                     }
                 ]
@@ -998,7 +998,7 @@
                 "title": "Coming Soon",
                 "room": 3,
                 "time": "17:00-17:55",
-                "description": "\n\n<p>Coming Soon</p>\n            ",
+                "description": "\n\n<p>Coming Soon</p>\n",
                 "speakers": [
                     {
                         "twitter": "",
@@ -1014,7 +1014,7 @@
                 "title": "Coming Soon",
                 "room": 4,
                 "time": "17:00-17:55",
-                "description": "\n\n<p>Coming Soon</p>\n            ",
+                "description": "\n\n<p>Coming Soon</p>\n",
                 "speakers": [
                     {
                         "twitter": "",
