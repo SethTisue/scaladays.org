@@ -115,6 +115,7 @@ section header h1{font-size:30px}
 #training ul li{list-style-type:disc;list-style-position:inside}
 #training .toggle-item{-webkit-transition:all 200ms ease-in-out;-moz-transition:all 200ms ease-in-out;-o-transition:all 200ms ease-in-out;-ms-transition:all 200ms ease-in-out;transition:all 200ms ease-in-out;margin:10px 0;padding:20px 20px 20px 20px;-webkit-border-radius:3px;border-radius:3px;background-color:#3e515e;}
 #training .toggle-item .toggle-control{background-color:transparent;cursor:pointer;color:#d64546;display:block;font-weight:700;}
+#training .toggle-item .toggle-control span{position:absolute;color:#53cdec;border-bottom:2px solid #19aacf;-webkit-border-radius:3px;border-radius:3px;padding:0 10px;margin-left:10px;background-color:#53cdec;color:#3e515e;-webkit-transform:rotate(-5deg);-moz-transform:rotate(-5deg);-o-transform:rotate(-5deg);-ms-transform:rotate(-5deg);-webkit-transform:rotate(-5deg);-moz-transform:rotate(-5deg);-o-transform:rotate(-5deg);-ms-transform:rotate(-5deg);transform:rotate(-5deg)}
 #training .toggle-item .toggle-control:after{content:"\25BE";float:right}
 #training .toggle-item .toggle-content{opacity:0;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";filter:alpha(opacity=0);display:none;-webkit-transition:all 200ms ease-in-out;-moz-transition:all 200ms ease-in-out;-o-transition:all 200ms ease-in-out;-ms-transition:all 200ms ease-in-out;transition:all 200ms ease-in-out}
 #training .toggle-item.on{padding:20px;background-color:#3e515e;}
