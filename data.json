@@ -71,24 +71,17 @@
             },
             {
                 "type": "track",
-                "title": "Reactive Streams: And why you should care.",
+                "title": "Catalyst: A Functional Query Optimizer for Spark and Shark",
                 "room": 1,
                 "time": "10:05-11:00",
-                "description": "\n\n<p>One of the fundamental problems of I/O is a core problem of communication: How do I know that the recipient is ready to receive my information?</p><p>In a pure push model, without taking into consideration Little's Law, it is very easy to produce data at a faster pace than it can be consumed, leading to loss of information, contention on the medium, or even full system failure.</p><p>Reactive Streams provide an asynchronous, concurrent, back-pressured/demand-driven solution for that and other problems. We will discuss this and more in this session.</p>\n            ",
+                "description": "\n\n<p>Shark is a SQL engine built on Apache Hive, that replaces Hive's MapReduce execution engine with Apache Spark.  Spark's fine-grained resource model and efficient execution engine allow Shark to outperform Hive by over 100x for data stored in memory. However, until now, Shark's performance has been limited by the flexibility of Hive's query optimizer.  Catalyst aims to remedy this situation by building a simple yet powerful optimization framework using Scala language features.</p>\n<p>Query optimization can greatly improve both the productivity of developers and the performance of the queries that they write.  A good query optimizer is capable of automatically rewriting relational queries to execute more efficiently, using techniques such as filtering data early, utilizing available indexes, and even ensuring different data sources are joined in the most efficient order.  By performing these transformations, the optimizer not only improves the execution times of relational queries, but also frees the developer to focus on the semantics of their application instead of its performance.  </p>\n<p>Unfortunately, building an optimizer is an incredibly complex engineering task and thus many open source systems perform only very simple optimizations.  Past research [1,2] has attempted to combat this complexity by providing frameworks that allow the creators of optimizers to write possible optimizations as a set of declarative rules.  However, the use of such frameworks has required the creation and maintenance of special “optimizer compilers” and forced the burden of learning a complex domain specific language upon those wishing to add features to the optimizer. </p>\n<p>Catalyst solves this problem by leveraging Scala's powerful pattern matching and runtime reflection. This framework allows developers to concisely specify complex optimizations, such as pushing filters past joins functionally.  Increased conciseness allows our developers both to create new optimizations faster and more easily reason about the correctness of the optimization.</p>\n<p>Catalyst also uses the new reflection capabilities in Scala 2.10 to generate custom classes at runtime for storing intermediate results and evaluating complex relational expressions.  Doing so allows us to avoid boxing of primitive values and has been shown to improve performance by orders of magnitude in some cases.</p>\n<p>[1]  Graefe, G. The Cascades Framework for Query Optimization. In Data Engineering Bulletin. Sept. 1995.<br>\n[2] Goetz Graefe , David J. DeWitt, The EXODUS optimizer generator, Proceedings of the 1987 ACM SIGMOD international conference on Management of data, p.160-172, May 27-29, 1987, San Francisco, California, United States</p>\n            ",
                 "speakers": [
                     {
-                        "twitter": "@viktorklang",
-                        "fullname": "Viktor Klang",
-                        "avatar": "assets/images/speakers/klang.jpg",
-                        "company": "Typesafe Inc",
-                        "bio": "Hailing from southern Sweden, Viktor Klang has been a passionate Scala hacker since 2007, a Java enterprise systems architect since 2003 and a programmer since 1998. He's a big fan of agile development, scalable software and elegant code. He joined the Akka team in the middle of 2009 as one of the earliest committers. Viktor currently serves as Chief Architect at Typesafe."
-                    },
-                    {
-                        "twitter": "@rolandkuhn",
-                        "fullname": "Roland Kuhn",
-                        "avatar": "assets/images/speakers/roland.jpg",
-                        "company": "Typesafe Inc",
-                        "bio": "After earning a PhD in high-energy particle physics and while working as a systems engineer in the space business, Roland came in contact with Akka. He started contributing to the open-source project in 2010 and has been employed by Typesafe since 2011 where he has been leading the Akka team since November 2012."
+                        "twitter": "@michaelarmbrust",
+                        "fullname": "Michael Armbrust",
+                        "avatar": "assets/images/speakers/armbrust.jpg",
+                        "company": "Databricks",
+                        "bio": "Software Engineer at Databricks, interested in distributed databases, query languages, scala, and more."
                     }
                 ]
             },
@@ -126,25 +119,40 @@
             },
             {
                 "type": "track",
-                "title": "Workshop",
-                "time": "10:05-11:00",
+                "title": "Pitching Scala: An Interactive Session on Creating Change in your Organization",
                 "room": 4,
-                "description": "\n\n<p>Details coming soon!</p>\n            ",
-                "speakers": []
+                "time": "10:05-11:00",
+                "description": "\n\n<p>Scala, Akka and Play provide groundbreaking opportunities for organizations to solve problems faster and more easily than traditional solutions.  Even with all of the advantages that they provide, adopting these technologies represents a major change in how a team delivers software.  Change of any kind can be difficult and adapting to both a new language such as Scala and new paradigms like actor models or functional programming, doubly so.  In this workshop, the team at BoldRadius will lead a lively and interactive discussion around how best to approach this problem, presenting tools, strategies and resources created with the help of evangelists who have driven successful adoption within their teams.  Join us to share your experience and ideas, provide feedback or simply to hear how others have tackled this challenge.</p>\n            ",
+                "speakers": [
+                    {
+                        "twitter": "@Mkelland",
+                        "fullname": "Mike Kelland",
+                        "avatar": "assets/images/speakers/mike.jpg",
+                        "company": "BoldRadius Solutions",
+                        "bio": "Mike is the head honcho at BoldRadius Solutions, a firm dedicated to enabling organizations to adopt the Typesafe Reactive Platform.  Mike's been building software for the web since 1997 and has authored patents in physical media integrity and network security.  Mike is a strong advocate for the Typesafe Reactive Platform and has worked with dozens of organizations who have successfully adopted it."
+                    }
+                ]
             },
             {
                 "type": "track",
-                "title": "Catalyst: A Functional Query Optimizer for Spark and Shark",
+                "title": "Reactive Streams: And why you should care.",
                 "room": 1,
                 "time": "11:05-12:00",
-                "description": "\n\n<p>Shark is a SQL engine built on Apache Hive, that replaces Hive's MapReduce execution engine with Apache Spark.  Spark's fine-grained resource model and efficient execution engine allow Shark to outperform Hive by over 100x for data stored in memory. However, until now, Shark's performance has been limited by the flexibility of Hive's query optimizer.  Catalyst aims to remedy this situation by building a simple yet powerful optimization framework using Scala language features.</p>\n<p>Query optimization can greatly improve both the productivity of developers and the performance of the queries that they write.  A good query optimizer is capable of automatically rewriting relational queries to execute more efficiently, using techniques such as filtering data early, utilizing available indexes, and even ensuring different data sources are joined in the most efficient order.  By performing these transformations, the optimizer not only improves the execution times of relational queries, but also frees the developer to focus on the semantics of their application instead of its performance.  </p>\n<p>Unfortunately, building an optimizer is an incredibly complex engineering task and thus many open source systems perform only very simple optimizations.  Past research [1,2] has attempted to combat this complexity by providing frameworks that allow the creators of optimizers to write possible optimizations as a set of declarative rules.  However, the use of such frameworks has required the creation and maintenance of special “optimizer compilers” and forced the burden of learning a complex domain specific language upon those wishing to add features to the optimizer. </p>\n<p>Catalyst solves this problem by leveraging Scala's powerful pattern matching and runtime reflection. This framework allows developers to concisely specify complex optimizations, such as pushing filters past joins functionally.  Increased conciseness allows our developers both to create new optimizations faster and more easily reason about the correctness of the optimization.</p>\n<p>Catalyst also uses the new reflection capabilities in Scala 2.10 to generate custom classes at runtime for storing intermediate results and evaluating complex relational expressions.  Doing so allows us to avoid boxing of primitive values and has been shown to improve performance by orders of magnitude in some cases.</p>\n<p>[1]  Graefe, G. The Cascades Framework for Query Optimization. In Data Engineering Bulletin. Sept. 1995.<br>\n[2] Goetz Graefe , David J. DeWitt, The EXODUS optimizer generator, Proceedings of the 1987 ACM SIGMOD international conference on Management of data, p.160-172, May 27-29, 1987, San Francisco, California, United States</p>\n            ",
+                "description": "\n\n<p>One of the fundamental problems of I/O is a core problem of communication: How do I know that the recipient is ready to receive my information?</p><p>In a pure push model, without taking into consideration Little's Law, it is very easy to produce data at a faster pace than it can be consumed, leading to loss of information, contention on the medium, or even full system failure.</p><p>Reactive Streams provide an asynchronous, concurrent, back-pressured/demand-driven solution for that and other problems. We will discuss this and more in this session.</p>\n            ",
                 "speakers": [
                     {
-                        "twitter": "@michaelarmbrust",
-                        "fullname": "Michael Armbrust",
-                        "avatar": "assets/images/speakers/armbrust.jpg",
-                        "company": "Databricks",
-                        "bio": "Software Engineer at Databricks, interested in distributed databases, query languages, scala, and more."
+                        "twitter": "@viktorklang",
+                        "fullname": "Viktor Klang",
+                        "avatar": "assets/images/speakers/klang.jpg",
+                        "company": "Typesafe Inc",
+                        "bio": "Hailing from southern Sweden, Viktor Klang has been a passionate Scala hacker since 2007, a Java enterprise systems architect since 2003 and a programmer since 1998. He's a big fan of agile development, scalable software and elegant code. He joined the Akka team in the middle of 2009 as one of the earliest committers. Viktor currently serves as Chief Architect at Typesafe."
+                    },
+                    {
+                        "twitter": "@rolandkuhn",
+                        "fullname": "Roland Kuhn",
+                        "avatar": "assets/images/speakers/roland.jpg",
+                        "company": "Typesafe Inc",
+                        "bio": "After earning a PhD in high-energy particle physics and while working as a systems engineer in the space business, Roland came in contact with Akka. He started contributing to the open-source project in 2010 and has been employed by Typesafe since 2011 where he has been leading the Akka team since November 2012."
                     }
                 ]
             },
@@ -182,17 +190,17 @@
             },
             {
                 "type": "track",
-                "title": "Pitching Scala: An Interactive Session on Creating Change in your Organization",
-                "room": 4,
+                "title": "Slick in the field, learning to forget ORM",
                 "time": "11:05-12:00",
-                "description": "\n\n<p>Scala, Akka and Play provide groundbreaking opportunities for organizations to solve problems faster and more easily than traditional solutions.  Even with all of the advantages that they provide, adopting these technologies represents a major change in how a team delivers software.  Change of any kind can be difficult and adapting to both a new language such as Scala and new paradigms like actor models or functional programming, doubly so.  In this workshop, the team at BoldRadius will lead a lively and interactive discussion around how best to approach this problem, presenting tools, strategies and resources created with the help of evangelists who have driven successful adoption within their teams.  Join us to share your experience and ideas, provide feedback or simply to hear how others have tackled this challenge.</p>\n            ",
+                "room": 4,
+                "description": "\n\n<p>For many years developers on the JVM platform were used to ORM frameworks. Our code was filled with annotations (or worst XML configuration files). We learned how to map our classes to relational tables and deal with its peculiarities. We had big, sometimes huge graph of objects, mapped to relational tables. We brought them all to memory, changed them and let it be automagically persisted back at the end of our transactions.</p><p>In a Scala/Slick world we deal with data and persistence in a totally different way. Our model are immutable structures (case classes and tuples), nullable columns are mapped to Options (and that's cool), relations are expressed by id references instead of object associations (that's less cool). Instead of writing xml or filling our code with annotations, we write type-safe idiomatic Scala code. We compose queries in a functional style. We map and flatMap over it.</p><p>But is that good or bad? What brings Slick to the readability and maintainability of our code base? How do we test our business logic when a great deal of it is executed outside the JVM?</p><p>In this talk we'll share our experience in building real world applications with Slick. The lessons learned, the patterns and anti-patterns we went through in our journey to shift the way we were used to think about persistence.</p><p>This is not an introduction to Slick. This talk is aimed to developers already using Slick.</p>\n            ",
                 "speakers": [
                     {
-                        "twitter": "@Mkelland",
-                        "fullname": "Mike Kelland",
-                        "avatar": "assets/images/speakers/mike.jpg",
-                        "company": "BoldRadius Solutions",
-                        "bio": "Mike is the head honcho at BoldRadius Solutions, a firm dedicated to enabling organizations to adopt the Typesafe Reactive Platform.  Mike's been building software for the web since 1997 and has authored patents in physical media integrity and network security.  Mike is a strong advocate for the Typesafe Reactive Platform and has worked with dozens of organizations who have successfully adopted it."
+                        "twitter": "@renatocaval",
+                        "fullname": "Renato Cavalcanti",
+                        "avatar": "assets/images/speakers/renato.jpg",
+                        "company": "",
+                        "bio": "Renato Cavalcanti is an independent Scala developer based in Belgium. Coming from a totally different field (psychology), he discovered a passion for programming in 1999. Scala aficionado since 2007, he has been hacking in Scala and related technologies for fun and profit. He's the founder of <a target=\"_blank\" href=\"http://www.bescala.org\">BeScala</a> and steering committee member of the <a target=\"_blank\" href=\"http://www.bejug.be\">BeJUG</a>."
                     }
                 ]
             },
@@ -410,17 +418,24 @@
             },
             {
                 "type": "track",
-                "title": "When Code Reacts to Data",
+                "title": "Introduction to Reactive: A Hands-on Workshop with Play and Akka",
                 "room": 1,
                 "time": "16:00-16:55",
-                "description": "\n\n<p>Data these days: there's a crapton of it, and a lot of it is crap. Can we get just-in-time processing AND secure error handling AND a modular flexibility like OO has never seen?\n</p><p>Welcome to a new world of data streaming. Multiple sources -- asynchronous, isolated I/O -- on-the-fly decisions: we have it all!</p>\n<p>This talk introduces scalaz-stream, with code that modifies its flow at runtime. This library showcases Scala's talents with a productively lazy, reassuringly safe, purely functional style. And modularity! I think code re-use is overrated, except like this. In this session, be on the watch for advanced FP patterns disguised in ordinary English. You may never think about richly decadent type systems the same way again.\"</p>\n            ",
+                "description": "\n\n<p>Modern web applications that are always connected require a new kind of architecture to handle real-time streaming of data.  They require a reactive architecture that is event-drive and resilient to failures.  But how hard are these applications to actually build?  In this hands-on workshop we will learn just how easy it can be to build a reactive application using Play and Akka. The application will use Play to asynchronously read from a web service and stream it to the client using websockets and JSON. In building this sample you will learn the basics of how a Play application is structured and how it integrates with Akka for building reactive applications.  Participants should bring a laptop with Typesafe Activator installed - <a href=\"http://typesafe.com/platform/getstarted\" target=\"_blank\">http://typesafe.com/platform/getstarted</a>.</p>\n            ",
                 "speakers": [
                     {
-                        "twitter": "@jessitron",
-                        "fullname": "Jessica Kerr",
-                        "avatar": "assets/images/speakers/kerr.jpg",
+                        "twitter": "@knight_cloud",
+                        "fullname": "Ryan Knight",
+                        "avatar": "assets/images/speakers/ryan.jpg",
+                        "company": "Typesafe Inc",
+                        "bio": "Ryan Knight is a consultant and trainer for Typesafe where he helps others learn and use Scala, Akka and Play.  Ryan frequently does training and presentations at conferences around the world, such as JavaOne, Devoxx, and many other Java get–togethers.  He has over 15 years of experience with enterprise software development. He first started consulting with Enterprise Java in 1999 with the Sun Java Center. Since then he has worked with a wide variety of companies, such as the Oracle, LDS Church, Williams Pipeline, Riot Games, Sony, T-Mobile, Deloitte and the State of Louisiana. This has given him experience with wide range of business, such as genealogy, telecommunications, finance and video games."
+                    },
+                    {
+                        "twitter": "@nraychaudhuri",
+                        "fullname": "Nilanjan Raychaudhuri",
+                        "avatar": "assets/images/speakers/nilanjan.jpg",
                         "company": "",
-                        "bio": "Jessica Kerr writes Scala code and speaks at conferences. She loves abstraction, git, her children, and anything that makes her brain hurt."
+                        "bio": "Nilanjan is a consultant/trainer and core member of Play framework team. He works for Typesafe. He has more than 14 years of experience managing and developing software solutions in Java, Ruby, Groovy and also in Scala. He is zealous about programming in Scala ever since he got introduced to this beautiful language. He enjoys sharing his experience via talks in various conferences and he is also the author of the \"Scala in Action\" and upcoming \"Play recipes\" book."
                     }
                 ]
             },
@@ -539,7 +554,7 @@
             {
                 "type": "pause",
                 "style": "drink",
-                "title": "Hospitality Suites at Kosmos and Community Party",
+                "title": "Community Party",
                 "time": "18:00-19:30",
                 "extra": ""
             }
@@ -561,14 +576,14 @@
                 "type": "keynote",
                 "title": "Legacy",
                 "time": "09:00-10:00",
-                "description": "\n\n<p>As software developers, we learn to abhor maintaining other people's old software. It's old, funky and brittle.  In fact, we spend much of our work lives trying to kill it or at the very least marginalize its use, so we can limit our exposure to it. We pity people who have to do it.</p><p>This is what we call \"legacy software\".</p><p>But the word \"legacy\" gets a bad wrap. In most other contexts, it has a positive meaning.</p><p>Maybe we're just bitter.  The average life span of a software system is hardly long enough to even use the word \"legacy\" to describe it.</p><p>How can we turn this word around? How can we leave an actual legacy of our work as software developers?</p>\n",
+                "description": "\n\n<p>As software developers, we learn to abhor maintaining other people's old software. It's old, funky and brittle.  In fact, we spend much of our work lives trying to kill it or at the very least marginalize its use, so we can limit our exposure to it. We pity people who have to do it.</p><p>This is what we call \"legacy software\".</p><p>But the word \"legacy\" gets a bad rap. In most other contexts, it has a positive meaning.</p><p>Maybe we're just bitter.  The average life span of a software system is hardly long enough to even use the word \"legacy\" to describe it.</p><p>How can we turn this word around? How can we leave an actual legacy of our work as software developers?</p>\n",
                 "speakers": [
                     {
                         "twitter": "@chadfowler",
                         "fullname": "Chad Fowler",
                         "avatar": "assets/images/speakers/fowler.png",
                         "company": "",
-                        "bio": ""
+                        "bio": "Chad Fowler is an internationally known software developer, trainer, manager, speaker, and musician. Over the past decade he has worked with some of the world’s largest companies and most admired software developers. Chad is CTO of 6Wunderkinder. He is the author or co-author of a number of popular software books, including Rails Recipes and The Passionate Programmer: Creating a Remarkable Career in Software Development."
                     }
                 ]
             },
@@ -590,17 +605,17 @@
             },
             {
                 "type": "track",
-                "title": "Coming Soon!",
+                "title": "The no-framework Scala Dependency Injection Framework",
                 "room": 2,
                 "time": "10:05-11:00",
-                "description": "\n\n<p>Coming Soon!</p>\n            ",
+                "description": "\n\n<p>Using a DI framework/container may seem obvious. But when was the last time you considered *why* do you really need one? After all, \"dependency injection\" is just a fancy name for passing arguments to a constructor.</p><p>In the talk we'll walk through some of the features of DI containers and see if we can replace them with pure Scala code. We'll start with \"manual\" DI, followed with using MacWire to generate the wiring code for us. Then we'll proceed to a no-framework scopes implementation (e.g. request or session), which are very useful in web applications. We will also discuss possibilities of adding interceptors using macros. And finally, we'll see how to use traits to create and compose modules (similar to the module concept known from Guice), which can be viewed as a simplified cake pattern.</p><p>As MacWire heavily uses macros, as a bonus, I'll explain how Scala Macros work and when they can be useful.</p>\n            ",
                 "speakers": [
                     {
-                        "twitter": "",
-                        "fullname": "",
-                        "avatar": "",
+                        "twitter": "@adamwarski",
+                        "fullname": "Adam Waski",
+                        "avatar": "assets/images/speakers/warski.jpg",
                         "company": "",
-                        "bio": ""
+                        "bio": "<p>I am one of the co-founders of SoftwareMill, a company specialising in delivering customised software solutions, and daily I mostly code  using Scala and Java. I am involved in a number of open-source projects, such as Hibernate Envers, ElasticMQ, Veripacks and MacWire. I have been a speaker at major conferences, such as Devoxx, JavaZone, JFokus or Jazoon.</p><p>Apart from writing closed- and open-source software, I am interested in improving the way we use functional and object-oriented programming. When not coding, I enjoy spending time with my family, hiking in the mountains or playing tennis.</p>"
                     }
                 ]
             },
@@ -827,11 +842,19 @@
             },
             {
                 "type": "track",
-                "title": "Workshop",
+                "title": "RESTTest: exploring DSL design in Scala",
                 "room": 4,
                 "time": "14:00-14:55",
-                "description": "\n\n<p>Details Coming Soon!</p>\n            ",
-                "speakers": []
+                "description": "\n\n<p>This is not about a building a better REST Testing library, it's about DSL design, using REST testing as the example.</p><p>Scala is a powerful language and a few intermediate techniques can quickly turned a regular library into a nice literate DSL.</p><p>Starting with a fluent API together we will apply these techniques to create a DSL. Showing how they are used and how they compose to form a complete DSL.  As the DSL evolves we will examine, what works, what does not and how the DSL’s motivation can inform this.</p><p>Finally we examine how to structure and test a DSL codebase; the importance of documentation, noting how DSL documentation is different to library documentation, and discuss when is it appropriate to introduce a DSL.</p>\n            ",
+                "speakers": [
+                    {
+                        "twitter": "@IainHull",
+                        "fullname": "Iain Hull",
+                        "avatar": "assets/images/speakers/hull.jpg",
+                        "company": "",
+                        "bio": "Iain is a software engineer at Workday using Scala to deliver their next generation elastic grid. His twin passions are large scale distributed computing and applying clean code to complex problems.  Especially how good library and api design can improve system design, reliability and reduce friction during development."
+                    }
+                ]
             },
             {
                 "type": "track",
@@ -995,15 +1018,15 @@
             },
             {
                 "type": "track",
-                "title": "Coming Soon",
+                "title": "Monitoring Akka",
                 "room": 3,
                 "time": "17:00-17:55",
-                "description": "\n\n<p>Coming Soon</p>\n",
+                "description": "\n\n<p>Jan will show how the Reactive Monitor helped a major financial services organisation to provide monitoring of their Akka system. The talk will explore the challenges of monitoring mission-critical systems, especially under heavy load. Jan will show the implementation details of the Reactive Monitor, pointing out the benefits of the Akka IO layer to implement non-blocking and resilient transport layer. The talk will close by going back to the large-scale system and show how we used the information from the monitoring to tune the Akka system.</p><p>You will not need any extensive Scala or Akka experience to understand the core principles, though a good appreciation of the challenges of mission-critical systems will help you understand the scale of the problem; knowledge of Akka, Scala and AspectJ will help you understand the details of the code.</p>\n",
                 "speakers": [
                     {
-                        "twitter": "",
-                        "fullname": "",
-                        "avatar": "a",
+                        "twitter": "@honzam399",
+                        "fullname": "Jan Machacek",
+                        "avatar": "assets/images/speakers/jan.jpg",
                         "company": "",
                         "bio": ""
                     }
