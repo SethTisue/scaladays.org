@@ -1028,7 +1028,7 @@
                         "fullname": "Jan Machacek",
                         "avatar": "assets/images/speakers/jan.jpg",
                         "company": "",
-                        "bio": ""
+                        "bio": "Jan is a passionate technologist with hands-on experience with the practical aspects of software delivery (architecture, quality, CI, CD); the project management approaches (applying the principles of agile project management); mentoring and motivating the engineering & business teams. He shares his expertise and passion for software as the editor of the Open Source Journal, regularly contributes to open source projects and speaks at conferences in the UK and abroad. Jan is the author of many open source projects (various Typesafe Activators, Reactive Monitor, Akka Patterns, Akka Extras, Scalad, Specs2 Spring and others), books and articles."
                     }
                 ]
             },
