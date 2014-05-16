@@ -22,7 +22,7 @@
 			</div>
       <div class="small">
         <a href="#venue">Venue & Lodging</a>
-        <a href="#training">Training</a>
+        <a href="#training">Training<span class="sold-out">STILL OPEN</span></a>
   			<a href="#sponsors">Sponsors</a>
             <a href="#conduct">Code of Conduct</a>
   			<a href="#contact">Contact us</a>
@@ -130,13 +130,14 @@
             </header>
             <article>
                 <p>Want to get the most out of Scala Days Berlin? Register for a 2-day in-person training course on Saturday and Sunday before the conference kicks off. The courses are designed for developers of all levels of proficiency with the Typesafe Reactive Platform.</p>
-                <p>Receive 200 Euros off training with the <a href="#tickets">purchase</a> of one or more Scala Days pass!</p>
+                <p>Training will begin at 9 am on Saturday and Sunday mornings and will run into late afternoon on both days.</p>
+                
 
 
-                <p>Courses include:</p>
+                <p><strong>Courses include:</strong></p>
 
                 <div class="toggle-item">
-                    <h3 class="toggle-control">Fast Track to Scala</h3>
+                    <h3 class="toggle-control">Fast Track to Scala<span>10 SEATS AVAILABLE</span></h3>
                     <div class="toggle-content">
                        
                         <p>
@@ -206,7 +207,7 @@
                     </div>
                 </div>
                 <div class="toggle-item">
-                    <h3 class="toggle-control">Fast Track to Akka with Scala</h3>
+                    <h3 class="toggle-control">Fast Track to Akka with Scala<span>2 SEATS AVAILABLE</span></h3>
                     <div class="toggle-content">
                         <p>
                           This two-day course introduces experienced application developers to the reactive Akka toolkit and runtime
@@ -276,7 +277,7 @@
                     </div>
                 </div>
                 <div class="toggle-item">
-                    <h3 class="toggle-control">Fast Track to Play with Scala</h3>
+                    <h3 class="toggle-control">Fast Track to Play with Scala<span>6 SEATS AVAILABLE</span></h3>
                     <div class="toggle-content">
                         <p>
                           This two-day course introduces experienced web-developers to the design-patterns and methodology
@@ -313,7 +314,33 @@
                     </div>
                     
                 </div>
-                <p><em>*Training will begin at 9 am on Saturday and Sunday mornings and will run into late afternoon on both days.</em></p>
+                
+                <div id="training-form">
+                <h3>Purchase Training</h3>
+                <p>Please complete the details below and a representative will be in touch to verify availability.</p>
+                <form action="https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+                  <input type="hidden" name="oid" value="00DC0000000QlWU">
+                  <input type="hidden" name="retURL" value="http://scaladays.org/thank-you-training.html">
+                  <input type="hidden" name="lead_source" value="Training">
+                  <input type="hidden" name="Campaign_ID" value="701C0000000iVBl">
+                  <input type="hidden" name="member_status" value="responded">
+                  <input type="hidden" name="00NC0000005EORf" value="TRAIN--2014-06-14--Scala_Days_Training_Only--SCALA--WW">
+                  <fieldset>
+                      <input id="first_name" maxlength="40" name="first_name" size="20" type="text" required="" placeholder="First Name">
+                      <input id="last_name" maxlength="80" name="last_name" size="20" type="text" required="" placeholder="Last Name">
+                  </fieldset>
+                  <fieldset>
+                      <input id="email" maxlength="80" name="email" size="20" type="text" required="" placeholder="Email">
+                      <input id="company" maxlength="40" name="company" size="20" type="text" required="" placeholder="Company">
+                  </fieldset>
+                  <p>Please specify training course(s) and number of seats:</p>
+                  <fieldset>
+                    
+                    <textarea id="description" name="description" type="text" placeholder="Training Course(s) and Number of Seats"></textarea>
+                </fieldset>
+                  <input type="submit" name="submit" class="button">
+              </form>
+              </div>
                 
             </article>
             
@@ -353,10 +380,17 @@
                             <td>&#8364; 1,699.-</td>
                             <td>&#8364; 1,099.-</td>
                         </tr>
+                        <tr>
+                            <th></th>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td><a href="#training-form" class="button">Purchase Training</a></td>
+                        </tr>
                     </tbody>
                   </table>
-                <!--<a href="https://secure.trifork.com/scaladays-berlin-2014/registration/" class="button">Purchase Tickets</a>-->
-                <h3>Tickets are sold out at this time, to be placed on a wait list please submit your details below:</h3>
+                
+                <h3>Conference tickets are sold out at this time.<br> To be placed on a wait list, please submit your details below:</h3>
                 <form action="https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
                   <input type="hidden" name="oid" value="00DC0000000QlWU">
                   <input type="hidden" name="retURL" value="http://scaladays.org/thank-you-wait-list.html">
@@ -372,6 +406,9 @@
                       <input id="email" maxlength="80" name="email" size="20" type="text" required="" placeholder="Email">
                       <input id="company" maxlength="40" name="company" size="20" type="text" required="" placeholder="Company">
                   </fieldset>
+                  <fieldset>
+                    <textarea id="description" name="description" type="text" placeholder="Comments"></textarea>
+                </fieldset>
                   <input type="submit" name="submit" class="button">
               </form>
             </header>

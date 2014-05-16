@@ -163,6 +163,9 @@ fieldset input[type="text"]:first-child{margin:0 2% .5em 0}
 fieldset input[type="text"]:last-child{margin:0 0 .5em 2%}
 fieldset textarea{width:100%;margin:0 0 .5em 0%}
 .legal{color:#fff;margin:40px 0 10px 0;font-size:18px}
+#training-form{margin:40px 0;}
+#training-form h3{color:#fff;margin-bottom:10px}
+#training-form input[type="text"],#training-form textarea{border:none}
 #schedule #details{position:fixed;top:0;right:0;bottom:0;left:0;overflow:auto;font-size:16px;background:#364550;z-index:11111;display:none;padding:80px;color:#fff;cursor:pointer;}
 @media (max-width:640px){#schedule #details{padding:60px 15px}
 }#schedule #details .details-hide{display:none}
