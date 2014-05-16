@@ -111,6 +111,22 @@ input[type='submit']
 		background-color: red-dkr
 
 
+.sold-out 
+	position: absolute
+	color: blue
+	border-bottom: 2px solid blue-text
+	border-radius: br
+	padding: 0 10px
+	margin-left: 10px
+	background-color: blue
+	color: slate-ltr
+	-webkit-transform: rotate(5deg)
+	-moz-transform: rotate(5deg)
+	-o-transform: rotate(5deg)
+	-ms-transform: rotate(5deg)
+	transform: rotate(5deg)
+	-webkit-backface-visibility: hidden
+
 nav
 	position: fixed
 	z-index: 999
@@ -129,8 +145,14 @@ nav
 		color: white
 		text-decoration: none
 		cursor: pointer
+		position: relative
 		&:hover
-			text-decoration: none 
+			text-decoration: none
+		.sold-out
+			font-size: 15px
+			left: 90px 
+			top: 10px 
+			color: navy 
 
 			
 	.big
@@ -247,6 +269,23 @@ section
 #logo
 	position: relative
 	margin-bottom: 60px
+	#home-sold-out
+		opacity: 0.95
+		background-color: navy
+		border-bottom: 2px solid #09212e
+		color: blue
+		font-size: 40px
+		-webkit-transform: rotate(12deg)
+		-moz-transform: rotate(12deg)
+		-o-transform: rotate(12deg)
+		-ms-transform: rotate(12deg)
+		transform: rotate(12deg)
+		left: 300px
+		top: 20px
+		@media (max-width: 960px)
+			font-size: 20px
+			left: 170px
+			top: 5px
 	h1
 		margin: 0
 		font-size: 100px
@@ -530,6 +569,7 @@ section
 			-o-transform: rotate(-10deg)
 			-ms-transform: rotate(-10deg)
 			transform: rotate(10deg)
+			-webkit-backface-visibility: hidden
 	#training
 		background-color: navy
 		&:before
@@ -582,6 +622,7 @@ section
 				-o-transform: rotate(-5deg)
 				-ms-transform: rotate(-5deg)
 				transform: rotate(-5deg)
+				-webkit-backface-visibility: hidden
 			&:after
 				content: "\25BE"
 				float: right
@@ -613,14 +654,30 @@ section
 	color: white
 	h1
 		color: navy
+	h3
+		color: white
+		max-width: 680px
+		margin: 0 0 10px 0
 	table
-		margin: 20px 0
+		margin: 20px 0 60px 0
 		border-radius: br
 		text-align: center
 		font-size: 18px
+		.sold-out
+			background: red
+			color: blue-text
+			border-bottom: 2px solid red-text
+			left: 60px
+			top: 0px
+			@media (max-width: 1300px)
+				left: 20px
+			@media (max-width: 1100px)
+				left: 0
+
 		tr
 			th, td 
 				padding: 20px
+				position: relative
 		thead tr th 
 			background-color: blue-text
 			color: navy
@@ -688,41 +745,41 @@ section
 		margin-bottom: 0.7em
 
 
-	form
-		text-align: left
-		max-width: 680px
+form
+	text-align: left
+	max-width: 680px
 
-	input[type="text"],
-	textarea
-		display: block
-		width: 300px
-		margin: 0 auto .5em auto
-		height: 40px
-		line-height: 30px
-		padding: 4px 10px
-		font-size: 1em
-		background-color: white-ltr
-		color: blue-text
-		border: 1px solid blue-dkr
-		border-radius: br
+input[type="text"],
+textarea
+	display: block
+	width: 300px
+	margin: 0 auto .5em auto
+	height: 40px
+	line-height: 30px
+	padding: 4px 10px
+	font-size: 1em
+	background-color: white-ltr
+	color: blue-text
+	border: 1px solid blue-dkr
+	border-radius: br
 
-	textarea
-		height: 200px
+textarea
+	height: 200px
 
-	fieldset input[type="text"]
-		float: left
-		margin: 0 2% .5em 2%
-		width: 48%
+fieldset input[type="text"]
+	float: left
+	margin: 0 2% .5em 2%
+	width: 48%
 
-	fieldset input[type="text"]:first-child
-		margin: 0 2% .5em 0
+fieldset input[type="text"]:first-child
+	margin: 0 2% .5em 0
 
-	fieldset input[type="text"]:last-child
-		margin: 0 0 .5em 2%
+fieldset input[type="text"]:last-child
+	margin: 0 0 .5em 2%
 
-	fieldset textarea
-		width: 100%
-		margin: 0 0 .5em 0%
+fieldset textarea
+	width: 100%
+	margin: 0 0 .5em 0%
 
 .legal
 	color: white
