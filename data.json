@@ -521,17 +521,17 @@
             },
             {
                 "type": "track",
-                "title": "Effective APIs",
+                "title": "Easy Metaprogramming For Everyone!",
                 "room": 3,
                 "time": "17:00-17:55",
-                "description": "\n\n<p>Scala provides a lot of power for the application developer. Even more the library author. This talk will walk through various tricks/techniques that can be used to expose a well-designed API for your users. We focus on three areas:</p><ul><li>Exposing design through types</li><li>Designing for binary compatibility</li><li>Remaining versatile in the runtime</li></ul>\n            ",
+                "description": "\n\n<p>Scala 2.10 has seen a flurry of macro flavors: def macros, implicit macros, untyped macros, type macros and more recently macro annotations. These flavors have brought a lot of feedback, and we've been thinking hard how to make sense of it.</p>\n<p>At this point it is clear that macros are useful. However there's still quite some work to be done in order to make macros enjoyable. The main issues that remain to be addressed are verbosity and complexity of the underlying API, difficulties with tool integration, and potential for confusion caused by leaking compiler internals and cryptic error messages.</p>\n<p>The goal of Project Palladium is to make macros as natural and as universal as typed functions: simple to write, simple to use, and simple to reason about. Towards that end, we have rethought our macro engine and the underlying reflection API, keeping existing functionality in place and at the same time fixing fundamental problems intrinsic to the original implementation.</p>\n<p>In this talk I will present our results, showing how easy it is to metaprogram with Palladium, and outline the place of our developments in the future of Scala.</p>\n            ",
                 "speakers": [
                     {
-                        "twitter": "@jsuereth",
-                        "fullname": "Josh Suereth",
-                        "avatar": "assets/images/speakers/josh.jpg",
-                        "company": "",
-                        "bio": "Josh Suereth is a Senior Software Engineer at Typesafe and the author of \"Scala In Depth\". He has been a Scala enthusiast ever since he came to know this beautiful language in 2007. He started his professional career as a software developer in 2004 using programming languages like C++, Perl and Java. In 2009 he began writing the book \"Scala In Depth\" which provides practical support for using Scala in every day applications. Josh regularly shares his expertise in articles and talks."
+                        "twitter": "@xeno_by",
+                        "fullname": "Eugene Burmako",
+                        "avatar": "assets/images/speakers/burmako.jpg",
+                        "company": "EPFL",
+                        "bio": "Programming languages enthusiast, PhD student at EPFL, member of Scala team, Scala macros guy."
                     }
                 ]
             },
@@ -858,17 +858,17 @@
             },
             {
                 "type": "track",
-                "title": "Easy Metaprogramming For Everyone!",
+                "title": "Effective APIs",
                 "room": 1,
                 "time": "15:00-15:55",
-                "description": "\n\n<p>Scala 2.10 has seen a flurry of macro flavors: def macros, implicit macros, untyped macros, type macros and more recently macro annotations. These flavors have brought a lot of feedback, and we've been thinking hard how to make sense of it.</p>\n<p>At this point it is clear that macros are useful. However there's still quite some work to be done in order to make macros enjoyable. The main issues that remain to be addressed are verbosity and complexity of the underlying API, difficulties with tool integration, and potential for confusion caused by leaking compiler internals and cryptic error messages.</p>\n<p>The goal of Project Palladium is to make macros as natural and as universal as typed functions: simple to write, simple to use, and simple to reason about. Towards that end, we have rethought our macro engine and the underlying reflection API, keeping existing functionality in place and at the same time fixing fundamental problems intrinsic to the original implementation.</p>\n<p>In this talk I will present our results, showing how easy it is to metaprogram with Palladium, and outline the place of our developments in the future of Scala.</p>\n            ",
+                "description": "\n\n<p>Scala provides a lot of power for the application developer. Even more the library author. This talk will walk through various tricks/techniques that can be used to expose a well-designed API for your users. We focus on three areas:</p><ul><li>Exposing design through types</li><li>Designing for binary compatibility</li><li>Remaining versatile in the runtime</li></ul>\n            ",
                 "speakers": [
                     {
-                        "twitter": "@xeno_by",
-                        "fullname": "Eugene Burmako",
-                        "avatar": "assets/images/speakers/burmako.jpg",
-                        "company": "EPFL",
-                        "bio": "Programming languages enthusiast, PhD student at EPFL, member of Scala team, Scala macros guy."
+                        "twitter": "@jsuereth",
+                        "fullname": "Josh Suereth",
+                        "avatar": "assets/images/speakers/josh.jpg",
+                        "company": "",
+                        "bio": "Josh Suereth is a Senior Software Engineer at Typesafe and the author of \"Scala In Depth\". He has been a Scala enthusiast ever since he came to know this beautiful language in 2007. He started his professional career as a software developer in 2004 using programming languages like C++, Perl and Java. In 2009 he began writing the book \"Scala In Depth\" which provides practical support for using Scala in every day applications. Josh regularly shares his expertise in articles and talks."
                     }
                 ]
             },
