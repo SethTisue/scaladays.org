@@ -180,7 +180,7 @@
                 "description": "\n\n<p>Most people agree that you become more productive by using IntelliJ IDEA for Scala. However it's not always clear how much more. In this talk we'll take a look at the key features of IntelliJ IDEA and reveal some of its usage statistics. And of course we'll get a report on what's going on with the IntelliJ IDEA plugin for Scala: what have been recently done and what's is coming in the future.</p>\n            ",
                 "speakers": [
                     {
-                        "twitter": "",
+                        "twitter": "@Safela",
                         "fullname": "Alexander Podkhalyuzin",
                         "avatar": "assets/images/speakers/pod.jpg",
                         "company": "",
@@ -563,7 +563,7 @@
     "Day3": {
         "id": "june-18",
         "title": "Wednesday June 18th",
-        "time": "08:00-19:00",
+        "time": "08:00-20:00",
         "tracks": [
             {
                 "type": "pause",
@@ -608,7 +608,7 @@
                 "title": "The no-framework Scala Dependency Injection Framework",
                 "room": 2,
                 "time": "10:05-11:00",
-                "description": "\n\n<p>Using a DI framework/container may seem obvious. But when was the last time you considered *why* do you really need one? After all, \"dependency injection\" is just a fancy name for passing arguments to a constructor.</p><p>In the talk we'll walk through some of the features of DI containers and see if we can replace them with pure Scala code. We'll start with \"manual\" DI, followed with using MacWire to generate the wiring code for us. Then we'll proceed to a no-framework scopes implementation (e.g. request or session), which are very useful in web applications. We will also discuss possibilities of adding interceptors using macros. And finally, we'll see how to use traits to create and compose modules (similar to the module concept known from Guice), which can be viewed as a simplified cake pattern.</p><p>As MacWire heavily uses macros, as a bonus, I'll explain how Scala Macros work and when they can be useful.</p>\n            ",
+                "description": "\n\n<p>Using a DI framework/container may seem obvious. But when was the last time you considered *why* do you really need one? After all, \"dependency injection\" is just a fancy name for passing arguments to a constructor.</p><p>In the talk we'll walk through some of the features of DI containers and see if we can replace them with pure Scala code. We'll start with \"manual\" DI, followed with using MacWire to generate the wiring code for us. Then we'll proceed to a no-framework scopes implementation (e.g. request, session), which are very useful in web applications. Interceptors can be implemented in pure Scala and used declaratively as well!</p><p>Finally, we'll see how to use traits to create and compose modules (similar to the module concept known from Guice): the \"Thin Cake Pattern\".</p><p>As MacWire heavily uses macros, as a bonus, I'll explain how Scala Macros work and when they can be useful.</p><p>Expect a lot of live-coding and demos!</p>\n            ",
                 "speakers": [
                     {
                         "twitter": "@adamwarski",
@@ -765,7 +765,7 @@
                         "fullname": "Nick Stanchenko",
                         "avatar": "assets/images/speakers/nick.jpg",
                         "company": "University of Lisbon",
-                        "bio": "Nick is a Scala enthusiast, studying and researching HCI at the University of Lisbon. He is the creator of Macroid&mdash;the Android Scala DSL"
+                        "bio": "Nick is a Scala enthusiast, studying and researching HCI at the University of Lisbon. He is the creator of Macroid, a Scala UI DSL for Android."
                     }
                 ]
             },
@@ -1034,25 +1034,25 @@
             },
             {
                 "type": "track",
-                "title": "Coming Soon",
+                "title": "The Reader Monad for Dependency Injection",
                 "room": 4,
                 "time": "17:00-17:55",
-                "description": "\n\n<p>Coming Soon</p>\n",
+                "description": "\n\n<p>There are a number of approaches to Dependency Injection. Some approaches get more attention than others. This talk is about how to do Dependency Injection using the Reader Monad. It will focus on:</p><ul><li>What Dependency Injection is and why we use it.</li><li>What the Reader Monad is and how it can be applied to Dependency Injection.</li><li>Some potential problems applying this pattern in an application, along with possible solutions.</li></ul>\n",
                 "speakers": [
                     {
-                        "twitter": "",
-                        "fullname": "",
-                        "avatar": "",
-                        "company": "",
-                        "bio": ""
+                        "twitter": "@jarhart",
+                        "fullname": "Jason Arhart",
+                        "avatar": "assets/images/speakers/handler.jpg",
+                        "company": "Originate",
+                        "bio": "Jason works for Originate as the Scala Architect. He is in charge of setting best practices for the company and ensuring that Scala projects are constantly improving in quality."
                     }
                 ]
             },
             {
                 "type": "pause",
-                "style": "",
-                "title": "Closing Panel and Thank You",
-                "time": "17:00-18:00",
+                "style": "drink",
+                "title": "Closing session featuring a Q&A with the Scala team at Typesafe, announcing the Activator Contest Winners, and beer reception.",
+                "time": "18:00-19:30",
                 "extra": ""
             }
         ]
