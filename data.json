@@ -229,17 +229,17 @@
             },
             {
                 "type": "track",
-                "title": "Building a 3D Multiplayer Game with Play, Akka, and THREE.js",
+                "title": "Without Past and Present",
                 "room": 2,
                 "time": "13:00-13:55",
-                "description": "\n\n<p>Using Three.js, a JavaScript 3D rendering library, Play Framework's web front-end and RESTful API capabilities, and supported by an Akka cluster, we can easily build an online multiplayer 3D game. In this presentation I'll walk you through the building blocks of such a game.</p>\n            ",
+                "description": "\n\n<p>With the rise of distributed databases, cluster management tools, consensus servers in our daily use developers needs to face an alien world radically different from previous experiences. While there is a wide collection of solutions to hide the complexity of dealing with the distributed nature of these systems, at the end there is no magic. Under the veil of abstractions exists a world of puzzles and fundamental limitations.</p><p>In this presentation I will try to lift the veil to offer a peek at the underlying concepts and demonstrate them through examples &#8212; while trying to keep the sanity of the audience</p>\n            ",
                 "speakers": [
                     {
-                        "twitter": "@KevinHoffman",
-                        "fullname": "Kevin Hoffman",
-                        "avatar": "assets/images/speakers/hoffman.jpg",
-                        "company": "Barclays",
-                        "bio": "Kevin Hoffman started programming when he was 10 years old, when his grandfather gave him a Commodore VIC-20 that he rescued from the trash. Ever since then, he has been hooked on programming, learning programming languages, and infecting others with his passion for simple, elegant code. He has written or co-written over 15 books on various coding and architecture topics. He is also getting ready to publish his first novel, a young adult fantasy. He regularly blogs at <a href='http://www.kotancode.com'>kotancode.com</a> and can be found on Twitter <a href='https://twitter.com/@KevinHoffman'>@KevinHoffman</a>."
+                        "twitter": "@drewhk",
+                        "fullname": "Endre Varga",
+                        "avatar": "assets/images/speakers/varga.jpg",
+                        "company": "Typesafe",
+                        "bio": "Endre is a developer at Typesafe, working on the open source Akka project and bringing the world of actors to the JVM. Coming from an academic background and working with distributed, concurrent systems on a daily basis he continuously investigates the tools to make distributed systems safer and understandable for the rest of the world."
                     }
                 ]
             },
