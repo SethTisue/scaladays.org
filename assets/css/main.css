@@ -209,7 +209,11 @@ fieldset textarea{width:100%;margin:0 0 .5em 0%}
 #schedule .tracks .pause,#schedule .statics .pause{width:100%;margin-top:1px;}
 #schedule .tracks .pause h3,#schedule .statics .pause h3{float:left;margin-right:2%;font-size:24px;line-height:1.1em;}
 #schedule .tracks .pause h3 span,#schedule .statics .pause h3 span{font-size:17px}
-#schedule .tracks .register,#schedule .statics .register{background:url("../images/register.svg") 30px 10px no-repeat;padding-left:150px;-webkit-background-size:100px auto;-moz-background-size:100px auto;background-size:100px auto}
+#schedule .tracks .pause h3 span.com-party-logos,#schedule .statics .pause h3 span.com-party-logos{padding-top:10px;display:block;}
+#schedule .tracks .pause h3 span.com-party-logos img,#schedule .statics .pause h3 span.com-party-logos img{height:60px;margin-right:10px;}
+@media (max-width: 1000px){#schedule .tracks .pause h3 span.com-party-logos img,#schedule .statics .pause h3 span.com-party-logos img{height:50px}
+}@media (max-width: 600px){#schedule .tracks .pause h3 span.com-party-logos img,#schedule .statics .pause h3 span.com-party-logos img{height:30px}
+}#schedule .tracks .register,#schedule .statics .register{background:url("../images/register.svg") 30px 10px no-repeat;padding-left:150px;-webkit-background-size:100px auto;-moz-background-size:100px auto;background-size:100px auto}
 #schedule .tracks .drink,#schedule .statics .drink{background:url("../images/drink.svg") 30px 10px no-repeat;padding-left:150px;-webkit-background-size:100px auto;-moz-background-size:100px auto;background-size:100px auto}
 #schedule .tracks .eat,#schedule .statics .eat{background:url("../images/eat.svg") 30px 10px no-repeat;padding-left:150px;-webkit-background-size:100px auto;-moz-background-size:100px auto;background-size:100px auto}
 #schedule .keynote{background:#3e515e;color:#8ba1b0;width:100%;overflow:hidden;}
