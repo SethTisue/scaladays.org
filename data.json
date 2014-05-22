@@ -554,7 +554,7 @@
             {
                 "type": "pause",
                 "style": "drink",
-                "title": "Community Party, <span>hosted by</span><br /><span class='com-party-logos'><img src='assets/images/sponsors/immobilien-reverse.svg'><img src='assets/images/sponsors/soundcloud-reverse.svg'><img src='assets/images/sponsors/workday-reverse.svg'><img src='assets/images/sponsors/trifork-reverse.svg'><img src='assets/images/sponsors/typesafe-reverse.svg'></span>",
+                "title": "Community Party, <span>hosted by</span><br /><span class='com-party-logos'><img src='assets/images/sponsors/immobilien-reverse.svg'><img src='assets/images/sponsors/skills-matter-reverse.svg'><img src='assets/images/sponsors/soundcloud-reverse.svg'><img src='assets/images/sponsors/workday-reverse.svg'><img src='assets/images/sponsors/trifork-reverse.svg'><img src='assets/images/sponsors/typesafe-reverse.svg'></span>",
                 "time": "18:00-19:30",
                 "extra": ""
             }
