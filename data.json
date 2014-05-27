@@ -73,7 +73,7 @@
                 "type": "track",
                 "title": "Catalyst: A Functional Query Optimizer for Spark and Shark",
                 "room": 1,
-                "time": "10:05-11:00",
+                "time": "10:00-10:55",
                 "description": "\n\n<p>Shark is a SQL engine built on Apache Hive, that replaces Hive's MapReduce execution engine with Apache Spark.  Spark's fine-grained resource model and efficient execution engine allow Shark to outperform Hive by over 100x for data stored in memory. However, until now, Shark's performance has been limited by the flexibility of Hive's query optimizer.  Catalyst aims to remedy this situation by building a simple yet powerful optimization framework using Scala language features.</p>\n<p>Query optimization can greatly improve both the productivity of developers and the performance of the queries that they write.  A good query optimizer is capable of automatically rewriting relational queries to execute more efficiently, using techniques such as filtering data early, utilizing available indexes, and even ensuring different data sources are joined in the most efficient order.  By performing these transformations, the optimizer not only improves the execution times of relational queries, but also frees the developer to focus on the semantics of their application instead of its performance.  </p>\n<p>Unfortunately, building an optimizer is an incredibly complex engineering task and thus many open source systems perform only very simple optimizations.  Past research [1,2] has attempted to combat this complexity by providing frameworks that allow the creators of optimizers to write possible optimizations as a set of declarative rules.  However, the use of such frameworks has required the creation and maintenance of special “optimizer compilers” and forced the burden of learning a complex domain specific language upon those wishing to add features to the optimizer. </p>\n<p>Catalyst solves this problem by leveraging Scala's powerful pattern matching and runtime reflection. This framework allows developers to concisely specify complex optimizations, such as pushing filters past joins functionally.  Increased conciseness allows our developers both to create new optimizations faster and more easily reason about the correctness of the optimization.</p>\n<p>Catalyst also uses the new reflection capabilities in Scala 2.10 to generate custom classes at runtime for storing intermediate results and evaluating complex relational expressions.  Doing so allows us to avoid boxing of primitive values and has been shown to improve performance by orders of magnitude in some cases.</p>\n<p>[1]  Graefe, G. The Cascades Framework for Query Optimization. In Data Engineering Bulletin. Sept. 1995.<br>\n[2] Goetz Graefe , David J. DeWitt, The EXODUS optimizer generator, Proceedings of the 1987 ACM SIGMOD international conference on Management of data, p.160-172, May 27-29, 1987, San Francisco, California, United States</p>\n            ",
                 "speakers": [
                     {
@@ -88,7 +88,7 @@
             {
                 "type": "track",
                 "title": "Quote or be quoted",
-                "time": "10:05-11:00",
+                "time": "10:00-10:55",
                 "room": 2,
                 "description": "\n\n<p>In Scala 2.11 we introduced quasiquotes, a rich domain-specific api for tree manipulation. Despite advanced functionality and deep integration into the language, the api itself is just a library that relies on existing language features: string interpolation, macros, type classes etc. This talk will walk through implementation of custom quotations for a tiny language embedded within Scala and introduce you to core concepts used in quasiquotes: splicing, cardinality, lifting/unlifting and show how all of this makes your life easier.</p>\n            ",
                 "speakers": [
@@ -105,7 +105,7 @@
                 "type": "track",
                 "title": "Solving Data Analytics Problems with Delite",
                 "room": 3,
-                "time": "10:05-11:00",
+                "time": "10:00-10:55",
                 "description": "\n\n<p>In Scala 2.11 we introduced quasiquotes, a rich domain-specific api for tree manipulation. Despite advanced functionality and deep integration into the language, the api itself is just a library that relies on existing language features: string interpolation, macros, type classes etc. This talk will walk through implementation of custom quotations for a tiny language embedded within Scala and introduce you to core concepts used in quasiquotes: splicing, cardinality, lifting/unlifting and show how all of this makes your life easier.</p><p>As data sizes become larger and processor architectures become more parallel, programmers are often forced to resort to using low-level programming models in order to improve performance and scalability. The introduction of heterogeneous accelerators such as GPUs make the programmers' jobs even more difficult, as they must often combine code for multiple different programming models together in ad-hoc ways. Domain-specific languages (DSLs) offer an alternative approach, as high-level implicitly parallel domain abstractions can be transparently lowered to multiple heterogeneous architectures. We have developed a suite of data analytic DSLs for machine learning, graph analysis, and data manipulation that use the Delite framework in Scala to achieve high performance parallel execution across multiple processors, GPUs, and clusters of machines.<p/><p>This talk will describe how we can combine these DSLs together to build larger applications to solve complex, real-world problems in multiple domains with both higher programmer productivity and higher performance than alternative solutions. After introducing the infrastructure and DSLs themselves, the talk will provide a survey of some of the applications currently being developed by other research groups at Stanford using these DSLs and the resulting productivity and performance benefits. Each application represents an ongoing collaboration in areas such as computational biology, biomedical imaging, data mining, inference engines, and large scale graph analysis.<p/>\n            ",
                 "speakers": [
                     {
@@ -121,7 +121,7 @@
                 "type": "track",
                 "title": "Pitching Scala: An Interactive Session on Creating Change in your Organization",
                 "room": 4,
-                "time": "10:05-11:00",
+                "time": "10:00-10:55",
                 "description": "\n\n<p>Scala, Akka and Play provide groundbreaking opportunities for organizations to solve problems faster and more easily than traditional solutions.  Even with all of the advantages that they provide, adopting these technologies represents a major change in how a team delivers software.  Change of any kind can be difficult and adapting to both a new language such as Scala and new paradigms like actor models or functional programming, doubly so.  In this workshop, the team at BoldRadius will lead a lively and interactive discussion around how best to approach this problem, presenting tools, strategies and resources created with the help of evangelists who have driven successful adoption within their teams.  Join us to share your experience and ideas, provide feedback or simply to hear how others have tackled this challenge.</p>\n            ",
                 "speakers": [
                     {
@@ -137,7 +137,7 @@
                 "type": "track",
                 "title": "Reactive Streams: And why you should care.",
                 "room": 1,
-                "time": "11:05-12:00",
+                "time": "11:00-11:55",
                 "description": "\n\n<p>One of the fundamental problems of I/O is a core problem of communication: How do I know that the recipient is ready to receive my information?</p><p>In a pure push model, without taking into consideration Little's Law, it is very easy to produce data at a faster pace than it can be consumed, leading to loss of information, contention on the medium, or even full system failure.</p><p>Reactive Streams provide an asynchronous, concurrent, back-pressured/demand-driven solution for that and other problems. We will discuss this and more in this session.</p>\n            ",
                 "speakers": [
                     {
@@ -160,7 +160,7 @@
                 "type": "track",
                 "title": "JScala - write your JavaScript in Scala",
                 "room": 2,
-                "time": "11:05-12:00",
+                "time": "11:00-11:55",
                 "description": "\n\n<p>JScala is a Scala macro that produces JavaScript from Scala code. I'll present JScala features, including client-server code sharing via @Javascript annotation, macro-based TypeScript definitions import via @Typescripted annotation, automatic macro-based toJson/fromJson serialization and browser Tetris example.</p>\n    <p>Additionally, I'll talk about further plans, Lift/Play integration and popular JavaScript libraries (jQuery, Angular.js)support.</p>\n            ",
                 "speakers": [
                     {
@@ -176,7 +176,7 @@
                 "type": "track",
                 "title": "Good to Great: IntelliJ IDEA and Scala",
                 "room": 3,
-                "time": "11:05-12:00",
+                "time": "11:00-11:55",
                 "description": "\n\n<p>Most people agree that you become more productive by using IntelliJ IDEA for Scala. However it's not always clear how much more. In this talk we'll take a look at the key features of IntelliJ IDEA and reveal some of its usage statistics. And of course we'll get a report on what's going on with the IntelliJ IDEA plugin for Scala: what have been recently done and what's is coming in the future.</p>\n            ",
                 "speakers": [
                     {
@@ -191,7 +191,7 @@
             {
                 "type": "track",
                 "title": "Slick in the field, learning to forget ORM",
-                "time": "11:05-12:00",
+                "time": "11:00-11:55",
                 "room": 4,
                 "description": "\n\n<p>For many years developers on the JVM platform were used to ORM frameworks. Our code was filled with annotations (or worst XML configuration files). We learned how to map our classes to relational tables and deal with its peculiarities. We had big, sometimes huge graph of objects, mapped to relational tables. We brought them all to memory, changed them and let it be automagically persisted back at the end of our transactions.</p><p>In a Scala/Slick world we deal with data and persistence in a totally different way. Our model are immutable structures (case classes and tuples), nullable columns are mapped to Options (and that's cool), relations are expressed by id references instead of object associations (that's less cool). Instead of writing xml or filling our code with annotations, we write type-safe idiomatic Scala code. We compose queries in a functional style. We map and flatMap over it.</p><p>But is that good or bad? What brings Slick to the readability and maintainability of our code base? How do we test our business logic when a great deal of it is executed outside the JVM?</p><p>In this talk we'll share our experience in building real world applications with Slick. The lessons learned, the patterns and anti-patterns we went through in our journey to shift the way we were used to think about persistence.</p><p>This is not an introduction to Slick. This talk is aimed to developers already using Slick.</p>\n            ",
                 "speakers": [
@@ -591,7 +591,7 @@
                 "type": "track",
                 "title": "Serious Fun With Scala",
                 "room": 1,
-                "time": "10:05-11:00",
+                "time": "10:00-10:55",
                 "description": "\n\n<p>The power of Scala keeps showing up in expected--and unexpected--places. In this talk, I will share how I used Scala in bioinformatics, neuroscience, online games, mobile applications, and desktop applications. </p>\n<p>In bioinformatics, the beauty of Scala really shines. Thanks to the abstraction in the Scala collection framework, creating collection types for DNA, RNA, and Protein Chains is super easy. With the proper collections at my disposal, I was able to implement algorithms such as Sequence Alignment, Genome Assembly, and Gibbs Sampling by focusing on the core ideas of the algorithm and not on the nitty-gritty details. On the top of it, Scala makes dynamic programming, which is fundamental in many bioinformatics algorithms, easy to implement and understand. </p>\n<p>Last year, I talked about using brainwaves to play games. Since then, I have taken things up a notch and started working to solve more practical problems such as maintaining attention while performing tasks (something that my age group suffers from a lot). This exposed me to a whole new and exciting world of Digital Signal Processing. This project benefited a lot from Reactive programming techniques in cleaning my code and making it more reliable.</p>\n<p>Not to be outdone by the serious work of algorithms, I took the desktop version of Collidium and converted it to an online HTML5 Game using Scala.js. I have also improved my Android game, Wordsteal. I even used Scala with Swing to save a few bucks for our budget-starved Student Store by creating a simple cash register application.</p>\n<p>In this talk, I will share many interesting techniques I learned and convey why I continue to be a huge fan of Scala. See you there!</p>\n            ",
                 "speakers": [
                     {
@@ -607,7 +607,7 @@
                 "type": "track",
                 "title": "The no-framework Scala Dependency Injection Framework",
                 "room": 2,
-                "time": "10:05-11:00",
+                "time": "10:00-10:55",
                 "description": "\n\n<p>Using a DI framework/container may seem obvious. But when was the last time you considered *why* do you really need one? After all, \"dependency injection\" is just a fancy name for passing arguments to a constructor.</p><p>In the talk we'll walk through some of the features of DI containers and see if we can replace them with pure Scala code. We'll start with \"manual\" DI, followed with using MacWire to generate the wiring code for us. Then we'll proceed to a no-framework scopes implementation (e.g. request, session), which are very useful in web applications. Interceptors can be implemented in pure Scala and used declaratively as well!</p><p>Finally, we'll see how to use traits to create and compose modules (similar to the module concept known from Guice): the \"Thin Cake Pattern\".</p><p>As MacWire heavily uses macros, as a bonus, I'll explain how Scala Macros work and when they can be useful.</p><p>Expect a lot of live-coding and demos!</p>\n            ",
                 "speakers": [
                     {
@@ -623,7 +623,7 @@
                 "type": "track",
                 "title": "Building a DBMS in Scala or how types can turn a SQL interpreter into a SQL compiler",
                 "room": 3,
-                "time": "10:05-11:00",
+                "time": "10:00-10:55",
                 "description": "\n\n<p>Commercial and open source database systems consist of millions of lines of highly optimized C code. Yet, their performance on individual queries falls 10x or 100x short of what a hand-written, specialized, implementation of the same query can achieve.</p><p>In a recent joint project at Oracle Labs and the DATA Lab at EPFL, we have set out to implement a database query engine in Scala. With just about 3000 lines of Scala code, our prototype supports the full TPCH benchmark suite and runs queries several times as fast as highly-tuned commercial systems (> 10x peak speedup).</p><p>This talk will focus on the key aspect that sets the system apart from other DB engines: where other systems interpret query plans, operator by operator, we generate and compile low-level C code for whole queries using the LMS (Lightweight Modular Staging) framework.</p><p>In particular, we will discuss powerful design patterns that leverage generative programming to provide a high degree of abstraction without performance penalty, and thus make Scala a more productive alternative to C for systems-level programming where the last drop of performance matters.</p><p>Among these design patterns are mixed-stage data structures that contains both static and dynamic parts (e.g. static schema and dynamic values for data records) and staged interpreters which can be mechanically turned into compilers (e.g. for SQL queries or regular expressions).</p>\n            ",
                 "speakers": [
                     {
@@ -639,7 +639,7 @@
                 "type": "track",
                 "title": "Workshop",
                 "room": 4,
-                "time": "10:05-11:00",
+                "time": "10:00-10:55",
                 "description": "\n\n<p>Details Coming Soon!</p>\n            ",
                 "speakers": []
             },
@@ -647,7 +647,7 @@
                 "type": "track",
                 "title": "Scala.js: what has it become and how is it used in the wild?",
                 "room": 1,
-                "time": "11:05-12:00",
+                "time": "11:00-11:55",
                 "description": "\n\n<p>Since Scala.js' first announcement at Scala Days NYC last year, we have made a lot of progress, and a community has been building around it. With two core developers, several active contributors, people giving talks about it in several conferences around the world, and a few tens of enthusiasts writing toy apps and even cross-compiling libraries, Scala.js is definitely gaining traction.</p>\n<p>In this talk, we will give a survey of some exciting new features of Scala.js, as well as projects from the community. We will end the talk with maybe the craziest of them: a chat application written entirely in Scala+Akka, both on the Play server and on the client, with transparent communication between the two via message passing between actors.</p>\n            ",
                 "speakers": [
                     {
@@ -663,7 +663,7 @@
                 "type": "track",
                 "title": "Building a Reactive Application",
                 "room": 2,
-                "time": "11:05-12:00",
+                "time": "11:00-11:55",
                 "description": "\n\n<p>This session proposal will focus on the tenets and tools for building a reactive application, as well as a simple real world examples.</p>\n            ",
                 "speakers": [
                     {
@@ -679,7 +679,7 @@
                 "type": "track",
                 "title": "Yin-Yang: Programming DSLs Made Simple",
                 "room": 3,
-                "time": "11:05-12:00",
+                "time": "11:00-11:55",
                 "description": "\n\n<p>Interfaces of deep embedded DSLs, like Slick and Squeryl, are inconsistent with the Scala standard library. Furthermore, they rely on complicated types and implicit conversions. This pollutes the API and makes type errors difficult to understand. For these reasons, designing a beautiful DSL API is a challenging and time consuming task.</p><p>In this talk I will explain how Yin-Yang makes designing and using DSLs a breeze. I will show DSLs with an idiomatic Scala API that are translated with macros to the complicated deep embedding. Then I show how we used Yin-Yang to give Slick's interface a face-lift and improved its performance threefold with just a few hundred lines of code. I finish the talk by live coding a DSL for big decimal numbers.</p>\n            ",
                 "speakers": [
                     {
@@ -695,7 +695,7 @@
                 "type": "track",
                 "title": "Laugh, Then Learn: Scala Puzzlers Returns!",
                 "room": 4,
-                "time": "11:05-12:00",
+                "time": "11:00-11:55",
                 "description": "\n\n<p>Scala Puzzlers returns with a twist: not only will we be presenting a brand new set of puzzlers for Scala 2.11 that will challenge you with unexpected and unintuitive behavior and help you learn something about your favorite language in the process.</p>\n<p>This time, we've added a key set of tips and recommendations to help you avoid these pitfalls when real deadlines are at stake. That's not the time for head-scratching - better to laugh and learn at ScalaDays 2014!</p>\n            ",
                 "speakers": [
                     {

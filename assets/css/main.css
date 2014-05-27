@@ -149,6 +149,7 @@ section header h1{font-size:30px}
 #sponsors article h2{color:#fff;font-weight:400;font-size:20px;text-transform:uppercase;background-color:#53cdec;padding:10px;-webkit-border-radius:3px;border-radius:3px}
 #sponsors article a{vertical-align:middle}
 #sponsors img{background:transparent;padding:20px;max-height:85px;max-width:200px}
+#sponsors img.platinum{max-width:300px;max-height:120px}
 #conduct{background:#364550;color:#fff;}
 #conduct h1{color:#53cdec}
 #conduct a{color:#d64546}
@@ -241,13 +242,13 @@ fieldset textarea{width:100%;margin:0 0 .5em 0%}
 #schedule .track:hover:before{color:#f0f3f6}
 #schedule .track:before{color:rgba(16,58,81,0.5);font-weight:700;text-transform:uppercase;font-size:11px;margin:0}
 #schedule .track.track1{left:0;}
-#schedule .track.track1:before{content:"Saal 1 / Room 1"}
+#schedule .track.track1:before{content:"TRACK 1 / Room 1"}
 #schedule .track.track2{left:25%;}
-#schedule .track.track2:before{content:"Saal 6 / Room 6"}
+#schedule .track.track2:before{content:"TRACK 2 / Room 6"}
 #schedule .track.track3{left:50%;}
-#schedule .track.track3:before{content:"Saal 2 / Room 2"}
+#schedule .track.track3:before{content:"TRACK 3 / Room 2"}
 #schedule .track.track4{left:75%;}
-#schedule .track.track4:before{content:"Saal 10 / Room 10"}
+#schedule .track.track4:before{content:"TRACK 4 / Room 10"}
 @media (max-width: 1430px){#schedule .track.track1{left:0}
 #schedule .track.track2{left:30%}
 #schedule .track.track3{left:60%}
