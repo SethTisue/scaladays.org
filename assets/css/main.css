@@ -149,6 +149,7 @@ section header h1{font-size:30px}
 #sponsors article h2{color:#fff;font-weight:400;font-size:20px;text-transform:uppercase;background-color:#53cdec;padding:10px;-webkit-border-radius:3px;border-radius:3px}
 #sponsors article a{vertical-align:middle}
 #sponsors img{background:transparent;padding:20px;max-height:85px;max-width:200px}
+#sponsors img.platinum{max-width:300px;max-height:120px}
 #conduct{background:#364550;color:#fff;}
 #conduct h1{color:#53cdec}
 #conduct a{color:#d64546}
