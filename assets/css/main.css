@@ -209,7 +209,11 @@ fieldset textarea{width:100%;margin:0 0 .5em 0%}
 #schedule .tracks .pause,#schedule .statics .pause{width:100%;margin-top:1px;}
 #schedule .tracks .pause h3,#schedule .statics .pause h3{float:left;margin-right:2%;font-size:24px;line-height:1.1em;}
 #schedule .tracks .pause h3 span,#schedule .statics .pause h3 span{font-size:17px}
-#schedule .tracks .register,#schedule .statics .register{background:url("../images/register.svg") 30px 10px no-repeat;padding-left:150px;-webkit-background-size:100px auto;-moz-background-size:100px auto;background-size:100px auto}
+#schedule .tracks .pause h3 span.com-party-logos,#schedule .statics .pause h3 span.com-party-logos{padding-top:10px;display:block;}
+#schedule .tracks .pause h3 span.com-party-logos img,#schedule .statics .pause h3 span.com-party-logos img{height:60px;margin-right:10px;}
+@media (max-width: 1000px){#schedule .tracks .pause h3 span.com-party-logos img,#schedule .statics .pause h3 span.com-party-logos img{height:50px}
+}@media (max-width: 600px){#schedule .tracks .pause h3 span.com-party-logos img,#schedule .statics .pause h3 span.com-party-logos img{height:30px}
+}#schedule .tracks .register,#schedule .statics .register{background:url("../images/register.svg") 30px 10px no-repeat;padding-left:150px;-webkit-background-size:100px auto;-moz-background-size:100px auto;background-size:100px auto}
 #schedule .tracks .drink,#schedule .statics .drink{background:url("../images/drink.svg") 30px 10px no-repeat;padding-left:150px;-webkit-background-size:100px auto;-moz-background-size:100px auto;background-size:100px auto}
 #schedule .tracks .eat,#schedule .statics .eat{background:url("../images/eat.svg") 30px 10px no-repeat;padding-left:150px;-webkit-background-size:100px auto;-moz-background-size:100px auto;background-size:100px auto}
 #schedule .keynote{background:#3e515e;color:#8ba1b0;width:100%;overflow:hidden;}
@@ -237,13 +241,13 @@ fieldset textarea{width:100%;margin:0 0 .5em 0%}
 #schedule .track:hover:before{color:#f0f3f6}
 #schedule .track:before{color:rgba(16,58,81,0.5);font-weight:700;text-transform:uppercase;font-size:11px;margin:0}
 #schedule .track.track1{left:0;}
-#schedule .track.track1:before{content:"room 1"}
+#schedule .track.track1:before{content:"Saal 1 / Room 1"}
 #schedule .track.track2{left:25%;}
-#schedule .track.track2:before{content:"room 2"}
+#schedule .track.track2:before{content:"Saal 6 / Room 6"}
 #schedule .track.track3{left:50%;}
-#schedule .track.track3:before{content:"room 3"}
+#schedule .track.track3:before{content:"Saal 2 / Room 2"}
 #schedule .track.track4{left:75%;}
-#schedule .track.track4:before{content:"room 4"}
+#schedule .track.track4:before{content:"Saal 10 / Room 10"}
 @media (max-width: 1430px){#schedule .track.track1{left:0}
 #schedule .track.track2{left:30%}
 #schedule .track.track3{left:60%}
