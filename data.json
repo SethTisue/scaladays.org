@@ -20,8 +20,8 @@
             },
             {
                 "type": "keynote",
-                "title": "Scala: More Simple Parts",
-                "description": "Coming Soon!",
+                "title": "Scala: The Simple Parts",
+                "description": "<p>I'd like to take you on a journey to what I think of as the core of Scala. The core is built from a moderate number of general and orthogonal concepts that can be combined freely. The parts are simple, but the combinations can be as elaborate s one wants to make them. </p><p>When done right, simple parts in the language lead to libraries that have clear interfaces and can be used in flexible ways. I will give examples how the fusion of functional and object-oriented concepts in Scala helps in the design of simple modules that compose well.</p>",
                 "time": "16:30-17:30",
                 "speakers": [
                     {
@@ -334,7 +334,7 @@
                         "fullname": "Play Framework Team",
                         "avatar": "assets/images/speakers/play.png",
                         "company": "Typesafe Inc",
-                        "bio": "<a href='http://twitter.com/_JamesWard' target='_blank'>James Ward</a> will MC as the Play Framework team (<a href='http://twitter.com/jroper' target='_blank'>James Roper</a>, <a href='http://twitter.com/richdougherty' target='_blank'>Rich Doherty</a>, Peter Vlugter and<a href='http://twitter.com/huntchr' target='_blank'> Christopher Hunt</a>) presents Play 2.3"
+                        "bio": "The Play Framework team (<a href='http://twitter.com/jroper' target='_blank'>James Roper</a>, <a href='http://twitter.com/richdougherty' target='_blank'>Rich Doherty</a>, Peter Vlugter and<a href='http://twitter.com/huntchr' target='_blank'> Christopher Hunt</a>) presents Play 2.3"
                     }
                 ]
             },
@@ -434,7 +434,7 @@
                         "twitter": "@nraychaudhuri",
                         "fullname": "Nilanjan Raychaudhuri",
                         "avatar": "assets/images/speakers/nilanjan.jpg",
-                        "company": "",
+                        "company": "Typesafe Inc",
                         "bio": "Nilanjan is a consultant/trainer and core member of Play framework team. He works for Typesafe. He has more than 14 years of experience managing and developing software solutions in Java, Ruby, Groovy and also in Scala. He is zealous about programming in Scala ever since he got introduced to this beautiful language. He enjoys sharing his experience via talks in various conferences and he is also the author of the \"Scala in Action\" and upcoming \"Play recipes\" book."
                     }
                 ]
@@ -544,17 +544,17 @@
             },
             {
                 "type": "track",
-                "title": "Conquering Scala's Confundus Charm",
+                "title": "Delicious Play recipes for real world (with Akka and Slick ingredients)",
                 "room": 4,
                 "time": "17:00-17:55",
-                "description": "\n\n<p>Also known as: The beginners guide to starting a Scala project.</p>\n<p>Starting a Scala project should be easy, but with a Simple Build Tool that appears anything but whats the best way to get started and stay sure footed?</p>\n<p>In this beginners talk we'll help get you up and running quickly and well on the road to success. In five simple steps you'll be able to release your code to the wild, safe in the knowledge you've set up a good foundation to build upon.</p>\n<p>The 5 Steps to a happy project:</p>\n<ol>\n  <li>Simple Build Tool (SBT)<br>\n     Having a build tool is core to getting started, so let SBT do the work for you.  You might not find it simple, but it doesn't have to be complex.</li>\n  <li>Console management.<br>\n     Mastering the REPL is the key to quick debugging / testing of code.</li>\n  <li>Testing<br>\n     You need to know your code works and recent changes haven't broken anything.  As with any modern language theres a wealth of choice and we'll have a quick look at most popular two: ScalaTest, Specs2</li>\n  <li>Checks and Balances<br>\n     Just because your test suite is green doesn't mean your code is any good. Using ScalaCheck you can conform to style and JaCoC will show you code that is missing tests.</li>\n  <li>Publishing<br>\n     Now your code is tested, how do you publish it and share with the world? We'll look at how to set up SBT to publish your code.</li>\n</ol>\n            ",
+                "description": "\n\n<p>Are you a play chef or want to be? Then come to this session to learn how professional Play chefs are developing Play applications for real world. I will share their best kept secrets, patterns and tricks. So come hungry.</p>\n            ",
                 "speakers": [
                     {
-                        "twitter": "@RossC0",
-                        "fullname": "Ross Lawley",
-                        "avatar": "assets/images/speakers/ross.jpg",
-                        "company": "MongoDB",
-                        "bio": "Ross is a Scala Engineer based in London for MongoDB. A relative newcomer to Scala, Ross jumped the dynamic / static language divide after taking the Functional Programming Principles in Scala course. With over 10 years experience developing web applications Ross holds a deep passion for agile web development. Previously, Ross was the Software Architect for Streetlife and prior to that was the technical lead for Europes largest commercial radio station owner - Global Radio Ltd."
+                        "twitter": "@nraychaudhuri",
+                        "fullname": "Nilanjan Raychaudhuri",
+                        "avatar": "assets/images/speakers/nilanjan.jpg",
+                        "company": "Typesafe Inc",
+                        "bio": "Nilanjan is a consultant/trainer and core member of Play framework team. He works for Typesafe. He has more than 14 years of experience managing and developing software solutions in Java, Ruby, Groovy and also in Scala. He is zealous about programming in Scala ever since he got introduced to this beautiful language. He enjoys sharing his experience via talks in various conferences and he is also the author of the \"Scala in Action\" and upcoming \"Play recipes\" book."
                     }
                 ]
             },
@@ -644,11 +644,19 @@
             },
             {
                 "type": "track",
-                "title": "Workshop",
+                "title": "DOT calculus",
                 "room": 4,
                 "time": "10:00-10:55",
-                "description": "\n\n<p>Details Coming Soon!</p>\n            ",
-                "speakers": []
+                "description": "\n\n<p>The DOT (Dependent Object Types) calculus attempts to ground Scala's type system in fewer, but powerful, constructs. In this talk I will describe what these constructs are, and how they relate to Scala's current type system. I will also show how DOT simplifies type inference. Finally, I will touch upon the challenges in the meta-theory.</p>\n            ",
+                "speakers": [
+                    {
+                        "twitter": "@nadamin",
+                        "fullname": "Nada Amin",
+                        "avatar": "assets/images/speakers/amin.jpg",
+                        "company": "EPFL",
+                        "bio": "Nada is a member of the Scala team at EPFL, where she studies type systems and hacks on programming languages. She has contributed to Clojure's core.logic and Google's Closure compiler. She's loved helping others learn to program ever since tutoring SICP as an undergraduate lab assistant at MIT."
+                    }
+                ]
             },
             {
                 "type": "track",
