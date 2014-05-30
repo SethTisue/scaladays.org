@@ -524,7 +524,7 @@
                 "title": "Easy Metaprogramming For Everyone!",
                 "room": 3,
                 "time": "17:00-17:55",
-                "description": "\n\n<p>Scala 2.10 has seen a flurry of macro flavors: def macros, implicit macros, untyped macros, type macros and more recently macro annotations. These flavors have brought a lot of feedback, and we've been thinking hard how to make sense of it.</p>\n<p>At this point it is clear that macros are useful. However there's still quite some work to be done in order to make macros enjoyable. The main issues that remain to be addressed are verbosity and complexity of the underlying API, difficulties with tool integration, and potential for confusion caused by leaking compiler internals and cryptic error messages.</p>\n<p>The goal of Project Palladium is to make macros as natural and as universal as typed functions: simple to write, simple to use, and simple to reason about. Towards that end, we have rethought our macro engine and the underlying reflection API, keeping existing functionality in place and at the same time fixing fundamental problems intrinsic to the original implementation.</p>\n<p>In this talk I will present our results, showing how easy it is to metaprogram with Palladium, and outline the place of our developments in the future of Scala.</p>\n            ",
+                "description": "\n\n<p>Scala 2.10 was the first language release that provided a public native API for metaprogramming Scala, introducing facilities for compile-time (macros) and runtime (Java-like reflection) metaprogramming. These facilities have brought a lot of feedback, and we've been thinking hard how to make sense of it.</p><p>At this point it is clear that dedicated support for metaprogramming is useful. Previously, one had to deal with ad-hoc solutions like textual code generation and command-line scalap invocations. However, now there is a full-fledged model of Scala that accounts for the variety of language constructs and includes a comprehensive, backward-compatible API. However, there's still quite some work to be done in order to make our metaprogramming tools enjoyable. The main issues that remain to be addressed are verbosity and brittleness of the underlying API, difficulties with tool integration, tight coupling with scalac, and potential for confusion caused by leaking implementation details and cryptic error messages.</p><p>The goal of Project Palladium is to make metaprogramming easy, ensuring that it doesn't require knowledge of compiler internals, is safe by construction and is portable across a wide range of implementors. Towards that end, we have rethought the metaprogramming APIs along with the accompanying macro engine, keeping existing functionality in place and at the same time fixing fundamental problems intrinsic to the original implementation.</p><p>In this talk we will present our progress, showing how easy it is to metaprogram with Palladium, and will outline the place of our developments in the future of Scala.</p>\n            ",
                 "speakers": [
                     {
                         "twitter": "@xeno_by",
@@ -532,6 +532,13 @@
                         "avatar": "assets/images/speakers/burmako.jpg",
                         "company": "EPFL",
                         "bio": "Programming languages enthusiast, PhD student at EPFL, member of Scala team, Scala macros guy."
+                    },
+                    {
+                        "twitter": "@den_sh",
+                        "fullname": "Denys Shabalin",
+                        "avatar": "assets/images/speakers/shabalin.jpg",
+                        "company": "Typesafe Inc & EPFL",
+                        "bio": "Denys is the author of Scala 2.11's quasiquotes, a project aimed at making AST manipulation a pleasure. He is also an active contributor to scala/scala repository, hacking on compiler internals, reflection API and macros. At the moment he works as intern at Typesafe researching ways to introduce referential transparency and hygiene concepts to Scala compiler and macro system."
                     }
                 ]
             },
