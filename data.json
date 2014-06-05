@@ -561,7 +561,7 @@
             {
                 "type": "pause",
                 "style": "drink",
-                "title": "Community Party, <span>hosted by</span><br /><span class='com-party-logos'><img src='assets/images/sponsors/immobilien-reverse.svg'><img src='assets/images/sponsors/skills-matter-reverse.svg'><img src='assets/images/sponsors/soundcloud-reverse.svg'><img src='assets/images/sponsors/workday-reverse.svg'><img src='assets/images/sponsors/trifork-reverse.svg'><img src='assets/images/sponsors/typesafe-reverse.svg'></span>",
+                "title": "Community Party, <span>hosted by</span><br /><span class='com-party-logos'><a href='http://www.immobilienscout24.de/' target='_blank'><img src='assets/images/sponsors/immobilien-reverse.svg'></a><a href='http://www.recruit-rgf.com/' target='_blank'><img src='assets/images/sponsors/recruit-reverse.svg'></a><a href='https://www.skillsmatter.com/' target='_blank'><img src='assets/images/sponsors/skills-matter-reverse.svg'></a><a href='https://soundcloud.com/' target='_blank'><img src='assets/images/sponsors/soundcloud-reverse.svg'></a><a href='http://www.trifork.com/' target='_blank'><img src='assets/images/sponsors/trifork-reverse.svg'></a><a href='http://www.typesafe.com' target='_blank'><img src='assets/images/sponsors/typesafe-reverse.svg'></a><a href='http://www.workday.com/' target='_blank'><img src='assets/images/sponsors/workday-reverse.svg'></a></span>",
                 "time": "18:00-19:30",
                 "extra": ""
             }
