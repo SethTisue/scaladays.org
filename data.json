@@ -890,10 +890,10 @@
             },
             {
                 "type": "track",
-                "title": "Forgotten Heroes: Less Fashionable Patterns in Scala",
+                "title": "Unsung Heroes: Less Fashionable Patterns in Scala",
                 "room": 2,
                 "time": "15:00-15:55",
-                "description": "\n\n<p>Abstract-Here</p>\n            ",
+                "description": "\n\n<p>Monads are the talk of the town, and everyone's doing them. In the virtual monad gold-rush, however, have we lost sight of some of the other useful tips, tricks and patterns that have got us to where we are. In this session I will examine a number of useful code snippets and ideas that I have used successfully on many projects, sometimes alongside monads, to great effect. There may be some useful corner cases you have overlooked, or perhaps just would like a refresher in some of the things you may have discovered but then forgotten.</p><p>This talk is suitable for Scala beginners but (I hope) will be of use to more experienced Scala developers as well, even if only as a gentle reminder about some of the tricks used, or perhaps in the effective combinations of some of them that have proven useful over time.</p>\n            ",
                 "speakers": [
                     {
                         "twitter": "@dickwall",
