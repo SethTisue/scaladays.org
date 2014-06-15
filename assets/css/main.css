@@ -13,6 +13,7 @@ body.thankyou{background:#53cdec}
 p{margin:.7em 0;line-height:1.4em}
 a{color:#fff;text-decoration:none}
 h1,h2,h3,h4{color:#103a51}
+.app-btn{margin:10px 5px 10px 0;display:inline-block}
 .button,input[type='submit'],.all-speakers,.buy-button{-webkit-transition:all 200ms ease-in-out;-moz-transition:all 200ms ease-in-out;-o-transition:all 200ms ease-in-out;-ms-transition:all 200ms ease-in-out;transition:all 200ms ease-in-out;display:block;font:inherit;background:#f16665;text-decoration:none;padding:10px 20px;-webkit-border-radius:3px;border-radius:3px;text-align:center;width:auto;-webkit-box-shadow:0 3px 0 #e25758;box-shadow:0 3px 0 #e25758;text-shadow:1px 1px 1px rgba(0,0,0,0.1);text-transform:uppercase;font-weight:700;cursor:pointer;color:#fff;display:inline-block;}
 .button:hover,input[type='submit']:hover,.all-speakers:hover,.buy-button:hover{background-color:#e25758}
 .sold-out{position:absolute;color:#53cdec;border-bottom:2px solid #19aacf;-webkit-border-radius:3px;border-radius:3px;padding:0 10px;margin-left:10px;background-color:#53cdec;color:#3e515e;-webkit-transform:rotate(5deg);-moz-transform:rotate(5deg);-o-transform:rotate(5deg);-ms-transform:rotate(5deg);-webkit-transform:rotate(5deg);-moz-transform:rotate(5deg);-o-transform:rotate(5deg);-ms-transform:rotate(5deg);transform:rotate(5deg);-webkit-backface-visibility:hidden}
