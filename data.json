@@ -458,17 +458,17 @@
             },
             {
                 "type": "track",
-                "title": "BirdWatch",
+                "title": "Writing Reactive Applications for Fun",
                 "room": 3,
                 "time": "16:00-16:55",
-                "description": "\n\n<p><a href='https://github.com/matthiasn/BirdWatch'>BirdWatch</a> is a reactive web application that initially got started as a fun side project in order to learn more about writing applications with the Typesafe stack. In the meantime it found some more serious users, including political science research projects:</p><p>'French political science researcher Joel Gombin is planning to use BirdWatch to monitor various topics during the campaign for the European elections. The app's flexible architecture allows to casually explore the data, while the ElasticSearch database allows other custom-devised tools in other languages, such as R, to use the collected tweets and analyse it along multiple facets. This will allow to gain precious insights about relevant issues in the European debate, and then analyse them with greater depth and details.'</p><p>In this talk we will have a look at the application architecture and how the Typesafe stack is helpful in writing this kind of application. Specifically we will look at the Iteratee library and how it can be used to route information to many clients per server. We will also discuss the lessons learned from using this tool in the European elections, which will be held in May 2014.</p>\n            ",
+                "description": "\n\n<p>In this presentation Matthias will be talking about how he came to writing reactive applications for fun. He started doing so in March 2013 and has since written the two reactive applications <a href='https://github.com/matthiasn/BirdWatch' target='_blank'>BirdWatch</a> and <a href='https://github.com/matthiasn/sse-chat' target='_blank' >sse-chat</a> and multiple blog posts explaining these applications in detail. In this talk he will be discussing the underlying architecture he has discovered for building reactive applications using Scala and Play Framework.</p>\n            ",
                 "speakers": [
                     {
                         "twitter": "@matthiasnehlsen",
                         "fullname": "Matthias Nehlsen",
                         "avatar": "assets/images/speakers/nehlsen.jpg",
                         "company": "",
-                        "bio": "Matthias Nehlsen is a freelance software engineer currently working with Scala, Akka and Play. He's also blogging at  matthiasnehlsen.com."
+                        "bio": "Matthias Nehlsen is a technology enthusiast and freelance software engineer from Hamburg, Germany. He had been working in IT operations and project management for a number of years before discovering his passion for writing software. Not too long ago he started writing reactive applications for fun and for his <a target='_blank' href='http://matthiasnehlsen.com/'>blog</a>"
                     }
                 ]
             },
