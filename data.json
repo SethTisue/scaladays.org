@@ -2,13 +2,13 @@
     "Day1": {
         "id": "june-16",
         "title": "Monday June 16th",
-        "time": "15:00-20:00",
+        "time": "14:00-20:00",
         "tracks": [
             {
                 "type": "pause",
                 "style": "register",
                 "title": "Registration Open",
-                "time": "15:00-16:00",
+                "time": "14:00-16:00",
                 "extra": "<br /><span>&amp; Reception in foyer</span>"
             },
             {
