@@ -326,9 +326,13 @@
 			color: white-ltr
 			h3 
 				color: blue
-			&:before
+			&:before, .time
 				color: white-ltr
-		&:before
+		.time
+			display: none
+			@media (max-width: 640px)
+				display: inline
+		&:before, .time
 			color: rgba(navy,0.5)
 			font-weight: 700
 			text-transform: uppercase
