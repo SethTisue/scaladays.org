@@ -240,8 +240,10 @@ fieldset textarea{width:100%;margin:0 0 .5em 0%}
 }@media (max-width: 640px){#schedule .track{width:90%}
 }#schedule .track:hover{background:#364550;color:#f0f3f6;}
 #schedule .track:hover h3{color:#53cdec}
-#schedule .track:hover:before{color:#f0f3f6}
-#schedule .track:before{color:rgba(16,58,81,0.5);font-weight:700;text-transform:uppercase;font-size:11px;margin:0}
+#schedule .track:hover:before,#schedule .track:hover .time{color:#f0f3f6}
+#schedule .track .time{display:none;}
+@media (max-width: 640px){#schedule .track .time{display:inline}
+}#schedule .track:before,#schedule .track .time{color:rgba(16,58,81,0.5);font-weight:700;text-transform:uppercase;font-size:11px;margin:0}
 #schedule .track.track1{left:0;}
 #schedule .track.track1:before{content:"TRACK 1 / Room 1"}
 #schedule .track.track2{left:25%;}
