@@ -31,15 +31,13 @@ if (is_mobile || !supportsTransitions){
 	return void 0;
 }
 
-var sanfranDate = new Date("Tue Feb 17 2015 09:00:00 GMT-0800");
+var sanfranDate = new Date("Tue Mar 16 2015 09:00:00 GMT-0800");
 var sfMil = sanfranDate.getTime();
 
 var amDate = new Date("Mon Jun 8 2015 09:00:00 GMT+0100");
 var amMil = amDate.getTime();
 
-// Mon Feb 17 2015 09:00:00 GMT-0700 (PDT)
 var endSF = sfMil;
-
 var endAM = amMil;
 
 // days, hours, minutes

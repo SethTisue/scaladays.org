@@ -20,7 +20,7 @@ p {
 	line-height: 1.2em;
 }
 a {
-	color: #fff;
+	color: #7FDFF9;
 }
 .button {
 	display: block;
@@ -31,15 +31,42 @@ a {
 	margin: 30px auto;
 	text-align: center;
 	width: 200px;
+	color: #fff;
 }
 .button:hover {
 	background: #61C9E6;
+	color: #fff;
 }
 
 header {
-	background: #59c8e8;
+	background: #59c8e8 url('scala-element.svg') no-repeat right bottom;
+	background-size: 400px;
 	color: #fff;
 	padding: 1px;
+}
+
+@media only screen and (max-width: 1440px) {
+	header {
+		background-size: 300px;
+	}
+}
+@media only screen and (max-width: 1200px) {
+	header {
+		background-position: 110% bottom
+	}
+}
+@media only screen and (max-width: 1140px) {
+	header {
+		background-position: 120% bottom
+	}
+}
+@media only screen and (max-width: 700px) {
+	header {
+		background-image: none;
+	}
+	#sponsors a {
+		display: block;
+	}
 }
 
 #logo {
@@ -70,22 +97,52 @@ header {
 
 #cfp {
 	padding: 1px;
+	background-color: #364550;
 }
 #cfp article {
 	max-width: 700px;
 	margin: 50px auto;
 	padding: 20px;
+	color: #fff;
 }
 #cfp .surtitle {
 	text-align: center;
-	color: #8EA6AD;
+	color: #fff;
 }
 #cfp h1 {
-	color: #E5554D;
+	color: #FF5754;
 	text-align: center;
 	font-size: 40px;
+	font-weight: 200;
 }
 
+
+
+#sponsors {
+	padding: 1px;
+	text-align: center;
+
+}
+
+#sponsors article {
+	max-width: 700px;
+	margin: 50px auto;
+	padding: 20px;
+}
+
+#sponsors h1 {
+	margin: 80px 0 20px 0;
+	color: #364550;
+	font-weight: 200;
+}
+
+#sponsors h1:first-child {
+	margin-top: 0;
+}
+
+#sponsors a {
+	margin: 0 40px;
+}
 .counter {
 	margin: 70px auto;
 	text-align: center;
