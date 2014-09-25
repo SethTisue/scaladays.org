@@ -15,9 +15,9 @@ if (is_mobile || !supportsTransitions){
 		"<li><span class='back none'>1</span><span class='front'>1</span></li>"+
 		"<li><span class='back none'>5</span><span class='front'>5</span></li></ul>"+
 		"<ul><li><span class='back none'>0</span><span class='front'>0</span></li>"+
-		"<li><span class='back none'>2</span><span class='front'>2</span></li></ul>"+
+		"<li><span class='back none'>3</span><span class='front'>3</span></li></ul>"+
 		"<ul><li><span class='back none'>1</span><span class='front'>1</span></li>"+
-		"<li><span class='back none'>7</span><span class='front'>7</span></li></ul>");
+		"<li><span class='back none'>6</span><span class='front'>6</span></li></ul>");
 	
 	$(".palettesAM").html("<ul><li><span class='back none'>2</span><span class='front'>2</span></li>"+
 		"<li><span class='back none'>0</span><span class='front'>0</span></li>"+
