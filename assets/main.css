@@ -143,6 +143,38 @@ header {
 #sponsors a {
 	margin: 0 40px;
 }
+
+
+
+#info {
+	padding: 1px;
+	text-align: center;
+
+}
+
+#info article {
+	max-width: 800px;
+	margin: 50px auto;
+	padding: 20px;
+}
+
+#info h1 {
+	margin: 20px 0 10px 0;
+	color: #364550;
+	font-weight: 700;
+	font-size: 16px
+}
+
+#info h1:first-child {
+	margin-top: 0;
+}
+
+#info p {
+	font-size: 14px;
+}
+
+
+
 .counter {
 	margin: 70px auto;
 	text-align: center;
