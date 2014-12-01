@@ -37,6 +37,15 @@ a {
 	background: #61C9E6;
 	color: #fff;
 }
+.button.red {
+	background: #FF5754;
+}
+.button.red:hover {
+	background: #D64843;
+}
+.button.goto {
+	width: 400px;
+}
 
 header {
 	background: #59c8e8 url('scala-element.svg') no-repeat right bottom;
