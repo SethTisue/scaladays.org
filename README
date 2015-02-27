@@ -1,7 +1,0 @@
-# Install
-
-	cd path/to/project
-	sudo npm install -g gulp
-	npm install
-	gulp
-
