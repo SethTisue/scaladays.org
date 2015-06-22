@@ -28,7 +28,7 @@ a {
 	text-decoration: none;
 	padding: 10px 20px;
 	border-radius: 3px;
-	margin: 30px auto;
+	margin: 20px auto;
 	text-align: center;
 	width: 200px;
 	color: #fff;
@@ -44,7 +44,7 @@ a {
 	background: #D64843;
 }
 .button.goto {
-	width: 400px;
+	min-width: 300px;
 }
 
 header {
@@ -52,7 +52,23 @@ header {
 	background-size: 400px;
 	color: #fff;
 	padding: 1px;
+	text-align: center;
+	padding-bottom: 100px;
 }
+header h1 {
+	font-weight: 300;
+	font-size: 2em;
+	margin-bottom: 60px;
+}
+
+header h2 {
+	font-weight: 700;
+	font-size: 0.8em;
+	margin-top: 50px;
+	margin-bottom: 0;
+	color: #103a51;
+}
+
 
 @media only screen and (max-width: 1440px) {
 	header {
@@ -81,7 +97,7 @@ header {
 #logo {
 	display: block;
 	text-align: center;
-	margin: 50px auto 70px;
+	margin: 50px auto 20px;
 }
 #logo img {
 	max-width: 481px;
