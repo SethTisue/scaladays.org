@@ -22,6 +22,19 @@ p {
 a {
 	color: #7FDFF9;
 }
+
+p.small {
+	font-size: 16px;
+	line-height: 18px;
+	margin-top: 10px;
+}
+
+p.byline {
+	font-size: 14px;
+	font-style: italic;
+	opacity: 0.8;
+}
+
 .button {
 	display: block;
 	background: #7FDFF9;
@@ -43,7 +56,34 @@ a {
 .button.red:hover {
 	background: #D64843;
 }
+
 .button.goto {
+	min-width: 300px;
+}
+
+.upcoming {
+	display: block;
+	background: #7FDFF9;
+	text-decoration: none;
+	padding: 10px 20px;
+	border-radius: 3px;
+	margin: 20px auto;
+	text-align: center;
+	width: 200px;
+	color: #fff;
+}
+.upcoming:hover {
+	background: #61C9E6;
+	color: #fff;
+}
+.upcoming.blue {
+	background: #40a8c6;
+}
+.upcoming.blue:hover {
+	background: #40a8c6;
+}
+
+.upcoming.goto {
 	min-width: 300px;
 }
 
