@@ -448,6 +448,53 @@ footer img {
 }
 
 
+
+
+.trifork-logo, .typesafe-logo {
+	position: relative;
+	float: left;
+	display: block;
+	width: 50%;
+	margin: 0 !important;
+}
+
+.trifork-logo img {
+	position: absolute;
+	width: 100%
+	max-width: 200px;
+	padding-top: 10px;
+	margin-left: 50%;
+	left: -100px;
+}
+
+.typesafe-logo img {
+	position: relative;
+	width: 200px;
+	margin-left: 50%;
+	left: -100px;
+}
+
+.code {
+	padding-top: 40px;
+	padding-bottom: 40px;
+	background-color: #364550;
+}
+
+.code article {
+	text-align: left;
+}
+
+.code article p {
+	color: white;
+	font-size: 16px !important;
+}
+
+.code article h1 {
+	color: #E05F5E !important;
+	font-size: 1.2em !important;
+	font-weight: normal !important;
+}
+
 /* MOBILE */
 @media only screen and (max-width: 900px) {
 	#logo {
@@ -510,6 +557,25 @@ footer img {
 		top: 25px;
 		border-radius: 0 0 2px 2px;
 	}
-
+	
+	.code {
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
 }
 
+	
+
+/* MOBILE */
+@media only screen and (max-width: 470px) {
+	.trifork-logo, .typesafe-logo {
+		width: 100%;
+	}
+	.trifork-logo img, .typesafe-logo img {
+		position: relative;
+		width: 60%;
+		margin-left: 0;
+		left: 0%;
+		margin-bottom: 12px;
+	}
+}
