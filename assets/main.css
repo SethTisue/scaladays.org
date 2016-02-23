@@ -450,7 +450,7 @@ footer img {
 
 
 
-.trifork-logo, .typesafe-logo {
+.trifork-logo, .lightbend-logo {
 	position: relative;
 	float: left;
 	display: block;
@@ -462,7 +462,6 @@ footer img {
 	position: absolute;
 	width: 100%
 	max-width: 200px;
-	padding-top: 10px;
 	margin-left: 50%;
 	left: -100px;
 }
