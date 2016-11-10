@@ -56,9 +56,14 @@ p.byline {
 .button.red:hover {
 	background: #D64843;
 }
-
+.button.blue {
+	background: rgba(64,168,198,.75);
+}
+.button.blue:hover {
+	background: rgba(64,168,198,1);
+}
 .button.goto {
-	min-width: 300px;
+	min-width: 360px;
 }
 
 .upcoming {
@@ -84,7 +89,7 @@ p.byline {
 }
 
 .upcoming.goto {
-	min-width: 300px;
+	min-width: 350px;
 }
 
 header {
@@ -450,7 +455,7 @@ footer img {
 
 
 
-.trifork-logo, .lightbend-logo {
+.trifork-logo, .typesafe-logo {
 	position: relative;
 	float: left;
 	display: block;
@@ -462,6 +467,7 @@ footer img {
 	position: absolute;
 	width: 100%
 	max-width: 200px;
+	padding-top: 10px;
 	margin-left: 50%;
 	left: -100px;
 }
