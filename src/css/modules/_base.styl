@@ -1,0 +1,83 @@
+*
+	margin: 0
+	padding: 0
+	box-sizing: border-box
+html, body
+	margin: 0
+	padding: 0
+	height: 100%
+	background: scala-slate
+
+body
+	padding: 0
+	margin: 0
+	font-weight: 400
+	font-style: normal
+	line-height: 1
+	position: relative
+	cursor: default
+	color: scala-slate
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif
+	font-smoothing: antialiased
+	-webkit-font-size-adjust: none
+	text-rendering: optimizeLegibility
+	> article
+		padding: 4rem 0
+		&.intro
+			padding: 6rem 0
+
+h1,h2,h3
+	font-weight: 400
+	color: scala-red
+	@media mediumOn
+		font-weight: 300
+.link-list a
+	margin-bottom: .5rem
+.white
+	background: white
+.scala-red
+	background: scala-red
+	h1,h2,h3,h4,h5,h6,p
+		color: white
+.scala-black
+	background: scala-black
+	h1,h2,h3,h4,h5,h6,p
+		color: white
+.scala-blue
+	background: scala-blue
+	h1,h2,h3,h4,h5,h6,p
+		color: white
+	a
+		color: white
+		font-weight: 700
+		border-bottom: 2px solid lighten(scala-blue, 15)
+		display: inline-block
+		&:hover
+			color: darken(scala-blue, 30)
+			border-bottom: 2px solid lighten(scala-blue, 40)
+.scala-slate
+	h1
+		color: scala-blue
+	h2,h3,h4,h5,h6,p
+		color: white
+.corner-element
+	background-image: url("../images/scala-element-reverse.svg")
+	background-repeat: no-repeat
+	background-position: bottom right
+	background-size: 10%
+.intro
+	background: scala-red url("../images/scala-element-reverse-emboss.svg") no-repeat
+	background-position: bottom right 
+	background-size: 10% auto
+	@media mediumOn
+		background-size: auto 60%
+	@media largeOn
+		background-size: auto 150%
+	.logo
+		max-width: 40rem
+		margin: 2rem 0 4rem 0
+	.intro-text
+		margin-bottom: 1.25rem
+.hosted img
+	max-width: 18rem
+	margin: 0 0 3rem 0
