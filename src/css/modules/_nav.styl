@@ -1,0 +1,56 @@
+.main-nav
+	display: none
+	position: fixed
+	background-color: rgba(scala-red, 1)
+	border: 2px solid white
+	top: 2rem
+	right: 2rem
+	padding: 1rem 0
+	border-radius: 10px
+	z-index: 999
+
+	a
+		color: white
+		display: block
+		line-height: 1.2
+		font-size: 1.125rem
+		padding: .5rem 1.75rem
+		font-weight: 700
+		&:hover
+			background-color: darken(scala-red, 12)
+		&.highlight
+			border 1px solid white
+			border-radius: 3px
+			padding: .875rem 0rem
+			background-color: scala-blue
+			text-align: center
+			text-transform: uppercase
+			margin: 1rem 1.75rem
+			font-size: .875rem
+			
+	@media largeOn
+		display: block
+.menu-button
+	position: fixed
+	z-index: 99999
+	top: 1rem
+	right: 1rem
+	width: 60px
+	height: 60px
+	border: 1px solid white
+	@media largeOn
+		display: none
+.off-canvas
+	background-color: scala-red
+.main-nav-off-canvas
+	padding: 1rem
+	a
+		color: white
+		display: block
+		line-height: 1.6
+		font-size: 1.375rem
+	
+	
+	
+	
+	

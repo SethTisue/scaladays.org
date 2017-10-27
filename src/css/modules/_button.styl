@@ -1,19 +1,25 @@
 .button, a.button
-	background: darken(scala-blue, 12)
+	background: scala-red
 	border-radius: 0px
 	border: 1px solid rgba(white, 1)
 	padding: 1rem 1.125rem
 	width: 100%
 	font-weight: 700
-
+	font-size: .875rem
+	color: white
 	@media mediumOn
 		width: auto
 	&:hover
-		background-color: scala-red
 		border: 1px solid rgba(white, 1)
+		background: scala-blue
+		color: white
 	.scala-red &
 		background: darken(scala-red, 12)
 		&:hover
 			background-color: darken(scala-red, 20)
+	.scala-blue &
+		background: darken(scala-blue, 12)
+		&:hover
+			background-color: darken(scala-blue, 20)
 			
 		
