@@ -21,7 +21,7 @@ body
 	font-smoothing: antialiased
 	-webkit-font-size-adjust: none
 	text-rendering: optimizeLegibility
-	> article
+	> article, > footer
 		padding: 4rem 0
 		&.intro
 			padding: 6rem 0
@@ -31,6 +31,22 @@ h1,h2,h3
 	color: scala-red
 	@media mediumOn
 		font-weight: 300
+		
+p 
+	a
+		color: scala-blue
+		font-weight: 700
+		border-bottom: 2px solid lighten(scala-blue, 30)
+		&:hover
+			color: darken(scala-blue, 20)
+			border-bottom: 2px solid lighten(scala-blue, 10)
+small
+	line-height: 1px
+	
+[type=text]
+	height: 3rem
+
+		
 .link-list a
 	margin-bottom: .5rem
 .white
@@ -76,8 +92,14 @@ h1,h2,h3
 	.logo
 		max-width: 40rem
 		margin: 2rem 0 4rem 0
-	.intro-text
+	h1
 		margin-bottom: 1.25rem
+		font-size: 2.5rem
+	h4
+		margin-bottom: 1.25rem
+	&.event-intro
+		.logo
+			margin: 2rem 0 0rem 0
 .hosted img
 	max-width: 16rem
 	margin: 0 0 3rem 0
