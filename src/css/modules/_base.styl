@@ -23,9 +23,39 @@ body
 	text-rendering: optimizeLegibility
 .off-canvas-content
 	> article, > footer
-		padding: 4rem 0
+		padding: 1rem 0 3rem 0	
+		@media mediumOn
+			padding: 2rem 0 3.5rem 0
+		@media largeOn
+			padding: 3rem 0 5rem 0
 		&.intro
-			padding: 6rem 0
+			padding: 0
+			.emboss
+				padding: 6rem 0
+				width: 100%
+				height: 100%
+				background: transparent url("../images/scala-element-reverse-emboss.svg") no-repeat
+				background-position: bottom right 
+				background-size: 10% auto
+				@media mediumOn
+					background-size: auto 60%
+					padding: 2rem 0 3.5rem 0
+				@media largeOn
+					background-size: auto 230%
+					padding: 5rem 0 7rem 0
+			.logo
+				max-width: 40rem
+				margin: 2rem 0 4rem 0
+			h1
+				margin-bottom: 1.25rem
+				font-size: 1.5rem
+				@media mediumOn
+					font-size: 2.5rem
+			h4
+				margin-bottom: 1.25rem
+			&.event-intro
+				.logo
+					margin: 2rem 0 0rem 0
 
 
 
@@ -34,7 +64,13 @@ h1,h2,h3
 	color: scala-red
 	@media mediumOn
 		font-weight: 300
-		
+h4
+	font-weight: 700
+	font-size: 1.125rem
+	text-transform: uppercase
+	.scala-blue &
+		color: darken(scala-blue, 30)
+
 p 
 	a
 		color: scala-blue
@@ -49,8 +85,7 @@ p
 	opacity: .7
 	font-weight: 700
 	
-[type=text]
-	height: 3rem
+
 
 		
 .link-list a
@@ -67,7 +102,7 @@ p
 		color: white
 .scala-blue
 	background: scala-blue
-	h1,h2,h3,h4,h5,h6,p
+	h1,h2,h3,h5,h6,p
 		color: white
 	a
 		color: white
@@ -78,6 +113,7 @@ p
 			color: darken(scala-blue, 30)
 			border-bottom: 2px solid lighten(scala-blue, 40)
 .scala-slate
+	background: scala-slate
 	h1
 		color: scala-blue
 	h2,h3,h4,h5,h6,p
@@ -87,29 +123,39 @@ p
 	background-repeat: no-repeat
 	background-position: bottom right
 	background-size: 10%
-.intro
-	background: scala-red url("../images/scala-element-reverse-emboss.svg") no-repeat
-	background-position: bottom right 
-	background-size: 10% auto
-	@media mediumOn
-		background-size: auto 60%
-	@media largeOn
-		background-size: auto 230%
-	.logo
-		max-width: 40rem
-		margin: 2rem 0 4rem 0
-	h1
-		margin-bottom: 1.25rem
-		font-size: 2.5rem
-	h4
-		margin-bottom: 1.25rem
-	&.event-intro
-		.logo
-			margin: 2rem 0 0rem 0
+
 .hosted img
 	max-width: 16rem
 	margin: 0 0 3rem 0
 .schedule
 	z-index: 9999
-	background: scala-blue
 	position: relative
+
+.venue
+	position: relative
+	min-height: 500px
+	#map 
+		width: 100%
+		height: 100%
+		position: absolute
+		top: 0
+		left: 0
+		z-index: 9
+	.panel
+		position: absolute
+		z-index: 999
+		background: scala-slate
+		color: white
+		padding: 1.5rem
+		width: 95%
+		@media mediumOn
+			width: auto
+			margin: 0 0 0 -1.5rem
+		h1
+			color: scala-red
+	.google-map
+		position: absolute
+		width: 100%
+		height: 100%
+		top: 0
+		left: 0

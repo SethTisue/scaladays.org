@@ -5,28 +5,37 @@
 	border: 2px solid white
 	top: 2rem
 	right: 2rem
-	padding: 1rem 0
-	border-radius: 10px
+	padding: 1rem 0 .5rem 0
+	border-radius: 8px
 	z-index: 999
 
 	a
 		color: white
 		display: block
-		line-height: 1.2
-		font-size: 1.125rem
-		padding: .5rem 1.75rem
+		line-height: 1.1
+		font-size: 1rem
+		padding: .375rem 1rem
 		font-weight: 700
 		&:hover
-			background-color: darken(scala-red, 12)
+			color: scala-blue
 		&.highlight
-			border 1px solid white
+			border 2px solid white
 			border-radius: 3px
 			padding: .875rem 0rem
-			background-color: scala-blue
+			background-color: darken(scala-red, 12)
 			text-align: center
 			text-transform: uppercase
-			margin: 1rem 1.75rem
+			margin: 1rem 1rem .5rem 1rem
 			font-size: .875rem
+			transition: background-color .25s ease-out
+			&:hover
+				background-color: darken(scala-red, 20)
+				color: white
+				transition: background-color .25s ease-out
+		.logo
+			max-width: 80%
+			
+			
 			
 	@media largeOn
 		display: block
@@ -41,7 +50,19 @@
 	@media largeOn
 		display: none
 .off-canvas
-	background-color: scala-red
+	background-color: scala-slate
+	a
+		border-bottom: 1px solid lighten(scala-slate, 10)
+		&:hover
+			color: scala-blue
+		&:first-child
+			border-bottom: none
+			margin-bottom: 1rem
+	a:focus
+		outline: none
+	.logo
+		max-width: 80%
+
 .main-nav-off-canvas
 	padding: 1rem
 	a

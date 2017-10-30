@@ -7,19 +7,25 @@
 	font-weight: 700
 	font-size: .875rem
 	color: white
+	transition: background-color .25s ease-out
 	@media mediumOn
 		width: auto
 	&:hover
 		border: 1px solid rgba(white, 1)
-		background: scala-blue
+		background-color: darken(scala-red, 12)
 		color: white
+		transition: background-color .25s ease-out
 	.scala-red &
 		background: darken(scala-red, 12)
 		&:hover
 			background-color: darken(scala-red, 20)
 	.scala-blue &
-		background: darken(scala-blue, 12)
+		background: scala-red
 		&:hover
-			background-color: darken(scala-blue, 20)
+			background-color: darken(scala-red, 12)
+	.scala-slate &
+		background: scala-blue
+		&:hover
+			background-color: darken(scala-blue, 12)
 			
 		
