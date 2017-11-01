@@ -1,0 +1,32 @@
+.btn-panel
+	border: 2px solid rgba(white, 1)
+	border-radius: 10px
+	color: white
+	padding: 1rem
+	display: block
+	transition: background-color .25s ease-out,color .25s ease-out
+	font-size: 1.75rem
+	font-weight: 700
+	text-transform: uppercase
+	margin-bottom: 2rem
+	background-color: darken(scala-red, 6)
+	background-image: url("../images/scala-element-reverse.svg")
+	background-repeat: no-repeat
+	background-position: bottom -1px right -1px
+	background-size: 17%
+	transition: background-color .25s ease-out,color .25s ease-out, background-size .25s ease-out
+	strong
+		display: block
+		margin-bottom: .5rem
+		font-size: 0.875rem
+		text-transform: capitalize
+	&:hover
+		color: white
+		background-color: scala-blue
+		background-size: 20%
+		transition: background-color .25s ease-out,color .25s ease-out, background-size .25s ease-out
+	@media mediumOn
+		padding: 1rem 1rem 5rem 
+		min-height: 220px
+	@media largeOn
+		min-height: 0

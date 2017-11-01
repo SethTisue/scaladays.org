@@ -1,0 +1,469 @@
+body {
+  font: 1em "Helvetica Neue", Helvetica, sans-serif;
+  line-height: 1.5em; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  margin-bottom: 0.5em; }
+
+h2 {
+  font-size: 1.5em;
+  margin-bottom: 1em; }
+
+[id="00-Introduction"] h1 {
+  font-size: 3em;
+  margin-bottom: 0.30em; }
+  [id="00-Introduction"] h1 span {
+    color: #E05F5E; }
+
+[id="00-Introduction"] h3 {
+  margin-top: 1em; }
+
+h3 {
+  text-transform: uppercase;
+  font-size: 1em; }
+
+a {
+  text-decoration: none; }
+
+body {
+  -webkit-text-size-adjust: none; }
+
+nav {
+  background: #E05F5E;
+  color: white;
+  padding: 1em 1.5em 1em 1.5em;
+  border-radius: 0.5em;
+  font-size: 1.25em;
+  font-weight: bold;
+  box-shadow: 0 0px 0 1px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  top: 2em;
+  right: 2em;
+  z-index: 999; }
+  nav a {
+    color: white; }
+  nav ul {
+    list-style: none;
+    padding: 0; }
+    nav ul li:last-child {
+      margin-bottom: 0; }
+  nav li {
+    margin-bottom: 0.5em; }
+
+@media only screen and (min-width: 0px) and (max-width: 960px) {
+  nav, nav ul {
+    display: none; } }
+#registration-section {
+  font-size: 1em;
+  color: white;
+  max-width: 40em;
+  min-width: 40em; }
+  #registration-section h1 {
+    font-size: 2em;
+    line-height: 1em; }
+  #registration-section h2, #registration-section legend {
+    text-transform: uppercase;
+    font-size: 1em;
+    margin-bottom: 0; }
+  #registration-section h2 {
+    margin-top: 2em; }
+  #registration-section .registration-section {
+    width: 100%; }
+  #registration-section th {
+    width: 8em;
+    text-align: right; }
+  #registration-section input {
+    margin-right: 0.5em; }
+  #registration-section fieldset {
+    border: none;
+    padding: 0; }
+  #registration-section hr {
+    display: none; }
+  #registration-section .available-payment-methods {
+    margin-bottom: 2em; }
+
+* {
+  margin: 0;
+  box-sizing: border-box; }
+
+html {
+  background: #61C9E6; }
+
+.scheduleClickToPop:hover {
+  color: #364550; }
+
+.align-right {
+  text-align: right; }
+
+.inline-block {
+  display: inline-block;
+  min-width: 16em; }
+
+section, [id="07-Footer"] {
+  padding: 2em 2em 2em 2em; }
+
+.content-from-admin, #schedule-section {
+  width: 100%;
+  max-width: 72em;
+  margin: 0 auto; }
+
+.content-from-admin h1, .content-from-admin h2, .content-from-admin h3, .content-from-admin h4, .content-from-admin h5, .content-from-admin h6, .content-from-admin p, #schedule-section h1, #schedule-section h2, #schedule-section h3, #schedule-section h4, #schedule-section h5, #schedule-section h6, #schedule-section p {
+  max-width: 67%; }
+
+[id="07-Footer"] .content-from-admin p {
+  max-width: 100%;
+  margin-bottom: 0.5em; }
+  [id="07-Footer"] .content-from-admin p a {
+    color: #364550; }
+
+section[id="00-Introduction"] {
+  background: #61C9E6;
+  color: white;
+  background-image: url("/dl/scaladays-sanfran-2015/scala_graphic.svg");
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  min-height: 24.5em;
+  padding-top: 2.5em; }
+  section[id="00-Introduction"] h2 {
+    color: #364550; }
+  section[id="00-Introduction"] a {
+    color: #E05F5E; }
+  section[id="00-Introduction"] span {
+    color: #E05F5E; }
+  section[id="00-Introduction"] article :nth-child(3) {
+    font-size: 1.25em; }
+  section[id="00-Introduction"] article :nth-child(4) {
+    color: #364550; }
+  section[id="00-Introduction"] article {
+    margin-bottom: 1em; }
+
+section[id="01-About Scala Days"] {
+  background: #364550;
+  color: white; }
+  section[id="01-About Scala Days"] h2 {
+    color: #E05F5E; }
+  section[id="01-About Scala Days"] a {
+    color: #61C9E6; }
+
+section[id="02-Venue"] {
+  background: #364550;
+  color: white;
+  background-image: url("/dl/scaladays-sanfran-2015/map.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
+  section[id="02-Venue"] h2 {
+    color: #E05F5E; }
+  section[id="02-Venue"] a {
+    color: #61C9E6; }
+  section[id="02-Venue"] article {
+    margin-bottom: 2em;
+    background: #364550;
+    padding: 1em;
+    width: 17em; }
+    section[id="02-Venue"] article h2, section[id="02-Venue"] article p {
+      max-width: 100%; }
+    section[id="02-Venue"] article a {
+      background: #61C9E6;
+      color: white;
+      height: 2.25em;
+      padding: 0.25em 0.75em 0.25em 0.75em;
+      border-radius: 0.25em; }
+  section[id="02-Venue"] address {
+    font-style: normal;
+    margin-bottom: 0.5em; }
+  section[id="02-Venue"] article:last-child {
+    margin-bottom: 0; }
+
+section[id="03-Training"] {
+  background: #E05F5E;
+  color: white; }
+  section[id="03-Training"] h2 {
+    color: #364550; }
+  section[id="03-Training"] a {
+    color: #61C9E6; }
+  section[id="03-Training"] h3 {
+    color: #364550; }
+  section[id="03-Training"] article {
+    margin-bottom: 2em;
+    border-bottom: 1px solid rgba(54, 69, 80, 0.25);
+    padding-bottom: 1em;
+    max-width: 67%; }
+    section[id="03-Training"] article h1, section[id="03-Training"] article h2, section[id="03-Training"] article h3, section[id="03-Training"] article h4, section[id="03-Training"] article h5, section[id="03-Training"] article h6, section[id="03-Training"] article p {
+      max-width: 100%; }
+    section[id="03-Training"] article span {
+      font-style: italic; }
+
+section[id="04-Registration"] {
+  background: #61C9E6;
+  color: white;
+  padding-bottom: 3em; }
+  section[id="04-Registration"] h2 {
+    color: #364550; }
+  section[id="04-Registration"] a {
+    color: #E05F5E; }
+  section[id="04-Registration"] h3 {
+    line-height: 1em; }
+  section[id="04-Registration"] a {
+    background: #E05F5E;
+    color: white;
+    height: 2.75em;
+    padding: 0.42em 1.3125em 0.5425em 1.3125em;
+    border-radius: 0.25em;
+    font-size: 1.25em;
+    display: inline;
+    box-shadow: inset 0 -2px 0 #BE504F; }
+  section[id="04-Registration"] a:active {
+    box-shadow: inset 0 0px 0 #BE504F;
+    background: #BE504F; }
+  section[id="04-Registration"] td {
+    font-size: 1.6em;
+    font-weight: normal; }
+  section[id="04-Registration"] th, section[id="04-Registration"] th {
+    width: 1em; }
+  section[id="04-Registration"] table {
+    text-align: right;
+    line-height: 1em; }
+  section[id="04-Registration"] h2, section[id="04-Registration"] h3, section[id="04-Registration"] table, section[id="04-Registration"] .align-right {
+    max-width: 67%; }
+
+section[id="05-Sponsors"] {
+  background: white;
+  color: #364550; }
+  section[id="05-Sponsors"] h2 {
+    color: #364550; }
+  section[id="05-Sponsors"] a {
+    color: #E05F5E; }
+  section[id="05-Sponsors"] article {
+    margin-bottom: 2em;
+    text-align: center;
+    max-width: 67%; }
+  section[id="05-Sponsors"] article:last-child {
+    margin-bottom: 1em; }
+  section[id="05-Sponsors"] h3 {
+    background: #61C9E6;
+    color: white;
+    text-align: center;
+    max-width: 100%; }
+  section[id="05-Sponsors"] img {
+    margin: 1.5em; }
+
+section[id="06-Code of Conduct"] {
+  background: #364550;
+  color: white; }
+  section[id="06-Code of Conduct"] h2 {
+    color: #E05F5E; }
+  section[id="06-Code of Conduct"] a {
+    color: #61C9E6; }
+
+section[id="07-Volunteer"] {
+  background: #E05F5E;
+  color: white; }
+  section[id="07-Volunteer"] h2 {
+    color: #364550; }
+  section[id="07-Volunteer"] a {
+    color: #61C9E6; }
+
+[id="08-Footer"] {
+  background: #61C9E6;
+  color: white; }
+  [id="08-Footer"] h2 {
+    color: #364550; }
+  [id="08-Footer"] a {
+    color: #E05F5E; }
+
+section[id="schedule"] img, section[id="00-Introduction"] img {
+  width: 5em;
+  height: 5em;
+  border-radius: 2.5em;
+  border: 2px solid white;
+  float: left;
+  margin-right: 1em; }
+
+section[id="schedule"] img {
+  width: 2.5em;
+  height: 2.5em;
+  margin-right: 0.5em;
+  margin-top: 0.25em; }
+
+section[id="schedule"] {
+  background: #61C9E6;
+  color: white;
+  overflow: hidden;
+  z-index: 9999;
+  position: relative; }
+  section[id="schedule"] h2 {
+    color: #364550; }
+  section[id="schedule"] a {
+    color: #E05F5E; }
+  section[id="schedule"] caption {
+    margin-bottom: 0.25em; }
+  section[id="schedule"] td {
+    min-width: 16em; }
+
+#schedule-section {
+  width: 100%;
+  max-width: 72em; }
+
+table {
+  margin-bottom: 2em;
+  width: 100%;
+  border-spacing: 1px; }
+  table h4 {
+    font-weight: 500;
+    margin-bottom: 0; }
+  table th, table tr, table td {
+    padding: 0.5em 1em 0.5em 1em; }
+  table caption {
+    text-transform: uppercase;
+    margin-bottom: 1em; }
+  table th {
+    background: #4695AE; }
+  table tr {
+    background: #55B2CE; }
+  table .track-headers, table .time {
+    text-align: right;
+    width: 5.5em; }
+  table .-fg, table caption {
+    text-align: left; }
+
+div[id*="eventid-"] a h4 {
+  color: white; }
+div[id*="eventid-"] a {
+  color: #364550; }
+
+.schedulePopupExtras {
+  display: none; }
+
+.scheduleClickToPop dl dd.speakercompany {
+    display: none;
+}
+
+.schedulePopupVisible {
+  position: fixed;
+  overflow: visible;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(97, 201, 230, 0.66667);
+  z-index: 999999; }
+  .schedulePopupVisible h1, .schedulePopupVisible h2, .schedulePopupVisible h3, .schedulePopupVisible h4, .schedulePopupVisible h5, .schedulePopupVisible h6, .schedulePopupVisible p {
+    max-width: 100% !important; }
+  .schedulePopupVisible dl {
+    color: #364550;
+    background: white;
+    padding: 2em 2em 1.75em 2em;
+    width: 44em;
+    max-height: 44em;
+    overflow: hidden;
+    overflow-y: auto;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-left: -22em;
+    margin-top: -22em; }
+    .schedulePopupVisible dl dd.subject {
+      font-size: 1.5em;
+      font-weight: bold;
+      margin-bottom: 1em; }
+    .schedulePopupVisible dl dd.abstract {
+      margin-bottom: 0.5em; }
+    .schedulePopupVisible dl dd.level {
+      margin-bottom: 2em; }
+    .schedulePopupVisible dl dd.speakerimage img {
+      width: 5em;
+      height: 5em;
+      margin-right: 0.5em;
+      margin-top: 0; }
+    .schedulePopupVisible dl dd.speaker {
+      font-weight: bold; }
+    .schedulePopupVisible dl dd.day-and-time {
+      font-weight: bold; }
+    .schedulePopupVisible dl dd.twitter {
+      margin-bottom: 1em; }
+    .schedulePopupVisible dl dd.speakerbio {
+      margin-bottom: 2em; }
+    .schedulePopupVisible dl dd.close a {
+      background: #E05F5E;
+      color: white;
+      padding: 0.42em 1.3125em 0.5425em 1.3125em;
+      border-radius: 0.25em;
+      display: inline-block;
+      float: right;
+      margin-bottom: 2em;
+      box-shadow: inset 0 -2px 0 #BE504F; }
+
+@media only screen and (min-width: 0px) and (max-width: 1194px) {
+  section[id="schedule"] {
+    overflow: scroll;
+    overflow-y: visible;
+    -webkit-overflow-scrolling: touch; } }
+@media only screen and (min-width: 0px) and (max-width: 480px) {
+  #section-02-Venue article {
+    margin: 0 auto; }
+    #section-02-Venue article:first-child {
+      margin-bottom: 2em; } }
+@media only screen and (min-width: 0px) and (max-width: 480px) {
+  section[id="04-Registration"] td {
+    font-size: 1em; } }
+@media only screen and (min-width: 402px) and (max-width: 12640px) {
+  section[id="04-Registration"] td {
+    font-size: auto; } }
+@media only screen and (min-width: 368px) and (max-width: 412px) {
+  section[id="00-Introduction"] {
+    background-position: 120% 100%; } }
+@media only screen and (min-width: 0px) and (max-width: 368px) {
+  section[id="00-Introduction"] {
+    background-position: 150% 100%; } }
+@media only screen and (min-width: 0px) and (max-width: 960px) {
+  .content-from-admin h1, .content-from-admin h2, .content-from-admin h3, .content-from-admin h4, .content-from-admin h5, .content-from-admin h6, .content-from-admin p, #schedule-section h1, #schedule-section h2, #schedule-section h3, #schedule-section h4, #schedule-section h5, #schedule-section h6, #schedule-section p {
+    max-width: 72em; }
+
+  section[id="00-Introduction"] img {
+    width: 4em;
+    height: 4em;
+    float: right;
+    margin-right: 0;
+    margin-left: 1em; }
+  section[id="00-Introduction"] article {
+    padding-bottom: 1em;
+    border-bottom: 1px solid rgba(54, 69, 80, 0.25); }
+
+  section[id="04-Registration"] #section-04-Registration, section[id="04-Registration"] .content-from-admin {
+    max-width: 100%; }
+  section[id="04-Registration"] h2, section[id="04-Registration"] h3, section[id="04-Registration"] table, section[id="04-Registration"] .align-right {
+    max-width: 100%; }
+
+  section[id="03-Training"] article {
+    max-width: 100%; }
+
+  section[id="05-Sponsors"] article {
+    max-width: 100%; } }
+@media only screen and (min-width: 0px) and (max-width: 720px) {
+  .schedulePopupVisible {
+    position: fixed;
+    overflow: visible;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(97, 201, 230, 0.66667);
+    z-index: 999999; }
+    .schedulePopupVisible h1, .schedulePopupVisible h2, .schedulePopupVisible h3, .schedulePopupVisible h4, .schedulePopupVisible h5, .schedulePopupVisible h6, .schedulePopupVisible p {
+      max-width: 100% !important; }
+    .schedulePopupVisible dl {
+      overflow: scroll;
+      overflow-x: hidden;
+      padding: 1em 1em 1em 1em;
+      width: 100%;
+      height: 100%;
+      max-height: 100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      margin-left: 0;
+      margin-top: 0; } }
+
+/*# sourceMappingURL=main.css.map */

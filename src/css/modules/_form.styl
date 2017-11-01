@@ -1,0 +1,28 @@
+form h2
+	margin-top: 3rem
+	&:first-child
+		margin-top: 0
+		
+fieldset
+	margin: 1rem 0
+	background: darken(scala-blue, 12)
+	padding: 2rem
+	.scala-blue &
+		color: white
+		h1,h2,h3,h4
+			color: white
+
+
+label
+	.scala-blue &
+		color: white
+		font-weight: 700
+	&.number_chars
+		margin: -.5rem 0 1.5rem 0
+		font-weight: 700
+		color: lighten(scala-blue, 12)
+		input
+			width: 2.5rem
+
+[type=text]
+	height: 3rem

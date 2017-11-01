@@ -1,7 +1,6 @@
 # Install
 
 	cd path/to/project
-	sudo npm install -g gulp
-	npm install
-	gulp
+	$ npm install stylus -g
+	stylus -c -w -o css src/css/main.min.styl
 

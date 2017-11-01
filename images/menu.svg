@@ -1,0 +1,5 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+  <title>menu</title>
+  <rect id="list-bg" width="20" height="20" fill="#de3423"/>
+  <path id="list-icon" d="M16.4,9H3.6C3,9,3,9.45,3,10s0,1,.6,1H16.4c.55,0,.6-.45.6-1S17,9,16.4,9Zm0,4H3.6c-.6,0-.6.45-.6,1s0,1,.6,1H16.4c.55,0,.6-.45.6-1S17,13,16.4,13ZM3.6,7H16.4c.55,0,.6-.45.6-1s0-1-.6-1H3.6C3,5,3,5.45,3,6S3,7,3.6,7Z" fill="#fff"/>
+</svg>
