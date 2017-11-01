@@ -5,7 +5,7 @@
     <clipPath>
         <use xlink:href="#a" overflow="visible" />
     </clipPath>
-    <g opacity=".2">
+    <g opacity=".4">
         <defs>
             <path id="b" d="M0 0h810v1311h-810z" />
         </defs>

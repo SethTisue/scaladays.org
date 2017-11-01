@@ -25,37 +25,57 @@ body
 	> article, > footer
 		padding: 1rem 0 3rem 0	
 		@media mediumOn
-			padding: 2rem 0 3.5rem 0
+			padding: 2rem 0 4rem 0
 		@media largeOn
 			padding: 3rem 0 5rem 0
 		&.intro
 			padding: 0
+			background: scala-red url("../images/berlin.jpg") no-repeat
+			background-position: top center
+			background-size: cover
+			@media mediumOn
+				background: scala-red url("../images/berlin-medium.jpg") no-repeat
+				background-position: top center
+				background-size: cover
+			@media largeOn
+				background: scala-red url("../images/berlin-large.jpg") no-repeat
+				background-position: top center
+				background-size: cover
 			.emboss
 				padding: 6rem 0
 				width: 100%
 				height: 100%
-				background: transparent url("../images/scala-element-reverse-emboss.svg") no-repeat
-				background-position: bottom right 
+				
 				background-size: 10% auto
 				@media mediumOn
-					background-size: auto 60%
-					padding: 2rem 0 3.5rem 0
+					background: transparent url("../images/scala-element-reverse-emboss.svg") no-repeat
+					background-position: bottom right 
+					background-size: auto 110%
+					padding: 1rem 0 5rem 0
 				@media largeOn
-					background-size: auto 230%
-					padding: 5rem 0 7rem 0
+					background-size: auto 160%
+					padding: 4rem 0 13rem 0
 			.logo
-				max-width: 40rem
+				max-width: 30rem
 				margin: 2rem 0 4rem 0
+				@media largeOn
+					max-width: 40rem
 			h1
 				margin-bottom: 1.25rem
 				font-size: 1.5rem
 				@media mediumOn
+					font-size: 1.5rem
+					font-weight: 400
+				@media largeOn
 					font-size: 2.5rem
+					font-weight: 300
 			h4
 				margin-bottom: 1.25rem
 			&.event-intro
 				.logo
 					margin: 2rem 0 0rem 0
+			&.global
+				background: scala-red
 
 
 
