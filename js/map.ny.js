@@ -125,14 +125,12 @@ var mapStyle = [
 ];
 
 
-var venuePosition = new google.maps.LatLng(52.5168394,13.4499112);
-var hotelPosition = new google.maps.LatLng(52.524202, 13.417203);
-var trainingPosition = new google.maps.LatLng(52.530908, 13.384623);
-var center = new google.maps.LatLng(52.524202, 13.417203);
+var venuePosition = new google.maps.LatLng(40.7624680,-73.9815570);
+var center = new google.maps.LatLng(40.7624680,-73.9815570);
 
 var mapOptions = {
 	center: center,
-	zoom: 13,
+	zoom: 15,
 	mapTypeId: google.maps.MapTypeId.ROADMAP,
 	scaleControl: false,
 	scrollwheel: false,
@@ -143,7 +141,7 @@ var map = new google.maps.Map(document.getElementById("map"), mapOptions);
 var markerVenue = new google.maps.Marker({
 	position: venuePosition,
 	map: map,
-	title: 'Kosmos Berlin',
+	title: 'Sheraton New York Times Square',
   icon: 'images/red-marker.png'
 });
 /*

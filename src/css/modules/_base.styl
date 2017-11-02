@@ -41,6 +41,18 @@ body
 				background: scala-red url("../images/berlin-large.jpg") no-repeat
 				background-position: top center
 				background-size: cover
+			&.new-york
+				background: scala-red url("../images/new-york.jpg") no-repeat
+				background-position: top center
+				background-size: cover
+				@media mediumOn
+					background: scala-red url("../images/new-york-medium.jpg") no-repeat
+					background-position: top center
+					background-size: cover
+				@media largeOn
+					background: scala-red url("../images/new-york-large.jpg") no-repeat
+					background-position: top center
+					background-size: cover
 			.emboss
 				padding: 6rem 0
 				width: 100%
@@ -71,11 +83,14 @@ body
 					font-weight: 300
 			h4
 				margin-bottom: 1.25rem
-			&.event-intro
+			&.event-intro, &.cfp-intro
 				.logo
 					margin: 2rem 0 0rem 0
-			&.global
+			&.global, &.cfp-intro
 				background: scala-red
+			&.cfp-intro .emboss
+				@media largeOn
+					padding: 4rem 0 6rem 0
 
 
 
@@ -122,7 +137,7 @@ p
 		color: white
 .scala-blue
 	background: scala-blue
-	h1,h2,h3,h5,h6,p
+	h1,h2,h3,h5,h6,p,li
 		color: white
 	a
 		color: white
