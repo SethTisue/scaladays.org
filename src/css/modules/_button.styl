@@ -1,4 +1,4 @@
-.button, a.button
+.button, a.button, button
 	background: scala-red
 	border-radius: 0px
 	border: 1px solid rgba(white, 1)
@@ -15,7 +15,7 @@
 		background-color: darken(scala-red, 12)
 		color: white
 		transition: background-color .25s ease-out
-	.scala-red &
+	.scala-red &, &.mktoButton
 		background: darken(scala-red, 12)
 		&:hover
 			background-color: darken(scala-red, 20)
@@ -27,5 +27,3 @@
 		background: scala-blue
 		&:hover
 			background-color: darken(scala-blue, 12)
-			
-		
