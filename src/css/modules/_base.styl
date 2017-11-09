@@ -114,6 +114,8 @@ p
 		&:hover
 			color: darken(scala-blue, 20)
 			border-bottom: 2px solid lighten(scala-blue, 10)
+li
+	margin-bottom: .375rem
 .legal
 	line-height: 1.5
 	font-size: 0.689rem
@@ -129,11 +131,19 @@ p
 	background: white
 .scala-red
 	background: scala-red
-	h1,h2,h3,h4,h5,h6,p
+	h1,h2,h3,h4,h5,h6,p,li
 		color: white
+	a
+		color: white
+		font-weight: 700
+		border-bottom: 2px solid lighten(scala-red, 15)
+		display: inline-block
+		&:hover
+			color: darken(scala-red, 30)
+			border-bottom: 2px solid lighten(scala-red, 40)
 .scala-black
 	background: scala-black
-	h1,h2,h3,h4,h5,h6,p
+	h1,h2,h3,h4,h5,h6,p,li
 		color: white
 .scala-blue
 	background: scala-blue
@@ -151,8 +161,16 @@ p
 	background: scala-slate
 	h1
 		color: scala-blue
-	h2,h3,h4,h5,h6,p
+	h2,h3,h4,h5,h6,p,li
 		color: white
+	a
+		color: white
+		font-weight: 700
+		border-bottom: 2px solid lighten(scala-blue, 15)
+		display: inline-block
+		&:hover
+			color: darken(scala-blue, 30)
+			border-bottom: 2px solid lighten(scala-blue, 40)
 .corner-element
 	background-image: url("../images/scala-element-reverse.svg")
 	background-repeat: no-repeat
@@ -165,6 +183,29 @@ p
 .schedule
 	z-index: 9999
 	position: relative
+	
+.program-committee .profile-pics
+	margin-top: 2rem
+	color: white
+	img
+		border-radius: 1000px
+		max-width: 10rem
+		float: left
+		margin: 0rem 1rem 0rem 0
+		border: 2px solid white
+	strong
+		color: scala-red
+	.profile
+		margin: 0 0 5rem 0
+		@media mediumOn
+			margin-left: 11rem
+	h2
+		margin: 0
+		color: scala-red
+	h3
+		font-size: 1.25rem
+		font-weight: 700
+		opacity: .7
 
 .venue
 	position: relative
