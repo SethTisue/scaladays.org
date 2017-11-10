@@ -169,8 +169,8 @@ li
 		border-bottom: 2px solid lighten(scala-blue, 15)
 		display: inline-block
 		&:hover
-			color: darken(scala-blue, 30)
-			border-bottom: 2px solid lighten(scala-blue, 40)
+			color: scala-blue
+			border-bottom: 2px solid lighten(scala-slate, 40)
 .corner-element
 	background-image: url("../images/scala-element-reverse.svg")
 	background-repeat: no-repeat
@@ -185,27 +185,31 @@ li
 	position: relative
 	
 .program-committee .profile-pics
-	margin-top: 2rem
+	margin-top: 4rem
 	color: white
 	img
 		border-radius: 1000px
-		max-width: 10rem
+		max-width: 8rem
 		float: left
-		margin: 0rem 1rem 0rem 0
+		margin: 0rem 2rem 0rem 0
 		border: 2px solid white
 	strong
 		color: scala-red
 	.profile
 		margin: 0 0 5rem 0
 		@media mediumOn
-			margin-left: 11rem
+			margin: 0 0 3rem 10rem
+		@media largeOn
+			margin: 0 2rem 3rem 10rem
 	h2
 		margin: 0
 		color: scala-red
+		font-weight: 700
+		@media mediumOn
+			font-weight: 300
 	h3
 		font-size: 1.25rem
 		font-weight: 700
-		opacity: .7
 
 .venue
 	position: relative
